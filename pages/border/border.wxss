@@ -1,0 +1,14 @@
+.doc-main {
+  background: transparent;
+}
+page{
+  background: #f5f5f5;
+}
+.doc-box-sub {
+  background: #fff;
+  border-radius: 0;
+}
+
+.doc-box-sub.shadow, .doc-box-sub.shadow-lg,.shadow-alice {
+  border-radius: 6rpx;
+}

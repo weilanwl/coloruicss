@@ -1,0 +1,110 @@
+<view class="bar solid-bottom">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>基本样式</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class="progress mb-sm round">
+    <view class="progress-bar " style="width: 30%"></view>
+  </view>
+  <view class="progress">
+    <view class="progress-bar" style="width: 40%">40%</view>
+  </view>
+</view>
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>进度条颜色</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class="progress mb-sm">
+    <view class="progress-bar" style="width: 15%"></view>
+  </view>
+
+  <view class="progress mb-sm">
+    <view class="progress-bar progress-bar-secondary" style="width: 30%"></view>
+  </view>
+
+  <view class="progress mb-sm">
+    <view class="progress-bar progress-bar-success" style="width: 45%"></view>
+  </view>
+
+  <view class="progress mb-sm">
+    <view class="progress-bar progress-bar-warning" style="width: 60%"></view>
+  </view>
+
+  <view class="progress">
+    <view class="progress-bar progress-bar-danger" style="width: 75%"></view>
+  </view>
+</view>
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>进度条高度</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class="progress progress-xs mb-sm">
+    <view class="progress-bar" style="width: 80%"></view>
+  </view>
+
+  <view class="progress progress-sm mb-sm">
+    <view class="progress-bar" style="width: 60%"></view>
+  </view>
+
+  <view class="progress">
+    <view class="progress-bar" style="width: 40%"></view>
+  </view>
+</view>
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>进度条条纹</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class="progress mt-sm progress-striped">
+    <view class="progress-bar progress-bar-danger" style="width: 80%"></view>
+  </view>
+  <view class="progress mt-sm progress-striped">
+    <view class="progress-bar progress-bar-warning" style="width: 60%"></view>
+  </view>
+  <view class="progress mt-sm progress-striped">
+    <view class="progress-bar progress-bar-success" style="width: 45%"></view>
+  </view>
+  <view class="progress mt-sm progress-striped">
+    <view class="progress-bar progress-bar-secondary" style="width: 30%"></view>
+  </view>
+  <view class="progress mt-sm progress-striped">
+    <view class="progress-bar" style="width: 15%"></view>
+  </view>
+</view>
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>进度条动画</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class="progress progress-striped progress-sm active ">
+    <view class="progress-bar progress-bar-secondary" style="width: 57%"></view>
+  </view>
+</view>
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>进度条动画</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class="progress">
+    <view class="progress-bar" style="width: 65%">Male</view>
+    <view class="progress-bar progress-bar-success" style="width: 15%">Female</view>
+    <view class="progress-bar progress-bar-warning" style="width: 20%">Other</view>
+  </view>
+</view>

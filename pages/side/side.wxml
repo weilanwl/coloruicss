@@ -1,0 +1,80 @@
+<view class="bar justify-between">
+  <view class='ml-sm' bindtap='showModal' data-modal='listSide'>
+    <view class='btn success sm radius'>
+      <text class='iconfont icon-list'> 侧边菜单</text>
+    </view>
+  </view>
+  <view class='mr-sm' bindtap='showModal' data-modal='menuSide'>筛选
+    <text class="iconfont icon-filter success-text"></text>
+  </view>
+</view>
+<view class='side side-right' wx:if="{{modalName=='menuSide'}}">
+  <view class='side-close' bindtap='closeModal'></view>
+  <view class="bar">
+    <view class='text-lg'>
+      <text class=' iconfont icon-title success-text ml-sm'></text> 城市
+    </view>
+  </view>
+  <view class='double-chose'>
+    <scroll-view scroll-y class="double-chose-first" style='height:240px;width: 400rpx;'>
+      <view class="cur">北京</view>
+      <view class="" wx:for="asdasdasdasdasdasdasdasdasd">北京</view>
+    </scroll-view>
+    <scroll-view scroll-y class="double-chose-last" style='height:240px;'>
+      <view class="cur">北京</view>
+      <view class="" wx:for="asdasdasdasdasdasdasdasdasd">北京</view>
+    </scroll-view>
+  </view>
+  <view class="bar mt-sm">
+    <view class='text-lg'>
+      <text class=' iconfont icon-title success-text ml-sm'></text> 国家
+    </view>
+  </view>
+  <scroll-view class='modal-bd' scroll-y="true" style='max-height:800rpx;'>
+    <view class='single-modal'>
+      <view class="single-modal-item {{item.checked?'cur':''}}" wx:for="{{radio}}">{{item.value}}</view>
+    </view>
+  </scroll-view>
+  <view class='flex justify-center bar'>
+    <button class='success btn hollow mr-sm'>重置</button>
+    <button class='warning btn' bindtap='closeModal'>确定</button>
+  </view>
+</view>
+
+<view class='side side-list' wx:if="{{modalName=='listSide'}}">
+  <view class="user">
+    <view class="user-top">
+      <view class="user-img">
+        <image src="http://www.diwuyuan.com/bbs/uc_server/data/avatar/000/00/02/52_avatar_big.jpg" class='radius'></image>
+      </view>
+      <view class="user-text">
+        <view class="user-name">
+          文晓港
+        </view>
+      </view>
+    </view>
+    <view class='user-bg' style='background-image:url(http://www.diwuyuan.com/bbs/uc_server/data/avatar/000/00/02/52_avatar_big.jpg)'>
+    </view>
+  </view>
+  <view class="list-box">
+    <view class="list-li list-arrow">
+      <view class="list-text">
+        <view class="iconfont icon-moneybagfill danger-text"> </view> 余额
+      </view>
+    </view>
+    <view class="list-li list-arrow">
+      <view class="list-text">
+        <view class="iconfont icon-skinfill success-text"> </view> 主题
+      </view>
+    </view>
+    <view class="list-li list-arrow">
+      <view class="list-text">
+        <view class="iconfont icon-locationfill warning-text"> </view> 地址
+      </view>
+    </view>
+  </view>
+  <view class='flex justify-center bar mt-xs'>
+    <button class='warning btn hollow' bindtap='closeModal'>退出账号</button>
+  </view>
+  <view class='side-close' bindtap='closeModal'></view>
+</view>

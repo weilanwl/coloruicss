@@ -1,0 +1,36 @@
+<view class="bar">
+  <view class='ml-sm iconfont icon-titles success-text'>全屏限高轮播</view>
+</view>
+<swiper class='swiper-screen' indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" indicator-active-color="#ff6600">
+  <swiper-item wx:for="1234">
+    <image src="http://image.weilanwl.com/img/4x3-{{index+1}}.jpg" mode='aspectFill' />
+  </swiper-item>
+</swiper>
+
+<view class="bar mt-sm">
+  <view class='ml-sm iconfont icon-titles success-text'>带背景图轮播</view>
+</view>
+<swiper class='swiper-bg' indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" indicator-active-color="#ff6600">
+  <swiper-item wx:for="124">
+    <view class='shadow-alice'>
+      <image src="http://image.weilanwl.com/img/4x3-{{index+2}}.jpg" mode='aspectFill' />
+    </view>
+  </swiper-item>
+</swiper>
+
+<view class="bar mt-sm">
+  <view class='ml-sm iconfont icon-titles success-text'>多图轮播(scroll-view)</view>
+</view>
+<view class='scroll-bar'>
+  <view class='scroll-left' bindtap='scrollLeft'>
+    <text class='iconfont icon-back'></text>
+  </view>
+  <scroll-view scroll-x class='scroll-list-box' scroll-into-view="in-{{scrollInto}}" scroll-with-animation>
+    <view class='scroll-list'>
+      <view class='scroll-item' id="in-{{index}}" style='background-image:url(http://image.weilanwl.com/img/4x3-{{item.id}}.jpg)' wx:for="{{scrollList}}"></view>
+    </view>
+  </scroll-view>
+  <view class='scroll-right' bindtap='scrollRight'>
+    <text class='iconfont icon-right'></text>
+  </view>
+</view>

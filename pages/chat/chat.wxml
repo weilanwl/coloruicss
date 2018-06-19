@@ -1,0 +1,71 @@
+<view class="chat-item">
+  <view class="chat-main justify-end flex">
+    <view>
+      <view class='chat-centact success'>
+        喵喵喵！喵喵喵！喵喵喵！喵喵！喵喵！！喵！喵喵喵！
+      </view>
+      <view class='gray-text text-sm text-right mt-sm'>2018年3月23日 13:23</view>
+    </view>
+  </view>
+  <image src="http://image.weilanwl.com/img/square-3.jpg" class="img-df radius" mode='widthFix'></image>
+</view>
+<view class="chat-item chat-left">
+  <image src="http://image.weilanwl.com/img/square-2.jpg" class="img-df round" mode='widthFix'></image>
+  <view class="chat-main">
+    <view>
+      <view class='chat-centact'>
+        喵喵喵！喵！喵！喵！喵喵喵！
+      </view>
+      <view class='gray-text text-sm mt-sm'>5天前 </view>
+    </view>
+  </view>
+</view>
+<view class="chat-item">
+  <view class="chat-main justify-end flex">
+    <view>
+      <view class='chat-centact'>
+        <image src="http://image.weilanwl.com/img/3x4-1.jpg" mode="widthFix"></image>
+      </view>
+      <view class='gray-text text-sm text-right mt-sm'>10分钟前</view>
+    </view>
+  </view>
+  <image src="http://image.weilanwl.com/img/square-3.jpg" class="img-df radius" mode='widthFix'></image>
+</view>
+<view class="chat-item chat-left">
+  <image src="http://image.weilanwl.com/img/square-2.jpg" class="img-df round" mode='widthFix'></image>
+  <view class="chat-main">
+    <view>
+      <view class='chat-centact'>
+        <text class='iconfont icon-notification'></text>3"
+      </view>
+      <view class='gray-text text-sm mt-sm'>1分钟前 </view>
+    </view>
+  </view>
+</view>
+<view class="chat-item">
+  <view class="chat-main justify-end flex">
+    <view>
+      <view class='chat-centact'>
+        <view>戏精铲屎官，主子了解一下？</view>
+        <view class="flex mt-sm">
+          <image src="http://image.weilanwl.com/img/4x3-3.jpg" mode="widthFix" class='basis-sm'></image>
+          <view class="ml-sm text-sm">
+            一个伪铲屎官瞎几把乱写的一堆文字.
+          </view>
+        </view>
+        <view class="flex solid-top align-center pt-sm mt-sm">
+          <image src="http://image.weilanwl.com/img/4x4.jpg" class='round img-xs' mode='widthFix'></image>
+          <view class="gray-text ml-sm text-sm">文晓港
+            <text>/ 程序员</text>
+          </view>
+        </view>
+      </view>
+      <view class='gray-text text-sm text-right mt-sm'>刚刚</view>
+    </view>
+  </view>
+  <image src="http://image.weilanwl.com/img/square-3.jpg" class="img-df radius" mode='widthFix'></image>
+</view>
+<view class="bar bottomfix shadow bar-textarea">
+  <input class='flex-sub solid-bottom ml-sm' focus="true" maxlength="300" cursor-spacing="10"></input>
+  <button class='success btn mh-sm'>发送</button>
+</view>

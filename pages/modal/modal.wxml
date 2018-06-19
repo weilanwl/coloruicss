@@ -1,0 +1,99 @@
+<view class="nav-list {{modalName=='defualtmodal'?'cur':''}}" bindtap='showModal' data-modal="defualtmodal">
+  <view class="nav-title">普通弹出层</view>
+  <view class="iconfont icon-right"></view>
+</view>
+<view class="nav-list {{modalName=='bottomModal'?'cur':''}}" bindtap='showModal' data-modal="bottomModal">
+  <view class="nav-title">底部弹出层</view>
+  <view class="iconfont icon-right"></view>
+</view>
+
+
+<view class="nav-list {{modalName=='modal'?'cur':''}}" bindtap='showModal' data-modal="modal">
+  <view class="nav-title">两个操作的模态框</view>
+  <view class="iconfont icon-right"></view>
+</view>
+
+
+<view class="nav-list {{modalName=='modals'?'cur':''}}" bindtap='showModal' data-modal="modals">
+  <view class="nav-title">多个操作的模态框</view>
+  <view class="iconfont icon-right"></view>
+</view>
+
+
+
+<view class="modal-box {{modalName=='defualtmodal'?'cur':''}}">
+  <view class='modal-dialog'>
+    <view class="modal-title">
+      <text>复选框</text>
+      <view class='bar-close badge danger round' bindtap='closeModal'>
+        <text class='iconfont icon-close'></text>
+      </view>
+    </view>
+    <view class='modal-bd'>
+      <radio-group class="list-double-col list-box" bindchange="radioChange">
+        <label class="radio list-li" wx:for="{{items}}">
+          <view class='list-text'>{{item.value}}</view>
+          <radio value="{{item.name}}" checked="{{item.checked}}" class='list-icon' />
+        </label>
+      </radio-group>
+    </view>
+  </view>
+</view>
+
+
+<view class="modal-box bottom-modal {{modalName=='bottomModal'?'cur':''}}">
+  <view class='modal-dialog'>
+    <view class="modal-title">
+      <text>复选框</text>
+      <view class='bar-close badge danger round' bindtap='closeModal'>
+        <text class='iconfont icon-close'></text>
+      </view>
+    </view>
+    <view class='modal-bd'>
+      <radio-group class="list-double-col list-box" bindchange="radioChange">
+        <label class="list-li" wx:for="{{items}}">
+          <view class='list-text'>{{item.value}}</view>
+          <radio value="{{item.name}}" checked="{{item.checked}}" class='list-icon' />
+        </label>
+      </radio-group>
+    </view>
+  </view>
+</view>
+
+<view class="modal-box {{modalName=='modal'?'cur':''}}">
+  <view class='modal-dialog'>
+    <view class="modal-title">
+      <text>复选框</text>
+      <view class='bar-close badge danger round' bindtap='closeModal'>
+        <text class='iconfont icon-close'></text>
+      </view>
+    </view>
+    <view class='modal-bd modal-message'>
+      带确认和取消
+    </view>
+    <view class='modal-option'>
+      <view class='modal-option-btn'>取消</view>
+      <view class='modal-option-btn success-text'>确认</view>
+    </view>
+  </view>
+</view>
+
+<view class="modal-box {{modalName=='modals'?'cur':''}}">
+  <view class='modal-dialog'>
+    <view class="modal-title">
+      <text>请选择</text>
+      <view class='bar-close badge danger round' bindtap='closeModal'>
+        <text class='iconfont icon-close'></text>
+      </view>
+    </view>
+    <view class='modal-bd modal-message'>
+      带确认和取消
+    </view>
+    <view class='modal-option'>
+      <view class='modal-option-btn success-text'>
+        <text class='iconfont icon-moneybag'></text> 微信支付</view>
+      <view class='modal-option-btn'>取消</view>
+      <view class='modal-option-btn '>确认</view>
+    </view>
+  </view>
+</view>

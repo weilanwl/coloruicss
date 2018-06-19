@@ -1,0 +1,228 @@
+<view class="user">
+  <view class="user-top">
+    <view class="user-img">
+      <image src="http://www.diwuyuan.com/bbs/uc_server/data/avatar/000/00/02/52_avatar_big.jpg" class='radius'></image>
+    </view>
+    <view class="user-text">
+      <view class="user-name">
+        文晓港
+        <text>切图仔</text>
+      </view>
+      <view class="user-sub cf">
+        <navigator hover-class='none' class='gray btn xs round'>编辑资料</navigator>
+        <navigator hover-class='none' class='fr'>
+          <text class='iconfont icon-qrcode'></text> 个人名片</navigator>
+      </view>
+    </view>
+  </view>
+  <view class="user-nav icon-nav-box">
+    <view class="icon-nav">
+      <navigator hover-class="none" class="icon-nav-navigator">
+        <text class="iconfont icon-moneybagfill"></text>
+        <text class="icon-nav-text">资金</text>
+      </navigator>
+      <navigator hover-class="none" class="icon-nav-navigator">
+        <text class="iconfont icon-radiobox"></text>
+        <text class="icon-nav-text">圈子</text>
+      </navigator>
+      <navigator hover-class="none" class="icon-nav-navigator">
+        <text class="iconfont icon-cartfill"><text class='badge mark-badge'>9</text></text>
+        <text class="icon-nav-text">购物车</text>
+      </navigator>
+      <navigator hover-class="none" class="icon-nav-navigator">
+        <text class="iconfont icon-messagefill"><text class='badge mark-badge'>99+</text></text>
+        <text class="icon-nav-text">消息</text>
+      </navigator>
+    </view>
+  </view>
+  <view class='user-bg' style='background-image:url(http://www.diwuyuan.com/bbs/uc_server/data/avatar/000/00/02/52_avatar_big.jpg)'>
+  </view>
+</view>
+<view class="list-box">
+  <view class="list-li">
+    <view class="list-text">
+      <view class="iconfont icon-list warning-text"> </view>
+      默认
+    </view>
+  </view>
+  <view class="list-li list-arrow">
+    <view class="list-text">
+      <view class="iconfont icon-right warning-text"> </view> 带箭头
+    </view>
+  </view>
+  <navigator url="" hover-class="none" class="list-li">
+    <view class="list-text">
+      <view class="iconfont icon-medal primary-text"> </view> 带徽章
+    </view>
+    <view class="list-badge">
+      <text class='badge warning-badge round'>徽章</text>
+      <text class='badge secondary-badge radius '>徽章</text>
+    </view>
+  </navigator>
+  <navigator url="" hover-class="none" class="list-li list-arrow">
+    <view class="list-text">
+      <view class="iconfont icon-medal primary-text"> </view> 带图标的提示
+    </view>
+    <view class="list-icon iconfont icon-appreciatefill warning-text">
+      点赞
+    </view>
+  </navigator>
+  <navigator url="" hover-class="none" class="list-li list-arrow">
+    <view class="list-text">
+      <view class="iconfont icon-medal danger-text"> </view> 带说明
+    </view>
+    <view class="list-icon gray-text">
+      小目标还没实现！
+    </view>
+  </navigator>
+</view>
+<view class='list-box'>
+  <view class="list-li">
+    <view class='list-tx'>
+      <view class='list-tx-img'>
+        <image src="http://www.diwuyuan.com/bbs/uc_server/data/avatar/000/00/02/52_avatar_big.jpg"></image>
+      </view>
+      <text> 名字</text>
+    </view>
+    <view class="delet-box iconfont icon-delete"></view>
+  </view>
+  <view class="list-li">
+    <view class='list-tx'>
+      <view class='list-tx-img'>
+        <image src="http://www.diwuyuan.com/bbs/uc_server/data/avatar/000/00/02/52_avatar_big.jpg"></image>
+      </view>
+      <text> 名字</text>
+    </view>
+    <view class="delet-box iconfont icon-delete"></view>
+  </view>
+  <view class="list-li">
+    <view class='list-tx'>
+      <view class='list-tx-img'>
+        <image src="http://www.diwuyuan.com/bbs/uc_server/data/avatar/000/00/02/52_avatar_big.jpg"></image>
+      </view>
+      <text> 名字</text>
+    </view>
+    <view class="delet-box iconfont icon-delete"></view>
+  </view>
+</view>
+<view class="list-box">
+  <view class="list-li">
+    <view class="list-text">
+      <view class="iconfont icon-medal danger-text"> </view> 带信息
+      <text>信息内容</text>
+    </view>
+  </view>
+  <view class="list-li">
+    <view class="list-text">
+      <view class="iconfont icon-medal danger-text"> </view> 带头像
+    </view>
+    <view class="list-tx">
+      <view class='list-tx-img'>
+        <image src="http://www.diwuyuan.com/bbs/uc_server/data/avatar/000/00/02/52_avatar_big.jpg" mode="aspectFill"></image>
+        <image src="http://www.diwuyuan.com/bbs/uc_server/data/avatar/000/00/02/52_avatar_big.jpg" mode="aspectFill"></image>
+        <image src="http://www.diwuyuan.com/bbs/uc_server/data/avatar/000/00/02/52_avatar_big.jpg" mode="aspectFill"></image>
+      </view>
+      <text>3 人</text>
+    </view>
+  </view>
+  <navigator url="" hover-class="none" class="list-li">
+    <view class="list-text">
+      <view class="iconfont icon-medal primary-text"> </view> 带按钮
+    </view>
+    <view class="list-btn">
+      <button class='primary btn'>
+        <text class='iconfont icon-yinsi'></text> 按钮</button>
+      <button class='danger btn'>按钮</button>
+    </view>
+  </navigator>
+</view>
+<view class="list-box list-double-col">
+  <view class="list-li">
+    <view class="list-text">
+      带信息
+      <text>信息内容</text>
+    </view>
+  </view>
+  <view class="list-li">
+    <view class="list-text">
+      <view class="iconfont icon-medal danger-text"> </view> 双列
+    </view>
+  </view>
+  <navigator url="" hover-class="none" class="list-li">
+    <view class="list-text success-text">
+      消息
+    </view>
+    <view class="list-badge">
+      <text class='badge mark-badge cur'></text>
+    </view>
+  </navigator>
+  <navigator url="" hover-class="none" class="list-li">
+    <view class='list-text warning-text'>访客</view>
+    <view class="list-badge">
+      <text class='badge mark-badge'>99+</text>
+    </view>
+  </navigator>
+  <navigator url="" hover-class="none" class="list-li">
+    <view class="list-text">
+      没有图标
+    </view>
+    <view class="list-btn">
+      <button class='danger btn'>按钮</button>
+    </view>
+  </navigator>
+  <view class="list-li">
+  </view>
+</view>
+<view class='list-box lattice-list'>
+  <view class='lattice-li'>
+    <view class="iconfont icon-countdown danger-text"> </view>
+    <view class="lattice-text">
+      宫格列表
+    </view>
+  </view>
+  <view class='lattice-li'>
+    <view class="iconfont icon-countdown danger-text"> </view>
+    <view class="lattice-text">
+      宫格列表
+    </view>
+  </view>
+  <view class='lattice-li'>
+    <view class="iconfont icon-countdown danger-text"> </view>
+    <view class="lattice-text">
+      宫格列表
+    </view>
+  </view>
+  <view class='lattice-li'>
+    <view class="iconfont icon-countdown danger-text"> </view>
+    <view class="lattice-text">
+      宫格列表
+    </view>
+  </view>
+  <view class='lattice-li'>
+    <view class="iconfont icon-countdown danger-text"> </view>
+    <view class="lattice-text">
+      宫格列表
+    </view>
+  </view>
+  <view class='lattice-li'>
+    <view class="iconfont icon-countdown danger-text"> </view>
+    <view class="lattice-text">
+      宫格列表
+    </view>
+  </view>
+  <view class='lattice-li'>
+    <view class="iconfont icon-countdown danger-text"> </view>
+    <view class="lattice-text">
+      宫格列表
+    </view>
+  </view>
+  <view class='lattice-li'>
+    <view class="iconfont icon-countdown danger-text"> </view>
+    <view class="lattice-text">
+      宫格列表
+    </view>
+  </view>
+</view>
+<view class='pv-sm text-center'>
+  <button class='danger btn'>按钮</button>
+</view>

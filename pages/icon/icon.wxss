@@ -1,0 +1,30 @@
+.doc-icon-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.doc-icon-list .iconfont {
+  width: 33.33%;
+  background: #fff;
+  text-align: center;
+  padding: 30rpx 0;
+  border-right: 1rpx solid #eee;
+  border-top: 1rpx solid #eee;
+  color: #888;
+}
+
+.doc-icon-list .iconfont:nth-child(3n) {
+  border-right: 0rpx solid #eee;
+}
+
+.doc-icon-list .iconfont::before {
+  font-size: 50rpx;
+}
+
+.doc-icon-list .iconfont text {
+  display: block;
+  color: #aaa;
+  font-size: 24rpx;
+  line-height: 60rpx;
+  font-family: Arial, -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}

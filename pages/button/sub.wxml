@@ -1,0 +1,6 @@
+<image src='/images/skin.jpg' mode='widthFix'></image>
+<view class='foot-btn' wx:if="{{ctype == 'foot'}}">
+  <button class='danger btn hollow'><text class='iconfont icon-delete mr-xs'></text> 删除</button>
+  <button class='success btn round'><text class='iconfont icon-upload mr-xs'></text> 上传</button>
+</view> 
+<button class='warning btn iconfont lg fixed icon-add' style='bottom:40rpx' wx:if="{{ctype == 'fixed'}}"></button>

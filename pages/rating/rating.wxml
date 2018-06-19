@@ -1,0 +1,21 @@
+<view class="bar solid-bottom">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>星级评分</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <view class='rating-item' wx:for="{{rating}}" wx:for-item="rat">
+    <view class='rating-title'>{{rat.title}}</view>
+    <view class='rating-star'>
+      <text wx:for="{{5}}" class="iconfont {{index<rat.scores?'icon-favorfill warning-text':'icon-favor gray-text'}}" bindtap='setScores' data-id='{{rat.id}}' data-index='{{index+1}}'></text>
+    </view>
+    <view class='rating-text gray-text'>
+      <text wx:if="{{rat.scores==5}}">非常好</text>
+      <text wx:if="{{rat.scores==4}}">好</text>
+      <text wx:if="{{rat.scores==3}}">一般</text>
+      <text wx:if="{{rat.scores==2}}">差</text>
+      <text wx:if="{{rat.scores==1}}">非常差</text>
+    </view>
+  </view>
+</view>

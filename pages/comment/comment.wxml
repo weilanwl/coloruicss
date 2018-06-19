@@ -1,0 +1,36 @@
+<view class="comment">
+  <view class="comment-item ph-sm">
+    <view class="bar justify-between">
+      <view class="bar-fr bar">
+        <image src="http://www.diwuyuan.com/bbs/uc_server/data/avatar/000/00/02/52_avatar_big.jpg" class="round"></image>
+        <text class='ml-sm'>文晓港</text>
+        <text class="gray-text text-sm"> 3 小时前</text>
+      </view>
+      <button class="success btn sm bar-fr" bindtap="recomment" data-id="{{comments.comment_id}}">
+        <text class="iconfont icon-writefill"> 回复</text>
+      </button>
+    </view>
+    <view class="comment-mian">
+      <view class="comment-content">评论回复的内容</view>
+      <view class="lattice-image">
+        <view style='background-image:url(http://image.weilanwl.com/img/4x3-1.jpg)'>
+        </view>
+        <view style='background-image:url(http://image.weilanwl.com/img/3x4-3.jpg)'>
+        </view>
+      </view>
+      <view class="comment-sub">
+        <view class="comment-sub-name">
+          <text class="success-text">王晓明</text>
+          <text class="gray-text text-sm">2 分钟前</text>
+        </view>
+        <view class="comment-sub-content">说的dei dei！</view>
+        <view class="comment-sub-name top-xs">
+          <text class="success-text">文晓港 </text>回复
+          <text class="success-text"> 王晓明</text>
+          <text class="gray-text text-sm">2 分钟前</text>
+        </view>
+        <view class="comment-sub-content">说的dei dei！</view>
+      </view>
+    </view>
+  </view>
+</view>

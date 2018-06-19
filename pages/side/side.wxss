@@ -1,0 +1,38 @@
+page {
+  background: #f1f1f1;
+}
+
+.side {
+  background: #f1f1f1;
+  position: fixed;
+  top: 0;
+  width: 650rpx;
+  height: 100%;
+  box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0.5);
+  left: 0;
+  overflow-y: auto;
+}
+
+.side-right {
+  left: auto;
+  right: 0;
+}
+
+.side-list {
+  width: 400rpx;
+}
+
+.side-close {
+  background: rgba(0, 0, 0, 0.1);
+  width: 350rpx;
+  height: 100%;
+  position: fixed;
+  z-index: 997;
+  right: 0rpx;
+  top: 0rpx;
+}
+.side-right .side-close{
+  width: 100rpx;
+  left: 0rpx;
+  right: auto;
+}

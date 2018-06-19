@@ -1,0 +1,119 @@
+<view class="bar solid-bottom">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text><text class='text-lg ml-xs'>形状</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class='flex flex-wrap '>
+    <button class='gray btn'>默认</button>
+    <button class='gray btn round ml-sm'>椭圆</button>
+  </view>
+</view>
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text><text class='text-lg ml-xs'>尺寸</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class='flex flex-wrap justify-between align-center'>
+    <button class='gray btn xs'>最小</button>
+    <button class='gray btn sm round'>小尺寸</button>
+    <button class='gray btn'>默认</button>
+    <button class='gray btn lg round'>大尺寸</button>
+    <button class='gray btn xl'>最大</button>
+  </view>
+</view>
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text><text class='text-lg ml-xs'>颜色</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class='flex flex-wrap justify-between'>
+    <button class='primary btn'>蔚蓝</button>
+    <button class='secondary btn round'>天青</button>
+    <navigator class='success btn'>森绿</navigator>
+    <button class='warning btn round'>鲜橙</button>
+    <button class='danger btn'>嫣红</button>
+  </view>
+</view>
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text><text class='text-lg ml-xs'>幽灵按钮</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class='flex flex-wrap justify-between align-center'>
+    <button class='gray btn hollow xs'>默认</button>
+    <button class='primary btn hollow sm'>蔚蓝</button>
+    <button class='secondary btn hollow round'>天青</button>
+    <navigator class='success btn hollow'>森绿</navigator>
+    <button class='warning btn hollow lg round'>鲜橙</button>
+  </view>
+</view>
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text><text class='text-lg ml-xs'>块状按钮</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class='flex flex-direction'>
+    <button class='gray btn block lg'>默认</button>
+    <button class='primary btn mt-sm block lg'>主键</button>
+  </view>
+</view>
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text><text class='text-lg ml-xs'>带图标的按钮</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class='flex justify-center align-center'>
+    <button class='secondary btn block hollow round'>
+      <text class='iconfont icon-appreciate mr-xs'></text> 次级键
+    </button>
+    <button class='primary btn ml-sm'>
+      <text class='iconfont icon-loading iconfont-spin mr-xs'></text> 主键
+    </button>
+  </view>
+</view>
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text><text class='text-lg ml-xs'>带图标的圆形按钮</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class='flex justify-center align-center'>
+    <button class='primary btn xs iconfont icon-appreciate'>
+    </button>
+    <button class='secondary btn sm ml-sm iconfont icon-discoverfill'>
+    </button>
+    <button class='success btn ml-sm iconfont icon-locationfill'>
+    </button>
+    <button class='warning btn lg ml-sm iconfont icon-weibo'>
+    </button>
+    <button class='danger btn xl ml-sm iconfont icon-presentfill'>
+    </button>
+  </view>
+</view>
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text><text class='text-lg ml-xs'>固定在底部</text>
+  </view>
+</view>
+<view class="doc-main">
+  <navigator class='btn success block lg' url='sub?ctype=foot'> 预览
+    <text class='iconfont icon-roundright ml-xs'></text>
+  </navigator>
+</view>
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text><text class='text-lg ml-xs'>悬浮按钮</text>
+  </view>
+</view>
+<view class="doc-main">
+  <navigator class='btn warning block lg mb-sm' url='sub?ctype=fixed'> 预览
+    <text class='iconfont icon-roundright ml-xs'></text>
+  </navigator>
+</view>

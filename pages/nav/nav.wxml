@@ -1,0 +1,111 @@
+<!--顶部导航-->
+<view class="nav" wx:if="{{navName=='norm'}}">
+  <view class="nav-item-box">
+    <view class="nav-item">全球</view>
+    <view class="nav-item cur">中国</view>
+    <view class="nav-item">美国</view>
+    <view class="nav-item">巴西</view>
+    <view class="nav-item">日本</view>
+    <view class="nav-item">德国</view>
+    <view class="nav-item">加拿大</view>
+  </view>
+</view>
+
+<view class="nav center-nav" wx:if="{{navName=='center'}}">
+  <view class="nav-item-box">
+    <view class="nav-item">
+      <text class='iconfont icon-album'></text> 图集</view>
+    <view class="nav-item cur">
+      <text class='iconfont icon-video'></text> 视频</view>
+  </view>
+</view>
+
+<view class="nav center-nav success-nav" wx:if="{{navName=='success'}}">
+  <view class="nav-item-box">
+    <view class="nav-item">
+      <text class='iconfont icon-album'></text> 图集</view>
+    <view class="nav-item cur">
+      <text class='iconfont icon-video'></text> 视频</view>
+  </view>
+</view>
+
+
+<view class="nav menu-nav" wx:if="{{navName=='menu'}}">
+  <view class="nav-item-box">
+    <view class="nav-item">
+      <text class='iconfont icon-hot'></text> 热销</view>
+    <view class="nav-item cur">衣服</view>
+    <view class="nav-item">裤子</view>
+    <view class="nav-item">箱包</view>
+    <view class="nav-item">手表</view>
+    <view class="nav-item">珠宝</view>
+    <view class="nav-item">数码</view>
+    <view class="nav-item">家居</view>
+  </view>
+  <view class="menu-nav-btn">筛选
+    <text class="iconfont icon-filter success-text"></text>
+  </view>
+</view>
+
+<scroll-view scroll-x="true" class="icon-nav-box" bindscroll="navScroll" wx:if="{{navName=='icon'}}">
+  <view class="icon-nav">
+    <navigator class="icon-nav-navigator">
+      <text class="iconfont icon-picfill"></text>
+      <text class="icon-nav-text">图集</text>
+    </navigator>
+    <navigator class="icon-nav-navigator">
+      <text class="iconfont icon-cardboardfill"></text>
+      <text class="icon-nav-text">VR</text>
+    </navigator>
+    <navigator class="icon-nav-navigator">
+      <text class="iconfont icon-discoverfill"><text class='badge mark-badge cur'></text></text>
+      <text class="icon-nav-text">发现</text>
+    </navigator>
+    <navigator class="icon-nav-navigator">
+      <text class="iconfont icon-cartfill"><text class='badge mark-badge'>9</text></text>
+      <text class="icon-nav-text">购物车</text>
+    </navigator>
+    <navigator class="icon-nav-navigator">
+      <text class="iconfont icon-favorfill"></text>
+      <text class="icon-nav-text">收藏</text>
+    </navigator>
+    <navigator class="icon-nav-navigator">
+      <text class="iconfont icon-locationfill"></text>
+      <text class="icon-nav-text">附近</text>
+    </navigator>
+    <navigator class="icon-nav-navigator">
+      <text class="iconfont icon-weibo"><text class='badge mark-badge'>New</text></text>
+      <text class="icon-nav-text">微博</text>
+    </navigator>
+    <navigator class="icon-nav-navigator">
+      <text class="iconfont icon-selectionfill"></text>
+      <text class="icon-nav-text">勋章</text>
+    </navigator>
+    <navigator class="icon-nav-navigator">
+      <text class="iconfont icon-messagefill"><text class='badge mark-badge'>99+</text></text>
+      <text class="icon-nav-text">消息</text>
+    </navigator>
+    <navigator class="icon-nav-navigator">
+      <text class="iconfont icon-recordfill"></text>
+      <text class="icon-nav-text">短视频</text>
+    </navigator>
+    <navigator class="icon-nav-navigator">
+      <text class="iconfont icon-redpacket_fill"></text>
+      <text class="icon-nav-text">红包</text>
+    </navigator>
+    <navigator class="icon-nav-navigator">
+      <text class="iconfont icon-timefill"></text>
+      <text class="icon-nav-text">历史记录</text>
+    </navigator>
+  </view>
+</scroll-view>
+<view class="icon-bar-box" wx:if="{{navName=='icon'}}">
+  <view class="icon-bar">
+    <view class="icon-bar-dot" style='margin-left:{{scrollleft}}%'></view>
+  </view>
+</view>
+
+<view class="nav-list {{navName==item.name?'cur':''}}" wx:for="{{nav}}" wx:key="{{index}}" bindtap='setName' data-name='{{item.name}}'>
+  <view class="nav-title">{{item.title}}</view>
+  <view class="iconfont icon-right"></view>
+</view>

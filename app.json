@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/layout/layout",
+    "pages/button/button",
+    "pages/button/sub",
+    "pages/border/border",
+    "pages/badge/badge",
+    "pages/bar/bar",
+    "pages/label/label",
+    "pages/text/text",
+    "pages/icon/icon",
+    "pages/loading/loading",
+    "pages/image/image",
+    "pages/form/form",
+    "pages/nav/nav",
+    "pages/item/item",
+    "pages/list/list",
+    "pages/side/side",
+    "pages/comment/comment",
+    "pages/timeline/timeline",
+    "pages/slider/slider",
+    "pages/rating/rating",
+    "pages/modal/modal",
+    "pages/progress/progress",
+    "pages/chat/chat"
+  ],
+  "window": {
+    "backgroundTextStyle": "black",
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "Color UI",
+    "navigationBarTextStyle": "light"
+  }
+}

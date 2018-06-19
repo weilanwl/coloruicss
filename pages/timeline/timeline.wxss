@@ -1,0 +1,71 @@
+page {
+  background: #f5f5f5;
+}
+
+.timeline {
+  background: #fff;
+}
+
+.timeline-item {
+  padding: 20rpx 20rpx 20rpx 140rpx;
+  position: relative;
+}
+
+.timeline-item::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1rpx;
+  background: #ddd;
+  left: 70rpx;
+  height: 100%;
+  top: 0;
+  z-index: 8;
+}
+
+.timeline-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 15rpx;
+  background: #ddd;
+  left: 57rpx;
+  height: 15rpx;
+  border: 8rpx solid #fff;
+  border-radius: 50%;
+  top: 45rpx;
+  z-index: 9;
+}
+
+.timeline-item.cur::before, .timeline-item.cur::after,
+.timeline-item.cur .timeline-main {
+  background: #39b54a;
+  color: #fff;
+}
+
+.timeline-time {
+  width: 140rpx;
+  text-align: center;
+  padding: 20rpx;
+  font-size: 26rpx;
+  color: #888;
+}
+
+.timeline-main {
+  color: #666;
+  background: #f1f1f1;
+  padding: 20rpx;
+  border-radius: 6rpx;
+}
+
+.timeline-item.timeline-sm {
+  padding: 20rpx 20rpx 20rpx 100rpx;
+}
+
+.timeline-item.timeline-sm::after {
+  left: 50rpx;
+}
+
+.timeline-item.timeline-sm::before {
+  left: 37rpx;
+}

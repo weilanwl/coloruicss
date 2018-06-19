@@ -1,0 +1,49 @@
+<view class="bar solid-bottom">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>底部-加载中</text>
+  </view>
+</view>
+<view class="loading-more {{loading?'cur':''}}">
+  <view class='no-more'>
+    <text class='iconfont icon-info'></text> 我也是有底线的！
+  </view>
+  <view class='loading-ing'>
+    <text class='iconfont icon-loading iconfont-spin'></text> 加载中...
+  </view>
+</view>
+
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>底部-加载完毕</text>
+  </view>
+</view>
+
+<view class="loading-more {{!loading?'cur':''}}">
+  <view class='no-more'>
+    <text class='iconfont icon-info'></text> 我也是有底线的！
+  </view>
+  <view class='loading-ing'>
+    <text class='iconfont icon-loading iconfont-spin'></text> 加载中...
+  </view>
+</view>
+
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>弹出框-加载</text>
+  </view>
+</view>
+<view class='doc-main'>
+  <view class='text-center'>
+    <button class='warning btn' bindtap='showLoading'>点我</button>
+  </view>
+</view>
+<view class='mode-loading' wx:if="{{showLoading}}">
+  <view class='mode-text'>
+    <view class='iconfont icon-emojifill warning-text'></view>
+    <view class='gray-text'>加载中...</view>
+  </view>
+</view>

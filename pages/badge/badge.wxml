@@ -1,0 +1,89 @@
+<view class="bar solid-bottom">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>形状</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class="flex align-center">
+    <view class='badge gray'>默认</view>
+    <view class='badge gray round ml-sm'>椭圆</view>
+    <view class='badge gray radius ml-sm'>圆角</view>
+  </view>
+</view>
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>尺寸</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class="flex align-center">
+    <view class='badge gray sm mr-sm'>小尺寸</view>
+    <view class='badge gray'>默认</view>
+  </view>
+</view>
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>颜色</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class="flex justify-between align-center">
+    <view class='badge gray'>暗灰</view>
+    <text class='badge primary round'>蔚蓝</text>
+    <text class='badge secondary radius'>天青</text>
+    <view class='badge success '>森绿</view>
+    <text class='badge warning round'>鲜橙</text>
+    <text class='badge danger radius'>嫣红</text>
+  </view>
+</view>
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>胶囊徽章</text>
+  </view>
+</view>
+
+<view class="doc-main">
+  <view class="flex justify-between align-center">
+    <view class='badge danger capsule-badge'>
+      <text class='iconfont icon-likefill'></text>
+      <text>1213</text>
+    </view>
+    <view class='badge primary round capsule-badge'>
+      <text>说明</text>
+    </view>
+    <view class='badge secondary round capsule-badge'>
+      <text>说明</text>
+      <text>说明</text>
+    </view>
+    <view class='badge warning radius capsule-badge'>
+      <text>说明</text>
+      <text>10:00</text>
+    </view>
+  </view>
+</view>
+<view class="bar solid-bottom mt-sm">
+  <view class='ml-sm'>
+    <text class='iconfont icon-titles success-text'></text>
+    <text class='text-lg ml-xs'>标记徽章</text>
+  </view>
+</view>
+<view class="doc-main">
+  <view class="flex justify-between align-center">
+    <view class='mark-list-item'>
+      <text class='badge mark-badge cur'></text>
+    </view>
+    <view class='mark-list-item'>
+      <text class='badge mark-badge'>9</text>
+    </view>
+    <view class='mark-list-item'>
+      <text class='badge mark-badge'>99</text>
+    </view>
+    <view class='mark-list-item'>
+      <text class='badge mark-badge'>99+</text>
+    </view>
+  </view>
+</view>
