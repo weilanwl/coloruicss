@@ -1,2 +1,3 @@
 # ColorUI组件
-鲜亮的高饱和色彩，专注视觉的小程序组件库
+项目网站：[http://color.weilanwl.com/](http://color.weilanwl.com/)  
+![ColorUI组件](http://color.weilanwl.com/ColorUI.jpg)  
