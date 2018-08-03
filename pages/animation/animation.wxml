@@ -1,0 +1,46 @@
+<view class="nav-list" bindtap='clickFullNavigation'>
+  <view class="nav-title">全屏图标导航</view>
+  <view class="iconfont icon-right"></view>
+</view>
+
+<view bindtap='clickFullNavigation'>
+    <view class="fullBox {{showFullNavigation ? 'fullBox-active':''}}'">
+        <view class="nav-item-box" bindtap='gotoAdd'>
+          <view wx:for="{{navigation1}}">
+            <image class="nav-item" src="{{item.src}}"/>
+            <text class='append'>{{item.name}}</text>
+          </view>
+        </view>
+    </view>
+</view>
+
+<view class="nav-list" bindtap='clickBottomNavigation'>
+  <view class="nav-title">下部弹出导航</view>
+  <view class="iconfont icon-right"></view>
+</view>
+
+<view bindtap='clickBottomNavigation'>
+    <view class="chooseBox {{showBottomNavigation ? 'chooseBox-active':''}}'">
+        <view class="nav-item-box" bindtap='gotoAdd'>
+          <view wx:for="{{navigation2}}">
+            <image class="nav-item" src="{{item.src}}"/>
+            <text class='append'>{{item.name}}</text>
+          </view>
+        </view>
+    </view>
+    <view class="chooseMask"  wx:if="{{showBottomNavigation}}"></view>
+</view>
+
+
+<view class="nav-list" bindtap='clickLeftScroll'>
+  <view class="nav-title">左滑进行修改删除</view>
+  <view class="iconfont icon-right"></view>
+</view>
+
+<view wx:if="{{showLeftScroll}}" wx:for="{{fakeDatas}}" wx:key="{{index}}" class="touch-item {{item.isTouchMove ? 'touch-move-active' : ''}}" data-index="{{index}}" bindtouchstart="touchstart" bindtouchmove="touchmove">
+  <view class="content">
+    <text>{{item.title}}</text>
+  </view>
+  <view class="dele" bindtap="modify" >修改</view>
+  <view class="dele" style='background-color:#c95b54;' bindtap="del">删除</view>
+</view>

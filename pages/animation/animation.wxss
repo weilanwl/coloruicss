@@ -1,0 +1,270 @@
+/* pages/animation/animation.wxss */
+page {
+  background: #f1f1f1;
+}
+
+/* 全屏图标导航部分 */
+.fullBox{
+  position: fixed;
+  width: 100%;
+  background: #ffffff;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+  transform: translateX(1000rpx);
+  animation: 0.5s spaceOutLeft;
+}
+.fullBox-active{
+  transform: translateX(0);
+  animation: 0.5s spaceInRight;
+}
+@keyframes spaceOutLeft {
+  0% {
+    opacity: 1;
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-transform: scale(1) translate(0%, 0%);
+            transform: scale(1) translate(0%, 0%);
+  }
+
+  100% {
+    opacity: 0;
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-transform: scale(.2) translate(-200%, 0%);
+            transform: scale(.2) translate(-200%, 0%);
+  }
+}
+@keyframes spaceInRight {
+  0% {
+    opacity: 0;
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-transform: scale(.2) translate(200%, 0%);
+            transform: scale(.2) translate(200%, 0%);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    -webkit-transform-origin: 100% 50%;
+            transform-origin: 100% 50%;
+    -webkit-transform: scale(1) translate(0%, 0%);
+            transform: scale(1) translate(0%, 0%);
+  }
+}
+
+/* 下部弹出导航部分 */
+.chooseMask{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.chooseBox{
+  border-radius: 30rpx;
+  position: fixed;
+  bottom: -20rpx;
+  width: 100%;
+  background: #ffffff;
+  height: 340rpx;
+  transform: translateY(340rpx);
+  transition: all 0.4s;
+  z-index: 3;
+}
+.chooseBox-active{
+  transform: translateY(0);
+  transition: all 0.4s;
+  z-index: 3;
+}
+.nav-item-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-item{
+  margin-top: 60rpx;
+  display: block;
+  height: 125rpx;
+  width: 125rpx;
+}
+.append{
+  display: flex;
+  justify-content: center;
+}
+
+/* 下部弹出导航部分 */
+.chooseMask{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.chooseBox{
+  border-radius: 30rpx;
+  position: fixed;
+  bottom: -20rpx;
+  width: 100%;
+  background: #ffffff;
+  height: 340rpx;
+  transform: translateY(340rpx);
+  transition: all 0.4s;
+  z-index: 3;
+}
+.chooseBox-active{
+  transform: translateY(0);
+  transition: all 0.4s;
+  z-index: 3;
+}
+.nav-item-box{
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-item{
+  margin-top: 60rpx;
+  display: block;
+  height: 125rpx;
+  width: 125rpx;
+}
+.append{
+  display: flex;
+  justify-content: center;
+}
+
+/* 左滑删除部分 */
+.touch-item { 
+  display: flex; 
+  justify-content: space-between; 
+  width: 100%; 
+  overflow: hidden;  
+  box-sizing: border-box;
+  margin: 20rpx 0 6rpx 0;
+  background: #ffffff;
+  }
+.content { 
+  height: 200rpx;
+  width: 100%; 
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  -webkit-transform: translateX(220rpx);
+  transform: translateX(220rpx); 
+  background: #ffffff;
+  margin: 30rpx 30rpx 30rpx -220rpx;
+  padding: 30rpx;
+  font-size: 50rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
+.touch-move-active .content,.touch-move-active .dele { 
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  }
+.dele {
+  background-color: #4479b2; 
+  width: 220rpx; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  color: #fff;
+  -webkit-transform: translateX(440rpx);
+  transform: translateX(440rpx);
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.feed-item{
+  width: 690rpx;
+  padding: 30rpx 30rpx 10rpx 30rpx;
+  margin: 8rpx 0 6rpx 0;
+  background: #ffffff;
+}
+.feed-item .teamInfo-intro{
+  display: block;
+  font-size: 30rpx;
+  font-weight: 600px;
+  color: #7a7a7a;
+  line-height: 40rpx;
+  margin-top:14rpx; 
+}
+
+/* 导航栏变大部分 */
+.swiper-screen {
+  height: 460rpx;
+}
+
+.swiper-screen image {
+  width: 100%;
+  display: block;
+  height: 460rpx;
+  margin: 0;
+}
+
+.swiper-bg {
+  background-image: url(http://image.weilanwl.com/img/swiper-bg.png);
+  background-size: cover;
+  height: 500rpx;
+}
+
+.swiper-bg swiper-item {
+  height: 400rpx;
+}
+
+.swiper-bg swiper-item view {
+  margin: 40rpx;
+}
+
+.swiper-bg image {
+  width: 100%;
+  display: block;
+  height: 400rpx;
+  margin: 0;
+  border-radius: 10rpx;
+}
+
+.scroll-bar {
+  background: #fff;
+  display: flex;
+}
+
+.scroll-left, .scroll-right {
+  width: 75rpx;
+  text-align: center;
+  line-height: 150rpx;
+  font-size: 36rpx;
+  color: #666;
+}
+
+.scroll-list-box {
+  height: 150rpx;
+  width: 600rpx;
+}
+
+.scroll-list {
+  height: 150rpx;
+  white-space: nowrap;
+}
+
+.scroll-item {
+  display: inline-block;
+  width: 200rpx;
+  height: 150rpx;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 170rpx;
+  background-color: #fff;
+}
