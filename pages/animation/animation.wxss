@@ -101,50 +101,6 @@ page {
   justify-content: center;
 }
 
-/* 下部弹出导航部分 */
-.chooseMask{
-  display: flex;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.7);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-}
-.chooseBox{
-  border-radius: 30rpx;
-  position: fixed;
-  bottom: -20rpx;
-  width: 100%;
-  background: #ffffff;
-  height: 340rpx;
-  transform: translateY(340rpx);
-  transition: all 0.4s;
-  z-index: 3;
-}
-.chooseBox-active{
-  transform: translateY(0);
-  transition: all 0.4s;
-  z-index: 3;
-}
-.nav-item-box{
-  display: flex;
-  flex-wrap: wrap;
-}
-.nav-item{
-  margin-top: 60rpx;
-  display: block;
-  height: 125rpx;
-  width: 125rpx;
-}
-.append{
-  display: flex;
-  justify-content: center;
-}
-
 /* 左滑删除部分 */
 .touch-item { 
   display: flex; 
