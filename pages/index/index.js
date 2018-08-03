@@ -29,6 +29,7 @@ Page({
       { title: '弹出框 ', name: 'modal' },
       { title: '进度条 ', name: 'progress' },
       { title: '聊天 ', name: 'chat' },
+      { title: '动画效果 ', name: 'animation' },
     ],
     userinfo: []
   },
