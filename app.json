@@ -23,7 +23,8 @@
     "pages/rating/rating",
     "pages/modal/modal",
     "pages/progress/progress",
-    "pages/chat/chat"
+    "pages/chat/chat",
+    "pages/animation/animation"
   ],
   "window": {
     "backgroundTextStyle": "black",
