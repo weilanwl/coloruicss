@@ -29,7 +29,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 21,
+			"current": -1,
 			"list": [
 				{
 					"id": 0,
@@ -156,11 +156,6 @@
 					"name": "聊天",
 					"pathName": "pages/chat/chat",
 					"query": ""
-				},
-				{
-					"id": -1,
-					"name": "动画",
-					"pathName": "pages/animation/animation"
 				}
 			]
 		}

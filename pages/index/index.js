@@ -14,7 +14,6 @@ Page({
       { title: '图标 ', name: 'icon' },
       { title: '加载', name: 'loading' },
       { title: '图片 ', name: 'image' },
-      { title: '动画 ', name: 'animation' },
     ],
     modules: [
       { title: '操作条', name: 'bar' },
