@@ -12,7 +12,7 @@ ColorUI V1.5 不再进行更新与维护，接下来会是全新的V2.0
 </p><p>
 欢迎小程序开发者使用！ 微信小程序开发 QQ群：240787041欢迎交流。
 </p><p>
-项目网站：  <a href="http://color.weilanwl.com/" target="_blank" >http://color.weilanwl.com/</a>
+项目网站：  <a href="https://www.color-ui.com/" target="_blank" >https://www.color-ui.com//</a>
 </p>
 <p align="center">小程序扫码体验<br>
 
