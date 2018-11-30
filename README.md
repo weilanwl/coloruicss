@@ -12,6 +12,9 @@ ColorUI V1.5 不再进行更新与维护，接下来会是全新的V2.0
 </p><p>
 欢迎小程序开发者使用！ 微信小程序开发 QQ群：240787041欢迎交流。
 </p><p>
+ 微信小程序开发 微信群
+</p><p>
+ 
  <img src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/images/wxqrcode.jpg" width="200">
 </p><p>
 项目网站：  <a href="https://www.color-ui.com/" target="_blank" >https://www.color-ui.com//</a>
