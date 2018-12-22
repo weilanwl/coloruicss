@@ -1,0 +1,432 @@
+<custom style="height:{{CustomBar}}px;">
+  <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <icon class='icon-back'/> 列表
+    </navigator>
+  </bar>
+</custom>
+<view class="page {{skin?' invert ':' '}}">
+  <list class="grid col-3">
+    <item>
+      <icon class='icon-cardboardfill text-red'/>
+      <text>VR</text>
+    </item>
+    <item>
+      <icon class='icon-recordfill text-orange'/>
+      <text>录像</text>
+    </item>
+    <item>
+      <icon class='icon-picfill text-yellow'/>
+      <text>图像</text>
+    </item>
+    <item>
+      <icon class='icon-noticefill text-olive'>
+        <tag class="badge">99+</tag>
+      </icon>
+      <text>通知</text>
+    </item>
+    <item>
+      <icon class='icon-upstagefill text-cyan'/>
+      <text>排行榜</text>
+    </item>
+    <item>
+      <icon class='icon-clothesfill text-blue'>
+        <tag class="badge"></tag>
+      </icon>
+      <text>皮肤</text>
+    </item>
+    <item>
+      <icon class='icon-discoverfill text-purple'/>
+      <text>发现</text>
+    </item>
+    <item>
+      <icon class='icon-questionfill text-mauve'/>
+      <text>帮助</text>
+    </item>
+    <item>
+      <icon class='icon-servicefill text-pink'/>
+      <text>反馈</text>
+    </item>
+  </list>
+  <list class="grid col-4">
+    <item>
+      <icon class='icon-cardboardfill text-red'/>
+      <text>VR</text>
+    </item>
+    <item>
+      <icon class='icon-recordfill text-orange'/>
+      <text>录像</text>
+    </item>
+    <item>
+      <icon class='icon-picfill text-yellow'/>
+      <text>图像</text>
+    </item>
+    <item>
+      <icon class='icon-noticefill text-olive'>
+        <tag class="badge">99+</tag>
+      </icon>
+      <text>通知</text>
+    </item>
+    <item>
+      <icon class='icon-upstagefill text-cyan'/>
+      <text>排行榜</text>
+    </item>
+    <item>
+      <icon class='icon-clothesfill text-blue'>
+        <tag class="badge"></tag>
+      </icon>
+      <text>皮肤</text>
+    </item>
+    <item>
+      <icon class='icon-discoverfill text-purple'/>
+      <text>发现</text>
+    </item>
+    <item>
+      <icon class='icon-questionfill text-mauve'/>
+      <text>帮助</text>
+    </item>
+  </list>
+  <list class="grid no-border col-4">
+    <item>
+      <icon class='icon-cardboardfill text-red'/>
+      <text>VR</text>
+    </item>
+    <item>
+      <icon class='icon-recordfill text-orange'/>
+      <text>录像</text>
+    </item>
+    <item>
+      <icon class='icon-picfill text-yellow'/>
+      <text>图像</text>
+    </item>
+    <item>
+      <icon class='icon-noticefill text-olive'>
+        <tag class="badge">99+</tag>
+      </icon>
+      <text>通知</text>
+    </item>
+    <item>
+      <icon class='icon-upstagefill text-cyan'/>
+      <text>排行榜</text>
+    </item>
+    <item>
+      <icon class='icon-clothesfill text-blue'>
+        <tag class="badge"></tag>
+      </icon>
+      <text>皮肤</text>
+    </item>
+    <item>
+      <icon class='icon-discoverfill text-purple'/>
+      <text>发现</text>
+    </item>
+    <item>
+      <icon class='icon-questionfill text-mauve'/>
+      <text>帮助</text>
+    </item>
+  </list>
+  <list class="grid col-5 no-border">
+    <item>
+      <icon class='icon-cardboardfill text-red'>
+        <tag class="badge">99+</tag>
+      </icon>
+      <text>VR</text>
+    </item>
+    <item>
+      <icon class='icon-recordfill text-orange'/>
+      <text>录像</text>
+    </item>
+    <item>
+      <icon class='icon-picfill text-yellow'/>
+      <text>图像</text>
+    </item>
+    <item>
+      <icon class='icon-noticefill text-olive'>
+      </icon>
+      <text>通知</text>
+    </item>
+    <item>
+      <icon class='icon-upstagefill text-cyan'/>
+      <text>排行榜</text>
+    </item>
+    <item>
+      <icon class='icon-clothesfill text-blue'>
+        <tag class="badge"></tag>
+      </icon>
+      <text>皮肤</text>
+    </item>
+    <item>
+      <icon class='icon-discoverfill text-purple'/>
+      <text>发现</text>
+    </item>
+    <item>
+      <icon class='icon-questionfill text-mauve'/>
+      <text>帮助</text>
+    </item>
+    <item>
+      <icon class='icon-commandfill text-purple'/>
+      <text>问答</text>
+    </item>
+    <item>
+      <icon class='icon-brandfill text-mauve'/>
+      <text>版权</text>
+    </item>
+  </list>
+  <list class="menu no-padding">
+    <item>
+      <view class='content'>
+        <view>
+          <icon class='icon-clothesfill text-blue'/> 皮肤设置</view>
+        <view class='text-gray text-sm'>
+          <icon class='icon-infofill'/> 皮肤需要付费购买</view>
+      </view>
+      <view class='action'>
+        <switch class='switch-sex sm' bindchange="switchSex" />
+      </view>
+    </item>
+    <item>
+      <view class='content'>
+        <view>
+          <icon class='icon-musicfill text-red'/> 声音控制</view>
+        <view class='text-gray text-sm'>
+          <icon class='icon-infofill'/> 需要获得系统权限</view>
+      </view>
+      <view class='action'>
+        <switch class='switch-music' />
+      </view>
+    </item>
+  </list>
+  <list class="menu menu-avatar inverts">
+    <item>
+      <avatar class="round lg" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></avatar>
+      <view class='content'>
+        <view class='text-grey'>文晓港</view>
+        <view class='text-gray text-sm'>
+          <icon class='icon-infofill text-red'/> 消息未送达</view>
+      </view>
+      <view class='action'>
+        <view class='text-grey text-xs'>22:20</view>
+        <tag class="round bg-grey sm">5</tag>
+      </view>
+    </item>
+    <item>
+      <avatar class="round lg" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);">
+        <tag class="badge">99+</tag>
+      </avatar>
+      <view class='content'>
+        <view class='text-grey'>文晓港
+          <tag class="round bg-orange sm">SVIP</tag>
+        </view>
+        <view class='text-gray text-sm'>
+          <icon class='icon-redpacket_fill text-red'/> 收到红包</view>
+      </view>
+      <view class='action'>
+        <view class='text-grey text-xs'>22:20</view>
+        <icon class='icon-notice_forbid_fill text-gray'/>
+      </view>
+    </item>
+  </list>
+  <list class="menu menu-avatar no-padding">
+    <item class="">
+      <avatar class="radius lg" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+      <view class='content'>
+        <view>喵星人互动群</view>
+        <view class='text-gray text-sm'>
+          喵星酱：喵喵喵！</view>
+      </view>
+      <view class='action'>
+        <view class='text-grey text-xs'>22:20</view>
+        <tag class="round bg-red sm">5</tag>
+      </view>
+    </item>
+    <item class="grayscale">
+      <avatar class="radius lg" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+      <view class='content'>
+        <view>喵星人互动群</view>
+        <view class='text-gray text-sm'>
+          喵星酱：喵喵喵！</view>
+      </view>
+      <view class='action'>
+        <view class='text-grey text-xs'>22:20</view>
+        <tag class="round bg-red sm">5</tag>
+      </view>
+    </item>
+    <item class="cur">
+      <avatar class="radius lg" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);">
+        <tag class="badge"></tag>
+      </avatar>
+      <view class='content'>
+        <view>喵星人互动群
+          <tag class="round bg-orange sm">6人</tag>
+        </view>
+        <view class='text-gray text-sm'>
+          喵星酱：
+          <icon class='icon-picfill text-orange'/> 图片传输中...</view>
+      </view>
+      <view class='action'>
+        <view class='text-grey text-xs'>22:20</view>
+        <icon class='icon-notice_forbid_fill text-gray'/>
+      </view>
+    </item>
+  </list>
+  <list class="menu">
+    <item>
+      <view class='content'>
+        <icon class='icon-circlefill text-grey'/>
+        <text class='text-grey'>默认</text>
+      </view>
+    </item>
+    <item>
+      <view class='content'>
+        <icon class='icon-emojifill text-red'/>
+        <text class='text-grey'>头像</text>
+      </view>
+      <view class='action'>
+        <avatar class="sm round">
+          <icon class='icon-people'/>
+        </avatar>
+      </view>
+    </item>
+    <item>
+      <view class='content'>
+        <icon class='icon-emojiflashfill text-pink'/>
+        <text class='text-grey'>头像组</text>
+      </view>
+      <view class='action'>
+        <avatar-group>
+          <avatar class="round sm" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);"></avatar>
+          <avatar class="round sm" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+          <avatar class="round sm" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></avatar>
+          <avatar class="round sm" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></avatar>
+        </avatar-group>
+        <text class='text-grey text-sm'>4 人</text>
+      </view>
+    </item>
+    <item>
+      <view class='content'>
+        <icon class='icon-crown text-green'/>
+        <text class='text-grey'>按钮</text>
+      </view>
+      <view class='action'>
+        <button class='round bg-green sm'>
+          <icon class='icon-upload'/> 上传</button>
+      </view>
+    </item>
+    <item>
+      <view class='content'>
+        <icon class='icon-crownfill text-green'/>
+        <text class='text-grey'>按钮</text>
+      </view>
+      <view class='action'>
+        <button class='round bg-blue'>
+          <icon class='icon-down'/> 下载</button>
+      </view>
+    </item>
+  </list>
+  <list class="menu">
+    <item class="arrow">
+      <view class='content'>
+        <icon class='icon-roundrightfill text-grey'/>
+        <text class='text-grey'>箭头</text>
+      </view>
+    </item>
+    <item class="arrow">
+      <view class='content'>
+        <icon class='icon-tagfill text-red'/>
+        <text class='text-grey'>标签</text>
+      </view>
+      <view class='action'>
+        <tag class="round bg-orange light">音乐</tag>
+        <tag class="round bg-olive light">电影</tag>
+        <tag class="round bg-blue light">旅行</tag>
+      </view>
+    </item>
+    <item class="arrow">
+      <view class='content'>
+        <icon class='icon-warn text-green'/>
+        <text class='text-grey'>文本</text>
+      </view>
+      <view class='action'>
+        <text class='text-grey text-sm'>小目标还没有实现！</text>
+      </view>
+    </item>
+    <item class="arrow">
+      <view class='content'>
+        <icon class='icon-warnfill text-green'/>
+        <text class='text-grey'>文本</text>
+        <text class='text-grey text-sm margin-left-sm'>小目标还没有实现！</text>
+      </view>
+    </item>
+  </list>
+  <list class="menu no-padding">
+    <item>
+      <view class='content'>
+        <icon class='icon-radiobox text-orange'/>
+        <text class='text-grey'>徽章</text>
+      </view>
+      <view class='action'>
+        <tag class='bg-red round'></tag>
+      </view>
+    </item>
+    <item>
+      <view class='content'>
+        <icon class='icon-tagfill text-olive'/>
+        <text class='text-grey'>标签</text>
+      </view>
+      <view class='action'>
+        <tag class='bg-olive round'>9</tag>
+      </view>
+    </item>
+    <item class="arrow">
+      <view class='content'>
+        <icon class='icon-radioboxfill text-blue'/>
+        <text class='text-grey'>胶囊</text>
+      </view>
+      <view class='action'>
+        <capsule class="round">
+          <tag class='bg-blue'>
+            <icon class='icon-locationfill'/>
+          </tag>
+          <tag class="line-blue">
+            广州
+          </tag>
+        </capsule>
+      </view>
+    </item>
+  </list>
+  <list class="menu no-padding card-menu margin-bottom-xl">
+    <item>
+      <view class='content'>
+        <icon class='icon-radiobox text-orange'/>
+        <text class='text-grey'>徽章</text>
+      </view>
+      <view class='action'>
+        <tag class='bg-red round'></tag>
+      </view>
+    </item>
+    <item>
+      <view class='content'>
+        <icon class='icon-tagfill text-olive'/>
+        <text class='text-grey'>标签</text>
+      </view>
+      <view class='action'>
+        <tag class='bg-olive round'>9</tag>
+      </view>
+    </item>
+    <item class="arrow">
+      <view class='content'>
+        <icon class='icon-radioboxfill text-blue'/>
+        <text class='text-grey'>胶囊</text>
+      </view>
+      <view class='action'>
+        <capsule class="round">
+          <tag class='bg-blue'>
+            <icon class='icon-locationfill'/>
+          </tag>
+          <tag class="line-blue">
+            广州
+          </tag>
+        </capsule>
+      </view>
+    </item>
+  </list>
+</view>

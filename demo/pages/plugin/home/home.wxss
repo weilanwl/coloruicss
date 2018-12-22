@@ -1,0 +1,41 @@
+
+bar .content image{
+  height: 30px;
+  width: 120px;
+}
+
+.cardTitle{
+  color: #fff;
+  padding: 45px 30px;
+  font-size: 20px;
+  font-weight: 300;
+  transform: skew(-10deg, 0deg);
+  position: relative;
+  text-shadow: 0px 0px 3px rgba(0,0,0,0.3)
+}
+
+.cardTitle::before{
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  border-radius: 10px;
+  background-color: #fff;
+  display: block;
+  top: 30px;
+  left: 25px;  
+  transform: skew(10deg, 0deg);
+}
+.cardTitle::after{
+  content: "";
+  position: absolute;
+  width: 70px;
+  border-radius: 3px;
+  height: 12px;
+  background-color: #fff;
+  display: block;
+  bottom: 38px;
+  left: 45px;  
+  transform: skew(10deg, 0deg);
+  opacity: 0.1;
+}

@@ -1,0 +1,119 @@
+<custom style="height:{{CustomBar}}px;">
+  <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <icon class='icon-back' /> 标签
+    </navigator>
+  </bar>
+</custom>
+
+<bar>
+  <view class='action'>
+    <icon class='icon-title text-blue' />标签形状
+  </view>
+</bar>
+<view class="padding">
+  <tag>默认</tag>
+  <tag class='round'>椭圆</tag>
+  <tag class='radius'>圆角</tag>
+</view>
+
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-blue' />标签尺寸
+  </view>
+</bar>
+<view class="padding">
+  <tag class='radius sm'>小尺寸</tag>
+  <tag class='radius'>普通尺寸</tag>
+</view>
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-blue' />标签颜色
+  </view>
+</bar>
+<view class='padding-sm flex flex-wrap'>
+  <view class="padding-xs" wx:for="{{ColorList}}" wx:key>
+    <tag class='bg-{{item.name}}'>{{item.title}}</tag>
+  </view>
+  <view class="padding-xs" wx:for="{{ColorList}}" wx:key wx:if="{{index<12}}">
+    <tag class='bg-{{item.name}} light'>{{item.title}}</tag>
+  </view>
+</view>
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-blue' />镂空标签
+  </view>
+</bar>
+<view class='padding-sm flex flex-wrap'>
+  <view class="padding-xs" wx:for="{{ColorList}}" wx:key>
+    <tag class='line-{{item.name}}'>{{item.title}}</tag>
+  </view>
+</view>
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-blue' />胶囊样式
+  </view>
+</bar>
+<view class="padding">
+  <capsule>
+    <tag class='bg-red'>
+      <icon class='icon-likefill' />
+    </tag>
+    <tag class="line-red">
+      12
+    </tag>
+  </capsule>
+  <capsule class="round">
+    <tag class='bg-blue '>
+      <icon class='icon-likefill' />
+    </tag>
+    <tag class="line-blue">
+      23
+    </tag>
+  </capsule>
+  <capsule class="round">
+    <tag class='bg-blue '>
+      说明
+    </tag>
+    <tag class="line-blue">
+      123
+    </tag>
+  </capsule>
+  <capsule class="radius">
+    <tag class='bg-grey '>
+      <icon class='icon-likefill' />
+    </tag>
+    <tag class="line-grey">
+      23
+    </tag>
+  </capsule>
+  <capsule class="radius">
+    <tag class='bg-brown sm'>
+      <icon class='icon-likefill' />
+    </tag>
+    <tag class="line-brown sm">
+      23
+    </tag>
+  </capsule>
+</view>
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-blue' />数字标签
+  </view>
+</bar>
+<view class="padding flex justify-between align-center">
+  <avatar class='xl radius'>
+    港
+    <tag class="badge">99+</tag>
+  </avatar>
+  <avatar class='xl radius' style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);">
+    <tag class='badge'>9</tag>
+  </avatar>
+  <avatar class='xl radius'>
+    <tag class='badge'>99</tag>
+    <icon class='icon-people' />
+  </avatar>
+  <avatar class='xl radius'>
+    <tag class='badge'>99+</tag>
+  </avatar>
+</view>

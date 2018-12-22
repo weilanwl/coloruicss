@@ -1,0 +1,175 @@
+<custom style="height:{{CustomBar}}px;">
+  <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <icon class='icon-back' /> 表单
+    </navigator>
+  </bar>
+</custom>
+<form>
+
+  <form-group class="margin-top">
+    <view class='title'>邮件</view>
+    <input placeholder="两字短标题" class='radius' name='input'></input>
+  </form-group>
+  <form-group>
+    <view class='title'>输入框</view>
+    <input placeholder="三字标题" class='radius' name='input'></input>
+  </form-group>
+  <form-group>
+    <view class='title'>收货地址</view>
+    <input placeholder="统一标题的宽度" class='radius' name='input'></input>
+  </form-group>
+  <form-group>
+    <view class='title'>收货地址</view>
+    <input placeholder="输入框带个图标" class='radius' name='input'></input>
+    <icon class='icon-locationfill text-orange' />
+  </form-group>
+  <form-group>
+    <view class='title'>验证码</view>
+    <input placeholder="输入框带个按钮" class='radius' name='input'></input>
+    <button class='bg-green shadow'>验证码</button>
+  </form-group>
+  <form-group>
+    <view class='title'>手机号码</view>
+    <input placeholder="输入框带标签" class='radius' name='input'></input>
+    <capsule class="radius">
+      <tag class='bg-blue '>
+        +86
+      </tag>
+      <tag class="line-blue">
+        中国大陆
+      </tag>
+    </capsule>
+  </form-group>
+
+
+  <form-group class="margin-top">
+    <view class='title'>普通选择</view>
+    <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
+      <view class="picker">
+        {{index?picker[index]:'禁止换行，超出容器部分会以 ... 方式截断'}}
+      </view>
+    </picker>
+  </form-group>
+  <form-group>
+    <view class='title'>多列选择</view>
+    <picker mode="multiSelector" bindchange="MultiChange" bindcolumnchange="MultiColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view class="picker">
+        {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
+      </view>
+    </picker>
+  </form-group>
+  <form-group>
+    <view class='title'>时间选择</view>
+    <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="TimeChange">
+      <view class="picker">
+        {{time}}
+      </view>
+    </picker>
+  </form-group>
+  <form-group>
+    <view class='title'>日期选择</view>
+    <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
+      <view class="picker">
+        {{date}}
+      </view>
+    </picker>
+  </form-group>
+  <form-group>
+    <view class='title'>地址选择</view>
+    <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker">
+        {{region[0]}}，{{region[1]}}，{{region[2]}}
+      </view>
+    </picker>
+  </form-group>
+
+  <form-group class="margin-top">
+    <view class='title'>开关选择</view>
+    <switch class='sm'></switch>
+  </form-group>
+  <form-group>
+    <view class='title'>大号开关</view>
+    <switch class=''></switch>
+  </form-group>
+  <form-group>
+    <view class='title'>定义颜色</view>
+    <switch class='red sm' checked/>
+  </form-group>
+  <form-group>
+    <view class='title'>定义图标</view>
+    <switch class='switch-sex sm' checked/>
+  </form-group>
+  <form-group>
+    <view class='title'>方形开关</view>
+    <switch class='orange radius sm' checked/>
+  </form-group>
+  <radio-group class="block">
+    <form-group class="margin-top">
+      <view class='title'>单选操作(radio)</view>
+      <radio checked />
+    </form-group>
+    <form-group>
+      <view class='title'>定义尺寸</view>
+      <radio class='sm' />
+    </form-group>
+    <form-group>
+      <view class='title'>定义样式</view>
+      <radio class='radio' />
+    </form-group>
+    <form-group>
+      <view class='title'>定义颜色</view>
+      <view>
+        <radio class='blue radio' />
+        <radio class='red margin-left-sm' />
+      </view>
+    </form-group>
+  </radio-group>
+
+  <form-group class="margin-top">
+    <view class='title'>复选选操作(checkbox)</view>
+    <checkbox></checkbox>
+  </form-group>
+  <form-group>
+    <view class='title'>定义尺寸</view>
+    <checkbox class='sm' checked></checkbox>
+  </form-group>
+  <form-group>
+    <view class='title'>定义形状</view>
+    <checkbox class='round' checked></checkbox>
+  </form-group>
+  <form-group>
+    <view class='title'>定义颜色</view>
+    <checkbox class='round blue' checked></checkbox>
+  </form-group>
+  <form-group class="margin-top">
+    <view class="grid col-3 grid-square flex-sub">
+      <view class="padding-xs bg-img" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);">
+      </view>
+      <view class="padding-xs bg-img" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);">
+        <tag class="bg-red">
+          <icon class='icon-close'></icon>
+        </tag>
+      </view>
+      <view class="padding-xs solids">
+        <icon class='icon-cameraadd'></icon>
+      </view>
+    </view>
+  </form-group>
+  <form-group class="margin-top" wx:hide="{{modalName==null}}">
+    <textarea placeholder="多行文本输入框" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class='placeholder'></textarea>
+  </form-group>
+  <form-group class="top" wx:hide="{{modalName==null}}">
+    <view class='title'>点文本框</view>
+    <textarea placeholder="多行文本输入框" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class='placeholder'></textarea>
+  </form-group>
+<!-- 
+  <form-group class="margin-top">
+    <view class='title'>多级联动</view>
+    <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+      <view class="picker">
+        {{region[0]}}，{{region[1]}}，{{region[2]}}
+      </view>
+    </picker>
+  </form-group> -->
+</form>

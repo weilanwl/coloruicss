@@ -1,0 +1,34 @@
+<custom style="height:{{CustomBar}}px;">
+  <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <icon class='icon-back' /> 边框阴影
+    </navigator>
+  </bar>
+</custom>
+<bar class="solid-bottom">
+  <view class='action'>
+    <icon class='icon-title text-blue' />边框
+  </view>  
+  <view class='action'>
+   <switch class='sm' bindchange='SetSize'></switch>
+  </view>   
+</bar>
+<view class='padding bg-white text-center'>
+  <view class='padding solid{{size?"s":""}}'>四周</view>
+  <view class='padding solid{{size?"s":""}}-top margin-top'>上</view>
+  <view class='padding solid{{size?"s":""}}-right margin-top'>右</view>
+  <view class='padding solid{{size?"s":""}}-bottom margin-top'>下</view>
+  <view class='padding solid{{size?"s":""}}-left margin-top'>左</view>
+</view>
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-blue' />阴影
+  </view>
+</bar>
+<view class="padding text-center">
+  <view class="padding-xl radius shadow bg-white"> 默认阴影</view>
+  <view class="padding-xl radius shadow-lg bg-white margin-top">长阴影</view>
+  <view class="padding-xl radius shadow-warp bg-white margin-top">翘边阴影</view>
+  <view class="padding-xl radius shadow-blur bg-red margin-top">根据背景颜色而改变的阴影</view>
+  <view class="padding-xl radius shadow-blur bg-red margin-top bg-img" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"><view>根据背景颜色而改变的阴影</view></view>
+</view>

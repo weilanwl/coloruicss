@@ -1,0 +1,72 @@
+<custom style="height:{{CustomBar}}px;">
+  <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <icon class='icon-back' /> 头像
+    </navigator>
+  </bar>
+</custom>
+<bar>
+  <view class='action'>
+    <icon class='icon-title text-blue' />头像形状
+  </view>
+</bar>
+<view class="padding">
+  <avatar class="round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></avatar>
+  <avatar class="radius margin-left" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></avatar>
+</view>
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-blue' />头像尺寸
+  </view>
+</bar>
+<view class="padding">
+  <avatar class="sm round margin-left" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></avatar>
+  <avatar class="round margin-left" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></avatar>
+  <avatar class="lg round margin-left" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+  <avatar class="xl round margin-left" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);"></avatar>
+</view>
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-blue' />内嵌文字(图标)
+  </view>
+</bar>
+<view class="padding">
+  <avatar class="radius">
+    <icon class='icon-people' />
+  </avatar>
+  <avatar class="radius  margin-left">
+    <text>港</text>
+  </avatar>
+</view>
+
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-blue' />头像颜色
+  </view>
+</bar>
+<view class="padding-sm">
+  <avatar class="round lg bg-{{item.name}} margin-xs" wx:for="{{ColorList}}" wx:key>
+    <text>{{item.name}}</text>
+  </avatar>
+</view>
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-blue' />头像组
+  </view>
+</bar>
+<view class='padding'>
+  <avatar-group>
+    <avatar class="round lg" wx:for="{{4}}" wx:key style="background-image:url(https://image.weilanwl.com/img/square-{{index+1}}.jpg);"></avatar>
+  </avatar-group>
+</view>
+
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-blue' />头像标签
+  </view>
+</bar>
+<view class='padding'>
+  <avatar class="round lg margin-left" wx:for="{{4}}" wx:key style="background-image:url(https://image.weilanwl.com/img/square-{{index+1}}.jpg);">
+    <tag class="badge {{index%2==0?'icon-female bg-pink':'icon-male bg-blue'}}"></tag>
+  </avatar>
+</view>

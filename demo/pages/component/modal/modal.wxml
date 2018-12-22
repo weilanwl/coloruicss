@@ -1,0 +1,123 @@
+<custom style="height:{{CustomBar}}px;">
+  <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <icon class='icon-back' /> 模态窗口
+    </navigator>
+  </bar>
+</custom>
+
+<bar class="">
+  <view class='action'>
+    <icon class='icon-titles text-orange ' /> 模态窗口
+  </view>
+  <view class='action'>
+    <button class='bg-green shadow' bindtap="showModal" data-target="Modal">Modal</button>
+  </view>
+</bar>
+<modal-box class="{{modalName=='Modal'?'show':''}}">
+  <dialog>
+    <bar class="justify-end">
+      <view class='content'>Modal标题</view>
+      <view class='action' bindtap='hideModal'>
+        <icon class='icon-close text-red'></icon>
+      </view>
+    </bar>
+    <view class='padding-xl'>
+      Modal 内容。
+    </view>
+  </dialog>
+</modal-box>
+
+<bar class=" margin-top">
+  <view class='action'>
+    <icon class='icon-titles text-orange ' /> 底部窗口
+  </view>
+  <view class='action'>
+    <button class='bg-green shadow' bindtap="showModal" data-target="bottomModal">Bottom</button>
+  </view>
+</bar>
+<modal-box class="bottom-modal {{modalName=='bottomModal'?'show':''}}">
+  <dialog>
+    <bar class="">
+      <view class='action text-green'>确定</view>
+      <view class='action text-blue' bindtap='hideModal'>取消</view>
+    </bar>
+    <view class='padding-xl'>
+      Modal 内容。
+    </view>
+  </dialog>
+</modal-box>
+
+<bar class=" margin-top">
+  <view class='action'>
+    <icon class='icon-titles text-orange ' /> 对话窗口
+  </view>
+  <view class='action'>
+    <button class='bg-green shadow' bindtap="showModal" data-target="DialogModal1">Dialog</button>
+    <button class='bg-blue shadow margin-left' bindtap="showModal" data-target="DialogModal2">Dialog</button>
+  </view>
+</bar>
+<modal-box class="{{modalName=='DialogModal1'?'show':''}}">
+  <dialog>
+    <bar class="justify-end">
+      <view class='content'>Modal标题</view>
+      <view class='action' bindtap='hideModal'>
+        <icon class='icon-close text-red'></icon>
+      </view>
+    </bar>
+    <view class='padding-xl'>
+      Modal 内容。
+    </view>
+    <bar class="justify-end">
+      <view class='action'>
+        <button class='line-green text-green' bindtap='hideModal'>取消</button>
+        <button class='bg-green margin-left' bindtap='hideModal'>确定</button>
+
+      </view>
+    </bar>
+  </dialog>
+</modal-box>
+
+<modal-box class="{{modalName=='DialogModal2'?'show':''}}">
+  <dialog>
+    <bar class="justify-end">
+      <view class='content'>Modal标题</view>
+      <view class='action' bindtap='hideModal'>
+        <icon class='icon-close text-red'></icon>
+      </view>
+    </bar>
+    <view class='padding-xl'>
+      Modal 内容。
+    </view>
+    <bar>
+      <view class='action margin-0 flex-sub text-green ' bindtap='hideModal'>
+        <icon class='icon-moneybag'></icon>微信支付</view>
+      <view class='action margin-0 flex-sub text-green solid-left' bindtap='hideModal'>取消</view>
+      <view class='action margin-0 flex-sub  solid-left' bindtap='hideModal'>确定</view>
+    </bar>
+  </dialog>
+</modal-box>
+
+<bar class=" margin-top">
+  <view class='action'>
+    <icon class='icon-titles text-orange ' /> 图片窗口
+  </view>
+  <view class='action'>
+    <button class='bg-green shadow' bindtap="showModal" data-target="Image">Image</button>
+  </view>
+</bar>
+
+<modal-box class="{{modalName=='Image'?'show':''}}">
+  <dialog>
+    <view class="bg-img" style="background-image: url('https://albedo-theme.com/wp-content/uploads/2016/08/pexels-photo-26180.jpg');height:200px;">
+      <bar class="justify-end none-bg text-white">
+        <view class='action' bindtap='hideModal'>
+          <icon class='icon-close '></icon>
+        </view>
+      </bar>
+    </view>
+    <bar>
+      <view class='action margin-0 flex-sub  solid-left' bindtap='hideModal'>我知道了</view>
+    </bar>
+  </dialog>
+</modal-box>

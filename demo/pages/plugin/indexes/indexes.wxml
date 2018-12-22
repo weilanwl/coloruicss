@@ -1,0 +1,41 @@
+<custom style="height:{{CustomBar}}px;">
+  <bar class="fixed none-bg text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;background-image:url(https://image.weilanwl.com/color2.0/plugin/sylb2244.jpg);">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <icon class='icon-back' /> 索引
+    </navigator>
+  </bar>
+</custom>
+<bar class="search fixed" style="top:{{CustomBar}}px;">
+  <view class='serach-form round'>
+    <icon class="icon-search" />
+    <input type="text" placeholder="输入搜索的关键词" confirm-type="search" />
+  </view>
+  <view class='action'>
+    <button class='gradual-green shadow-blur round'>搜索</button>
+  </view>
+</bar>
+<scroll-view scroll-y class="indexes" scroll-into-view="indexes-{{listCurID}}" style='height:calc(100vh - {{CustomBar}}px - 50px)' scroll-with-animation="true" enable-back-to-top="true">
+  <block wx:for="{{list}}" wx:key>
+    <view class='padding indexItem-{{list[index]}}' id="indexes-{{list[index]}}" data-index="{{list[index]}}">{{list[index]}}</view>
+    <list class="menu menu-avatar no-padding">
+      <item wx:for="{{2}}" wx:key wx:for-index="sub">
+        <avatar class="round lg">{{list[index]}}</avatar>
+        <view class='content'>
+          <view class='text-grey'>{{list[index]}}<text class='text-abc'>{{list[sub]}}</text>君</view>
+          <view class='text-gray text-sm'>
+            有{{sub+2}}个主子需要伺候
+          </view>
+        </view>
+      </item>
+    </list>
+  </block>
+</scroll-view>
+<view class='indexBar' style='height:calc(100vh - {{CustomBar}}px - 50px)'>
+  <view class='indexBar-box' bindtouchstart="tStart" bindtouchend="tEnd" catchtouchmove="tMove">
+    <view class="indexBar-item " wx:for="{{list}}" wx:key id='{{index}}' bindtouchstart="getCur" bindtouchend="setCur" >{{list[index]}}</view>
+  </view>
+</view>
+<!--选择显示-->
+<view hidden="{{hidden}}" class="indexToast">
+  {{listCur}}
+</view>

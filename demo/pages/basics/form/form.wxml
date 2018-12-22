@@ -1,0 +1,61 @@
+<custom style="height:{{CustomBar}}px;">
+  <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <icon class='icon-back'/>
+      表单控件
+    </navigator>
+    <view class='action'>
+
+    </view>
+  </bar>
+</custom>
+<view class='text-center'>
+  <view class="padding-xl ">
+    <checkbox class=''></checkbox>
+    <radio-group>
+      <radio class='' checked name="sex" />
+      <radio class='blue sm' name="sex" />
+    </radio-group>
+  </view>
+  <view class="padding-xl ">
+    <switch class='' />
+    <radio-group>
+      <radio class='red radio' checked name="sex" />
+      <radio class='blue radio' name="sex" />
+    </radio-group>
+    <checkbox class='blue'></checkbox>
+    <checkbox class='cyan round'></checkbox>
+  </view>
+  <view class="padding-xl ">
+    <switch class=' sm' />
+    <radio-group>
+      <radio class='red radio sm' checked name="sex" />
+      <radio class='blue radio sm' name="sex" />
+    </radio-group>
+    <checkbox class='red sm'></checkbox>    
+    <checkbox class='cyan round sm'></checkbox>
+  </view>
+  <view class="padding-xl ">
+    <switch class='switch-sex' checked/>
+    <switch class='switch-sex sm' />
+  </view>
+  <view class="padding-xl ">
+    <switch class='red' checked/>
+    <switch class='blue sm' checked/>
+  </view>
+  <view class="padding-xl ">
+    <switch class='' checked/>
+    <switch class=' sm' checked/>
+  </view>
+  <view class="padding-xl ">
+    <switch class='' />
+    <switch class=' sm' />
+  </view>
+  <view class="padding-xl ">
+    <switch class='orange sm radius' />
+    <switch class='yellow radius' />
+  </view>
+  <view class="padding-xl ">
+    <switch class='blue radius' />
+  </view>
+</view>

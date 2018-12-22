@@ -1,0 +1,245 @@
+<custom style="height:{{CustomBar}}px;">
+  <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <icon class='icon-back' />
+      <text>操作条</text>
+    </navigator>
+  </bar>
+</custom>
+
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-back text-gray' />
+    <text>返回</text>
+  </view>
+</bar>
+
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-green ' />
+    <text>案例</text>
+  </view>
+  <view class='action'>
+    <button class='bg-green shadow-blur sm'>添加
+      <icon class='icon-add' /> </button>
+  </view>
+</bar>
+
+<bar class="margin-top justify-end">
+  <view class='action'>
+    <icon class='icon-close text-red'></icon>
+  </view>
+</bar>
+
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-back text-gray' /> 返回
+  </view>
+  <view class='content'>
+    操作条
+  </view>
+</bar>
+
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-homefill text-gray' /> 首页
+  </view>
+  <view class='content'>
+    鲜亮的高饱和色彩，专注视觉的小程序组件库
+  </view>
+  <view class='action'>
+    <icon class='icon-cardboardfill text-grey' />
+    <icon class='icon-recordfill text-red' />
+  </view>
+</bar>
+
+<bar class="margin-top bg-blue">
+  <view class='action'>
+    <icon class='icon-close' /> 关闭
+  </view>
+  <view class='content'>
+    海蓝
+  </view>
+</bar>
+<bar class="margin-top bg-orange">
+  <view class='action'>
+    <icon class='icon-back' /> 返回
+  </view>
+  <view class='content'>
+    操作条
+  </view>
+</bar>
+
+<bar class="margin-top bg-black search">
+  <avatar class="round" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+  <view class='content'>
+    ColorUI
+  </view>
+  <view class='action'>
+    <icon class="icon-more" />
+  </view>
+</bar>
+
+<bar class="margin-top bg-red search">
+  <avatar class="round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></avatar>
+  <view class='serach-form radius'>
+    <icon class="icon-search" />
+    <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search" />
+  </view>
+  <view class='action'>
+    <text>广州</text>
+    <icon class="icon-triangledownfill" />
+  </view>
+</bar>
+
+<bar class="margin-top search">
+  <avatar class="round" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></avatar>
+  <view class='serach-form round'>
+    <icon class="icon-search" />
+    <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search" />
+  </view>
+  <view class='action'>
+    <text>广州</text>
+    <icon class="icon-triangledownfill" />
+  </view>
+</bar>
+
+<bar class="margin-top bg-cyan search">
+  <view class='serach-form radius'>
+    <icon class="icon-search" />
+    <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search" />
+  </view>
+  <view class='action'>
+    <icon class='icon-close' />
+    <text>取消</text>
+  </view>
+</bar>
+
+<bar class="margin-top search">
+  <view class='serach-form round'>
+    <icon class="icon-search" />
+    <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search" />
+  </view>
+  <view class='action'>
+    <button class='bg-green shadow-blur round'>搜索</button>
+  </view>
+</bar>
+
+<bar class="margin-top btn-group">
+  <button class='bg-green shadow-blur round'>保存</button>
+</bar>
+
+<bar class="margin-top btn-group">
+  <button class='bg-green shadow-blur round lg'>保存</button>
+</bar>
+
+<bar class="margin-top btn-group">
+  <button class='bg-green shadow-blur'>保存</button>
+  <button class='text-green line-green shadow'>上传</button>
+</bar>
+
+<bar class="margin-top btn-group">
+  <button class='bg-green shadow-blur round'>保存</button>
+  <button class='bg-blue shadow-blur round'>提交</button>
+</bar>
+
+<bar class="margin-top shop">
+  <view class="action">
+    <icon class='icon-service text-green'>
+      <tag class='badge'></tag>
+    </icon>
+    客服
+  </view>
+  <view class="action text-orange">
+    <icon class='icon-favorfill' /> 已收藏
+  </view>
+  <view class="action">
+    <icon class='icon-cart'>
+      <tag class='badge'>99</tag>
+    </icon>
+    购物车
+  </view>
+  <view class='bg-red submit'>立即订购</view>
+</bar>
+
+<bar class="margin-top shop">
+  <view class="action">
+    <icon class='icon-service text-green'>
+      <tag class='badge'></tag>
+    </icon>
+    客服
+  </view>
+  <view class="action">
+    <icon class='icon-cart'>
+      <tag class='badge'>99</tag>
+    </icon>
+    购物车
+  </view>
+  <view class='bg-orange submit'>加入购物车</view>
+  <view class='bg-red submit'>立即订购</view>
+</bar>
+
+<bar class="margin-top shop">
+  <view class="action">
+    <icon class='icon-service text-green'>
+      <tag class='badge'></tag>
+    </icon>
+    客服
+  </view>
+  <view class="action">
+    <icon class=' icon-shop' /> 店铺
+  </view>
+  <view class="action">
+    <icon class='icon-cart'>
+      <tag class='badge'>99</tag>
+    </icon>
+    购物车
+  </view>
+  <view class='submit'>
+    <button class='bg-red round shadow-blur'>立即订购</button>
+  </view>
+</bar>
+
+<bar class="margin-top shop">
+  <view class="action">
+    <icon class='icon-service text-green'>
+      <tag class='badge'></tag>
+    </icon>
+    客服
+  </view>
+  <view class="action">
+    <icon class='icon-cart'>
+      <tag class='badge'>99</tag>
+    </icon>
+    购物车
+  </view>
+  <view class='submit'>
+    <button class='bg-orange round shadow-blur'>加入购物车</button>
+  </view>
+  <view class='submit'>
+    <button class='bg-red round shadow-blur'>立即订购</button>
+  </view>
+</bar>
+
+<bar class="margin-top input">
+  <view class='action'>
+    <icon class='icon-sound text-grey' />
+  </view>
+  <input class='solid-bottom' focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
+  <view class='action'>
+    <icon class='icon-emojifill text-grey' />
+  </view>
+  <button class='bg-green shadow-blur'>发送</button>
+</bar>
+
+<bar class="margin-top input">
+  <avatar class="round" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+  <view class='action'>
+    <icon class='icon-roundaddfill text-grey' />
+  </view>
+  <input class='solid-bottom' maxlength="300" cursor-spacing="10"></input>
+  <view class='action'>
+    <icon class='icon-emojifill text-grey' />
+  </view>
+  <button class='bg-green shadow-blur'>发送</button>
+</bar>

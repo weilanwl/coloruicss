@@ -1,0 +1,132 @@
+@import "icon.wxss";
+@import "colorui.wxss";
+
+.nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0px 20px 0px;
+  justify-content: space-between;
+}
+
+.nav-li {
+  color: #666;
+  padding: 15px;
+  border-radius: 6px;
+  width: 45%;
+  margin: 0 2.5% 20px;
+  background-image: url(https://image.weilanwl.com/color2.0/cardBg.png);
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+}
+
+.nav-li::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: -10%;
+  border-radius: 5px;
+  opacity: 0.2;
+  transform: scale(0.9, 0.9);
+}
+
+.nav-li.cur {
+  color: #fff;
+  background: rgb(94, 185, 94);
+  box-shadow: 2px 2px 3px rgba(94, 185, 94, 0.4);
+}
+
+.nav-title {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.nav-title::first-letter {
+  font-size: 20px;
+  margin-right: 2px;
+}
+
+.nav-name {
+  font-size: 14px;
+  text-transform: Capitalize;
+  margin-top: 10px;
+  position: relative;
+}
+
+.nav-name::before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 20px;
+  height: 3px;
+  background: #fff;
+  bottom: 0;
+  right: 0;
+  opacity: 0.5;
+}
+
+.nav-name::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: #fff;
+  bottom: 0;
+  right: 20px;
+  opacity: 0.3;
+}
+
+.nav-name::first-letter {
+  font-weight: bold;
+  font-size: 18px;
+  margin-right: 1px;
+}
+
+.nav-li icon {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  font-size: 26px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.text-light {
+  font-weight: 300;
+}
+
+@keyframes show {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  60% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+@-webkit-keyframes show {
+  0% {
+    transform: translateY(-50px);
+  }
+
+  60% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}

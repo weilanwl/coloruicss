@@ -1,0 +1,14 @@
+<custom style="height:{{CustomBar}}px;">
+  <bar class="fixed none-bg text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;background-image:url(https://image.weilanwl.com/color2.0/plugin/cjkz2329.jpg);">
+    <view class='content' open-type="navigateBack" delta="1" hover-class="none">
+      <image src="/images/cjkz.png" mode='widthFix'></image>
+    </view>
+  </bar>
+</custom>
+<card>
+  <item class="bg-img shadow-blur" style="background-image:url({{item.img}})" bindtap="toChild" data-url="{{item.url}}" wx:for="{{list}}" wx:key>
+    <view class="cardTitle">
+      {{item.title}}
+    </view>
+  </item>
+</card>

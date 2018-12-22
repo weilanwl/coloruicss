@@ -1,0 +1,7 @@
+<custom style="height:{{CustomBar}}px;">
+  <bar class="fixed gradual-orange" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <icon class='icon-back' /> 渐变
+    </navigator>
+  </bar>
+</custom>

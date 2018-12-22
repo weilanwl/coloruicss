@@ -1,0 +1,91 @@
+<custom style="height:{{CustomBar}}px;">
+  <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <icon class='icon-back'/>
+      聊天
+    </navigator>
+  </bar>
+</custom>
+
+<chat>
+  <item class="self">
+    <view class="main">
+      <view class='content bg-green shadow-blur'>
+        <text>喵喵喵！喵喵喵！喵喵喵！喵喵！喵喵！！喵！喵喵喵！</text>
+      </view>
+    </view>
+    <avatar class="radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+    <view class='date'>2018年3月23日 13:23</view>
+  </item>
+  <info class='round'>对方撤回一条消息!</info>
+  <item>
+    <avatar class="radius" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></avatar>
+    <view class="main">
+      <view class='content shadow'>
+        <text>喵喵喵！喵喵喵！</text>
+      </view>
+    </view>
+    <view class='date '> 13:23</view>
+  </item>
+  <info>
+    <icon class='icon-roundclosefill text-red '/> 对方拒绝了你的消息
+  </info>
+  <info>
+    对方开启了好友验证，你还不是他(她)的好友。请先发送好友验证请求，对方验证通过后，才能聊天。
+    <text class='text-blue'>发送好友验证</text>
+  </info>
+  <item class="self">
+    <view class="main">
+      <image src="https://image.weilanwl.com/img/3x4-1.jpg" class='radius' mode="widthFix"></image>
+    </view>
+    <avatar class="radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+    <view class='date'> 13:23</view>
+  </item>
+  <item class="self">
+    <view class="main">
+      <view class='action text-bold text-grey'>
+        3"
+      </view>
+      <view class='content shadow'>
+        <icon class='icon-sound text-xxl padding-right-xl'> </icon>
+      </view>
+    </view>
+    <avatar class="radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+    <view class='date'>13:23</view>
+  </item>
+  <item class="self">
+    <view class="main">
+      <view class='action'>
+        <icon class='icon-locationfill text-orange text-xxl'/>
+      </view>
+      <view class='content shadow'>
+        喵星球，喵喵市
+      </view>
+    </view>
+    <avatar class="radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+    <view class='date'>13:23</view>
+  </item>
+  <item>
+    <avatar class="radius" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></avatar>
+    <view class="main">
+      <view class='content shadow'>
+       @#$^&**
+      </view>      
+      <view class='action text-grey'>
+        <icon class='icon-warnfill text-red text-xxl'/> <text class='text-sm margin-left-sm'>翻译错误</text> 
+      </view>
+    </view>
+    <view class='date'>13:23</view>
+  </item>
+</chat>
+
+<bar class="foot input">
+  <view class='action'>
+    <icon class='icon-sound text-grey'/>
+  </view>
+  <input class='solid-bottom' focus="{{false}}" maxlength="300" cursor-spacing="10"></input>
+  <view class='action'>
+    <icon class='icon-emojifill text-grey'/>
+  </view>
+  <button class='bg-green shadow-blur'>发送</button>
+</bar>

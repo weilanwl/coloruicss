@@ -1,6 +1,0 @@
-page{
-  background: #f5f5f5;
-}
-.doc-example > button{
-  margin-right: 20rpx;
-}

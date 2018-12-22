@@ -1,0 +1,31 @@
+<custom style="height:{{CustomBar}}px;">
+  <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <icon class='icon-back' /> 加载
+    </navigator>
+    <view class='action'>
+      <load class="load-icon {{!isLoad?'loading':'over'}}"></load>
+    </view>
+  </bar>
+</custom>
+<bar>
+  <view class='action'>
+    <icon class='icon-title text-blue'/>背景
+  </view>
+</bar>
+<load class="bg-blue {{!isLoad?'loading':'over'}}"></load>
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-blue'/>加载状态
+  </view>
+  <view class='action'>
+  <switch class='sm' bindchange='isLoading'></switch>
+  </view>
+</bar>
+<load class="bg-grey {{!isLoad?'loading':'over'}}"></load>
+<bar class="margin-top">
+  <view class='action'>
+    <icon class='icon-title text-blue'/>加载错误
+  </view>
+</bar>
+<load class="bg-red erro"></load>

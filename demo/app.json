@@ -1,0 +1,65 @@
+{
+  "pages": [
+    "pages/basics/home/home",
+    "pages/basics/layout/layout",
+    "pages/component/home/home",
+    "pages/plugin/home/home",
+    "pages/basics/button/button",
+    "pages/basics/tag/tag",
+    "pages/basics/avatar/avatar",
+    "pages/basics/image/image",
+    "pages/basics/progress/progress",
+    "pages/component/list/list",
+    "pages/basics/form/form",
+    "pages/component/bar/bar",
+    "pages/component/timeline/timeline",
+    "pages/basics/shadow/shadow",
+    "pages/component/chat/chat",
+    "pages/component/form/form",
+    "pages/basics/background/background",
+    "pages/basics/text/text",
+    "pages/basics/icon/icon",
+    "pages/basics/loading/loading",
+    "pages/component/nav/nav",
+    "pages/component/card/card",
+    "pages/component/swiper/swiper",
+    "pages/component/modal/modal",
+    "pages/plugin/indexes/indexes",
+    "pages/basics/button/design",
+    "pages/plugin/gradual/gradual",
+    "pages/plugin/animation/animation"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#39b54a",
+    "navigationBarTitleText": "Color UI",
+    "navigationStyle": "custom",
+    "navigationBarTextStyle": "white"
+  },
+  "component": true,
+  "tabBar": {
+    "color": "#aaa",
+    "selectedColor": "#39b54a",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/basics/home/home",
+        "iconPath": "/images/tabbar/basics.png",
+        "selectedIconPath": "/images/tabbar/basics_cur.png",
+        "text": "基础"
+      },
+      {
+        "pagePath": "pages/component/home/home",
+        "iconPath": "/images/tabbar/component.png",
+        "selectedIconPath": "/images/tabbar/component_cur.png",
+        "text": "组件"
+      },
+      {
+        "pagePath": "pages/plugin/home/home",
+        "iconPath": "/images/tabbar/plugin.png",
+        "selectedIconPath": "/images/tabbar/plugin_cur.png",
+        "text": "扩展"
+      }
+    ]
+  }
+}
