@@ -1,5 +1,6 @@
 /*
   Color UI v2.0.2 | by 文晓港 
+  单位为多种混合(px,rpx,vw,vh,em)
   仅供学习交流，如作它用所承受的法律责任一概与作者无关   
   （QQ交流群：240787041）
   文档：http://www.color-ui.com/
@@ -2414,6 +2415,7 @@ timeline>item>.content {
   border-radius: 3px;
   display: block;
   color: #666;
+  line-height: 1.6;
 }
 
 timeline>item>.content+.content {
