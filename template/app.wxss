@@ -1,2 +1,2 @@
 @import "icon.wxss";
-@import "colorui.wxss";
+@import "colorui-rpx.wxss";

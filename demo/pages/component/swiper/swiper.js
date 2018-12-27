@@ -46,7 +46,6 @@ Page({
   // 初始化towerSwiper
   towerSwiper(name) {
     let list = this.data[name];
-
     for (let i = 0; i < list.length; i++) {
       list[i].zIndex = parseInt(list.length / 2) + 1 - Math.abs(i - parseInt(list.length / 2))
       list[i].mLeft = i - parseInt(list.length / 2)
@@ -99,6 +98,5 @@ Page({
         towerList: list
       })
     }
-    console.log(list);
   },
 });

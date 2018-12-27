@@ -97,8 +97,8 @@
     <switch class='red sm' checked/>
   </form-group>
   <form-group>
+    <switch class='switch-sex' checked/>
     <view class='title'>定义图标</view>
-    <switch class='switch-sex sm' checked/>
   </form-group>
   <form-group>
     <view class='title'>方形开关</view>
