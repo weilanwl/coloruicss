@@ -1,173 +1,173 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back'/> 列表
+      <text class='icon-back'></text> 列表
     </navigator>
   </bar>
 </custom>
 <view class="page {{skin?' invert ':' '}}">
   <list class="grid col-3">
     <item>
-      <icon class='icon-cardboardfill text-red'/>
+      <text class='icon-cardboardfill text-red'></text>
       <text>VR</text>
     </item>
     <item>
-      <icon class='icon-recordfill text-orange'/>
+      <text class='icon-recordfill text-orange'></text>
       <text>录像</text>
     </item>
     <item>
-      <icon class='icon-picfill text-yellow'/>
+      <text class='icon-picfill text-yellow'></text>
       <text>图像</text>
     </item>
     <item>
-      <icon class='icon-noticefill text-olive'>
+      <text class='icon-noticefill text-olive'>
         <tag class="badge">99+</tag>
-      </icon>
+      </text>
       <text>通知</text>
     </item>
     <item>
-      <icon class='icon-upstagefill text-cyan'/>
+      <text class='icon-upstagefill text-cyan'></text>
       <text>排行榜</text>
     </item>
     <item>
-      <icon class='icon-clothesfill text-blue'>
+      <text class='icon-clothesfill text-blue'>
         <tag class="badge"></tag>
-      </icon>
+      </text>
       <text>皮肤</text>
     </item>
     <item>
-      <icon class='icon-discoverfill text-purple'/>
+      <text class='icon-discoverfill text-purple'></text>
       <text>发现</text>
     </item>
     <item>
-      <icon class='icon-questionfill text-mauve'/>
+      <text class='icon-questionfill text-mauve'></text>
       <text>帮助</text>
     </item>
     <item>
-      <icon class='icon-servicefill text-pink'/>
+      <text class='icon-servicefill text-pink'></text>
       <text>反馈</text>
     </item>
   </list>
   <list class="grid col-4">
     <item>
-      <icon class='icon-cardboardfill text-red'/>
+      <text class='icon-cardboardfill text-red'></text>
       <text>VR</text>
     </item>
     <item>
-      <icon class='icon-recordfill text-orange'/>
+      <text class='icon-recordfill text-orange'></text>
       <text>录像</text>
     </item>
     <item>
-      <icon class='icon-picfill text-yellow'/>
+      <text class='icon-picfill text-yellow'></text>
       <text>图像</text>
     </item>
     <item>
-      <icon class='icon-noticefill text-olive'>
+      <text class='icon-noticefill text-olive'>
         <tag class="badge">99+</tag>
-      </icon>
+      </text>
       <text>通知</text>
     </item>
     <item>
-      <icon class='icon-upstagefill text-cyan'/>
+      <text class='icon-upstagefill text-cyan'></text>
       <text>排行榜</text>
     </item>
     <item>
-      <icon class='icon-clothesfill text-blue'>
+      <text class='icon-clothesfill text-blue'>
         <tag class="badge"></tag>
-      </icon>
+      </text>
       <text>皮肤</text>
     </item>
     <item>
-      <icon class='icon-discoverfill text-purple'/>
+      <text class='icon-discoverfill text-purple'></text>
       <text>发现</text>
     </item>
     <item>
-      <icon class='icon-questionfill text-mauve'/>
+      <text class='icon-questionfill text-mauve'></text>
       <text>帮助</text>
     </item>
   </list>
   <list class="grid no-border col-4">
     <item>
-      <icon class='icon-cardboardfill text-red'/>
+      <text class='icon-cardboardfill text-red'></text>
       <text>VR</text>
     </item>
     <item>
-      <icon class='icon-recordfill text-orange'/>
+      <text class='icon-recordfill text-orange'></text>
       <text>录像</text>
     </item>
     <item>
-      <icon class='icon-picfill text-yellow'/>
+      <text class='icon-picfill text-yellow'></text>
       <text>图像</text>
     </item>
     <item>
-      <icon class='icon-noticefill text-olive'>
+      <text class='icon-noticefill text-olive'>
         <tag class="badge">99+</tag>
-      </icon>
+      </text>
       <text>通知</text>
     </item>
     <item>
-      <icon class='icon-upstagefill text-cyan'/>
+      <text class='icon-upstagefill text-cyan'></text>
       <text>排行榜</text>
     </item>
     <item>
-      <icon class='icon-clothesfill text-blue'>
+      <text class='icon-clothesfill text-blue'>
         <tag class="badge"></tag>
-      </icon>
+      </text>
       <text>皮肤</text>
     </item>
     <item>
-      <icon class='icon-discoverfill text-purple'/>
+      <text class='icon-discoverfill text-purple'></text>
       <text>发现</text>
     </item>
     <item>
-      <icon class='icon-questionfill text-mauve'/>
+      <text class='icon-questionfill text-mauve'></text>
       <text>帮助</text>
     </item>
   </list>
   <list class="grid col-5 no-border">
     <item>
-      <icon class='icon-cardboardfill text-red'>
+      <text class='icon-cardboardfill text-red'>
         <tag class="badge">99+</tag>
-      </icon>
+      </text>
       <text>VR</text>
     </item>
     <item>
-      <icon class='icon-recordfill text-orange'/>
+      <text class='icon-recordfill text-orange'></text>
       <text>录像</text>
     </item>
     <item>
-      <icon class='icon-picfill text-yellow'/>
+      <text class='icon-picfill text-yellow'></text>
       <text>图像</text>
     </item>
     <item>
-      <icon class='icon-noticefill text-olive'>
-      </icon>
+      <text class='icon-noticefill text-olive'>
+      </text>
       <text>通知</text>
     </item>
     <item>
-      <icon class='icon-upstagefill text-cyan'/>
+      <text class='icon-upstagefill text-cyan'></text>
       <text>排行榜</text>
     </item>
     <item>
-      <icon class='icon-clothesfill text-blue'>
+      <text class='icon-clothesfill text-blue'>
         <tag class="badge"></tag>
-      </icon>
+      </text>
       <text>皮肤</text>
     </item>
     <item>
-      <icon class='icon-discoverfill text-purple'/>
+      <text class='icon-discoverfill text-purple'></text>
       <text>发现</text>
     </item>
     <item>
-      <icon class='icon-questionfill text-mauve'/>
+      <text class='icon-questionfill text-mauve'></text>
       <text>帮助</text>
     </item>
     <item>
-      <icon class='icon-commandfill text-purple'/>
+      <text class='icon-commandfill text-purple'></text>
       <text>问答</text>
     </item>
     <item>
-      <icon class='icon-brandfill text-mauve'/>
+      <text class='icon-brandfill text-mauve'></text>
       <text>版权</text>
     </item>
   </list>
@@ -175,23 +175,23 @@
     <item>
       <view class='content'>
         <view>
-          <icon class='icon-clothesfill text-blue'/> 皮肤设置</view>
+          <text class='icon-clothesfill text-blue'></text> 皮肤设置</view>
         <view class='text-gray text-sm'>
-          <icon class='icon-infofill'/> 皮肤需要付费购买</view>
+          <text class='icon-infofill'></text> 皮肤需要付费购买</view>
       </view>
       <view class='action'>
-        <switch class='switch-sex sm' bindchange="switchSex" />
+        <switch class='switch-sex sm' bindchange="switchSex"></switch>
       </view>
     </item>
     <item>
       <view class='content'>
         <view>
-          <icon class='icon-musicfill text-red'/> 声音控制</view>
+          <text class='icon-musicfill text-red'></text> 声音控制</view>
         <view class='text-gray text-sm'>
-          <icon class='icon-infofill'/> 需要获得系统权限</view>
+          <text class='icon-infofill'></text> 需要获得系统权限</view>
       </view>
       <view class='action'>
-        <switch class='switch-music' />
+        <switch class='switch-music'></switch>
       </view>
     </item>
   </list>
@@ -201,7 +201,7 @@
       <view class='content'>
         <view class='text-grey'>文晓港</view>
         <view class='text-gray text-sm'>
-          <icon class='icon-infofill text-red'/> 消息未送达</view>
+          <text class='icon-infofill text-red'></text> 消息未送达</view>
       </view>
       <view class='action'>
         <view class='text-grey text-xs'>22:20</view>
@@ -217,11 +217,11 @@
           <tag class="round bg-orange sm">SVIP</tag>
         </view>
         <view class='text-gray text-sm'>
-          <icon class='icon-redpacket_fill text-red'/> 收到红包</view>
+          <text class='icon-redpacket_fill text-red'></text> 收到红包</view>
       </view>
       <view class='action'>
         <view class='text-grey text-xs'>22:20</view>
-        <icon class='icon-notice_forbid_fill text-gray'/>
+        <text class='icon-notice_forbid_fill text-gray'></text>
       </view>
     </item>
   </list>
@@ -260,35 +260,53 @@
         </view>
         <view class='text-gray text-sm'>
           喵星酱：
-          <icon class='icon-picfill text-orange'/> 图片传输中...</view>
+          <text class='icon-picfill text-orange'></text> 图片传输中...</view>
       </view>
       <view class='action'>
         <view class='text-grey text-xs'>22:20</view>
-        <icon class='icon-notice_forbid_fill text-gray'/>
+        <text class='icon-notice_forbid_fill text-gray'></text>
       </view>
     </item>
   </list>
   <list class="menu">
     <item>
       <view class='content'>
-        <icon class='icon-circlefill text-grey'/>
-        <text class='text-grey'>默认</text>
+        <text class='icon-circlefill text-grey'></text>
+        <text class='text-grey'>图标 + 标题</text>
       </view>
     </item>
     <item>
       <view class='content'>
-        <icon class='icon-emojifill text-red'/>
+        <image src='/images/logo.png' class='png' mode='aspectFit'></image>
+        <text class='text-grey'>图片 + 标题</text>
+      </view>
+    </item>
+    <item>
+      <button class='content' open-type='contact'>
+        <text class='icon-btn text-olive'></text>
+        <text class='text-grey'>Open-type 按钮</text>
+      </button>
+    </item>
+    <item>
+      <navigator class='content' hover-class='none' url='../list/list' open-type="redirect">
+        <text class='icon-discoverfill text-orange'></text>
+        <text class='text-grey'>Navigator 跳转</text>
+      </navigator>
+    </item>
+    <item>
+      <view class='content'>
+        <text class='icon-emojifill text-red'></text>
         <text class='text-grey'>头像</text>
       </view>
       <view class='action'>
         <avatar class="sm round">
-          <icon class='icon-people'/>
+          <text class='icon-people'></text>
         </avatar>
       </view>
     </item>
     <item>
       <view class='content'>
-        <icon class='icon-emojiflashfill text-pink'/>
+        <text class='icon-emojiflashfill text-pink'></text>
         <text class='text-grey'>头像组</text>
       </view>
       <view class='action'>
@@ -303,35 +321,35 @@
     </item>
     <item>
       <view class='content'>
-        <icon class='icon-crown text-green'/>
+        <text class='icon-crown text-green'></text>
         <text class='text-grey'>按钮</text>
       </view>
       <view class='action'>
         <button class='round bg-green sm'>
-          <icon class='icon-upload'/> 上传</button>
+          <text class='icon-upload'></text> 上传</button>
       </view>
     </item>
     <item>
       <view class='content'>
-        <icon class='icon-crownfill text-green'/>
+        <text class='icon-crownfill text-green'></text>
         <text class='text-grey'>按钮</text>
       </view>
       <view class='action'>
         <button class='round bg-blue'>
-          <icon class='icon-down'/> 下载</button>
+          <text class='icon-down'></text> 下载</button>
       </view>
     </item>
   </list>
   <list class="menu">
     <item class="arrow">
       <view class='content'>
-        <icon class='icon-roundrightfill text-grey'/>
+        <text class='icon-roundrightfill text-grey'></text>
         <text class='text-grey'>箭头</text>
       </view>
     </item>
     <item class="arrow">
       <view class='content'>
-        <icon class='icon-tagfill text-red'/>
+        <text class='icon-tagfill text-red'></text>
         <text class='text-grey'>标签</text>
       </view>
       <view class='action'>
@@ -342,7 +360,7 @@
     </item>
     <item class="arrow">
       <view class='content'>
-        <icon class='icon-warn text-green'/>
+        <text class='icon-warn text-green'></text>
         <text class='text-grey'>文本</text>
       </view>
       <view class='action'>
@@ -351,7 +369,7 @@
     </item>
     <item class="arrow">
       <view class='content'>
-        <icon class='icon-warnfill text-green'/>
+        <text class='icon-warnfill text-green'></text>
         <text class='text-grey'>文本</text>
         <text class='text-grey text-sm margin-left-sm'>小目标还没有实现！</text>
       </view>
@@ -360,7 +378,7 @@
   <list class="menu no-padding">
     <item>
       <view class='content'>
-        <icon class='icon-radiobox text-orange'/>
+        <text class='icon-radiobox text-orange'></text>
         <text class='text-grey'>徽章</text>
       </view>
       <view class='action'>
@@ -369,7 +387,7 @@
     </item>
     <item>
       <view class='content'>
-        <icon class='icon-tagfill text-olive'/>
+        <text class='icon-tagfill text-olive'></text>
         <text class='text-grey'>标签</text>
       </view>
       <view class='action'>
@@ -378,13 +396,13 @@
     </item>
     <item class="arrow">
       <view class='content'>
-        <icon class='icon-radioboxfill text-blue'/>
+        <text class='icon-radioboxfill text-blue'></text>
         <text class='text-grey'>胶囊</text>
       </view>
       <view class='action'>
         <capsule class="round">
           <tag class='bg-blue'>
-            <icon class='icon-locationfill'/>
+            <text class='icon-locationfill'></text>
           </tag>
           <tag class="line-blue">
             广州
@@ -396,7 +414,7 @@
   <list class="menu no-padding card-menu margin-bottom-xl">
     <item>
       <view class='content'>
-        <icon class='icon-radiobox text-orange'/>
+        <text class='icon-radiobox text-orange'></text>
         <text class='text-grey'>徽章</text>
       </view>
       <view class='action'>
@@ -405,7 +423,7 @@
     </item>
     <item>
       <view class='content'>
-        <icon class='icon-tagfill text-olive'/>
+        <text class='icon-tagfill text-olive'></text>
         <text class='text-grey'>标签</text>
       </view>
       <view class='action'>
@@ -414,13 +432,13 @@
     </item>
     <item class="arrow">
       <view class='content'>
-        <icon class='icon-radioboxfill text-blue'/>
+        <text class='icon-radioboxfill text-blue'></text>
         <text class='text-grey'>胶囊</text>
       </view>
       <view class='action'>
         <capsule class="round">
           <tag class='bg-blue'>
-            <icon class='icon-locationfill'/>
+            <text class='icon-locationfill'></text>
           </tag>
           <tag class="line-blue">
             广州

@@ -1,14 +1,14 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed none-bg text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;background-image:url(https://image.weilanwl.com/color2.0/plugin/sylb2244.jpg);">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 索引
+      <text class='icon-back'></text> 索引
     </navigator>
   </bar>
 </custom>
 <bar class="search fixed" style="top:{{CustomBar}}px;">
-  <view class='serach-form round'>
-    <icon class="icon-search" />
-    <input type="text" placeholder="输入搜索的关键词" confirm-type="search" />
+  <view class='search-form round'>
+    <text class="icon-search"></text>
+    <input type="text" placeholder="输入搜索的关键词" confirm-type="search"></input>
   </view>
   <view class='action'>
     <button class='gradual-green shadow-blur round'>搜索</button>

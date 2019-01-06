@@ -1,14 +1,14 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 背景颜色
+      <text class='icon-back'></text> 背景颜色
     </navigator>
   </bar>
 </custom>
 
 <bar class="solid-bottom">
   <view class='action'>
-    <icon class='icon-title text-blue' />深色背景
+    <text class='icon-title text-blue'></text>深色背景
   </view>
 </bar>
 <view class='grid col-3 padding-sm'>
@@ -22,7 +22,7 @@
 
 <bar class="solid-bottom">
   <view class='action'>
-    <icon class='icon-title text-blue' />淡色背景
+    <text class='icon-title text-blue'></text>淡色背景
   </view>
 </bar>
 <view class='grid col-3 bg-white padding-sm'>
@@ -35,7 +35,7 @@
 </view>
 <bar class="solid-bottom margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />渐变背景
+    <text class='icon-title text-blue'></text>渐变背景
   </view>
 </bar>
 <view class='grid col-2 padding-sm'>
@@ -78,7 +78,7 @@
 </view>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />图片背景
+    <text class='icon-title text-blue'></text>图片背景
   </view>
 </bar>
 <view class="bg-img bg-mask padding-tb-xl" style="background-image: url('https://albedo-theme.com/wp-content/uploads/2016/08/pexels-photo-26180.jpg')">
@@ -93,7 +93,7 @@
 </view>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />视频背景
+    <text class='icon-title text-blue'></text>视频背景
   </view>
 </bar>
 <view class="bg-video bg-mask">
@@ -109,7 +109,7 @@
 </view>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />透明背景(文字层)
+    <text class='icon-title text-blue'></text>透明背景(文字层)
   </view>
 </bar>
 <view class='grid col-2 padding-sm'>

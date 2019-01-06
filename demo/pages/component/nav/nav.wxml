@@ -1,7 +1,7 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 导航栏
+      <text class='icon-back'></text> 导航栏
     </navigator>
   </bar>
 </custom>
@@ -10,7 +10,7 @@
 </view>
 <bar class="solid-bottom">
   <view class='action'>
-    <icon class='icon-titles text-orange ' /> 默认
+    <text class='icon-titles text-orange '></text> 默认
   </view>
 </bar>
 <scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
@@ -21,7 +21,7 @@
 
 <bar class="margin-top solid-bottom">
   <view class='action'>
-    <icon class='icon-title text-orange' /> 居中
+    <text class='icon-title text-orange'></text> 居中
   </view>
 </bar>
 <scroll-view scroll-x class="bg-white nav text-center">
@@ -32,7 +32,7 @@
 
 <bar class="margin-top solid-bottom">
   <view class='action'>
-    <icon class='icon-title text-orange' /> 平分
+    <text class='icon-title text-orange'></text> 平分
   </view>
 </bar>
 <scroll-view scroll-x class="bg-white nav">
@@ -44,7 +44,7 @@
 </scroll-view>
 <bar class="margin-top solid-bottom">
   <view class='action'>
-    <icon class='icon-title text-orange' /> 背景
+    <text class='icon-title text-orange'></text> 背景
   </view>
 </bar>
 <scroll-view scroll-x class="bg-red nav text-center">
@@ -54,34 +54,34 @@
 </scroll-view>
 <bar class="margin-top solid-bottom">
   <view class='action'>
-    <icon class='icon-title text-orange' /> 图标
+    <text class='icon-title text-orange'></text> 图标
   </view>
 </bar>
 <scroll-view scroll-x class="bg-green nav text-center">
   <item class="{{0==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="0">
-    <icon class='icon-camerafill'></icon> 数码
+    <text class='icon-camerafill'></text> 数码
   </item>
   <item class="{{1==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="1">
-    <icon class='icon-upstagefill'></icon> 排行榜
+    <text class='icon-upstagefill'></text> 排行榜
   </item>
   <item class="{{2==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="2">
-    <icon class='icon-clothesfill'></icon> 皮肤
+    <text class='icon-clothesfill'></text> 皮肤
   </item>
 </scroll-view>
 
 <bar class="margin-top solid-bottom">
   <view class='action'>
-    <icon class='icon-title text-orange' /> 定位
+    <text class='icon-title text-orange'></text> 定位
   </view>
 </bar>
 <scroll-view scroll-x class="bg-green nav text-center">
   <item class="{{0==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="0">
-    <icon class='icon-camerafill'></icon> 数码
+    <text class='icon-camerafill'></text> 数码
   </item>
   <item class="{{1==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="1">
-    <icon class='icon-upstagefill'></icon> 排行榜
+    <text class='icon-upstagefill'></text> 排行榜
   </item>
   <item class="{{2==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="2">
-    <icon class='icon-clothesfill'></icon> 皮肤
+    <text class='icon-clothesfill'></text> 皮肤
   </item>
 </scroll-view>

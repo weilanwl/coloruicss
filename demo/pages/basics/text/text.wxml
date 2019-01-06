@@ -1,7 +1,7 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back'/> 文本
+      <text class='icon-back'></text> 文本
     </navigator>
     <view class='action'>
 
@@ -10,7 +10,7 @@
 </custom>
 <bar class="solid-bottom">
   <view class='action'>
-    <icon class='icon-title text-blue'/>文字大小
+    <text class='icon-title text-blue'></text>文字大小
   </view>
 </bar>
 <view class='bg-white padding-lr'>
@@ -18,7 +18,7 @@
     <view class='padding'>60</view>
     <view class='flex-sub text-center'>
       <view class='solid-bottom text-xsl padding'>
-        <icon class=' icon-roundcheckfill text-green'/>
+        <text class=' icon-roundcheckfill text-green'></text>
       </view>
       <view class='padding'>用于图标、数字等特大显示</view>
     </view>
@@ -27,7 +27,7 @@
     <view class='padding'>40</view>
     <view class='flex-sub text-center'>
       <view class='solid-bottom text-sl padding'>
-        <icon class=' icon-roundcheckfill text-green'/>
+        <text class=' icon-roundcheckfill text-green'></text>
       </view>
       <view class='padding'>用于图标、数字等较大显示</view>
     </view>
@@ -87,7 +87,7 @@
 </view>
 <bar class="solid-bottom margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue'/>文字颜色
+    <text class='icon-title text-blue'></text>文字颜色
   </view>
 </bar>
 <view class='grid col-5 padding-sm'>
@@ -99,7 +99,7 @@
 </view>
 <bar class="solid-bottom margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue'/>文字截断
+    <text class='icon-title text-blue'></text>文字截断
   </view>
 </bar>
 <view class='padding bg-white'>
@@ -107,7 +107,7 @@
 </view>
 <bar class="solid-bottom margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue'/>文字对齐
+    <text class='icon-title text-blue'></text>文字对齐
   </view>
 </bar>
 <view class='padding bg-white'>
@@ -117,7 +117,7 @@
 </view>
 <bar class="solid-bottom margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue'/>特殊文字
+    <text class='icon-title text-blue'></text>特殊文字
   </view>
 </bar>
 <view class='padding text-center'>

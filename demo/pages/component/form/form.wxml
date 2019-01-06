@@ -1,7 +1,7 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 表单
+      <text class='icon-back'></text> 表单
     </navigator>
   </bar>
 </custom>
@@ -22,7 +22,7 @@
   <form-group>
     <view class='title'>收货地址</view>
     <input placeholder="输入框带个图标" class='radius' name='input'></input>
-    <icon class='icon-locationfill text-orange' />
+    <text class='icon-locationfill text-orange'></text>
   </form-group>
   <form-group>
     <view class='title'>验证码</view>
@@ -94,34 +94,34 @@
   </form-group>
   <form-group>
     <view class='title'>定义颜色</view>
-    <switch class='red sm' checked/>
+    <switch class='red sm' checked></switch>
   </form-group>
   <form-group>
-    <switch class='switch-sex' checked/>
+    <switch class='switch-sex' checked></switch>
     <view class='title'>定义图标</view>
   </form-group>
   <form-group>
     <view class='title'>方形开关</view>
-    <switch class='orange radius sm' checked/>
+    <switch class='orange radius sm' checked></switch>
   </form-group>
   <radio-group class="block">
     <form-group class="margin-top">
       <view class='title'>单选操作(radio)</view>
-      <radio checked />
+      <radio checked></radio>
     </form-group>
     <form-group>
       <view class='title'>定义尺寸</view>
-      <radio class='sm' />
+      <radio class='sm'></radio>
     </form-group>
     <form-group>
       <view class='title'>定义样式</view>
-      <radio class='radio' />
+      <radio class='radio'></radio>
     </form-group>
     <form-group>
       <view class='title'>定义颜色</view>
       <view>
-        <radio class='blue radio' />
-        <radio class='red margin-left-sm' />
+        <radio class='blue radio'></radio>
+        <radio class='red margin-left-sm'></radio>
       </view>
     </form-group>
   </radio-group>
@@ -148,11 +148,11 @@
       </view>
       <view class="padding-xs bg-img" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);">
         <tag class="bg-red">
-          <icon class='icon-close'></icon>
+          <text class='icon-close'></text>
         </tag>
       </view>
       <view class="padding-xs solids">
-        <icon class='icon-cameraadd'></icon>
+        <text class='icon-cameraadd'></text>
       </view>
     </view>
   </form-group>

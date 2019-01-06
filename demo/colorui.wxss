@@ -1,6 +1,5 @@
 /*
-  Color UI v2.0.2 | by 文晓港 
-  单位为多种混合(px,rpx,vw,vh,em)
+  Color UI v2.0.3 | by 文晓港 
   仅供学习交流，如作它用所承受的法律责任一概与作者无关   
   （QQ交流群：240787041）
   文档：http://www.color-ui.com/
@@ -12,7 +11,7 @@
 
 page {
   background: #f1f1f1;
-  font-size: 14px;
+  font-size: 28rpx;
   color: #333;
   line-height: 1;
   font-family: Helvetica Neue, Helvetica, sans-serif;
@@ -138,7 +137,7 @@ item, chat, image {
 }
 
 .grid.grid-square {
-  margin-bottom: -10px;
+  margin-bottom: -20rpx;
   overflow: hidden;
 }
 
@@ -146,11 +145,11 @@ item, chat, image {
   position: absolute;
   right: 0;
   top: 0;
-  border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 6rpx;
 }
 
-.grid.grid-square view> icon, .grid.grid-square item> icon {
-  font-size: 26px;
+.grid.grid-square view> text[class*="icon"], .grid.grid-square item> text {
+  font-size: 52rpx;
   position: absolute;
   color: #aaa;
   margin: auto;
@@ -161,9 +160,9 @@ item, chat, image {
 }
 
 .grid.grid-square view, .grid.grid-square item {
-  margin-right: 10px;
-  margin-bottom: 10px;
-  border-radius: 3px;
+  margin-right: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 6rpx;
   position: relative;
   overflow: hidden;
 }
@@ -175,9 +174,9 @@ item, chat, image {
 }
 
 .grid.col-2.grid-square view, .grid.col-2.grid-square item {
-  padding-bottom: calc((100% - 10px)/2);
+  padding-bottom: calc((100% - 20rpx)/2);
   height: 0;
-  width: calc((100% - 10px)/2);
+  width: calc((100% - 20rpx)/2);
 }
 
 .grid.col-2.grid-square view:nth-child(2n),
@@ -186,9 +185,9 @@ item, chat, image {
 }
 
 .grid.col-3.grid-square view, .grid.col-3.grid-square item {
-  padding-bottom: calc((100% - 20px)/3);
+  padding-bottom: calc((100% - 40rpx)/3);
   height: 0;
-  width: calc((100% - 20px)/3);
+  width: calc((100% - 40rpx)/3);
 }
 
 .grid.col-3.grid-square view:nth-child(3n),
@@ -197,9 +196,9 @@ item, chat, image {
 }
 
 .grid.col-4.grid-square view, .grid.col-4.grid-square item {
-  padding-bottom: calc((100% - 30px)/4);
+  padding-bottom: calc((100% - 60rpx)/4);
   height: 0;
-  width: calc((100% - 30px)/4);
+  width: calc((100% - 60rpx)/4);
 }
 
 .grid.col-4.grid-square view:nth-child(4n),
@@ -208,9 +207,9 @@ item, chat, image {
 }
 
 .grid.col-5.grid-square view, .grid.col-5.grid-square item {
-  padding-bottom: calc((100% - 40px)/5);
+  padding-bottom: calc((100% - 80rpx)/5);
   height: 0;
-  width: calc((100% - 40px)/5);
+  width: calc((100% - 80rpx)/5);
 }
 
 .grid.col-1>item, .grid.col-1>view {
@@ -240,153 +239,153 @@ item, chat, image {
 }
 
 .margin-xs {
-  margin: 5px;
+  margin: 10rpx;
 }
 
 .margin-sm {
-  margin: 10px;
+  margin: 20rpx;
 }
 
 .margin {
-  margin: 15px;
+  margin: 30rpx;
 }
 
 .margin-lg {
-  margin: 20px;
+  margin: 40rpx;
 }
 
 .margin-xl {
-  margin: 25px;
+  margin: 50rpx;
 }
 
 .margin-top-xs {
-  margin-top: 5px;
+  margin-top: 10rpx;
 }
 
 .margin-top-sm {
-  margin-top: 10px;
+  margin-top: 20rpx;
 }
 
 .margin-top {
-  margin-top: 15px;
+  margin-top: 30rpx;
 }
 
 .margin-top-lg {
-  margin-top: 20px;
+  margin-top: 40rpx;
 }
 
 .margin-top-xl {
-  margin-top: 25px;
+  margin-top: 50rpx;
 }
 
 .margin-right-xs {
-  margin-right: 5px;
+  margin-right: 10rpx;
 }
 
 .margin-right-sm {
-  margin-right: 10px;
+  margin-right: 20rpx;
 }
 
 .margin-right {
-  margin-right: 15px;
+  margin-right: 30rpx;
 }
 
 .margin-right-lg {
-  margin-right: 20px;
+  margin-right: 40rpx;
 }
 
 .margin-right-xl {
-  margin-right: 25px;
+  margin-right: 50rpx;
 }
 
 .margin-bottom-xs {
-  margin-bottom: 5px;
+  margin-bottom: 10rpx;
 }
 
 .margin-bottom-sm {
-  margin-bottom: 10px;
+  margin-bottom: 20rpx;
 }
 
 .margin-bottom {
-  margin-bottom: 15px;
+  margin-bottom: 30rpx;
 }
 
 .margin-bottom-lg {
-  margin-bottom: 20px;
+  margin-bottom: 40rpx;
 }
 
 .margin-bottom-xl {
-  margin-bottom: 25px;
+  margin-bottom: 50rpx;
 }
 
 .margin-left-xs {
-  margin-left: 5px;
+  margin-left: 10rpx;
 }
 
 .margin-left-sm {
-  margin-left: 10px;
+  margin-left: 20rpx;
 }
 
 .margin-left {
-  margin-left: 15px;
+  margin-left: 30rpx;
 }
 
 .margin-left-lg {
-  margin-left: 20px;
+  margin-left: 40rpx;
 }
 
 .margin-left-xl {
-  margin-left: 25px;
+  margin-left: 50rpx;
 }
 
 .margin-lr-xs {
-  margin-left: 5px;
-  margin-right: 5px;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
 }
 
 .margin-lr-sm {
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
 }
 
 .margin-lr {
-  margin-left: 15px;
-  margin-right: 15px;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
 }
 
 .margin-lr-lg {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 40rpx;
+  margin-right: 40rpx;
 }
 
 .margin-lr-xl {
-  margin-left: 25px;
-  margin-right: 25px;
+  margin-left: 50rpx;
+  margin-right: 50rpx;
 }
 
 .margin-tb-xs {
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
 }
 
 .margin-tb-sm {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
 }
 
 .margin-tb {
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
 }
 
 .margin-tb-lg {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
 }
 
 .margin-tb-xl {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  margin-top: 50rpx;
+  margin-bottom: 50rpx;
 }
 
 .padding-0 {
@@ -394,153 +393,153 @@ item, chat, image {
 }
 
 .padding-xs {
-  padding: 5px;
+  padding: 10rpx;
 }
 
 .padding-sm {
-  padding: 10px;
+  padding: 20rpx;
 }
 
 .padding {
-  padding: 15px;
+  padding: 30rpx;
 }
 
 .padding-lg {
-  padding: 20px;
+  padding: 40rpx;
 }
 
 .padding-xl {
-  padding: 25px;
+  padding: 50rpx;
 }
 
 .padding-top-xs {
-  padding-top: 5px;
+  padding-top: 10rpx;
 }
 
 .padding-top-sm {
-  padding-top: 10px;
+  padding-top: 20rpx;
 }
 
 .padding-top {
-  padding-top: 15px;
+  padding-top: 30rpx;
 }
 
 .padding-top-lg {
-  padding-top: 20px;
+  padding-top: 40rpx;
 }
 
 .padding-top-xl {
-  padding-top: 25px;
+  padding-top: 50rpx;
 }
 
 .padding-right-xs {
-  padding-right: 5px;
+  padding-right: 10rpx;
 }
 
 .padding-right-sm {
-  padding-right: 10px;
+  padding-right: 20rpx;
 }
 
 .padding-right {
-  padding-right: 15px;
+  padding-right: 30rpx;
 }
 
 .padding-right-lg {
-  padding-right: 20px;
+  padding-right: 40rpx;
 }
 
 .padding-right-xl {
-  padding-right: 25px;
+  padding-right: 50rpx;
 }
 
 .padding-bottom-xs {
-  padding-bottom: 5px;
+  padding-bottom: 10rpx;
 }
 
 .padding-bottom-sm {
-  padding-bottom: 10px;
+  padding-bottom: 20rpx;
 }
 
 .padding-bottom {
-  padding-bottom: 15px;
+  padding-bottom: 30rpx;
 }
 
 .padding-bottom-lg {
-  padding-bottom: 20px;
+  padding-bottom: 40rpx;
 }
 
 .padding-bottom-xl {
-  padding-bottom: 25px;
+  padding-bottom: 50rpx;
 }
 
 .padding-left-xs {
-  padding-left: 5px;
+  padding-left: 10rpx;
 }
 
 .padding-left-sm {
-  padding-left: 10px;
+  padding-left: 20rpx;
 }
 
 .padding-left {
-  padding-left: 15px;
+  padding-left: 30rpx;
 }
 
 .padding-left-lg {
-  padding-left: 20px;
+  padding-left: 40rpx;
 }
 
 .padding-left-xl {
-  padding-left: 25px;
+  padding-left: 50rpx;
 }
 
 .padding-lr-xs {
-  padding-left: 5px;
-  padding-right: 5px;
+  padding-left: 10rpx;
+  padding-right: 10rpx;
 }
 
 .padding-lr-sm {
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 20rpx;
+  padding-right: 20rpx;
 }
 
 .padding-lr {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
 }
 
 .padding-lr-lg {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 40rpx;
+  padding-right: 40rpx;
 }
 
 .padding-lr-xl {
-  padding-left: 25px;
-  padding-right: 25px;
+  padding-left: 50rpx;
+  padding-right: 50rpx;
 }
 
 .padding-tb-xs {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
 }
 
 .padding-tb-sm {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
 }
 
 .padding-tb {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
 }
 
 .padding-tb-lg {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40rpx;
+  padding-bottom: 40rpx;
 }
 
 .padding-tb-xl {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 50rpx;
+  padding-bottom: 50rpx;
 }
 
 /* -- 浮动 --  */
@@ -589,13 +588,13 @@ image.loading::after {
   position: absolute;
   top: 0;
   left: 0;
-  width: 16px;
-  height: 16px;
-  line-height: 16px;
+  width: 32rpx;
+  height: 32rpx;
+  line-height: 32rpx;
   right: 0;
   bottom: 0;
   z-index: -1;
-  font-size: 16px;
+  font-size: 32rpx;
   margin: auto;
   color: #ccc;
   -webkit-animation: icon-spin 2s infinite linear;
@@ -615,39 +614,36 @@ switch, checkbox, radio {
   position: relative;
 }
 
-switch::after {
+switch::after, switch::before {
   font-family: "iconfont" !important;
   content: "\e645";
   position: absolute;
   color: #fff;
-  top: 50%;
-  margin-top: -8px;
-  left: 10px;
-  font-size: 16px;
-  line-height: 16px;
+  top: 0%;
+  left: 0rpx;
+  font-size: 32rpx;
+  line-height: 64rpx;
+  width: 64rpx;
+  text-align: center;
   pointer-events: none;
   transform: scale(0, 0);
   transition: all 0.3s ease-in-out 0s;
+  z-index: 9;
+}
+
+switch::before {
+  content: "\e646";
+  right: 0;
+  transform: scale(1, 1);
+  left: auto;
 }
 
 switch[checked]::after {
   transform: scale(1, 1);
 }
 
-switch::before {
-  font-family: "iconfont" !important;
-  content: "\e646";
-  position: absolute;
-  color: #fff;
-  top: 50%;
-  margin-top: -8px;
-  right: 10px;
-  font-size: 16px;
-  line-height: 16px;
-  pointer-events: none;
-  transform: scale(1, 1);
-  transition: all 0.3s ease-in-out 0s;
-  z-index: 9;
+switch[checked]::before {
+  transform: scale(0, 0);
 }
 
 radio::before, checkbox::before {
@@ -656,10 +652,10 @@ radio::before, checkbox::before {
   position: absolute;
   color: #fff;
   top: 50%;
-  margin-top: -8px;
-  right: 5px;
-  font-size: 16px;
-  line-height: 16px;
+  margin-top: -16rpx;
+  right: 10rpx;
+  font-size: 32rpx;
+  line-height: 32rpx;
   pointer-events: none;
   transform: scale(1, 1);
   transition: all 0.3s ease-in-out 0s;
@@ -672,9 +668,30 @@ switch[checked]::before {
 
 switch .wx-switch-input {
   background: #aaa !important;
-  border-color: #aaa;
-  padding: 0 30px;
+  border: none;
+  padding: 0 60rpx;
+  height: 64rpx;
   margin: 0;
+  border-radius: 100rpx;
+}
+
+switch .wx-switch-input::after {
+  margin: auto !important;
+  width: 64rpx !important;
+  height: 64rpx !important;
+  border-radius: 100rpx;
+  left: 0rpx !important;
+  top: 0rpx !important;
+  bottom: 0rpx !important;
+  position: absolute;
+  transform: scale(0.9, 0.9) !important;
+  transition: all 0.1s ease-in-out 0s;
+}
+
+switch .wx-switch-input-checked::after {
+  margin: auto !important;
+  left: 57rpx !important;
+  box-shadow: none !important;
 }
 
 radio-group {
@@ -683,22 +700,17 @@ radio-group {
 
 radio .wx-radio-input, checkbox .wx-checkbox-input {
   margin: 0;
-  width: 24px;
-  height: 24px;
+  width: 48rpx;
+  height: 48rpx;
 }
 
 checkbox.round .wx-checkbox-input {
-  border-radius: 50px;
-}
-
-switch .wx-switch-input-checked::after {
-  margin-left: 10px;
-  box-shadow: none;
+  border-radius: 100rpx;
 }
 
 switch.radius .wx-switch-input::after, switch.radius .wx-switch-input,
 switch.radius .wx-switch-input::before {
-  border-radius: 5px;
+  border-radius: 10rpx;
 }
 
 switch .wx-switch-input::before, radio.radio::before,
@@ -711,16 +723,16 @@ radio.radio[checked]::after {
   background: transparent;
   display: block;
   position: absolute;
-  width: 8px;
-  height: 8px;
+  width: 16rpx;
+  height: 16rpx;
   z-index: 999;
-  top: 0px;
-  left: 0px;
+  top: 0rpx;
+  left: 0rpx;
   right: 0;
   bottom: 0;
   margin: auto;
-  border-radius: 100px;
-  border: 8px solid #fff;
+  border-radius: 200rpx;
+  border: 16rpx solid #fff;
 }
 
 switch.sm, checkbox.sm, radio.sm {
@@ -1041,59 +1053,59 @@ checkbox.white[checked] .wx-checkbox-input, radio.white[checked] .wx-radio-input
 }
 
 button.shadow[class*="-red"] {
-  box-shadow: 3px 3px 4px rgba(204, 69, 59, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(204, 69, 59, 0.2) !important;
 }
 
 button.shadow[class*="-orange"] {
-  box-shadow: 3px 3px 4px rgba(217, 109, 26, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(217, 109, 26, 0.2) !important;
 }
 
 button.shadow[class*="-yellow"] {
-  box-shadow: 3px 3px 4px rgba(224, 170, 7, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(224, 170, 7, 0.2) !important;
 }
 
 button.shadow[class*="-olive"] {
-  box-shadow: 3px 3px 4px rgba(124, 173, 55, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(124, 173, 55, 0.2) !important;
 }
 
 button.shadow[class*="-green"] {
-  box-shadow: 3px 3px 4px rgba(48, 156, 63, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(48, 156, 63, 0.2) !important;
 }
 
 button.shadow[class*="-cyan"] {
-  box-shadow: 3px 3px 4px rgba(28, 187, 180, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(28, 187, 180, 0.2) !important;
 }
 
 button.shadow[class*="-blue"] {
-  box-shadow: 3px 3px 4px rgba(0, 102, 204, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(0, 102, 204, 0.2) !important;
 }
 
 button.shadow[class*="-purple"] {
-  box-shadow: 3px 3px 4px rgba(88, 48, 156, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(88, 48, 156, 0.2) !important;
 }
 
 button.shadow[class*="-mauve"] {
-  box-shadow: 3px 3px 4px rgba(133, 33, 150, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(133, 33, 150, 0.2) !important;
 }
 
 button.shadow[class*="-pink"] {
-  box-shadow: 3px 3px 4px rgba(199, 50, 134, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(199, 50, 134, 0.2) !important;
 }
 
 button.shadow[class*="-brown"] {
-  box-shadow: 3px 3px 4px rgba(140, 88, 53, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(140, 88, 53, 0.2) !important;
 }
 
 button.shadow[class*="-grey"] {
-  box-shadow: 3px 3px 4px rgba(114, 130, 138, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(114, 130, 138, 0.2) !important;
 }
 
 button.shadow[class*="-gray"] {
-  box-shadow: 3px 3px 4px rgba(114, 130, 138, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(114, 130, 138, 0.2) !important;
 }
 
 button.shadow[class*="-black"] {
-  box-shadow: 3px 3px 4px rgba(26, 26, 26, 0.2) !important;
+  box-shadow: 6rpx 6rpx 8rpx rgba(26, 26, 26, 0.2) !important;
 }
 
 .bg-img {
@@ -1151,35 +1163,35 @@ button.shadow[class*="-black"] {
  ==================== */
 
 .text-xs {
-  font-size: 10px;
+  font-size: 20rpx;
 }
 
 .text-sm {
-  font-size: 12px;
+  font-size: 24rpx;
 }
 
 .text-df {
-  font-size: 14px;
+  font-size: 28rpx;
 }
 
 .text-lg {
-  font-size: 16px;
+  font-size: 32rpx;
 }
 
 .text-xl {
-  font-size: 18px;
+  font-size: 36rpx;
 }
 
 .text-xxl {
-  font-size: 22px;
+  font-size: 44rpx;
 }
 
 .text-sl {
-  font-size: 40px;
+  font-size: 80rpx;
 }
 
 .text-xsl {
-  font-size: 60px;
+  font-size: 120rpx;
 }
 
 .text-Abc {
@@ -1197,7 +1209,7 @@ button.shadow[class*="-black"] {
 .text-price::before {
   content: "¥";
   font-size: 80%;
-  margin-right: 2px;
+  margin-right: 4rpx;
 }
 
 .text-cut {
@@ -1316,23 +1328,23 @@ button.shadow[class*="-black"] {
 }
 
 .solid::after {
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1rpx solid rgba(0, 0, 0, 0.1);
 }
 
 .solid-top::after {
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  border-top: 1rpx solid rgba(0, 0, 0, 0.1);
 }
 
 .solid-right::after {
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1rpx solid rgba(0, 0, 0, 0.1);
 }
 
 .solid-bottom::after {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1rpx solid rgba(0, 0, 0, 0.1);
 }
 
 .solid-left::after {
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1rpx solid rgba(0, 0, 0, 0.1);
 }
 
 .solids::after {
@@ -1358,54 +1370,54 @@ button.shadow[class*="-black"] {
 /* -- 虚线 -- */
 
 .dashed::after {
-  border: 1px dashed #ddd;
+  border: 1rpx dashed #ddd;
 }
 
 .dashed-top::after {
-  border-top: 1px dashed #ddd;
+  border-top: 1rpx dashed #ddd;
 }
 
 .dashed-right::after {
-  border-right: 1px dashed #ddd;
+  border-right: 1rpx dashed #ddd;
 }
 
 .dashed-bottom::after {
-  border-bottom: 1px dashed #ddd;
+  border-bottom: 1rpx dashed #ddd;
 }
 
 .dashed-left::after {
-  border-left: 1px dashed #ddd;
+  border-left: 1rpx dashed #ddd;
 }
 
 /* -- 阴影 -- */
 
 .shadow {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.1);
 }
 
 .shadow-lg {
-  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.07);
+  box-shadow: 0rpx 40rpx 100rpx 0rpx rgba(0, 0, 0, 0.07);
 }
 
 .shadow-warp {
   position: relative;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10rpx rgba(0, 0, 0, 0.1);
 }
 
 .shadow-warp:before, .shadow-warp:after {
   position: absolute;
   content: "";
-  top: 10px;
-  bottom: 15px;
-  left: 10px;
+  top: 20rpx;
+  bottom: 30rpx;
+  left: 20rpx;
   width: 50%;
-  box-shadow: 0 15px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 30rpx 20rpx rgba(0, 0, 0, 0.2);
   transform: rotate(-3deg);
   z-index: -1;
 }
 
 .shadow-warp:after {
-  right: 10px;
+  right: 20rpx;
   left: auto;
   transform: rotate(3deg);
 }
@@ -1418,12 +1430,12 @@ button.shadow[class*="-black"] {
   content: "";
   display: block;
   background: inherit;
-  filter: blur(5px);
+  filter: blur(10rpx);
   position: absolute;
   width: 100%;
   height: 100%;
-  top: 5px;
-  left: 5px;
+  top: 10rpx;
+  left: 10rpx;
   z-index: -1;
   opacity: 0.4;
   transform-origin: 0 0;
@@ -1435,12 +1447,12 @@ button.shadow[class*="-black"] {
           按钮
  ==================== */
 
-.round, button.icon {
-  border-radius: 5000px !important;
+.round, button.text {
+  border-radius: 5000rpx !important;
 }
 
 .radius {
-  border-radius: 3px !important;
+  border-radius: 6rpx !important;
 }
 
 button {
@@ -1449,17 +1461,17 @@ button {
   align-items: center;
   justify-content: center;
   box-sizing: border-box;
-  padding: 10px 15px 8px;
-  font-size: 14px;
+  padding: 20rpx 30rpx 16rpx;
+  font-size: 28rpx;
   line-height: 1;
   text-align: center;
   text-decoration: none;
-  border-radius: 3px;
+  border-radius: 6rpx;
   overflow: visible;
   color: #666;
   background-color: #fff !important;
   margin-left: initial;
-  transform: translate(0px, 0px);
+  transform: translate(0rpx, 0rpx);
   margin-right: initial;
 }
 
@@ -1480,15 +1492,15 @@ button::after, tag[class*="line-"]::after {
 }
 
 button[class*="line"]::after, tag.radius[class*="line"]::after {
-  border-radius: 6px;
+  border-radius: 12rpx;
 }
 
 button.round[class*="line"]::after, tag.round[class*="line"]::after {
-  border-radius: 500px;
+  border-radius: 1000rpx;
 }
 
 button[class*="lines"]::after {
-  border: 3px solid rgba(0, 0, 0, 0.2);
+  border: 6rpx solid rgba(0, 0, 0, 0.2);
 }
 
 button[class*="bg-"]::after {
@@ -1496,40 +1508,40 @@ button[class*="bg-"]::after {
 }
 
 button.sm {
-  padding: 7px 10px 5px;
-  font-size: 12px;
+  padding: 14rpx 20rpx 10rpx;
+  font-size: 24rpx;
 }
 
 button.lg {
-  padding: 16px 20px 14px;
-  font-size: 16px;
+  padding: 32rpx 40rpx 28rpx;
+  font-size: 32rpx;
 }
 
 button.icon.sm {
-  width: 28px;
-  height: 28px;
+  width: 56rpx;
+  height: 56rpx;
 }
 
-button.icon {
-  width: 35px;
-  height: 35px;
+button.text {
+  width: 70rpx;
+  height: 70rpx;
   padding: 0;
 }
 
 button.icon.lg {
-  width: 41px;
-  height: 41px;
+  width: 80rpx;
+  height: 80rpx;
 }
 
 button.shadow-blur::before {
-  top: 2px;
-  left: 2px;
-  filter: blur(3px);
+  top: 4rpx;
+  left: 4rpx;
+  filter: blur(6rpx);
   opacity: 0.6;
 }
 
 button.button-hover {
-  transform: translate(1px, 1px);
+  transform: translate(1rpx, 1rpx);
 }
 
 .block {
@@ -1550,7 +1562,7 @@ button[disabled] {
  ==================== */
 
 tag {
-  font-size: 12px;
+  font-size: 24rpx;
   color: #666;
   vertical-align: middle;
   position: relative;
@@ -1558,7 +1570,7 @@ tag {
   align-items: stretch;
   justify-content: center;
   box-sizing: border-box;
-  padding: 6px 7px 5px;
+  padding: 12rpx 14rpx 10rpx;
   line-height: 1;
   background: #fff;
   font-family: Helvetica Neue, Helvetica, sans-serif;
@@ -1569,12 +1581,12 @@ tag[class*="line-"]::after {
 }
 
 tag+tag {
-  margin-left: 5px;
+  margin-left: 10rpx;
 }
 
 tag.sm {
-  font-size: 10px;
-  padding: 5px 6px 3px;
+  font-size: 20rpx;
+  padding: 10rpx 12rpx 6rpx;
 }
 
 capsule {
@@ -1583,7 +1595,7 @@ capsule {
 }
 
 capsule + capsule {
-  margin-left: 5px;
+  margin-left: 10rpx;
 }
 
 capsule tag {
@@ -1591,50 +1603,50 @@ capsule tag {
 }
 
 capsule tag[class*="line-"]:last-child::after {
-  border-left: 0px solid transparent !important;
+  border-left: 0rpx solid transparent !important;
 }
 
 capsule tag[class*="line-"]:first-child::after {
-  border-right: 0px solid transparent !important;
+  border-right: 0rpx solid transparent !important;
 }
 
 capsule.radius tag:first-child {
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
+  border-top-left-radius: 6rpx;
+  border-bottom-left-radius: 6rpx;
 }
 
 capsule.radius tag:last-child::after, capsule.radius tag[class*="line-"] {
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
+  border-top-right-radius: 12rpx;
+  border-bottom-right-radius: 12rpx;
 }
 
 capsule.round tag:first-child {
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
-  text-indent: 2px;
+  border-top-left-radius: 200rpx;
+  border-bottom-left-radius: 200rpx;
+  text-indent: 4rpx;
 }
 
 capsule.round tag:last-child::after, capsule.round tag:last-child {
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
-  text-indent: -2px;
+  border-top-right-radius: 200rpx;
+  border-bottom-right-radius: 200rpx;
+  text-indent: -4rpx;
 }
 
 tag.badge {
   background: #dd514c;
-  border-radius: 100px;
+  border-radius: 200rpx;
   position: absolute;
-  top: -5px;
-  right: -5px;
-  font-size: 10px;
-  padding: 3px 5px 2px;
+  top: -10rpx;
+  right: -10rpx;
+  font-size: 20rpx;
+  padding: 6rpx 10rpx 4rpx;
   color: #fff;
 }
 
 tag:empty {
-  padding: 4px;
-  top: -2px;
-  right: -2px;
+  padding: 8rpx;
+  top: -4rpx;
+  right: -4rpx;
 }
 
 /* ==================
@@ -1651,9 +1663,9 @@ avatar {
   color: #fff;
   white-space: nowrap;
   position: relative;
-  width: 32px;
-  height: 32px;
-  line-height: 32px;
+  width: 64rpx;
+  height: 64rpx;
+  line-height: 64rpx;
   background-size: cover;
   background-position: center;
   vertical-align: middle;
@@ -1668,12 +1680,12 @@ avatar text {
 }
 
 avatar.sm {
-  width: 24px;
-  height: 24px;
-  line-height: 24px;
+  width: 48rpx;
+  height: 48rpx;
+  line-height: 48rpx;
 }
 
-avatar > icon {
+avatar > text {
   position: absolute;
   left: 50%;
   top: 0;
@@ -1683,46 +1695,46 @@ avatar > icon {
   transform: scale(1.2) translateX(-50%);
 }
 
-avatar.sm > icon {
+avatar.sm > text {
   transform: scale(0.75) translateX(-50%);
 }
 
-avatar.lg > icon {
+avatar.lg > text {
   transform: scale(1.75) translateX(-50%);
 }
 
-avatar.xl > icon {
+avatar.xl > text {
   transform: scale(2.2) translateX(-50%);
 }
 
 avatar.lg {
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
+  width: 90rpx;
+  height: 90rpx;
+  line-height: 90rpx;
 }
 
 avatar.xl {
-  width: 64px;
-  height: 64px;
-  line-height: 64px;
+  width: 128rpx;
+  height: 128rpx;
+  line-height: 128rpx;
 }
 
 avatar-group {
   direction: rtl;
   unicode-bidi: bidi-override;
-  padding: 0 5px 0 20px;
+  padding: 0 10rpx 0 40rpx;
   display: inline-block;
 }
 
 avatar-group avatar {
-  margin-left: -15px;
-  border: 2px solid #f1f1f1;
+  margin-left: -30rpx;
+  border: 4rpx solid #f1f1f1;
   vertical-align: middle;
 }
 
 avatar-group avatar.sm {
-  margin-left: -10px;
-  border: 1px solid #f1f1f1;
+  margin-left: -20rpx;
+  border: 1rpx solid #f1f1f1;
 }
 
 /* ==================
@@ -1731,7 +1743,7 @@ avatar-group avatar.sm {
 
 progress-bar {
   overflow: hidden;
-  height: 14px;
+  height: 28rpx;
   background-color: #ebeef5;
   display: inline-flex;
   align-items: center;
@@ -1743,11 +1755,11 @@ progress-bar+view, progress-bar+text {
 }
 
 progress-bar.xs {
-  height: 5px;
+  height: 10rpx;
 }
 
 progress-bar.sm {
-  height: 10px;
+  height: 20rpx;
 }
 
 progress-bar view {
@@ -1757,7 +1769,7 @@ progress-bar view {
   display: flex;
   justify-items: flex-end;
   justify-content: space-around;
-  font-size: 10px;
+  font-size: 20rpx;
   color: #fff;
   background: #0081ff;
   transition: width 0.6s ease;
@@ -1766,18 +1778,18 @@ progress-bar view {
 progress-bar text {
   align-items: center;
   display: flex;
-  font-size: 10px;
+  font-size: 20rpx;
   color: #666;
-  text-indent: 5px;
+  text-indent: 10rpx;
 }
 
 progress-bar.text-progress {
-  padding-right: 30px;
+  padding-right: 60rpx;
 }
 
 progress-bar.striped view {
   background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
-  background-size: 36px 36px;
+  background-size: 72rpx 72rpx;
 }
 
 progress-bar.active view {
@@ -1786,7 +1798,7 @@ progress-bar.active view {
 
 @keyframes progress-bar-stripes {
   from {
-    background-position: 36px 0;
+    background-position: 72rpx 0;
   }
 
   to {
@@ -1807,7 +1819,7 @@ load {
 load::before {
   font-family: "iconfont" !important;
   display: inline-block;
-  margin-right: 3px;
+  margin-right: 6rpx;
 }
 
 load.loading::before {
@@ -1836,7 +1848,7 @@ load.erro::after {
 }
 
 load.load-icon::before {
-  font-size: 16px;
+  font-size: 32rpx;
 }
 
 load.load-icon::after {
@@ -1845,6 +1857,119 @@ load.load-icon::after {
 
 load.load-icon.over {
   display: none;
+}
+
+load.load-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 140rpx;
+  left: 0;
+  margin: auto;
+  width: 260rpx;
+  height: 260rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  box-shadow: 0 0 0rpx 2000rpx rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 28rpx;
+  z-index: 9999;
+  line-height: 2.4em;
+}
+
+load.load-modal [class*="icon"]{
+  font-size: 60rpx;
+}
+load.load-modal image{
+  width: 70rpx;
+  height: 70rpx;
+}
+
+load.load-modal::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  border-radius: 50%;
+  width: 200rpx;
+  height: 200rpx;
+  font-size: 10px;
+  border-top: 6rpx solid rgba(0, 0, 0, 0.05);
+  border-right: 6rpx solid rgba(0, 0, 0, 0.05);
+  border-bottom: 6rpx solid rgba(0, 0, 0, 0.05);
+  border-left: 6rpx solid #f37b1d;
+  animation: icon-spin 1s infinite linear;
+  z-index: -1;
+}
+
+.load-progress {
+  pointer-events: none;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  left: 0;  
+  z-index: 2000;
+}
+.load-progress.hide {
+  display: none;
+}
+
+.load-progress .load-progress-bar {
+  position: relative;
+  width: 100%;
+  height: 4rpx;
+  overflow: hidden;
+  transition: all 200ms ease 0s;
+}
+
+
+.load-progress .load-progress-spinner {
+  position: absolute;
+  top: 10rpx;
+  right: 10rpx;
+  z-index: 2000;
+  display: block;
+}
+
+.load-progress .load-progress-spinner::after {
+  content: "";
+  display: block;
+  width: 24rpx;
+  height: 24rpx;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: solid 4rpx transparent;
+  border-top-color: inherit;
+  border-left-color: inherit;
+  border-radius: 50%;
+  -webkit-animation: load-progress-spinner 0.4s linear infinite;
+  animation: load-progress-spinner 0.4s linear infinite;
+}
+
+@-webkit-keyframes load-progress-spinner {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes load-progress-spinner {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 /* ==================
@@ -1856,7 +1981,7 @@ load.load-icon.over {
 }
 
 list.menu {
-  padding: 0 15px;
+  padding: 0 30rpx;
   background: #fff;
   display: block;
 }
@@ -1866,22 +1991,20 @@ list.menu.no-padding {
 }
 
 list.menu+list.menu {
-  margin-top: 15px;
+  margin-top: 30rpx;
 }
 
 list+list {
-  margin-top: 15px;
+  margin-top: 30rpx;
 }
 
 list.menu>item {
   position: relative;
-  line-height: 18px;
-  font-size: 16px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #eee;
-  min-height: 50px;
+  border-bottom: 1rpx solid #eee;
+  min-height: 100rpx;
 }
 
 list.menu>item.cur {
@@ -1893,44 +2016,48 @@ list.menu>item:last-child {
 }
 
 list.menu.no-padding>item {
-  padding: 15px;
+  padding: 30rpx;
 }
 
 list.menu-avatar.no-padding>item {
-  padding-left: 70px;
+  padding-left: 140rpx;
 }
 
 list.menu-avatar.no-padding>item avatar {
-  left: 15px;
+  left: 30rpx;
 }
 
 list.menu.no-padding>item.arrow {
-  padding-right: 33px;
+  padding-right: 66rpx;
 }
 
 list.menu>item .content {
   line-height: 1.6em;
-  flex: 1;
+  flex: 1;  
+  font-size: 30rpx;
 }
 
 list.menu>item button.content {
   padding: 0;
   justify-content: flex-start;
-  font-size: 16px;
 }
 
 list.menu>item button.content::after {
   display: none;
 }
 
-list.menu>item .content>text[class*="icon"], list.menu>item .content>image,
-list.menu>item .content>icon {
-  margin-right: 5px;
+list.menu>item .content>text[class*="icon"]{
+  margin-right: 10rpx;
   display: inline-block;
-  width: 1.4em;
+  width: 1.6em;
+  text-align: center
+}
+ list.menu>item .content>image {
+  margin-right: 10rpx;
+  display: inline-block;
+  width: 1.6em;
   height: 1.6em;
   vertical-align: middle;
-  text-align: center;
 }
 
 list.menu>item .action {
@@ -1942,11 +2069,11 @@ list>item.grayscale {
 }
 
 list.menu>item .action tag:empty {
-  right: 5px;
+  right: 10rpx;
 }
 
 list.menu>item.arrow {
-  padding-right: 18px;
+  padding-right: 36rpx;
 }
 
 list.menu>item.arrow::after {
@@ -1954,20 +2081,20 @@ list.menu>item.arrow::after {
   display: block;
   content: "\e6a3";
   position: absolute;
-  font-size: 17px;
+  font-size: 34rpx;
   color: #aaa;
-  line-height: 15px;
-  height: 15px;
-  width: 15px;
+  line-height: 30rpx;
+  height: 30rpx;
+  width: 30rpx;
   text-align: center;
-  top: 1px;
+  top: 1rpx;
   bottom: 0;
   right: 0;
   margin: auto;
 }
 
 list.menu.no-padding>item.arrow::after {
-  right: 15px;
+  right: 30rpx;
 }
 
 list.menu>item avatar-group avatar {
@@ -1975,9 +2102,9 @@ list.menu>item avatar-group avatar {
 }
 
 list.card-menu {
-  margin-left: 15px;
-  margin-right: 15px;
-  border-radius: 10px;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 20rpx;
   overflow: hidden;
 }
 
@@ -1987,15 +2114,15 @@ list.menu-avatar>item>avatar {
 }
 
 list.menu-avatar>item {
-  padding-left: 55px;
-  height: 70px;
+  padding-left: 110rpx;
+  height: 140rpx;
 }
 
 list.menu>item .content tag.sm {
-  font-size: 8px;
+  font-size: 16rpx;
   line-height: 80%;
-  padding: 4px 3px 2px;
-  margin-top: -3px;
+  padding: 8rpx 6rpx 4rpx;
+  margin-top: -6rpx;
 }
 
 list.grid {
@@ -2008,58 +2135,58 @@ list.grid>item {
   flex-direction: column;
   border-right: 1rpx solid #eee;
   border-bottom: 1rpx solid #eee;
-  padding: 10px;
+  padding: 20rpx;
 }
 
-list.grid>item icon {
+list.grid>item text[class*="icon"] {
   display: block;
   width: 100%;
   position: relative;
-  font-size: 24px;
-  margin-top: 10px;
+  font-size: 48rpx;
+  margin-top: 20rpx;
 }
 
 list.grid>item text {
   display: block;
   color: #888;
-  margin-top: 5px;
-  line-height: 20px;
-  font-size: 13px;
+  margin-top: 10rpx;
+  line-height: 40rpx;
+  font-size: 26rpx;
 }
 
 list.grid>item tag {
   left: 50%;
   right: auto;
-  margin-left: 10px;
+  margin-left: 20rpx;
 }
 
 list.grid.col-3>item:nth-child(3n) {
-  border-right: 0px;
+  border-right: 0rpx;
 }
 
 list.grid.col-4>item:nth-child(4n) {
-  border-right: 0px;
+  border-right: 0rpx;
 }
 
 list.grid.col-5>item:nth-child(5n) {
-  border-right: 0px;
+  border-right: 0rpx;
 }
 
 list.grid.no-border {
-  padding: 10px 5px;
+  padding: 20rpx 10rpx;
 }
 
 list.grid.no-border>item {
   border: none !important;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
 }
 
 list.menu-avatar.comment > item {
   height: auto;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 45px;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  padding-left: 90rpx;
 }
 
 list.menu-avatar.comment  avatar {
@@ -2075,9 +2202,8 @@ bar {
   position: relative;
   align-items: center;
   background: #fff;
-  height: 50px;
+  height: 100rpx;
   justify-content: space-between;
-  font-size: 16px;
 }
 
 bar .action {
@@ -2089,38 +2215,33 @@ bar .action {
 }
 
 bar .action:first-child {
-  margin-left: 15px;
-  font-size: 15px;
+  margin-left: 30rpx;
+  font-size: 30rpx;
 }
 
-bar .action:first-child text {
-  display: inline-block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
+bar .action text.text-cut {
   text-align: left;
   width: 100%;
 }
 
 bar avatar:first-child {
-  margin-left: 10px;
+  margin-left: 20rpx;
 }
 
-bar .action:first-child >icon[class*="icon"] {
-  margin-left: -0.5em;
+bar .action:first-child >text[class*="icon"] {
+  margin-left: -0.3em;
+  margin-right: 0.3em;
 }
 
 bar .action:last-child {
-  margin-right: 15px;
+  margin-right: 30rpx;
 }
 
-bar .action>icon[class*="icon"] {
-  font-size: 18px;
-  height: 100%;
-  width: 1.4em;
+bar .action>text[class*="icon"] {
+  font-size: 36rpx;
 }
 
-bar .action>icon[class*="icon"]+icon[class*="icon"] {
+bar .action>text[class*="icon"]+text[class*="icon"] {
   margin-left: 0.5em;
 }
 
@@ -2130,11 +2251,11 @@ bar .content {
   width: 400rpx;
   left: 0;
   right: 0;
-  bottom: 8px;
+  bottom: 16rpx;
   margin: auto;
-  height: 30px;
-  font-size: 18px;
-  line-height: 30px;
+  height: 60rpx;
+  font-size: 36rpx;
+  line-height: 60rpx;
   cursor: none;
   pointer-events: none;
   text-overflow: ellipsis;
@@ -2147,54 +2268,49 @@ bar.btn-group {
 }
 
 bar.btn-group button {
-  padding: 10px 16px;
+  padding: 20rpx 32rpx;
 }
 
 bar.btn-group button {
   flex: 1;
-  margin: 0 10px;
+  margin: 0 20rpx;
   max-width: 50%;
 }
 
-bar .serach-form {
+bar .search-form {
   background: #f5f5f5;
-  line-height: 32px;
-  height: 32px;
-  font-size: 12px;
+  line-height: 64rpx;
+  height: 64rpx;
+  font-size: 24rpx;
   color: #666;
   flex: 1;
   display: flex;
   align-items: center;
-  margin: 0 10px;
+  margin: 0 20rpx;
 }
 
-bar .serach-form +.action {
-  margin-right: 10px;
+bar .search-form +.action {
+  margin-right: 20rpx;
 }
 
-bar .serach-form +.action text+icon {
-  margin-right: -0.5em;
-}
-
-bar .serach-form input {
+bar .search-form input {
   flex: 1;
-  padding-right: 10px;
-  height: 32px;
-  line-height: 32px;
-  font-size: 13px;
+  padding-right: 20rpx;
+  height: 128rpx;
+  line-height: 128rpx;
+  font-size: 26rpx;
 }
 
-bar .serach-form [class*="icon"] {
-  width: 2em;
-  height: auto;
+bar .search-form [class*="icon"] {
+  margin: 0 0.5em;
 }
 
-bar .serach-form.round [class*="icon"] {
+bar .search-form.round [class*="icon"] {
   margin-left: 0.5em;
 }
 
-bar .serach-form [class*="icon"]::before {
-  top: 0px;
+bar .search-form [class*="icon"]::before {
+  top: 0rpx;
 }
 
 bar.fixed, .nav.fixed {
@@ -2202,7 +2318,7 @@ bar.fixed, .nav.fixed {
   width: 100%;
   top: 0;
   z-index: 1024;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1rpx 6rpx rgba(0, 0, 0, 0.1);
 }
 
 bar.foot {
@@ -2210,7 +2326,7 @@ bar.foot {
   width: 100%;
   bottom: 0;
   z-index: 1024;
-  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 -1rpx 6rpx rgba(0, 0, 0, 0.1);
 }
 
 bar.shop {
@@ -2218,23 +2334,28 @@ bar.shop {
 }
 
 bar.shop .action {
-  font-size: 12px;
+  font-size: 24rpx;
   position: relative;
   flex: 1;
   text-align: center;
-  padding: 0 10px;
+  padding: 0 20rpx;
   display: block;
   height: auto !important;
   line-height: 1;
   margin: 0 !important;
 }
 
+bar.shop button.action::after {
+  border: 0;
+}
+
 bar.shop [class*="icon"] {
-  width: 50px !important;
+  width: 100rpx !important;
   position: relative;
   display: block;
   height: auto !important;
-  margin: 0 auto 5px !important;
+  margin: 0 auto 10rpx !important;
+  text-align: center;
 }
 
 bar.shop .submit {
@@ -2256,16 +2377,16 @@ bar.shop .submit+.submit {
 }
 
 bar.shop .submit button {
-  margin-left: 10px;
+  margin-left: 20rpx;
 }
 
 bar.shop .submit:last-child button {
-  margin-left: 0px;
+  margin-left: 0rpx;
 }
 
 bar.shop .submit+.submit button {
-  margin-left: 0px;
-  margin-right: 10px;
+  margin-left: 0rpx;
+  margin-right: 20rpx;
 }
 
 bar.shop .action::after {
@@ -2277,38 +2398,38 @@ bar.shop .action::after {
   left: 0;
   transform: scale(0.5);
   transform-origin: 0 0;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-right: 1rpx solid rgba(0, 0, 0, 0.1) !important;
 }
 
 bar.input {
-  padding-right: 10px;
+  padding-right: 20rpx;
 }
 
 bar.input input {
   overflow: initial;
-  line-height: 32px;
-  height: 32px;
-  min-height: 32px;
+  line-height: 64rpx;
+  height: 64rpx;
+  min-height: 64rpx;
   flex: 1;
-  font-size: 15px;
-  margin: 0 10px;
+  font-size: 30rpx;
+  margin: 0 20rpx;
 }
 
 bar.input .action {
-  margin-left: 10px;
+  margin-left: 20rpx;
 }
 
 bar.input .action [class*="icon"] {
-  font-size: 24px;
+  font-size: 48rpx;
 }
 
 bar.input input+.action {
-  margin-right: 10px;
-  margin-left: 0px;
+  margin-right: 20rpx;
+  margin-left: 0rpx;
 }
 
 bar.input .action:first-child [class*="icon"] {
-  margin-left: 0px;
+  margin-left: 0rpx;
 }
 
 custom {
@@ -2317,8 +2438,8 @@ custom {
 }
 
 custom bar {
-  padding-right: 110px;
-  box-shadow: 0px 0px 0px !important;
+  padding-right: 220rpx;
+  box-shadow: 0rpx 0rpx 0rpx !important;
 }
 
 /* ==================
@@ -2334,15 +2455,15 @@ custom bar {
 }
 
 .nav item {
-  height: 45px;
+  height: 90rpx;
   display: inline-block;
-  line-height: 45px;
-  margin: 0 5px;
-  padding: 0 10px;
+  line-height: 90rpx;
+  margin: 0 10rpx;
+  padding: 0 20rpx;
 }
 
 .nav item.cur {
-  border-bottom: 2px solid;
+  border-bottom: 4rpx solid;
 }
 
 /* ==================
@@ -2355,16 +2476,16 @@ timeline {
 }
 
 timeline time {
-  width: 60px;
+  width: 120rpx;
   text-align: center;
-  padding: 10px 0;
-  font-size: 13px;
+  padding: 20rpx 0;
+  font-size: 26rpx;
   color: #888;
   display: block;
 }
 
 timeline>item {
-  padding: 15px 15px 15px 60px;
+  padding: 30rpx 30rpx 30rpx 120rpx;
   position: relative;
   display: block;
   color: #ccc;
@@ -2377,7 +2498,7 @@ timeline>item::after {
   position: absolute;
   width: 1rpx;
   background: #ddd;
-  left: 30px;
+  left: 60rpx;
   height: 100%;
   top: 0;
   z-index: 8;
@@ -2388,38 +2509,38 @@ timeline>item::before {
   content: "\e763";
   display: block;
   position: absolute;
-  top: 18px;
+  top: 36rpx;
   z-index: 9;
   background: #fff;
-  width: 25px;
-  height: 25px;
+  width: 50rpx;
+  height: 50rpx;
   text-align: center;
   border: none;
-  line-height: 25px;
-  left: 18px;
+  line-height: 50rpx;
+  left: 36rpx;
 }
 
 timeline>item[class*="icon"]::before {
   background: #fff;
-  width: 25px;
-  height: 25px;
+  width: 50rpx;
+  height: 50rpx;
   text-align: center;
   border: none;
-  line-height: 25px;
-  left: 18px;
+  line-height: 50rpx;
+  left: 36rpx;
 }
 
 timeline>item>.content {
   background: #f1f1f1;
-  padding: 15px;
-  border-radius: 3px;
+  padding: 30rpx;
+  border-radius: 6rpx;
   display: block;
   color: #666;
   line-height: 1.6;
 }
 
 timeline>item>.content+.content {
-  margin-top: 10px;
+  margin-top: 20rpx;
 }
 
 /* ==================
@@ -2433,59 +2554,59 @@ chat {
 
 chat item {
   display: flex;
-  padding: 15px 15px 35px;
+  padding: 30rpx 30rpx 70rpx;
   position: relative;
 }
 
 chat item>avatar {
-  width: 40px;
-  height: 40px;
+  width: 80rpx;
+  height: 80rpx;
 }
 
 chat item>.main {
-  max-width: calc(100% - 130px);
-  margin: 0 20px;
+  max-width: calc(100% - 260rpx);
+  margin: 0 40rpx;
   display: flex;
   align-items: center;
 }
 
 chat item>image {
-  height: 160px;
+  height: 320rpx;
 }
 
 chat item>.main .content {
   background: #fff;
-  padding: 10px;
-  border-radius: 3px;
+  padding: 20rpx;
+  border-radius: 6rpx;
   display: inline-flex;
   max-width: 100%;
   align-items: center;
   color: #666;
-  font-size: 15px;
+  font-size: 30rpx;
   position: relative;
-  min-height: 40px;
-  line-height: 20px;
+  min-height: 80rpx;
+  line-height: 40rpx;
   text-align: left;
 }
 
 chat item .date {
   position: absolute;
-  font-size: 12px;
+  font-size: 24rpx;
   color: #aaa;
-  width: calc(100% - 160px);
-  bottom: 10px;
-  left: 80px;
+  width: calc(100% - 320rpx);
+  bottom: 20rpx;
+  left: 160rpx;
 }
 
 chat item .action {
-  padding: 0 15px;
+  padding: 0 30rpx;
   display: flex;
   align-items: center;
 }
 
 chat item>.main .content::after {
   content: "";
-  top: 12px;
+  top: 24rpx;
   transform: rotate(180deg);
   position: absolute;
   z-index: 100;
@@ -2493,14 +2614,14 @@ chat item>.main .content::after {
   width: 0;
   height: 0;
   vertical-align: middle;
-  border-bottom: 8px solid transparent;
-  border-top: 8px solid transparent;
+  border-bottom: 16rpx solid transparent;
+  border-top: 16rpx solid transparent;
   overflow: hidden;
   border-right-color: #fff;
-  border-left: 8px solid #333;
+  border-left: 16rpx solid #333;
   border-right: 0 dotted;
   border-left-color: #fff;
-  left: -7px;
+  left: -14rpx;
   right: initial;
 }
 
@@ -2511,8 +2632,8 @@ chat item.self {
 
 chat item.self>.main .content::after {
   left: auto;
-  right: -7px;
-  border-right: 8px solid #fff;
+  right: -14rpx;
+  border-right: 16rpx solid #fff;
   border-left: 0 dotted;
 }
 
@@ -2522,11 +2643,11 @@ chat item.self>.main .bg-green.content::after {
 
 chat info {
   display: inline-block;
-  margin: 10px auto;
-  font-size: 12px;
-  padding: 4px 6px;
+  margin: 20rpx auto;
+  font-size: 24rpx;
+  padding: 8rpx 12rpx;
   background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
+  border-radius: 6rpx;
   color: #fff;
   max-width: 400rpx;
   line-height: 1.4;
@@ -2545,8 +2666,8 @@ card > item {
   display: block;
   background: #fff;
   overflow: hidden;
-  border-radius: 5px;
-  margin: 15px;
+  border-radius: 10rpx;
+  margin: 30rpx;
 }
 
 card > item.shadow-blur {
@@ -2554,8 +2675,8 @@ card > item.shadow-blur {
 }
 
 card.no-card > item {
-  margin: 0px;
-  border-radius: 0px;
+  margin: 0rpx;
+  border-radius: 0rpx;
 }
 
 card.case .image {
@@ -2577,16 +2698,16 @@ card.case .image bar {
   bottom: 0;
   width: 100%;
   background-color: transparent;
-  padding: 0px 15px;
+  padding: 0rpx 30rpx;
   word-wrap: normal;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
 
 card.case.no-card .image {
-  margin: 15px 15px 0;
+  margin: 30rpx 30rpx 0;
   overflow: hidden;
-  border-radius: 5px;
+  border-radius: 10rpx;
 }
 
 card.dynamic {
@@ -2600,30 +2721,30 @@ card.dynamic>item {
 }
 
 card.dynamic>item > .text-content {
-  padding: 0 15px 0;
+  padding: 0 30rpx 0;
   max-height: 6.4em;
   overflow: hidden;
-  font-size: 15px;
-  margin-bottom: 10px;
+  font-size: 30rpx;
+  margin-bottom: 20rpx;
 }
 
 card.dynamic>item .square-img {
   width: 100%;
-  height: 100px;
-  border-radius: 3px;
+  height: 200rpx;
+  border-radius: 6rpx;
 }
 
 card.dynamic>item .only-img {
   width: 100%;
-  height: 160px;
-  border-radius: 3px;
+  height: 320rpx;
+  border-radius: 6rpx;
 }
 
 /* card.dynamic>item .comment {
-  padding: 10px;
+  padding: 20rpx;
   background: #f1f1f1;
-  margin: 0 15px 15px;
-  border-radius: 3px;
+  margin: 0 30rpx 30rpx;
+  border-radius: 6rpx;
 } */
 
 card.article {
@@ -2631,42 +2752,41 @@ card.article {
 }
 
 card.article>item {
-  padding-bottom: 15px;
+  padding-bottom: 30rpx;
 }
 
 card.article>item .title {
-  font-size: 15px;
+  font-size: 30rpx;
   font-weight: 900;
   word-wrap: normal;
   text-overflow: ellipsis;
   white-space: nowrap;
   color: #333;
-  line-height: 50px;
-  padding: 0 15px;
+  line-height: 100rpx;
+  padding: 0 30rpx;
 }
 
 card.article>item .content {
   display: flex;
-  padding: 0 15px;
+  padding: 0 30rpx;
 }
 
 card.article>item .content > image {
-  width: 120px;
+  width: 240rpx;
   height: 6.4em;
-  margin-right: 10px;
-  border-radius: 3px;
+  margin-right: 20rpx;
+  border-radius: 6rpx;
 }
 
 card.article>item .content .desc {
   flex: 1;
-  width: 500rpx;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 card.article>item .content .text-content {
-  font-size: 14px;
+  font-size: 28rpx;
   color: #888;
   height: 4.8em;
   overflow: hidden;
@@ -2678,7 +2798,7 @@ card.article>item .content .text-content {
 
 form-group {
   background: #fff;
-  padding: 0 15px;
+  padding: 0 30rpx;
   display: flex;
   align-items: center;
   min-height: 100rpx;
@@ -2691,11 +2811,11 @@ form-group + form-group {
 
 form-group .title {
   text-align: justify;
-  padding-right: 15px;
-  font-size: 15px;
+  padding-right: 30rpx;
+  font-size: 30rpx;
   position: relative;
-  height: 30px;
-  line-height: 30px;
+  height: 60rpx;
+  line-height: 60rpx;
 }
 
 form-group.top {
@@ -2704,24 +2824,24 @@ form-group.top {
 
 form-group input {
   flex: 1;
-  font-size: 15px;
+  font-size: 30rpx;
   color: #555;
-  padding-right: 10px;
+  padding-right: 20rpx;
 }
 
-form-group > icon[class*="icon-"] {
-  font-size: 18px;
+form-group > text[class*="icon"] {
+  font-size: 36rpx;
   padding: 0;
   box-sizing: border-box;
 }
 
 form-group textarea, form-group textarea textarea {
-  margin: 16px 0 15px;
+  margin: 32rpx 0 30rpx;
   height: 4.8em;
   width: 100%;
   line-height: 1.2em;
   flex: 1;
-  font-size: 14px;
+  font-size: 28rpx;
   padding: 0;
   box-sizing: content-box;
   display: inline-block;
@@ -2734,19 +2854,19 @@ form-group textarea::after {
 }
 
 form-group .grid-square {
-  margin: 15px 0 0 !important;
+  margin: 30rpx 0 0 !important;
 }
 
 form-group picker {
   flex: 1;
-  padding-right: 20px;
+  padding-right: 40rpx;
   overflow: hidden;
   position: relative;
 }
 
 form-group picker .picker {
-  line-height: 50px;
-  font-size: 14px;
+  line-height: 100rpx;
+  font-size: 28rpx;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
@@ -2759,14 +2879,14 @@ form-group picker::after {
   display: block;
   content: "\e6a3";
   position: absolute;
-  font-size: 17px;
+  font-size: 34rpx;
   color: #aaa;
-  line-height: 50px;
-  width: 30px;
+  line-height: 100rpx;
+  width: 60rpx;
   text-align: center;
   top: 0;
   bottom: 0;
-  right: -10px;
+  right: -20rpx;
   margin: auto;
 }
 
@@ -2791,7 +2911,7 @@ modal-box {
   -ms-transform: scale(1.185);
   transform: scale(1.185);
   backface-visibility: hidden;
-  perspective: 1000px;
+  perspective: 2000rpx;
   background: rgba(0, 0, 0, 0.6);
   transition: all 0.6s ease-in-out 0;
   pointer-events: none;
@@ -2837,7 +2957,7 @@ modal-box.bottom-modal dialog {
 }
 
 modal-box.bottom-modal {
-  margin-bottom: -500px;
+  margin-bottom: -1000rpx;
 }
 
 modal-box.bottom-modal.show {
@@ -2851,22 +2971,22 @@ modal-box.bottom-modal.show {
 swiper.square-dot .wx-swiper-dot {
   background: #fff;
   opacity: 0.4;
-  width: 5px !important;
-  height: 5px !important;
-  border-radius: 10px !important;
+  width: 10rpx !important;
+  height: 10rpx !important;
+  border-radius: 20rpx !important;
   transition: all 0.3s ease-in-out 0s !important;
 }
 
 swiper.square-dot .wx-swiper-dot.wx-swiper-dot-active {
   opacity: 1;
-  width: 15px !important;
+  width: 30rpx !important;
 }
 
 swiper.round-dot .wx-swiper-dot {
   /* background: #39b54a; */
-  width: 5px !important;
-  height: 5px !important;
-  top: -2px !important;
+  width: 10rpx !important;
+  height: 10rpx !important;
+  top: -4rpx !important;
   transition: all 0.3s ease-in-out 0s !important;
   position: relative;
 }
@@ -2874,21 +2994,21 @@ swiper.round-dot .wx-swiper-dot {
 swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active::after {
   content: "";
   position: absolute;
-  width: 5px;
-  height: 5px;
-  top: 0px;
-  left: 0px;
+  width: 10rpx;
+  height: 10rpx;
+  top: 0rpx;
+  left: 0rpx;
   right: 0;
   bottom: 0;
   margin: auto;
   background: #fff;
-  border-radius: 10px;
+  border-radius: 20rpx;
 }
 
 swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
-  width: 9px !important;
-  height: 9px !important;
-  top: 0px !important;
+  width: 18rpx !important;
+  height: 18rpx !important;
+  top: 0rpx !important;
 }
 
 .screen-swiper {
@@ -2910,7 +3030,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
   width: 610rpx !important;
   left: 70rpx !important;
   box-sizing: border-box;
-  padding: 20px 0px 35px;
+  padding: 40rpx 0rpx 70rpx;
   overflow: initial !important;
 }
 
@@ -2918,7 +3038,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
   width: 100%;
   display: block;
   height: 100%;
-  border-radius: 5px;
+  border-radius: 10rpx;
   transform: scale(0.9);
   transition: all 0.2s ease-in 0s;
 }
@@ -2939,11 +3059,12 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
   height: 380rpx;
   top: 0;
   bottom: 0;
-  left:50%;
+  left: 50%;
   margin: auto;
   transition: all 0.3s ease-in 0s;
   opacity: 1;
 }
+
 .tower-swiper .tower-item.none {
   opacity: 0;
 }
@@ -2951,5 +3072,5 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 .tower-swiper .tower-item .bg-img {
   width: 100%;
   height: 100%;
-  border-radius: 3px;
+  border-radius: 6rpx;
 }

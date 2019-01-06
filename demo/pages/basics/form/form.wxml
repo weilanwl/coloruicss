@@ -1,61 +1,58 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back'/>
+      <text class='icon-back'></text>
       表单控件
     </navigator>
-    <view class='action'>
-
-    </view>
   </bar>
 </custom>
 <view class='text-center'>
   <view class="padding-xl ">
     <checkbox class=''></checkbox>
     <radio-group>
-      <radio class='' checked name="sex" />
-      <radio class='blue sm' name="sex" />
+      <radio class='' checked name="sex"></radio>
+      <radio class='blue sm' name="sex"></radio>
     </radio-group>
   </view>
   <view class="padding-xl ">
-    <switch class='' />
+    <switch class=''></switch>
     <radio-group>
-      <radio class='red radio' checked name="sex" />
-      <radio class='blue radio' name="sex" />
+      <radio class='red radio' checked name="sex"></radio>
+      <radio class='blue radio' name="sex"></radio>
     </radio-group>
     <checkbox class='blue'></checkbox>
     <checkbox class='cyan round'></checkbox>
   </view>
   <view class="padding-xl ">
-    <switch class=' sm' />
+    <switch class=' sm'></switch>
     <radio-group>
-      <radio class='red radio sm' checked name="sex" />
-      <radio class='blue radio sm' name="sex" />
+      <radio class='red radio sm' checked name="sex"></radio>
+      <radio class='blue radio sm' name="sex"></radio>
     </radio-group>
     <checkbox class='red sm'></checkbox>    
     <checkbox class='cyan round sm'></checkbox>
   </view>
   <view class="padding-xl ">
-    <switch class='switch-sex' checked/>
-    <switch class='switch-sex sm' />
+    <switch class='switch-sex' checked></switch>
+    <switch class='switch-sex sm'></switch>
   </view>
   <view class="padding-xl ">
-    <switch class='red' checked/>
-    <switch class='blue sm' checked/>
+    <switch class='red' checked></switch>
+    <switch class='blue sm' checked></switch>
   </view>
   <view class="padding-xl ">
-    <switch class='' checked/>
-    <switch class=' sm' checked/>
+    <switch class='' checked></switch>
+    <switch class=' sm' checked></switch>
   </view>
   <view class="padding-xl ">
-    <switch class='' />
-    <switch class=' sm' />
+    <switch class=''></switch>
+    <switch class=' sm'></switch>
   </view>
   <view class="padding-xl ">
-    <switch class='orange sm radius' />
-    <switch class='yellow radius' />
+    <switch class='orange sm radius'></switch>
+    <switch class='yellow radius'></switch>
   </view>
   <view class="padding-xl ">
-    <switch class='blue radius' />
+    <switch class='blue radius'></switch>
   </view>
 </view>

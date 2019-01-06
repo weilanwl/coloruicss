@@ -1,7 +1,7 @@
 <custom style="height:{{CustomBar}}px;">
     <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
         <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-            <icon class='icon-back'/>
+            <text class='icon-back'></text>
             图片
         </navigator>
         <view class='action'>

@@ -1,7 +1,7 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 按钮 / 设计
+      <text class='icon-back'></text> 按钮 / 设计
     </navigator>
   </bar>
 </custom>
@@ -24,15 +24,15 @@
   <view class='title'>选择尺寸</view>
   <radio-group bindchange='SetSize'>
     <label class='margin-left-sm'>
-      <radio class='blue sm radio' value='sm' />
+      <radio class='blue sm radio' value='sm'></radio>
       <text> 小</text>
     </label>
     <label class='margin-left-sm'>
-      <radio class='blue sm radio' value='' checked/>
+      <radio class='blue sm radio' value='' checked></radio>
       <text> 中</text>
     </label>
     <label class='margin-left-sm'>
-      <radio class='blue sm radio' value='lg' />
+      <radio class='blue sm radio' value='lg'></radio>
       <text> 大</text>
     </label>
   </radio-group>
@@ -49,11 +49,11 @@
   <view class='title'>边框大小</view>
    <radio-group bindchange='SetBorderSize'>
     <label class='margin-left-sm'>
-      <radio class='blue sm radio' value='' checked/>
+      <radio class='blue sm radio' value='' checked></radio>
       <text> 小</text>
     </label>
     <label class='margin-left-sm'>
-      <radio class='blue sm radio' value='s' />
+      <radio class='blue sm radio' value='s'></radio>
       <text> 大</text>
     </label>
   </radio-group>
@@ -69,7 +69,7 @@
     <bar class="justify-end">
       <view class='content'>选择颜色</view>
       <view class='action' bindtap='hideModal'>
-        <icon class='icon-close text-red'></icon>
+        <text class='icon-close text-red'></text>
       </view>
     </bar>
     <view class='grid col-5 padding'>

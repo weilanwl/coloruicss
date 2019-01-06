@@ -1,7 +1,7 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed none-bg text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;background-image:url(https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg);">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 微动画
+      <text class='icon-back'></text> 微动画
     </navigator>
   </bar>
 </custom>

@@ -1,13 +1,13 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 卡片
+      <text class='icon-back'></text> 卡片
     </navigator>
   </bar>
 </custom>
 <bar class="solid-bottom">
   <view class='action'>
-    <icon class='icon-titles text-orange ' /> 案例类卡片
+    <text class='icon-titles text-orange '></text> 案例类卡片
   </view>
   <view class='action'>
     <switch class='sm' checked='{{isCard}}' bindchange='isCard'></switch>
@@ -28,9 +28,9 @@
           <view class='text-gray text-sm flex justify-between'>
             十天前
             <view class="text-gray text-sm">
-              <icon class="icon-attentionfill" /> 10
-              <icon class="icon-appreciatefill" /> 20
-              <icon class="icon-messagefill" /> 30
+              <text class="icon-attentionfill"></text> 10
+              <text class="icon-appreciatefill"></text> 20
+              <text class="icon-messagefill"></text> 30
             </view>
           </view>
         </view>
@@ -40,7 +40,7 @@
 </card>
 <bar class="solid-bottom {{isCard?'margin-top':''}}">
   <view class='action'>
-    <icon class='icon-titles text-orange ' /> 动态类卡片
+    <text class='icon-titles text-orange '></text> 动态类卡片
   </view>
   <view class='action'>
     <switch class='sm' checked='{{isCard}}' bindchange='isCard'></switch>
@@ -67,9 +67,9 @@
       </view>
     </view>
     <view class='text-gray text-sm text-right padding'>
-      <icon class="icon-attentionfill" /> 10
-      <icon class="icon-appreciatefill" /> 20
-      <icon class="icon-messagefill" /> 30
+      <text class="icon-attentionfill"></text> 10
+      <text class="icon-appreciatefill"></text> 20
+      <text class="icon-messagefill"></text> 30
     </view>
     <list class="menu menu-avatar comment solids-top">
       <item wx:for="{{2}}" wx:key>
@@ -88,8 +88,8 @@
           <view class='margin-top-sm flex justify-between'>
             <view class='text-gray text-df'>2018年12月4日</view>
             <view>
-              <icon class="icon-appreciate{{!isZan?'fill':''}} text-{{!isZan?'red':'gray'}}" />
-              <icon class="icon-messagefill text-gray margin-left-sm" />
+              <text class="icon-appreciate{{!isZan?'fill':''}} text-{{!isZan?'red':'gray'}}"></text>
+              <text class="icon-messagefill text-gray margin-left-sm"></text>
             </view>
           </view>
         </view>
@@ -100,7 +100,7 @@
 
 <bar class="solid-bottom margin-top">
   <view class='action'>
-    <icon class='icon-titles text-orange ' /> 文章类卡片
+    <text class='icon-titles text-orange '></text> 文章类卡片
   </view>
   <view class='action'>
     <switch class='sm' checked='{{isCard}}' bindchange='isCard'></switch>

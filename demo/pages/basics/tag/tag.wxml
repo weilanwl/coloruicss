@@ -1,14 +1,14 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 标签
+      <text class='icon-back'></text> 标签
     </navigator>
   </bar>
 </custom>
 
 <bar>
   <view class='action'>
-    <icon class='icon-title text-blue' />标签形状
+    <text class='icon-title text-blue'></text>标签形状
   </view>
 </bar>
 <view class="padding">
@@ -19,7 +19,7 @@
 
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />标签尺寸
+    <text class='icon-title text-blue'></text>标签尺寸
   </view>
 </bar>
 <view class="padding">
@@ -28,7 +28,7 @@
 </view>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />标签颜色
+    <text class='icon-title text-blue'></text>标签颜色
   </view>
 </bar>
 <view class='padding-sm flex flex-wrap'>
@@ -41,7 +41,7 @@
 </view>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />镂空标签
+    <text class='icon-title text-blue'></text>镂空标签
   </view>
 </bar>
 <view class='padding-sm flex flex-wrap'>
@@ -51,13 +51,13 @@
 </view>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />胶囊样式
+    <text class='icon-title text-blue'></text>胶囊样式
   </view>
 </bar>
 <view class="padding">
   <capsule>
     <tag class='bg-red'>
-      <icon class='icon-likefill' />
+      <text class='icon-likefill'></text>
     </tag>
     <tag class="line-red">
       12
@@ -65,7 +65,7 @@
   </capsule>
   <capsule class="round">
     <tag class='bg-blue '>
-      <icon class='icon-likefill' />
+      <text class='icon-likefill'></text>
     </tag>
     <tag class="line-blue">
       23
@@ -81,7 +81,7 @@
   </capsule>
   <capsule class="radius">
     <tag class='bg-grey '>
-      <icon class='icon-likefill' />
+      <text class='icon-likefill'></text>
     </tag>
     <tag class="line-grey">
       23
@@ -89,7 +89,7 @@
   </capsule>
   <capsule class="radius">
     <tag class='bg-brown sm'>
-      <icon class='icon-likefill' />
+      <text class='icon-likefill'></text>
     </tag>
     <tag class="line-brown sm">
       23
@@ -98,7 +98,7 @@
 </view>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />数字标签
+    <text class='icon-title text-blue'></text>数字标签
   </view>
 </bar>
 <view class="padding flex justify-between align-center">
@@ -111,7 +111,7 @@
   </avatar>
   <avatar class='xl radius'>
     <tag class='badge'>99</tag>
-    <icon class='icon-people' />
+    <text class='icon-people'></text>
   </avatar>
   <avatar class='xl radius'>
     <tag class='badge'>99+</tag>

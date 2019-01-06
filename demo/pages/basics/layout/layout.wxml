@@ -1,7 +1,7 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 布局
+      <text class='icon-back'></text> 布局
     </navigator>
   </bar>
 </custom>
@@ -13,7 +13,7 @@
 <block wx:if="{{TabCur==0}}">
   <bar class="solid-bottom margin-top">
     <view class='action'>
-      <icon class='icon-title text-blue' />固定尺寸
+      <text class='icon-title text-blue'></text>固定尺寸
     </view>
   </bar>
   <view class="padding bg-white">
@@ -29,7 +29,7 @@
   </view>
   <bar class="margin-top solid-bottom">
     <view class='action'>
-      <icon class='icon-title text-blue' />比例布局
+      <text class='icon-title text-blue'></text>比例布局
     </view>
   </bar>
   <view class="padding bg-white">
@@ -49,7 +49,7 @@
   </view>
   <bar class="margin-top solid-bottom">
     <view class='action'>
-      <icon class='icon-title text-blue' />水平对齐(justify)
+      <text class='icon-title text-blue'></text>水平对齐(justify)
     </view>
   </bar>
   <view class="bg-white">
@@ -76,7 +76,7 @@
   </view>
   <bar class="margin-top solid-bottom">
     <view class='action'>
-      <icon class='icon-title text-blue' />垂直对齐(align)
+      <text class='icon-title text-blue'></text>垂直对齐(align)
     </view>
   </bar>
   <view class="bg-white">
@@ -97,7 +97,7 @@
 <block wx:if="{{TabCur==1}}">
   <bar class="margin-top solid-bottom">
     <view class='action'>
-      <icon class='icon-title text-blue' />等分列
+      <text class='icon-title text-blue'></text>等分列
     </view>
     <view class='action'></view>
   </bar>
@@ -108,7 +108,7 @@
   </view>
   <bar class="margin-top solid-bottom">
     <view class='action'>
-      <icon class='icon-title text-blue' />等高
+      <text class='icon-title text-blue'></text>等高
     </view>
     <view class='action'></view>
   </bar>
@@ -121,7 +121,7 @@
 <block wx:if="{{TabCur==2}}">
   <bar class="margin-top solid-bottom">
     <view class='action'>
-      <icon class='icon-title text-blue' />浮动
+      <text class='icon-title text-blue'></text>浮动
     </view>
   </bar>
   <view class="bg-white padding">
@@ -134,7 +134,7 @@
 <block wx:if="{{TabCur==3}}">
   <bar class="margin-top solid-bottom">
     <view class='action'>
-      <icon class='icon-title text-blue' />内外边距
+      <text class='icon-title text-blue'></text>内外边距
     </view>
   </bar>
   <view class="bg-white">

@@ -1,14 +1,14 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 模态窗口
+      <text class='icon-back'></text> 模态窗口
     </navigator>
   </bar>
 </custom>
 
 <bar class="">
   <view class='action'>
-    <icon class='icon-titles text-orange ' /> 模态窗口
+    <text class='icon-titles text-orange '></text> 模态窗口
   </view>
   <view class='action'>
     <button class='bg-green shadow' bindtap="showModal" data-target="Modal">Modal</button>
@@ -19,7 +19,7 @@
     <bar class="justify-end">
       <view class='content'>Modal标题</view>
       <view class='action' bindtap='hideModal'>
-        <icon class='icon-close text-red'></icon>
+        <text class='icon-close text-red'></text>
       </view>
     </bar>
     <view class='padding-xl'>
@@ -30,7 +30,7 @@
 
 <bar class=" margin-top">
   <view class='action'>
-    <icon class='icon-titles text-orange ' /> 底部窗口
+    <text class='icon-titles text-orange '></text> 底部窗口
   </view>
   <view class='action'>
     <button class='bg-green shadow' bindtap="showModal" data-target="bottomModal">Bottom</button>
@@ -50,7 +50,7 @@
 
 <bar class=" margin-top">
   <view class='action'>
-    <icon class='icon-titles text-orange ' /> 对话窗口
+    <text class='icon-titles text-orange '></text> 对话窗口
   </view>
   <view class='action'>
     <button class='bg-green shadow' bindtap="showModal" data-target="DialogModal1">Dialog</button>
@@ -62,7 +62,7 @@
     <bar class="justify-end">
       <view class='content'>Modal标题</view>
       <view class='action' bindtap='hideModal'>
-        <icon class='icon-close text-red'></icon>
+        <text class='icon-close text-red'></text>
       </view>
     </bar>
     <view class='padding-xl'>
@@ -83,7 +83,7 @@
     <bar class="justify-end">
       <view class='content'>Modal标题</view>
       <view class='action' bindtap='hideModal'>
-        <icon class='icon-close text-red'></icon>
+        <text class='icon-close text-red'></text>
       </view>
     </bar>
     <view class='padding-xl'>
@@ -91,7 +91,7 @@
     </view>
     <bar>
       <view class='action margin-0 flex-sub text-green ' bindtap='hideModal'>
-        <icon class='icon-moneybag'></icon>微信支付</view>
+        <text class='icon-moneybag'></text>微信支付</view>
       <view class='action margin-0 flex-sub text-green solid-left' bindtap='hideModal'>取消</view>
       <view class='action margin-0 flex-sub  solid-left' bindtap='hideModal'>确定</view>
     </bar>
@@ -100,7 +100,7 @@
 
 <bar class=" margin-top">
   <view class='action'>
-    <icon class='icon-titles text-orange ' /> 图片窗口
+    <text class='icon-titles text-orange '></text> 图片窗口
   </view>
   <view class='action'>
     <button class='bg-green shadow' bindtap="showModal" data-target="Image">Image</button>
@@ -112,7 +112,7 @@
     <view class="bg-img" style="background-image: url('https://albedo-theme.com/wp-content/uploads/2016/08/pexels-photo-26180.jpg');height:200px;">
       <bar class="justify-end none-bg text-white">
         <view class='action' bindtap='hideModal'>
-          <icon class='icon-close '></icon>
+          <text class='icon-close '></text>
         </view>
       </bar>
     </view>

@@ -1,31 +1,61 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 加载
+      <text class='icon-back'></text> 加载
     </navigator>
     <view class='action'>
-      <load class="load-icon {{!isLoad?'loading':'over'}}"></load>
+      <load class="load-text {{!isLoad?'loading':'over'}}"></load>
     </view>
   </bar>
 </custom>
 <bar>
   <view class='action'>
-    <icon class='icon-title text-blue'/>背景
+    <text class='icon-title text-blue'></text>背景
   </view>
 </bar>
 <load class="bg-blue {{!isLoad?'loading':'over'}}"></load>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue'/>加载状态
+    <text class='icon-title text-blue'></text>加载状态
   </view>
   <view class='action'>
-  <switch class='sm' bindchange='isLoading'></switch>
+    <switch class='sm' bindchange='isLoading'></switch>
   </view>
 </bar>
 <load class="bg-grey {{!isLoad?'loading':'over'}}"></load>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue'/>加载错误
+    <text class='icon-title text-blue'></text>加载错误
   </view>
 </bar>
 <load class="bg-red erro"></load>
+
+<bar class="margin-top">
+  <view class='action'>
+    <text class='icon-title text-blue'></text>弹框加载
+  </view>
+  <view class='action'>
+    <button class='bg-green shadow' bindtap='loadModal'>
+      点我
+    </button>
+  </view>
+</bar>
+<load class='load-modal' wx:if="{{loadModal}}"> 
+    <!-- <view class='icon-emojifill text-orange'></view> -->
+    <image src='/images/logo.png' class='png' mode='aspectFit'></image>
+    <view class='gray-text'>加载中...</view>
+</load>
+<bar class="margin-top">
+  <view class='action'>
+    <text class='icon-title text-blue'></text>进度条加载
+  </view>
+  <view class='action'>
+    <button class='bg-green shadow' bindtap='loadProgress'>
+      点我
+    </button>
+  </view>
+</bar>
+<view class='load-progress {{loadProgress!=0?"show":"hide"}}' style="top:{{CustomBar}}px;">
+  <view class='load-progress-bar bg-green' style="transform: translate3d(-{{100-loadProgress}}%, 0px, 0px);"></view>
+  <view class='load-progress-spinner text-green'></view>
+</view>

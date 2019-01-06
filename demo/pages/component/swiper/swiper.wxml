@@ -1,13 +1,13 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 轮播图
+      <text class='icon-back'></text> 轮播图
     </navigator>
   </bar>
 </custom>
 <bar>
   <view class='action'>
-    <icon class='icon-title text-pink' /> 全屏限高轮播
+    <text class='icon-title text-pink'></text> 全屏限高轮播
   </view>
   <view class='action'>
     <switch class='sm' bindchange='DotStyle'></switch>
@@ -15,12 +15,12 @@
 </bar>
 <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
   <swiper-item wx:for="{{4}}" wx:key>
-    <image src="https://image.weilanwl.com/img/4x3-{{index+1}}.jpg" mode='aspectFill' />
+    <image src="https://image.weilanwl.com/img/4x3-{{index+1}}.jpg" mode='aspectFill'></image>
   </swiper-item>
 </swiper>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-pink' /> 卡片式轮播
+    <text class='icon-title text-pink'></text> 卡片式轮播
   </view>
 </bar>
 <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
@@ -31,7 +31,7 @@
 
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-pink' /> 堆叠式轮播
+    <text class='icon-title text-pink'></text> 堆叠式轮播
   </view>
 </bar>
 <view class="tower-swiper" bindtouchmove="towerMove" bindtouchstart="towerStart" bindtouchend="towerEnd">

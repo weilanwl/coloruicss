@@ -27,31 +27,6 @@
     font-style: normal;
 }
 
-icon {
-    height: 1em;
-    width: 1.4em;
-    vertical-align: middle;
-    position: relative;
-}
-
-icon[class*="icon-"]::after {
-    content: "正";
-    opacity: 0;
-}
-
-icon[class*="icon-"]::before {
-    position: absolute;
-    display: block;
-    text-align: center;
-    top: 0px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 1em;
-    margin: auto;
-    line-height: 1em;
-}
-
 @font-face {font-family: "iconfont";
   src: url('//at.alicdn.com/t/font_533566_yfq2d9wdij.eot?t=1545239985831'); /* IE9*/
   src: url('//at.alicdn.com/t/font_533566_yfq2d9wdij.eot?t=1545239985831#iefix') format('embedded-opentype'), /* IE6-IE8 */

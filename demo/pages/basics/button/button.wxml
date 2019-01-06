@@ -1,29 +1,29 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 按钮
+      <text class='icon-back'></text> 按钮
     </navigator>
     <navigator class='action' url='design' hover-class="none">
-      <icon class='icon-skinfill' />
+      <text class='icon-skinfill'></text>
       <text class="text-df">设计</text>
     </navigator>
   </bar>
 </custom>
 <bar>
   <view class='action'>
-    <icon class='icon-title text-blue' />按钮形状
+    <text class='icon-title text-blue'></text>按钮形状
   </view>
 </bar>
 <view class="padding flex flex-wrap justify-between align-center">
   <button>默认</button>
   <button class='round'>圆角</button>
   <button class='icon'>
-    <icon class='icon-emojifill' />
+    <text class='icon-emojifill'></text>
   </button>
 </view>
 <bar class="margin-top ">
   <view class='action'>
-    <icon class='icon-title text-blue' />按钮尺寸
+    <text class='icon-title text-blue'></text>按钮尺寸
   </view>
 </bar>
 <view class="padding flex flex-wrap justify-between align-center">
@@ -33,7 +33,7 @@
 </view>
 <bar class="margin-top ">
   <view class='action'>
-    <icon class='icon-title text-blue' />按钮颜色
+    <text class='icon-title text-blue'></text>按钮颜色
   </view>
   <view class='action'>
     <text class='text-df'>阴影</text>
@@ -47,16 +47,16 @@
 </view>
 <bar class="margin-top ">
   <view class='action'>
-    <icon class='icon-title text-blue' />镂空按钮
+    <text class='icon-title text-blue'></text>镂空按钮
   </view>
   <view class='action'>
     <radio-group bindchange='SetBorderSize'>
       <label class='margin-left-sm'>
-        <radio class='blue sm radio' value='' checked/>
+        <radio class='blue sm radio' value='' checked></radio>
         <text> 小</text>
       </label>
       <label class='margin-left-sm'>
-        <radio class='blue sm radio' value='s' />
+        <radio class='blue sm radio' value='s'></radio>
         <text> 大</text>
       </label>
     </radio-group>
@@ -69,7 +69,7 @@
 </view>
 <bar class="margin-top ">
   <view class='action'>
-    <icon class='icon-title text-blue' />块状按钮
+    <text class='icon-title text-blue'></text>块状按钮
   </view>
 </bar>
 <view class="padding flex flex-direction">
@@ -78,7 +78,7 @@
 </view>
 <bar class="margin-top ">
   <view class='action'>
-    <icon class='icon-title text-blue' />无效状态
+    <text class='icon-title text-blue'></text>无效状态
   </view>
 </bar>
 <view class="padding">
@@ -87,13 +87,13 @@
 </view>
 <bar class="margin-top ">
   <view class='action'>
-    <icon class='icon-title text-blue' />按钮加图标
+    <text class='icon-title text-blue'></text>按钮加图标
   </view>
 </bar>
 <view class="padding-xl">
   <button class='block line-orange lg'>
-    <icon class='icon-upload' /> 图标</button>
+    <text class='icon-upload'></text> 图标</button>
   <button class='block bg-blue margin-tb-sm lg'>
-    <icon class='icon-loading2 iconfont-spin' /> 加载</button>
+    <text class='icon-loading2 iconfont-spin'></text> 加载</button>
   <button class='block bg-black margin-tb-sm lg' loading> 微信加载</button>
 </view>

@@ -1,13 +1,13 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 边框阴影
+      <text class='icon-back'></text> 边框阴影
     </navigator>
   </bar>
 </custom>
 <bar class="solid-bottom">
   <view class='action'>
-    <icon class='icon-title text-blue' />边框
+    <text class='icon-title text-blue'></text>边框
   </view>  
   <view class='action'>
    <switch class='sm' bindchange='SetSize'></switch>
@@ -22,7 +22,7 @@
 </view>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />阴影
+    <text class='icon-title text-blue'></text>阴影
   </view>
 </bar>
 <view class="padding text-center">

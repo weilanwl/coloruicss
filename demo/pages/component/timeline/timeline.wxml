@@ -1,7 +1,7 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back'/>
+      <text class='icon-back'></text>
       时间轴
     </navigator>
   </bar>
@@ -61,7 +61,7 @@
           <view class='content'>
             <view class='text-grey'>文晓港</view>
             <view class='text-gray text-sm'>
-              <icon class='icon-infofill text-red'/> 消息未送达</view>
+              <text class='icon-infofill text-red'></text> 消息未送达</view>
           </view>
           <view class='action'>
             <view class='text-grey text-xs'>22:20</view>
@@ -77,11 +77,11 @@
               <tag class="round orange sm">SVIP</tag>
             </view>
             <view class='text-gray text-sm'>
-              <icon class='icon-redpacket_fill text-red'/> 收到红包</view>
+              <text class='icon-redpacket_fill text-red'></text> 收到红包</view>
           </view>
           <view class='action'>
             <view class='text-grey text-xs'>22:20</view>
-            <icon class='icon-notice_forbid_fill text-gray'/>
+            <text class='icon-notice_forbid_fill text-gray'></text>
           </view>
         </item>
       </list>

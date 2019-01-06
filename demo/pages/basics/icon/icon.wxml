@@ -1,22 +1,19 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back'/> 图标
+      <text class='icon-back'></text> 图标
     </navigator>
-    <view class='action'>
-
-    </view>
   </bar>
 </custom>
 <bar class="search fixed" style="top:{{CustomBar}}px">
-  <view class='serach-form round'>
-    <icon class="icon-search"/>
-    <input type="text" placeholder="搜索icon" confirm-type="search" bindinput='searchIcon'/>
+  <view class='search-form round'>
+    <text class="icon-search"></text>
+    <input type="text" placeholder="搜索icon" confirm-type="search" bindinput='searchIcon'></input>
   </view>
 </bar>
 <list class="grid col-3">
   <item wx:for="{{icon}}" wx:key wx:if="{{item.isShow}}">
-    <icon class='icon-{{item.name}} lg text-gray'/>
+    <text class='icon-{{item.name}} lg text-gray'></text>
     <text>{{item.name}}</text>
   </item>
 </list>

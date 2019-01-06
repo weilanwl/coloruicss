@@ -1,13 +1,13 @@
 <custom style="height:{{CustomBar}}px;">
   <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <icon class='icon-back' /> 头像
+      <text class='icon-back'></text> 头像
     </navigator>
   </bar>
 </custom>
 <bar>
   <view class='action'>
-    <icon class='icon-title text-blue' />头像形状
+    <text class='icon-title text-blue'></text>头像形状
   </view>
 </bar>
 <view class="padding">
@@ -16,7 +16,7 @@
 </view>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />头像尺寸
+    <text class='icon-title text-blue'></text>头像尺寸
   </view>
 </bar>
 <view class="padding">
@@ -27,12 +27,12 @@
 </view>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />内嵌文字(图标)
+    <text class='icon-title text-blue'></text>内嵌文字(图标)
   </view>
 </bar>
 <view class="padding">
   <avatar class="radius">
-    <icon class='icon-people' />
+    <text class='icon-people'></text>
   </avatar>
   <avatar class="radius  margin-left">
     <text>港</text>
@@ -41,7 +41,7 @@
 
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />头像颜色
+    <text class='icon-title text-blue'></text>头像颜色
   </view>
 </bar>
 <view class="padding-sm">
@@ -51,7 +51,7 @@
 </view>
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />头像组
+    <text class='icon-title text-blue'></text>头像组
   </view>
 </bar>
 <view class='padding'>
@@ -62,7 +62,7 @@
 
 <bar class="margin-top">
   <view class='action'>
-    <icon class='icon-title text-blue' />头像标签
+    <text class='icon-title text-blue'></text>头像标签
   </view>
 </bar>
 <view class='padding'>

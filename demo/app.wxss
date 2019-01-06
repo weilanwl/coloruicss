@@ -1,5 +1,5 @@
 @import "icon.wxss";
-@import "colorui-rpx.wxss";
+@import "colorui.wxss";
 @import "/pages/plugin/animation/animation.wxss";
 
 .nav-list {
@@ -89,7 +89,7 @@
   margin-right: 1px;
 }
 
-.nav-li icon {
+.nav-li text {
   position: absolute;
   right: 30rpx;
   top: 30rpx;
