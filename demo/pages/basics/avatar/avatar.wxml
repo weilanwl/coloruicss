@@ -10,8 +10,8 @@
     <text class='icon-title text-blue'></text>头像形状
   </view>
 </bar>
-<view class="padding">
-  <avatar class="round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></avatar>
+<view class="padding">	
+  <avatar class="round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></avatar>	
   <avatar class="radius margin-left" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></avatar>
 </view>
 <bar class="margin-top">
@@ -24,6 +24,18 @@
   <avatar class="round margin-left" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></avatar>
   <avatar class="lg round margin-left" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
   <avatar class="xl round margin-left" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);"></avatar>
+</view>
+<view class="padding">
+  <avatar class="sm round margin-left bg-red" > orange</avatar>
+  <avatar class="round margin-left bg-red" >orange</avatar>
+  <avatar class="lg round margin-left bg-red" >orange</avatar>
+  <avatar class="xl round margin-left bg-red" >orange</avatar>
+</view>
+<view class="padding">
+  <avatar class="sm round margin-left bg-red" > 蔚蓝</avatar>
+  <avatar class="round margin-left bg-red" >蔚蓝</avatar>
+  <avatar class="lg round margin-left bg-red" >蔚蓝</avatar>
+  <avatar class="xl round margin-left bg-red" >蔚蓝</avatar>
 </view>
 <bar class="margin-top">
   <view class='action'>

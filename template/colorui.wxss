@@ -148,7 +148,7 @@ item, chat, image {
   border-bottom-left-radius: 6rpx;
 }
 
-.grid.grid-square view> text[class*="icon"], .grid.grid-square item> text {
+.grid.grid-square view> text[class*="icon"], .grid.grid-square item> text[class*="icon"] {
   font-size: 52rpx;
   position: absolute;
   color: #aaa;
@@ -157,6 +157,10 @@ item, chat, image {
   bottom: 0;
   left: 0;
   right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .grid.grid-square view, .grid.grid-square item {
@@ -1669,23 +1673,30 @@ avatar {
   background-size: cover;
   background-position: center;
   vertical-align: middle;
+  font-size: 0rpx;
 }
-
+avatar::first-letter ,avatar text::first-letter{
+  font-size: 40rpx;
+}
 avatar text {
   position: absolute;
   left: 50%;
   display: inline-block;
   transform-origin: 0 center;
-  transform: scale(0.75) translateX(-50%);
+  transform: scale(1) translateX(-50%);
+  font-size: inherit;
 }
+
 
 avatar.sm {
   width: 48rpx;
   height: 48rpx;
   line-height: 48rpx;
 }
-
-avatar > text {
+avatar.sm::first-letter ,avatar.sm text::first-letter{
+  font-size: 30rpx;
+}
+avatar > text[class*="icon"] {
   position: absolute;
   left: 50%;
   top: 0;
@@ -1695,15 +1706,15 @@ avatar > text {
   transform: scale(1.2) translateX(-50%);
 }
 
-avatar.sm > text {
+avatar.sm > text[class*="icon"] {
   transform: scale(0.75) translateX(-50%);
 }
 
-avatar.lg > text {
+avatar.lg > text[class*="icon"] {
   transform: scale(1.75) translateX(-50%);
 }
 
-avatar.xl > text {
+avatar.xl > text[class*="icon"] {
   transform: scale(2.2) translateX(-50%);
 }
 
@@ -1711,14 +1722,20 @@ avatar.lg {
   width: 90rpx;
   height: 90rpx;
   line-height: 90rpx;
+  font-size: 22rpx;
 }
-
+avatar.lg::first-letter ,avatar.lg text::first-letter{
+  font-size: 36rpx;
+}
 avatar.xl {
   width: 128rpx;
   height: 128rpx;
   line-height: 128rpx;
+  font-size: 24rpx;
 }
-
+avatar.xl::first-letter ,avatar.xl text::first-letter{
+  font-size: 40rpx;
+}
 avatar-group {
   direction: rtl;
   unicode-bidi: bidi-override;
@@ -2239,6 +2256,10 @@ bar .action:last-child {
 
 bar .action>text[class*="icon"] {
   font-size: 36rpx;
+}
+
+bar .action>text[class*="icon"]::before {
+  vertical-align: 0.1em;
 }
 
 bar .action>text[class*="icon"]+text[class*="icon"] {
