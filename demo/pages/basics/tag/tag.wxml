@@ -1,119 +1,119 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 标签
     </navigator>
-  </bar>
-</custom>
+  </view>
+</view>
 
-<bar>
+<view class="cu-bar">
   <view class='action'>
     <text class='icon-title text-blue'></text>标签形状
   </view>
-</bar>
+</view>
 <view class="padding">
-  <tag>默认</tag>
-  <tag class='round'>椭圆</tag>
-  <tag class='radius'>圆角</tag>
+  <view class='cu-tag'>默认</view>
+  <view class='cu-tag round'>椭圆</view>
+  <view class='cu-tag radius'>圆角</view>
 </view>
 
-<bar class="margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>标签尺寸
   </view>
-</bar>
-<view class="padding">
-  <tag class='radius sm'>小尺寸</tag>
-  <tag class='radius'>普通尺寸</tag>
 </view>
-<bar class="margin-top">
+<view class="padding">
+  <view class='cu-tag radius sm'>小尺寸</view>
+  <view class='cu-tag radius'>普通尺寸</view>
+</view>
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>标签颜色
   </view>
-</bar>
+</view>
 <view class='padding-sm flex flex-wrap'>
   <view class="padding-xs" wx:for="{{ColorList}}" wx:key>
-    <tag class='bg-{{item.name}}'>{{item.title}}</tag>
+    <view class='cu-tag bg-{{item.name}}'>{{item.title}}</view>
   </view>
   <view class="padding-xs" wx:for="{{ColorList}}" wx:key wx:if="{{index<12}}">
-    <tag class='bg-{{item.name}} light'>{{item.title}}</tag>
+    <view class='cu-tag bg-{{item.name}} light'>{{item.title}}</view>
   </view>
 </view>
-<bar class="margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>镂空标签
   </view>
-</bar>
+</view>
 <view class='padding-sm flex flex-wrap'>
   <view class="padding-xs" wx:for="{{ColorList}}" wx:key>
-    <tag class='line-{{item.name}}'>{{item.title}}</tag>
+    <view class='cu-tag line-{{item.name}}'>{{item.title}}</view>
   </view>
 </view>
-<bar class="margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>胶囊样式
   </view>
-</bar>
-<view class="padding">
-  <capsule>
-    <tag class='bg-red'>
-      <text class='icon-likefill'></text>
-    </tag>
-    <tag class="line-red">
-      12
-    </tag>
-  </capsule>
-  <capsule class="round">
-    <tag class='bg-blue '>
-      <text class='icon-likefill'></text>
-    </tag>
-    <tag class="line-blue">
-      23
-    </tag>
-  </capsule>
-  <capsule class="round">
-    <tag class='bg-blue '>
-      说明
-    </tag>
-    <tag class="line-blue">
-      123
-    </tag>
-  </capsule>
-  <capsule class="radius">
-    <tag class='bg-grey '>
-      <text class='icon-likefill'></text>
-    </tag>
-    <tag class="line-grey">
-      23
-    </tag>
-  </capsule>
-  <capsule class="radius">
-    <tag class='bg-brown sm'>
-      <text class='icon-likefill'></text>
-    </tag>
-    <tag class="line-brown sm">
-      23
-    </tag>
-  </capsule>
 </view>
-<bar class="margin-top">
+<view class="padding">
+  <view class="cu-capsule">
+    <view class='cu-tag bg-red'>
+      <text class='icon-likefill'></text>
+    </view>
+    <view class="cu-tag line-red">
+      12
+    </view>
+  </view>
+  <view class="cu-capsule round">
+    <view class='cu-tag bg-blue '>
+      <text class='icon-likefill'></text>
+    </view>
+    <view class="cu-tag line-blue">
+      23
+    </view>
+  </view>
+  <view class="cu-capsule round">
+    <view class='cu-tag bg-blue '>
+      说明
+    </view>
+    <view class="cu-tag line-blue">
+      123
+    </view>
+  </view>
+  <view class="cu-capsule radius">
+    <view class='cu-tag bg-grey '>
+      <text class='icon-likefill'></text>
+    </view>
+    <view class="cu-tag line-grey">
+      23
+    </view>
+  </view>
+  <view class="cu-capsule radius">
+    <view class='cu-tag bg-brown sm'>
+      <text class='icon-likefill'></text>
+    </view>
+    <view class="cu-tag line-brown sm">
+      23
+    </view>
+  </view>
+</view>
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>数字标签
   </view>
-</bar>
+</view>
 <view class="padding flex justify-between align-center">
-  <avatar class='xl radius'>
+  <view class='cu-avatar xl radius'>
     港
-    <tag class="badge">99+</tag>
-  </avatar>
-  <avatar class='xl radius' style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);">
-    <tag class='badge'>9</tag>
-  </avatar>
-  <avatar class='xl radius'>
-    <tag class='badge'>99</tag>
+    <view class="cu-tag badge">99+</view>
+  </view>
+  <view class='cu-avatar xl radius' style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);">
+    <view class='cu-tag badge'>9</view>
+  </view>
+  <view class='cu-avatar xl radius'>
+    <view class='cu-tag badge'>99</view>
     <text class='icon-people'></text>
-  </avatar>
-  <avatar class='xl radius'>
-    <tag class='badge'>99+</tag>
-  </avatar>
+  </view>
+  <view class='cu-avatar xl radius'>
+    <view class='cu-tag badge'>99+</view>
+  </view>
 </view>

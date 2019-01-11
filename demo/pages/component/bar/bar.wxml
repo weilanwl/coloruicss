@@ -1,46 +1,46 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text>
       <text>操作条</text>
     </navigator>
-  </bar>
-</custom>
+  </view>
+</view>
 
-<bar class="margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-back text-gray'></text>
     <text>返回</text>
   </view>
-</bar>
+</view>
 
-<bar class="margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-green'></text>
     <text>案例</text>
   </view>
   <view class='action'>
-    <button class='bg-green shadow-blur sm'>添加
+    <button class='cu-btn bg-green shadow-blur sm'>添加
       <text class='icon-add'></text> </button>
   </view>
-</bar>
+</view>
 
-<bar class="margin-top justify-end">
+<view class="cu-bar margin-top justify-end">
   <view class='action'>
     <text class='icon-close text-red'></text>
   </view>
-</bar>
+</view>
 
-<bar class="margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-back text-gray'></text> 返回
   </view>
   <view class='content'>
     操作条
   </view>
-</bar>
+</view>
 
-<bar class="margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-homefill text-gray'></text> 首页
   </view>
@@ -51,37 +51,37 @@
     <text class='icon-cardboardfill text-grey'></text>
     <text class='icon-recordfill text-red'></text>
   </view>
-</bar>
+</view>
 
-<bar class="margin-top bg-blue">
+<view class="cu-bar margin-top bg-blue">
   <view class='action'>
     <text class='icon-close'></text> 关闭
   </view>
   <view class='content'>
     海蓝
   </view>
-</bar>
-<bar class="margin-top bg-orange">
+</view>
+<view class="cu-bar margin-top bg-orange">
   <view class='action'>
     <text class='icon-back'></text> 返回
   </view>
   <view class='content'>
     操作条
   </view>
-</bar>
+</view>
 
-<bar class="margin-top bg-black search">
-  <avatar class="round" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+<view class="cu-bar margin-top bg-black search">
+  <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
   <view class='content'>
     ColorUI
   </view>
   <view class='action'>
     <text class="icon-more"></text>
   </view>
-</bar>
+</view>
 
-<bar class="margin-top bg-red search">
-  <avatar class="round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></avatar>
+<view class="cu-bar margin-top bg-red search">
+  <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
   <view class='search-form radius'>
     <text class="icon-search"></text>
     <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
@@ -90,10 +90,10 @@
     <text>广州</text>
     <text class="icon-triangledownfill"></text>
   </view>
-</bar>
+</view>
 
-<bar class="margin-top search">
-  <avatar class="round" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></avatar>
+<view class="cu-bar margin-top search">
+  <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>
   <view class='search-form round'>
     <text class="icon-search"></text>
     <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
@@ -102,9 +102,9 @@
     <text>广州</text>
     <text class="icon-triangledownfill"></text>
   </view>
-</bar>
+</view>
 
-<bar class="margin-top bg-cyan search">
+<view class="cu-bar margin-top bg-cyan search">
   <view class='search-form radius'>
     <text class="icon-search"></text>
     <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
@@ -113,40 +113,40 @@
     <text class='icon-close'></text>
     <text>取消</text>
   </view>
-</bar>
+</view>
 
-<bar class="margin-top search">
+<view class="cu-bar margin-top search">
   <view class='search-form round'>
     <text class="icon-search"></text>
     <input type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
   </view>
   <view class='action'>
-    <button class='bg-green shadow-blur round'>搜索</button>
+    <button class='cu-btn bg-green shadow-blur round'>搜索</button>
   </view>
-</bar>
+</view>
 
-<bar class="margin-top btn-group">
-  <button class='bg-green shadow-blur round'>保存</button>
-</bar>
+<view class="cu-bar margin-top btn-group">
+  <button class='cu-btn bg-green shadow-blur round'>保存</button>
+</view>
 
-<bar class="margin-top btn-group">
-  <button class='bg-green shadow-blur round lg'>保存</button>
-</bar>
+<view class="cu-bar margin-top btn-group">
+  <button class='cu-btn bg-green shadow-blur round lg'>保存</button>
+</view>
 
-<bar class="margin-top btn-group">
-  <button class='bg-green shadow-blur'>保存</button>
-  <button class='text-green line-green shadow'>上传</button>
-</bar>
+<view class="cu-bar margin-top btn-group">
+  <button class='cu-btn bg-green shadow-blur'>保存</button>
+  <button class='cu-btn text-green line-green shadow'>上传</button>
+</view>
 
-<bar class="margin-top btn-group">
-  <button class='bg-green shadow-blur round'>保存</button>
-  <button class='bg-blue shadow-blur round'>提交</button>
-</bar>
+<view class="cu-bar margin-top btn-group">
+  <button class='cu-btn bg-green shadow-blur round'>保存</button>
+  <button class='cu-btn bg-blue shadow-blur round'>提交</button>
+</view>
 
-<bar class="margin-top shop">
-  <button class="action"  open-type='contact'>
+<view class="cu-bar margin-top shop">
+  <button class="cu-btn action"  open-type='contact'>
     <text class='icon-service text-green'>
-      <tag class='badge'></tag>
+      <view class='cu-tag badge'></view>
     </text>
     客服
   </button>
@@ -155,34 +155,34 @@
   </view>
   <view class="action">
     <text class='icon-cart'>
-      <tag class='badge'>99</tag>
+      <view class='cu-tag badge'>99</view>
     </text>
     购物车
   </view>
   <view class='bg-red submit'>立即订购</view>
-</bar>
+</view>
 
-<bar class="margin-top shop">
-  <button class="action"  open-type='contact'>
+<view class="cu-bar margin-top shop">
+  <button class="cu-btn action"  open-type='contact'>
     <text class='icon-service text-green'>
-      <tag class='badge'></tag>
+      <view class='cu-tag badge'></view>
     </text>
     客服
   </button>
   <view class="action">
     <text class='icon-cart'>
-      <tag class='badge'>99</tag>
+      <view class='cu-tag badge'>99</view>
     </text>
     购物车
   </view>
   <view class='bg-orange submit'>加入购物车</view>
   <view class='bg-red submit'>立即订购</view>
-</bar>
+</view>
 
-<bar class="margin-top shop">
-  <button class="action"  open-type='contact'>
+<view class="cu-bar margin-top shop">
+  <button class="cu-btn action"  open-type='contact'>
     <text class='icon-service text-green'>
-      <tag class='badge'></tag>
+      <view class='cu-tag badge'></view>
     </text>
     客服
   </button>
@@ -191,37 +191,37 @@
   </view>
   <view class="action">
     <text class='icon-cart'>
-      <tag class='badge'>99</tag>
+      <view class='cu-tag badge'>99</view>
     </text>
     购物车
   </view>
   <view class='submit'>
-    <button class='bg-red round shadow-blur'>立即订购</button>
+    <button class='cu-btn bg-red round shadow-blur'>立即订购</button>
   </view>
-</bar>
+</view>
 
-<bar class="margin-top shop">
-  <button class="action"  open-type='contact'>
+<view class="cu-bar margin-top shop">
+  <button class="cu-btn action"  open-type='contact'>
     <text class='icon-service text-green'>
-      <tag class='badge'></tag>
+      <view class='cu-tag badge'></view>
     </text>
     客服
   </button>
   <view class="action">
     <text class='icon-cart'>
-      <tag class='badge'>99</tag>
+      <view class='cu-tag badge'>99</view>
     </text>
     购物车
   </view>
   <view class='submit'>
-    <button class='bg-orange round shadow-blur'>加入购物车</button>
+    <button class='cu-btn bg-orange round shadow-blur'>加入购物车</button>
   </view>
   <view class='submit'>
-    <button class='bg-red round shadow-blur'>立即订购</button>
+    <button class='cu-btn bg-red round shadow-blur'>立即订购</button>
   </view>
-</bar>
+</view>
 
-<bar class="margin-top input">
+<view class="cu-bar margin-top input">
   <view class='action'>
     <text class='icon-sound text-grey'></text>
   </view>
@@ -229,11 +229,11 @@
   <view class='action'>
     <text class='icon-emojifill text-grey'></text>
   </view>
-  <button class='bg-green shadow-blur'>发送</button>
-</bar>
+  <button class='cu-btn bg-green shadow-blur'>发送</button>
+</view>
 
-<bar class="margin-top input">
-  <avatar class="round" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+<view class="cu-bar margin-top input">
+  <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
   <view class='action'>
     <text class='icon-roundaddfill text-grey'></text>
   </view>
@@ -241,5 +241,5 @@
   <view class='action'>
     <text class='icon-emojifill text-grey'></text>
   </view>
-  <button class='bg-green shadow-blur'>发送</button>
-</bar>
+  <button class='cu-btn bg-green shadow-blur'>发送</button>
+</view>

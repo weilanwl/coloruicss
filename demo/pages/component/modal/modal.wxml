@@ -1,123 +1,123 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 模态窗口
     </navigator>
-  </bar>
-</custom>
+  </view>
+</view>
 
-<bar class="">
+<view class="cu-bar ">
   <view class='action'>
     <text class='icon-titles text-orange '></text> 模态窗口
   </view>
   <view class='action'>
-    <button class='bg-green shadow' bindtap="showModal" data-target="Modal">Modal</button>
+    <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="Modal">Modal</button>
   </view>
-</bar>
-<modal-box class="{{modalName=='Modal'?'show':''}}">
-  <dialog>
-    <bar class="justify-end">
+</view>
+<view class="cu-modal {{modalName=='Modal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar justify-end">
       <view class='content'>Modal标题</view>
       <view class='action' bindtap='hideModal'>
         <text class='icon-close text-red'></text>
       </view>
-    </bar>
+    </view>
     <view class='padding-xl'>
       Modal 内容。
     </view>
-  </dialog>
-</modal-box>
+  </view>
+</view>
 
-<bar class=" margin-top">
+<view class="cu-bar  margin-top">
   <view class='action'>
     <text class='icon-titles text-orange '></text> 底部窗口
   </view>
   <view class='action'>
-    <button class='bg-green shadow' bindtap="showModal" data-target="bottomModal">Bottom</button>
+    <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="bottomModal">Bottom</button>
   </view>
-</bar>
-<modal-box class="bottom-modal {{modalName=='bottomModal'?'show':''}}">
-  <dialog>
-    <bar class="">
+</view>
+<view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar ">
       <view class='action text-green'>确定</view>
       <view class='action text-blue' bindtap='hideModal'>取消</view>
-    </bar>
+    </view>
     <view class='padding-xl'>
       Modal 内容。
     </view>
-  </dialog>
-</modal-box>
+  </view>
+</view>
 
-<bar class=" margin-top">
+<view class="cu-bar  margin-top">
   <view class='action'>
     <text class='icon-titles text-orange '></text> 对话窗口
   </view>
   <view class='action'>
-    <button class='bg-green shadow' bindtap="showModal" data-target="DialogModal1">Dialog</button>
-    <button class='bg-blue shadow margin-left' bindtap="showModal" data-target="DialogModal2">Dialog</button>
+    <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="DialogModal1">Dialog</button>
+    <button class='cu-btn bg-blue shadow margin-left' bindtap="showModal" data-target="DialogModal2">Dialog</button>
   </view>
-</bar>
-<modal-box class="{{modalName=='DialogModal1'?'show':''}}">
-  <dialog>
-    <bar class="justify-end">
+</view>
+<view class="cu-modal {{modalName=='DialogModal1'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar justify-end">
       <view class='content'>Modal标题</view>
       <view class='action' bindtap='hideModal'>
         <text class='icon-close text-red'></text>
       </view>
-    </bar>
+    </view>
     <view class='padding-xl'>
       Modal 内容。
     </view>
-    <bar class="justify-end">
+    <view class="cu-bar justify-end">
       <view class='action'>
-        <button class='line-green text-green' bindtap='hideModal'>取消</button>
-        <button class='bg-green margin-left' bindtap='hideModal'>确定</button>
+        <button class='cu-btn line-green text-green' bindtap='hideModal'>取消</button>
+        <button class='cu-btn bg-green margin-left' bindtap='hideModal'>确定</button>
 
       </view>
-    </bar>
-  </dialog>
-</modal-box>
+    </view>
+  </view>
+</view>
 
-<modal-box class="{{modalName=='DialogModal2'?'show':''}}">
-  <dialog>
-    <bar class="justify-end">
+<view class="cu-modal {{modalName=='DialogModal2'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar justify-end">
       <view class='content'>Modal标题</view>
       <view class='action' bindtap='hideModal'>
         <text class='icon-close text-red'></text>
       </view>
-    </bar>
+    </view>
     <view class='padding-xl'>
       Modal 内容。
     </view>
-    <bar>
+    <view class="cu-bar">
       <view class='action margin-0 flex-sub text-green ' bindtap='hideModal'>
         <text class='icon-moneybag'></text>微信支付</view>
       <view class='action margin-0 flex-sub text-green solid-left' bindtap='hideModal'>取消</view>
       <view class='action margin-0 flex-sub  solid-left' bindtap='hideModal'>确定</view>
-    </bar>
-  </dialog>
-</modal-box>
+    </view>
+  </view>
+</view>
 
-<bar class=" margin-top">
+<view class="cu-bar  margin-top">
   <view class='action'>
     <text class='icon-titles text-orange '></text> 图片窗口
   </view>
   <view class='action'>
-    <button class='bg-green shadow' bindtap="showModal" data-target="Image">Image</button>
+    <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="Image">Image</button>
   </view>
-</bar>
+</view>
 
-<modal-box class="{{modalName=='Image'?'show':''}}">
-  <dialog>
+<view class="cu-modal {{modalName=='Image'?'show':''}}">
+  <view class="cu-dialog">
     <view class="bg-img" style="background-image: url('https://albedo-theme.com/wp-content/uploads/2016/08/pexels-photo-26180.jpg');height:200px;">
-      <bar class="justify-end none-bg text-white">
+      <view class="cu-bar justify-end none-bg text-white">
         <view class='action' bindtap='hideModal'>
           <text class='icon-close '></text>
         </view>
-      </bar>
+      </view>
     </view>
-    <bar>
+    <view class="cu-bar">
       <view class='action margin-0 flex-sub  solid-left' bindtap='hideModal'>我知道了</view>
-    </bar>
-  </dialog>
-</modal-box>
+    </view>
+  </view>
+</view>

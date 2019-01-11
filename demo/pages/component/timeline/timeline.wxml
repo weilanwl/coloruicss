@@ -1,63 +1,63 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text>
       时间轴
     </navigator>
-  </bar>
-</custom>
-<timeline>
-  <time>昨天</time>
-  <item class='cur icon-noticefill'>
+  </view>
+</view>
+<view class="cu-timeline">
+  <view class="cu-time">昨天</view>
+  <view class='cu-item cur icon-noticefill'>
     <view class="content bg-green shadow-blur">
       <text>22:22</text> 【广州市】快件已到达地球
     </view>
-  </item>
-  <item class='text-red icon-attentionforbidfill'>
+  </view>
+  <view class='cu-item text-red icon-attentionforbidfill'>
     <view class="content bg-red shadow-blur">
       这是第一次，我家的铲屎官走了这么久。久到足足有三天！！
     </view>
-  </item>
-  <item class='text-grey icon-evaluate_fill'>
+  </view>
+  <view class='cu-item text-grey icon-evaluate_fill'>
     <view class="content bg-grey shadow-blur">
       这是第一次，我家的铲屎官走了这么久。
     </view>
-  </item>
-  <item class='text-blue'>
+  </view>
+  <view class='cu-item text-blue'>
     <view class="bg-blue content">
       <text>20:00</text> 【月球】快件已到达月球，准备发往地球
     </view>
     <view class="bg-cyan content">
       <text>10:00</text> 【银河系】快件已到达银河系，准备发往月球
     </view>
-  </item>
-</timeline>
+  </view>
+</view>
 
-<timeline>
-  <time>06-17</time>
-  <item>
+<view class="cu-timeline">
+  <view class="cu-time">06-17</view>
+  <view class="cu-item">
     <view class="content">
       <text>01:30</text> 【喵星】 MX-12138 已揽收，准备发往银河系
     </view>
-  </item>
-</timeline>
+  </view>
+</view>
 
-<timeline>
-  <time>06-17</time>
-  <item>
+<view class="cu-timeline">
+  <view class="cu-time">06-17</view>
+  <view class="cu-item">
     <view class="content">
-      <capsule class="radius">
-        <tag class="bg-cyan">上午</tag>
-        <tag class="line-cyan">10:00</tag>
-      </capsule>
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-cyan">上午</view>
+        <view class="cu-tag line-cyan">10:00</view>
+      </view>
       <view class='margin-top'>这是第一次，我家的铲屎官走了这么久。久到足足有三天！！ 在听到他的脚步声响在楼梯间的那一刻，我简直想要破门而出，对着他狠狠地吼上10分钟，然后再看心情要不要他进门。</view>
     </view>
-  </item>
-  <item class='text-blue'>
+  </view>
+  <view class='cu-item text-blue'>
     <view class="bg-blue shadow-blur content">
-      <list class="menu menu-avatar radius">
-        <item>
-          <avatar class="round lg" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></avatar>
+      <view class="cu-list menu menu-avatar radius">
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
           <view class='content'>
             <view class='text-grey'>文晓港</view>
             <view class='text-gray text-sm'>
@@ -65,16 +65,16 @@
           </view>
           <view class='action'>
             <view class='text-grey text-xs'>22:20</view>
-            <tag class="round grey sm">5</tag>
+            <view class="cu-tag round grey sm">5</view>
           </view>
-        </item>
-        <item>
-          <avatar class="round lg" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);">
-            <tag class="badge">99+</tag>
-          </avatar>
+        </view>
+        <view class="cu-item">
+          <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);">
+            <view class="cu-tag badge">99+</view>
+          </view>
           <view class='content'>
             <view class='text-grey'>文晓港
-              <tag class="round orange sm">SVIP</tag>
+              <view class="cu-tag round orange sm">SVIP</view>
             </view>
             <view class='text-gray text-sm'>
               <text class='icon-redpacket_fill text-red'></text> 收到红包</view>
@@ -83,8 +83,8 @@
             <view class='text-grey text-xs'>22:20</view>
             <text class='icon-notice_forbid_fill text-gray'></text>
           </view>
-        </item>
-      </list>
+        </view>
+      </view>
     </view>
-  </item>
-</timeline>
+  </view>
+</view>

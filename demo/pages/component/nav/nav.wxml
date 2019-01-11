@@ -1,87 +1,87 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 导航栏
     </navigator>
-  </bar>
-</custom>
+  </view>
+</view>
 <view wx:for="{{10}}" wx:key wx:if="{{index==TabCur}}" class='bg-grey padding margin text-center'>
   Tab{{index}}
 </view>
-<bar class="solid-bottom">
+<view class="cu-bar solid-bottom">
   <view class='action'>
     <text class='icon-titles text-orange '></text> 默认
   </view>
-</bar>
+</view>
 <scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
-  <item class="{{index==TabCur?'text-green cur':''}}" wx:for="{{10}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+  <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{10}}" wx:key bindtap='tabSelect' data-id="{{index}}">
     Tab{{index}}
-  </item>
+  </view>
 </scroll-view>
 
-<bar class="margin-top solid-bottom">
+<view class="cu-bar margin-top solid-bottom">
   <view class='action'>
     <text class='icon-title text-orange'></text> 居中
   </view>
-</bar>
+</view>
 <scroll-view scroll-x class="bg-white nav text-center">
-  <item class="{{index==TabCur?'text-blue cur':''}}" wx:for="{{3}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+  <view class="cu-item {{index==TabCur?'text-blue cur':''}}" wx:for="{{3}}" wx:key bindtap='tabSelect' data-id="{{index}}">
     Tab{{index}}
-  </item>
+  </view>
 </scroll-view>
 
-<bar class="margin-top solid-bottom">
+<view class="cu-bar margin-top solid-bottom">
   <view class='action'>
     <text class='icon-title text-orange'></text> 平分
   </view>
-</bar>
+</view>
 <scroll-view scroll-x class="bg-white nav">
   <view class='flex text-center'>
-    <item class="flex-sub {{index==TabCur?'text-orange cur':''}}" wx:for="{{4}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+    <view class="cu-item flex-sub {{index==TabCur?'text-orange cur':''}}" wx:for="{{4}}" wx:key bindtap='tabSelect' data-id="{{index}}">
       Tab{{index}}
-    </item>
+    </view>
   </view>
 </scroll-view>
-<bar class="margin-top solid-bottom">
+<view class="cu-bar margin-top solid-bottom">
   <view class='action'>
     <text class='icon-title text-orange'></text> 背景
   </view>
-</bar>
+</view>
 <scroll-view scroll-x class="bg-red nav text-center">
-  <item class="{{index==TabCur?'text-white cur':''}}" wx:for="{{3}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+  <view class="cu-item {{index==TabCur?'text-white cur':''}}" wx:for="{{3}}" wx:key bindtap='tabSelect' data-id="{{index}}">
     Tab{{index}}
-  </item>
+  </view>
 </scroll-view>
-<bar class="margin-top solid-bottom">
+<view class="cu-bar margin-top solid-bottom">
   <view class='action'>
     <text class='icon-title text-orange'></text> 图标
   </view>
-</bar>
+</view>
 <scroll-view scroll-x class="bg-green nav text-center">
-  <item class="{{0==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="0">
+  <view class="cu-item {{0==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="0">
     <text class='icon-camerafill'></text> 数码
-  </item>
-  <item class="{{1==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="1">
+  </view>
+  <view class="cu-item {{1==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="1">
     <text class='icon-upstagefill'></text> 排行榜
-  </item>
-  <item class="{{2==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="2">
+  </view>
+  <view class="cu-item {{2==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="2">
     <text class='icon-clothesfill'></text> 皮肤
-  </item>
+  </view>
 </scroll-view>
 
-<bar class="margin-top solid-bottom">
+<view class="cu-bar margin-top solid-bottom">
   <view class='action'>
     <text class='icon-title text-orange'></text> 定位
   </view>
-</bar>
+</view>
 <scroll-view scroll-x class="bg-green nav text-center">
-  <item class="{{0==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="0">
+  <view class="cu-item {{0==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="0">
     <text class='icon-camerafill'></text> 数码
-  </item>
-  <item class="{{1==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="1">
+  </view>
+  <view class="cu-item {{1==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="1">
     <text class='icon-upstagefill'></text> 排行榜
-  </item>
-  <item class="{{2==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="2">
+  </view>
+  <view class="cu-item {{2==TabCur?'text-white cur':''}}" bindtap='tabSelect' data-id="2">
     <text class='icon-clothesfill'></text> 皮肤
-  </item>
+  </view>
 </scroll-view>

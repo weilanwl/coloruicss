@@ -1,6 +1,5 @@
 @import "icon.wxss";
 @import "colorui.wxss";
-@import "/pages/plugin/animation/animation.wxss";
 
 .nav-list {
   display: flex;

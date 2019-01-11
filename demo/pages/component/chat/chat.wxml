@@ -1,47 +1,47 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text>
       聊天
     </navigator>
-  </bar>
-</custom>
+  </view>
+</view>
 
-<chat>
-  <item class="self">
+<view class="cu-chat">
+  <view class="cu-item self">
     <view class="main">
       <view class='content bg-green shadow-blur'>
         <text>喵喵喵！喵喵喵！喵喵喵！喵喵！喵喵！！喵！喵喵喵！</text>
       </view>
     </view>
-    <avatar class="radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+    <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
     <view class='date'>2018年3月23日 13:23</view>
-  </item>
-  <info class='round'>对方撤回一条消息!</info>
-  <item>
-    <avatar class="radius" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></avatar>
+  </view>
+  <view class='cu-info round'>对方撤回一条消息!</view>
+  <view class="cu-item">
+    <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>
     <view class="main">
       <view class='content shadow'>
         <text>喵喵喵！喵喵喵！</text>
       </view>
     </view>
     <view class='date '> 13:23</view>
-  </item>
-  <info>
+  </view>
+  <view class="cu-info">
     <text class='icon-roundclosefill text-red '></text> 对方拒绝了你的消息
-  </info>
-  <info>
+  </view>
+  <view  class="cu-info">
     对方开启了好友验证，你还不是他(她)的好友。请先发送好友验证请求，对方验证通过后，才能聊天。
     <text class='text-blue'>发送好友验证</text>
-  </info>
-  <item class="self">
+  </view>
+  <view class="cu-item self">
     <view class="main">
       <image src="https://image.weilanwl.com/img/3x4-1.jpg" class='radius' mode="widthFix"></image>
     </view>
-    <avatar class="radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+    <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
     <view class='date'> 13:23</view>
-  </item>
-  <item class="self">
+  </view>
+  <view class="cu-item self">
     <view class="main">
       <view class='action text-bold text-grey'>
         3"
@@ -50,10 +50,10 @@
         <text class='icon-sound text-xxl padding-right-xl'> </text>
       </view>
     </view>
-    <avatar class="radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+    <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
     <view class='date'>13:23</view>
-  </item>
-  <item class="self">
+  </view>
+  <view class="cu-item self">
     <view class="main">
       <view class='action'>
         <text class='icon-locationfill text-orange text-xxl'></text>
@@ -62,11 +62,11 @@
         喵星球，喵喵市
       </view>
     </view>
-    <avatar class="radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></avatar>
+    <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
     <view class='date'>13:23</view>
-  </item>
-  <item>
-    <avatar class="radius" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></avatar>
+  </view>
+  <view class="cu-item">
+    <view class="cu-avatar radius" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>
     <view class="main">
       <view class='content shadow'>
        @#$^&**
@@ -76,10 +76,10 @@
       </view>
     </view>
     <view class='date'>13:23</view>
-  </item>
-</chat>
+  </view>
+</view>
 
-<bar class="foot input">
+<view class="cu-bar foot input">
   <view class='action'>
     <text class='icon-sound text-grey'></text>
   </view>
@@ -87,5 +87,5 @@
   <view class='action'>
     <text class='icon-emojifill text-grey'></text>
   </view>
-  <button class='bg-green shadow-blur'>发送</button>
-</bar>
+  <button class='cu-btn bg-green shadow-blur'>发送</button>
+</view>

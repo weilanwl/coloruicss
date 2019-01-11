@@ -1,16 +1,16 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 背景颜色
     </navigator>
-  </bar>
-</custom>
+  </view>
+</view>
 
-<bar class="solid-bottom">
+<view class="cu-bar solid-bottom">
   <view class='action'>
     <text class='icon-title text-blue'></text>深色背景
   </view>
-</bar>
+</view>
 <view class='grid col-3 padding-sm'>
   <view class='padding-sm' wx:for="{{ColorList}}" wx:key>
     <view class='bg-{{item.name}} padding radius text-center shadow-blur'>
@@ -20,11 +20,11 @@
   </view>
 </view>
 
-<bar class="solid-bottom">
+<view class="cu-bar solid-bottom">
   <view class='action'>
     <text class='icon-title text-blue'></text>淡色背景
   </view>
-</bar>
+</view>
 <view class='grid col-3 bg-white padding-sm'>
   <view class='padding-sm' wx:for="{{ColorList}}" wx:key wx:if="{{index<12}}">
     <view class='bg-{{item.name}} padding radius text-center light'>
@@ -33,11 +33,11 @@
     </view>
   </view>
 </view>
-<bar class="solid-bottom margin-top">
+<view class="cu-bar solid-bottom margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>渐变背景
   </view>
-</bar>
+</view>
 <view class='grid col-2 padding-sm'>
   <view class='padding-sm'>
     <view class='gradual-red padding radius text-center shadow-blur'>
@@ -76,11 +76,11 @@
     </view>
   </view>
 </view>
-<bar class="margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>图片背景
   </view>
-</bar>
+</view>
 <view class="bg-img bg-mask padding-tb-xl" style="background-image: url('https://albedo-theme.com/wp-content/uploads/2016/08/pexels-photo-26180.jpg')">
   <view class='padding-xl text-white'>
     <view class='padding-xs text-xl'>
@@ -91,11 +91,11 @@
     </view>
   </view>
 </view>
-<bar class="margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>视频背景
   </view>
-</bar>
+</view>
 <view class="bg-video bg-mask">
   <video src='https://www.weilanwl.com/theme/wl/assets/images/slider1.mp4' autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover"></video>
   <cover-view class='padding-xl text-white'>
@@ -107,11 +107,11 @@
     </cover-view>
   </cover-view>
 </view>
-<bar class="margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>透明背景(文字层)
   </view>
-</bar>
+</view>
 <view class='grid col-2 padding-sm'>
   <view class='padding-sm'>
     <view class="bg-img padding-bottom-xl" style="background-image: url('https://image.weilanwl.com/img/square-3.jpg')">

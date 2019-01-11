@@ -1,14 +1,14 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class='cu-custom' style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <view class='content'>ColorUI 空白模板</view>
-  </bar>
-</custom>
+  </view>
+</view>
 <view class="margin-xl padding-xl bg-white radius shadow-lg">
   <view class="flex justify-center">
-    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='round bg-green shadow'> 获取头像昵称 </button>
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='cu-btn round bg-green shadow'> 获取头像昵称 </button>
     <block wx:else>
       <view class='text-center'>
-        <avatar class="xl round solids" style="background-image:url({{userInfo.avatarUrl}})"></avatar>
+        <view class="cu-avatar xl round solids" style="background-image:url({{userInfo.avatarUrl}})"></view>
         <view class="padding">{{userInfo.nickName}}</view>
       </view>
     </block>

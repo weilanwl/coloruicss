@@ -1,21 +1,21 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 布局
     </navigator>
-  </bar>
-</custom>
+  </view>
+</view>
 <scroll-view scroll-x class="bg-white nav text-center fixed" style="top:{{CustomBar}}px">
-  <item class="{{index==TabCur?'text-blue cur':''}}" wx:for="{{tabNav}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+  <view class="cu-item {{index==TabCur?'text-blue cur':''}}" wx:for="{{tabNav}}" wx:key bindtap='tabSelect' data-id="{{index}}">
     {{tabNav[index]}}
-  </item>
+  </view>
 </scroll-view>
 <block wx:if="{{TabCur==0}}">
-  <bar class="solid-bottom margin-top">
+  <view class="cu-bar solid-bottom margin-top">
     <view class='action'>
       <text class='icon-title text-blue'></text>固定尺寸
     </view>
-  </bar>
+  </view>
   <view class="padding bg-white">
     <view class="flex flex-wrap">
       <view class='basis-xs bg-grey margin-xs padding-sm radius'>xs(20%)</view>
@@ -27,11 +27,11 @@
       <view class='basis-xl bg-grey margin-xs padding-sm radius'>xl(80%)</view>
     </view>
   </view>
-  <bar class="margin-top solid-bottom">
+  <view class="cu-bar margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>比例布局
     </view>
-  </bar>
+  </view>
   <view class="padding bg-white">
     <view class="flex">
       <view class='flex-sub bg-grey padding-sm margin-xs radius'>1</view>
@@ -47,11 +47,11 @@
       <view class='flex-treble bg-grey padding-sm margin-xs radius'>3</view>
     </view>
   </view>
-  <bar class="margin-top solid-bottom">
+  <view class="cu-bar margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>水平对齐(justify)
     </view>
-  </bar>
+  </view>
   <view class="bg-white">
     <view class="flex solid-bottom padding justify-start">
       <view class='bg-grey padding-sm margin-xs radius'>start</view>
@@ -74,11 +74,11 @@
       <view class='bg-grey padding-sm margin-xs radius'>around</view>
     </view>
   </view>
-  <bar class="margin-top solid-bottom">
+  <view class="cu-bar margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>垂直对齐(align)
     </view>
-  </bar>
+  </view>
   <view class="bg-white">
     <view class="flex solid-bottom padding align-start">
       <view class='bg-grey padding-lg margin-xs radius'>ColorUi</view>
@@ -95,23 +95,23 @@
   </view>
 </block>
 <block wx:if="{{TabCur==1}}">
-  <bar class="margin-top solid-bottom">
+  <view class="cu-bar margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>等分列
     </view>
     <view class='action'></view>
-  </bar>
+  </view>
   <view class="bg-white padding">
     <view class="grid col-{{index+1}} margin-bottom text-center" wx:for="{{5}}" wx:key>
       <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" wx:for="{{(index+1)*2}}" wx:key>{{index+1}}</view>
     </view>
   </view>
-  <bar class="margin-top solid-bottom">
+  <view class="cu-bar margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>等高
     </view>
     <view class='action'></view>
-  </bar>
+  </view>
   <view class="bg-white padding">
     <view class="grid col-4 grid-square">
       <view class="bg-img" wx:for="{{4}}" wx:key style="background-image:url(https://image.weilanwl.com/img/square-{{index+1}}.jpg);"></view>
@@ -119,11 +119,11 @@
   </view>
 </block>
 <block wx:if="{{TabCur==2}}">
-  <bar class="margin-top solid-bottom">
+  <view class="cu-bar margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>浮动
     </view>
-  </bar>
+  </view>
   <view class="bg-white padding">
     <view class=" cf padding-sm">
       <view class='bg-grey radius fl padding-sm'>ColorUi fl</view>
@@ -132,11 +132,11 @@
   </view>
 </block>
 <block wx:if="{{TabCur==3}}">
-  <bar class="margin-top solid-bottom">
+  <view class="cu-bar margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>内外边距
     </view>
-  </bar>
+  </view>
   <view class="bg-white">
     <view class='padding bg-gray'>{size}的尺寸有xs/sm/df/lg/xl</view>
     <view class='flex flex-wrap padding solid-top'>

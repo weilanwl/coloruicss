@@ -1,28 +1,28 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 卡片
     </navigator>
-  </bar>
-</custom>
-<bar class="solid-bottom">
+  </view>
+</view>
+<view class="cu-bar solid-bottom">
   <view class='action'>
     <text class='icon-titles text-orange '></text> 案例类卡片
   </view>
   <view class='action'>
     <switch class='sm' checked='{{isCard}}' bindchange='isCard'></switch>
   </view>
-</bar>
-<card class="case {{isCard?'no-card':''}}">
-  <item wx:for="{{1}}" wx:key class="shadow">
+</view>
+<view class="cu-card case {{isCard?'no-card':''}}">
+  <view wx:for="{{1}}" wx:key class="cu-item shadow">
     <view class='image'>
       <image src="https://image.weilanwl.com/img/4x3-1.jpg" mode="widthFix"></image>
-      <tag class="bg-blue">福利</tag>
-      <bar class='bg-shadeBottom'>我和制服不得不说的那些事！</bar>
+      <view class="cu-tag bg-blue">福利</view>
+      <view class='cu-bar bg-shadeBottom'>我和制服不得不说的那些事！</view>
     </view>
-    <list class="menu menu-avatar">
-      <item>
-        <avatar class="round lg" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);"></avatar>
+    <view class="cu-list menu menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);"></view>
         <view class='content flex-sub'>
           <view class='text-grey'>猪皮蛋</view>
           <view class='text-gray text-sm flex justify-between'>
@@ -34,31 +34,31 @@
             </view>
           </view>
         </view>
-      </item>
-    </list>
-  </item>
-</card>
-<bar class="solid-bottom {{isCard?'margin-top':''}}">
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-bar solid-bottom {{isCard?'margin-top':''}}">
   <view class='action'>
     <text class='icon-titles text-orange '></text> 动态类卡片
   </view>
   <view class='action'>
     <switch class='sm' checked='{{isCard}}' bindchange='isCard'></switch>
   </view>
-</bar>
-<card class="dynamic {{isCard?'no-card':''}}">
-  <item wx:for="1" wx:key class="shadow">
-    <list class="menu menu-avatar">
-      <item>
-        <avatar class="round lg" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></avatar>
+</view>
+<view class="cu-card dynamic {{isCard?'no-card':''}}">
+  <view wx:for="1" wx:key class="cu-item shadow">
+    <view class="cu-list menu menu-avatar">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
         <view class='content flex-sub'>
           <view>晓晓萌</view>
           <view class='text-gray text-sm flex justify-between'>
             2018年12月3日
           </view>
         </view>
-      </item>
-    </list>
+      </view>
+    </view>
     <view class='text-content'>
       你们的铲屎官是不是经常突然对手机傻笑？我家铲屎官常常坐沙发上笑的发抖！（暗中观察.jpg）
     </view>
@@ -71,9 +71,9 @@
       <text class="icon-appreciatefill"></text> 20
       <text class="icon-messagefill"></text> 30
     </view>
-    <list class="menu menu-avatar comment solids-top">
-      <item wx:for="{{2}}" wx:key>
-        <avatar class="round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></avatar>
+    <view class="cu-list menu menu-avatar comment solids-top">
+      <view class="cu-item" wx:for="{{2}}" wx:key>
+        <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
         <view class='content'>
           <view class='text-grey'>猪皮蛋</view>
           <view class='text-gray text-content text-df'>
@@ -93,31 +93,31 @@
             </view>
           </view>
         </view>
-      </item>
-    </list>
-  </item>
-</card>
+      </view>
+    </view>
+  </view>
+</view>
 
-<bar class="solid-bottom margin-top">
+<view class="cu-bar solid-bottom margin-top">
   <view class='action'>
     <text class='icon-titles text-orange '></text> 文章类卡片
   </view>
   <view class='action'>
     <switch class='sm' checked='{{isCard}}' bindchange='isCard'></switch>
   </view>
-</bar>
-<card class="article {{isCard?'no-card':''}}">
-  <item wx:for="1" wx:key class="shadow">
+</view>
+<view class="cu-card article {{isCard?'no-card':''}}">
+  <view wx:for="1" wx:key class="cu-item shadow">
     <view class="title">这里有个戏精铲屎官，主子了解一下？</view>
     <view class="content">
       <image src="https://image.weilanwl.com/img/4x3-3.jpg" mode="aspectFill"></image>
       <view class="desc">
         <view class='text-content'> 这是一个伪铲屎官为了给自己的程序凑字数瞎几把乱写的一堆文字，了解一下就OK！ヾ(=･ω･=)o</view>
         <view>
-          <tag class='bg-red light sm round'>假装有猫系列</tag>
-          <tag class='bg-green light sm round'>戏精系列</tag>
+          <view class='cu-tag bg-red light sm round'>假装有猫系列</view>
+          <view class='cu-tag bg-green light sm round'>戏精系列</view>
         </view>
       </view>
     </view>
-  </item>
-</card>
+  </view>
+</view>

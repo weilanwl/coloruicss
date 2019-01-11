@@ -1,11 +1,11 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text>
       表单控件
     </navigator>
-  </bar>
-</custom>
+  </view>
+</view>
 <view class='text-center'>
   <view class="padding-xl ">
     <checkbox class=''></checkbox>

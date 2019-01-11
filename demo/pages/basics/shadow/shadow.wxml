@@ -1,18 +1,18 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 边框阴影
     </navigator>
-  </bar>
-</custom>
-<bar class="solid-bottom">
+  </view>
+</view>
+<view class="cu-bar solid-bottom">
   <view class='action'>
     <text class='icon-title text-blue'></text>边框
   </view>  
   <view class='action'>
    <switch class='sm' bindchange='SetSize'></switch>
   </view>   
-</bar>
+</view>
 <view class='padding bg-white text-center'>
   <view class='padding solid{{size?"s":""}}'>四周</view>
   <view class='padding solid{{size?"s":""}}-top margin-top'>上</view>
@@ -20,11 +20,11 @@
   <view class='padding solid{{size?"s":""}}-bottom margin-top'>下</view>
   <view class='padding solid{{size?"s":""}}-left margin-top'>左</view>
 </view>
-<bar class="margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>阴影
   </view>
-</bar>
+</view>
 <view class="padding text-center">
   <view class="padding-xl radius shadow bg-white"> 默认阴影</view>
   <view class="padding-xl radius shadow-lg bg-white margin-top">长阴影</view>

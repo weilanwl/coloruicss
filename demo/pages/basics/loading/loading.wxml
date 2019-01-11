@@ -1,60 +1,60 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 加载
     </navigator>
     <view class='action'>
-      <load class="load-text {{!isLoad?'loading':'over'}}"></load>
+      <view class="cu-load load-icon {{!isLoad?'loading':'over'}}"></view>
     </view>
-  </bar>
-</custom>
-<bar>
+  </view>
+</view>
+<view class="cu-bar">
   <view class='action'>
     <text class='icon-title text-blue'></text>背景
   </view>
-</bar>
-<load class="bg-blue {{!isLoad?'loading':'over'}}"></load>
-<bar class="margin-top">
+</view>
+<view class="cu-load bg-blue {{!isLoad?'loading':'over'}}"></view>
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>加载状态
   </view>
   <view class='action'>
     <switch class='sm' bindchange='isLoading'></switch>
   </view>
-</bar>
-<load class="bg-grey {{!isLoad?'loading':'over'}}"></load>
-<bar class="margin-top">
+</view>
+<view class="cu-load bg-grey {{!isLoad?'loading':'over'}}"></view>
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>加载错误
   </view>
-</bar>
-<load class="bg-red erro"></load>
+</view>
+<view class="cu-load bg-red erro"></view>
 
-<bar class="margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>弹框加载
   </view>
   <view class='action'>
-    <button class='bg-green shadow' bindtap='loadModal'>
+    <button class='cu-btn bg-green shadow' bindtap='loadModal'>
       点我
     </button>
   </view>
-</bar>
-<load class='load-modal' wx:if="{{loadModal}}"> 
+</view>
+<view class='cu-load load-modal' wx:if="{{loadModal}}"> 
     <!-- <view class='icon-emojifill text-orange'></view> -->
     <image src='/images/logo.png' class='png' mode='aspectFit'></image>
     <view class='gray-text'>加载中...</view>
-</load>
-<bar class="margin-top">
+</view>
+<view class="cu-bar margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>进度条加载
   </view>
   <view class='action'>
-    <button class='bg-green shadow' bindtap='loadProgress'>
+    <button class='cu-btn bg-green shadow' bindtap='loadProgress'>
       点我
     </button>
   </view>
-</bar>
+</view>
 <view class='load-progress {{loadProgress!=0?"show":"hide"}}' style="top:{{CustomBar}}px;">
   <view class='load-progress-bar bg-green' style="transform: translate3d(-{{100-loadProgress}}%, 0px, 0px);"></view>
   <view class='load-progress-spinner text-green'></view>

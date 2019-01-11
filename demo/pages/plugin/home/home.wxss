@@ -1,5 +1,5 @@
 
-bar .content image{
+.cu-bar .content image{
   height: 60rpx;
   width: 240rpx;
 }

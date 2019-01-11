@@ -1,17 +1,18 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed none-bg text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;background-image:url(https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg);">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed none-bg text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;background-image:url(https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg);">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 微动画
     </navigator>
-  </bar>
-</custom>
-<card class="DhCard">
-  <item class="gradual-green shadow-blur">
-    <view>
-      水波纹
-    </view>
-    <view class='animation-wave'>
-      <view class='wave'></view>
-    </view>
-  </item>
-</card>
+  </view>
+</view>
+<view class="margin radius gradual-green shadow-blur">
+  <image src='https://image.weilanwl.com/gif/wave.gif' mode='scaleToFill' class='gif-wave response'></image>
+</view>
+<view class="margin flex">
+  <view class='bg-black flex-sub margin-right radius shadow-lg'>
+    <image src='https://image.weilanwl.com/gif/loading-black.gif' mode='aspectFit' class='gif-loading-black response'></image>
+  </view>
+  <view class='bg-white flex-sub radius shadow-lg'>
+    <image src='https://image.weilanwl.com/gif/loading-white.gif' mode='aspectFit' class='gif-loading-white response'></image>
+  </view>
+</view>

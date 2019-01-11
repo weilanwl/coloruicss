@@ -1,26 +1,26 @@
-<custom style="height:{{CustomBar}}px;">
-  <bar class="fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 按钮 / 设计
     </navigator>
-  </bar>
-</custom>
+  </view>
+</view>
 <view class="padding-xl">
   <view class="box bg-white text-center radius {{block?'flex-direction':''}}">
-    <button class='{{border?"line":"bg"}}{{bordersize?bordersize:""}}-{{color}} {{round?"round":""}} {{size}} {{shadow?"shadow":""}} {{block?"block":""}}'>我是一个按钮</button>
+    <button class='cu-btn {{border?"line":"bg"}}{{bordersize?bordersize:""}}-{{color}} {{round?"round":""}} {{size}} {{shadow?"shadow":""}} {{block?"block":""}}'>我是一个按钮</button>
   </view>
   <view class='padding text-center'> class="<text wx:if="{{color}}">{{border?"line":"bg"}}{{bordersize?bordersize:""}}-{{color}} {{round?"round":""}} {{size}} {{shadow?"shadow":""}} {{block?"block":""}}</text>" </view>
 </view>
 
-<form-group class="margin-top" bindtap="showModal" data-target="ColorModal">
+<view class="cu-form-group margin-top" bindtap="showModal" data-target="ColorModal">
   <view class='title'>选择颜色</view>
   <view class='padding-sm bg-{{color}} solid radius shadow-blur'></view>
-</form-group>
-<form-group>
+</view>
+<view class="cu-form-group">
   <view class='title'>是否圆角</view>
   <switch class='sm' bindchange='SetRound'></switch>
-</form-group>
-<form-group>
+</view>
+<view class="cu-form-group">
   <view class='title'>选择尺寸</view>
   <radio-group bindchange='SetSize'>
     <label class='margin-left-sm'>
@@ -36,16 +36,16 @@
       <text> 大</text>
     </label>
   </radio-group>
-</form-group>
-<form-group>
+</view>
+<view class="cu-form-group">
   <view class='title'>是否添加阴影</view>
   <switch class='sm' bindchange='SetShadow'></switch>
-</form-group>
-<form-group>
+</view>
+<view class="cu-form-group">
   <view class='title'>是否镂空</view>
   <switch class='sm' bindchange='SetBorder'></switch>
-</form-group>
-<form-group wx:if="{{border}}">
+</view>
+<view  class="cu-form-group" wx:if="{{border}}">
   <view class='title'>边框大小</view>
    <radio-group bindchange='SetBorderSize'>
     <label class='margin-left-sm'>
@@ -57,25 +57,25 @@
       <text> 大</text>
     </label>
   </radio-group>
-</form-group>
+</view>
 
-<!-- <form-group>
+<!-- <view class="cu-form-group">
   <view class='title'>定义为块元素</view>
   <switch class='sm' bindchange='SetBlock'></switch>
-</form-group> -->
+</view> -->
 
-<modal-box class="{{modalName=='ColorModal'?'show':''}}">
-  <dialog>
-    <bar class="justify-end">
+<view class="cu-modal {{modalName=='ColorModal'?'show':''}}">
+  <view class="cu-dialog">
+    <view class="cu-bar justify-end">
       <view class='content'>选择颜色</view>
       <view class='action' bindtap='hideModal'>
         <text class='icon-close text-red'></text>
       </view>
-    </bar>
+    </view>
     <view class='grid col-5 padding'>
       <view class='padding-xs' wx:for="{{ColorList}}" wx:key bindtap='SetColor' data-color='{{item.name}}'>
         <view class='padding-tb bg-{{item.name}} radius'> {{item.title}} </view>
       </view>
     </view>
-  </dialog>
-</modal-box>
+  </view>
+</view>
