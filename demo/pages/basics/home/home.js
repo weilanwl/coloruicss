@@ -13,19 +13,6 @@ Page({
       { title: '加载', name: 'loading', color: 'green', icon: 'loading2' },
     ],
   },
-  onLoad() {
-    let that = this;
-    // 获取用户信息
-    wx.getSetting({
-      success: res => {
-        if (!res.authSetting['scope.userInfo']) {
-          wx.redirectTo({
-            url: '/pages/auth/auth'
-          })
-        }
-      }
-    })
-  },
   showModal(e) {
     this.setData({
       modalName: e.currentTarget.dataset.target

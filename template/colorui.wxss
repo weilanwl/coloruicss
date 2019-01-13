@@ -1459,6 +1459,7 @@ button.icon.lg {
 
 .cu-list.menu {
   display: block;
+  overflow: hidden;
 }
 
 .cu-list+.cu-list {
