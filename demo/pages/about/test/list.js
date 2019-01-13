@@ -1,4 +1,4 @@
-// pages/basics/image/image.js
+// pages/about/test/list.js
 Page({
 
   /**

@@ -17,21 +17,3 @@
 .switch-music::before {
   content: "\e6db";
 }
-
-.invert {
-  filter: invert(100%);
-}
-
-.invert avatar tag, .invert [class*="text-"] tag,
-.invert [class*="text-"] [class*="text-"] {
-  filter: invert(0%);
-}
-
-.invert button, .invert tag, .invert image, .invert avatar, .invert switch,
-.invert [class*="text-"] {
-  filter: invert(100%);
-}
-
-.invert list.menu, .invert list.grid {
-  background: #ddd;
-}

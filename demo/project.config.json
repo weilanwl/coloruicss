@@ -1,43 +1,43 @@
 {
-	"description": "项目配置文件",
-	"packOptions": {
-		"ignore": []
-	},
-	"setting": {
-		"urlCheck": true,
-		"es6": true,
-		"postcss": true,
-		"minified": true,
-		"newFeature": true
-	},
-	"compileType": "miniprogram",
-	"libVersion": "2.4.1",
-	"appid": "wxfd5241d66a07713f",
-	"projectname": "GitHub-ColorUI",
-	"debugOptions": {
-		"hidedInDevtools": []
-	},
-	"isGameTourist": false,
-	"condition": {
-		"search": {
-			"current": -1,
-			"list": []
-		},
-		"conversation": {
-			"current": -1,
-			"list": []
-		},
-		"plugin": {
-			"current": -1,
-			"list": []
-		},
-		"game": {
-			"currentL": -1,
-			"list": []
-		},
-		"miniprogram": {
-			"current": 2,
-			"list": [
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
+    "newFeature": true
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.4.1",
+  "appid": "wxfd5241d66a07713f",
+  "projectname": "ColorUI2.0-test",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "isGameTourist": false,
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "currentL": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": 2,
+      "list": [
         {
           "id": 0,
           "name": "-----基础-首页-----",
@@ -70,43 +70,43 @@
         },
         {
           "id": 2,
-          "name": "1.2 基础-按钮",
+          "name": "1.5 基础-按钮",
           "pathName": "pages/basics/button/button",
           "query": ""
         },
         {
           "id": 2,
-          "name": "1.2 -- 基础-按钮-设计",
+          "name": "1.5 -- 基础-按钮-设计",
           "pathName": "pages/basics/button/design",
           "query": ""
         },
         {
           "id": 2,
-          "name": "1.3 基础-标签",
+          "name": "1.6 基础-标签",
           "pathName": "pages/basics/tag/tag",
           "query": ""
         },
         {
           "id": -1,
-          "name": "1.4 基础-头像",
+          "name": "1.7 基础-头像",
           "pathName": "pages/basics/avatar/avatar",
           "query": ""
         },
         {
           "id": -1,
-          "name": "1.5 基础-进度条",
+          "name": "1.8 基础-进度条",
           "pathName": "pages/basics/progress/progress",
           "query": ""
         },
         {
           "id": 10,
-          "name": "1.6 基础-边框阴影",
+          "name": "1.9 基础-边框阴影",
           "pathName": "pages/basics/shadow/shadow",
           "query": ""
         },
         {
           "id": -1,
-          "name": "1.7 基础-加载",
+          "name": "1.10 基础-加载",
           "pathName": "pages/basics/loading/loading",
           "query": ""
         },
@@ -171,6 +171,12 @@
           "query": ""
         },
         {
+          "id": 20,
+          "name": "2.10 组件-步骤条",
+          "pathName": "pages/component/steps/steps",
+          "query": ""
+        },
+        {
           "id": -1,
           "name": "-----扩展-首页-----",
           "pathName": "pages/plugin/home/home",
@@ -188,7 +194,7 @@
           "pathName": "pages/plugin/animation/animation",
           "query": ""
         }
-			]
-		}
-	}
+      ]
+    }
+  }
 }

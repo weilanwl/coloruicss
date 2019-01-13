@@ -8,8 +8,9 @@ Page({
       { title: '表单', name: 'form', color: 'red', icon: 'formfill' },
       { title: '时间轴', name: 'timeline', color: 'orange', icon: 'timefill' },
       { title: '聊天', name: 'chat', color: 'green', icon: 'messagefill' },
-      { title: '轮播', name: 'swiper', color: 'olive', icon: 'album'},
+      { title: '轮播', name: 'swiper', color: 'olive', icon: 'album' },
       { title: '模态框', name: 'modal', color: 'grey', icon: 'squarecheckfill' },
+      { title: '步骤条', name: 'steps', color: 'cyan', icon: 'roundcheckfill' },
     ],
   },
   onLoad: function () {

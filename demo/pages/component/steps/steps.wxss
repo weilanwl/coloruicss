@@ -1,0 +1,125 @@
+.steps-bottom.cu-steps .cu-item .num::before {
+  content: "\e668";
+  font-family: 'iconfont';
+}
+
+.cu-steps {
+  display: flex;
+}
+
+scroll-view.cu-steps {
+  display: block;
+  white-space: nowrap;
+}
+
+scroll-view.cu-steps .cu-item {
+  display: inline-block;
+}
+
+.cu-steps .cu-item {
+  flex: 1;
+  text-align: center;
+  color: #aaa;
+  position: relative;
+  min-width: 100rpx;
+}
+
+.cu-steps .cu-item [class*="icon"], .cu-steps .cu-item .num {
+  display: block;
+  font-size: 40rpx;
+  line-height: 80rpx;
+}
+
+.cu-steps .cu-item::before, .cu-steps .cu-item::after,.cu-steps.steps-arrow .cu-item::before, .cu-steps.steps-arrow .cu-item::after  {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0px;
+  width: calc(100% - 80rpx);
+  border-bottom: 1px solid #ccc;
+  left: calc(0px - (100% - 80rpx) / 2);
+  top: 40rpx;
+  z-index: 0;
+}
+
+.cu-steps.steps-arrow .cu-item::before, .cu-steps.steps-arrow .cu-item::after {
+  content: "\e6a3";  
+  font-family: 'iconfont';
+  height: 30rpx;
+  border-bottom-width: 0px;  
+  line-height: 30rpx;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  color: #ccc;
+}
+
+.cu-steps.steps-bottom .cu-item::before, .cu-steps.steps-bottom .cu-item::after {
+  bottom: 40rpx;
+  top: initial;
+}
+
+.cu-steps .cu-item::after {
+  border-bottom: 1px solid currentColor;
+  width: 0px;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.cu-steps .cu-item[class*="text-"]::after {
+  width: calc(100% - 80rpx);
+  color: currentColor !important;
+}
+
+.cu-steps .cu-item:first-child::before, .cu-steps .cu-item:first-child::after {
+  display: none;
+}
+
+.cu-steps .cu-item .num {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  line-height: 40rpx;
+  margin: 20rpx auto;
+  font-size: 24rpx;
+  border: 1px solid currentColor;
+  position: relative;
+  overflow: hidden;
+}
+
+.cu-steps .cu-item[class*="text-"] .num {
+  background-color: currentColor;
+}
+
+.cu-steps .cu-item .num::before, .cu-steps .cu-item .num::after {
+  content: attr(data-index);
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  transition: all 0.3s ease-in-out 0s;
+  transform: translateY(0rpx);
+}
+
+.cu-steps .cu-item[class*="text-"] .num::before {
+  transform: translateY(-40rpx);
+  color: #fff;
+}
+
+.cu-steps .cu-item .num::after {
+  transform: translateY(40rpx);
+  color: #fff;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.cu-steps .cu-item[class*="text-"] .num::after {
+  content: "\e645";
+  font-family: 'iconfont';
+  color: #fff;
+  transform: translateY(0rpx);
+}
+
+.cu-steps .cu-item[class*="text-"] .num.err::after {
+  content: "\e646";
+}

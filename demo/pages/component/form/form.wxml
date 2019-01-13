@@ -86,11 +86,7 @@
 
   <view class="cu-form-group margin-top">
     <view class='title'>开关选择</view>
-    <switch class='sm'></switch>
-  </view>
-  <view class="cu-form-group">
-    <view class='title'>大号开关</view>
-    <switch class=''></switch>
+    <switch></switch>
   </view>
   <view class="cu-form-group">
     <view class='title'>定义颜色</view>
@@ -110,10 +106,6 @@
       <radio checked></radio>
     </view>
     <view class="cu-form-group">
-      <view class='title'>定义尺寸</view>
-      <radio class='sm'></radio>
-    </view>
-    <view class="cu-form-group">
       <view class='title'>定义样式</view>
       <radio class='radio'></radio>
     </view>
@@ -129,10 +121,6 @@
   <view class="cu-form-group margin-top">
     <view class='title'>复选选操作(checkbox)</view>
     <checkbox></checkbox>
-  </view>
-  <view class="cu-form-group">
-    <view class='title'>定义尺寸</view>
-    <checkbox class='sm' checked></checkbox>
   </view>
   <view class="cu-form-group">
     <view class='title'>定义形状</view>

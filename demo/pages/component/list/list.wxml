@@ -5,446 +5,269 @@
     </navigator>
   </view>
 </view>
-<view class="page {{skin?' invert ':' '}}">
-  <view class="cu-list grid col-3">
-    <view class="cu-item">
-      <text class='icon-cardboardfill text-red'></text>
-      <text>VR</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-recordfill text-orange'></text>
-      <text>录像</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-picfill text-yellow'></text>
-      <text>图像</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-noticefill text-olive'>
-        <view class="cu-tag badge">99+</view>
-      </text>
-      <text>通知</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-upstagefill text-cyan'></text>
-      <text>排行榜</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-clothesfill text-blue'>
-        <view class="cu-tag badge"></view>
-      </text>
-      <text>皮肤</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-discoverfill text-purple'></text>
-      <text>发现</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-questionfill text-mauve'></text>
-      <text>帮助</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-servicefill text-pink'></text>
-      <text>反馈</text>
-    </view>
+<view class="cu-bar solid-bottom margin-top">
+  <view class='action'>
+    <text class='icon-title text-orange '></text> 宫格列表
   </view>
-  <view class="cu-list grid col-4">
-    <view class="cu-item">
-      <text class='icon-cardboardfill text-red'></text>
-      <text>VR</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-recordfill text-orange'></text>
-      <text>录像</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-picfill text-yellow'></text>
-      <text>图像</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-noticefill text-olive'>
-        <view class="cu-tag badge">99+</view>
-      </text>
-      <text>通知</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-upstagefill text-cyan'></text>
-      <text>排行榜</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-clothesfill text-blue'>
-        <view class="cu-tag badge"></view>
-      </text>
-      <text>皮肤</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-discoverfill text-purple'></text>
-      <text>发现</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-questionfill text-mauve'></text>
-      <text>帮助</text>
-    </view>
+  <view class='action'>
+    <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="gridModal">设置</button>
   </view>
-  <view class="cu-list grid no-border col-4">
-    <view class="cu-item">
-      <text class='icon-cardboardfill text-red'></text>
-      <text>VR</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-recordfill text-orange'></text>
-      <text>录像</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-picfill text-yellow'></text>
-      <text>图像</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-noticefill text-olive'>
-        <view class="cu-tag badge">99+</view>
-      </text>
-      <text>通知</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-upstagefill text-cyan'></text>
-      <text>排行榜</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-clothesfill text-blue'>
-        <view class="cu-tag badge"></view>
-      </text>
-      <text>皮肤</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-discoverfill text-purple'></text>
-      <text>发现</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-questionfill text-mauve'></text>
-      <text>帮助</text>
-    </view>
-  </view>
-  <view class="cu-list grid col-5 no-border">
-    <view class="cu-item">
-      <text class='icon-cardboardfill text-red'>
-        <view class="cu-tag badge">99+</view>
-      </text>
-      <text>VR</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-recordfill text-orange'></text>
-      <text>录像</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-picfill text-yellow'></text>
-      <text>图像</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-noticefill text-olive'>
-      </text>
-      <text>通知</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-upstagefill text-cyan'></text>
-      <text>排行榜</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-clothesfill text-blue'>
-        <view class="cu-tag badge"></view>
-      </text>
-      <text>皮肤</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-discoverfill text-purple'></text>
-      <text>发现</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-questionfill text-mauve'></text>
-      <text>帮助</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-commandfill text-purple'></text>
-      <text>问答</text>
-    </view>
-    <view class="cu-item">
-      <text class='icon-brandfill text-mauve'></text>
-      <text>版权</text>
-    </view>
-  </view>
-  <view class="cu-list menu no-padding">
-    <view class="cu-item">
-      <view class='content'>
-        <view>
-          <text class='icon-clothesfill text-blue'></text> 皮肤设置</view>
-        <view class='text-gray text-sm'>
-          <text class='icon-infofill'></text> 皮肤需要付费购买</view>
-      </view>
-      <view class='action'>
-        <switch class='switch-sex sm' bindchange="switchSex"></switch>
-      </view>
-    </view>
-    <view class="cu-item">
-      <view class='content'>
-        <view>
-          <text class='icon-musicfill text-red'></text> 声音控制</view>
-        <view class='text-gray text-sm'>
-          <text class='icon-infofill'></text> 需要获得系统权限</view>
-      </view>
-      <view class='action'>
-        <switch class='switch-music'></switch>
-      </view>
-    </view>
-  </view>
-  <view class="cu-list menu menu-avatar inverts">
-    <view class="cu-item">
-      <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
-      <view class='content'>
-        <view class='text-grey'>文晓港</view>
-        <view class='text-gray text-sm'>
-          <text class='icon-infofill text-red'></text> 消息未送达</view>
-      </view>
-      <view class='action'>
-        <view class='text-grey text-xs'>22:20</view>
-        <view class="cu-tag round bg-grey sm">5</view>
-      </view>
-    </view>
-    <view class="cu-item">
-      <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);">
-        <view class="cu-tag badge">99+</view>
-      </view>
-      <view class='content'>
-        <view class='text-grey'>文晓港
-          <view class="cu-tag round bg-orange sm">SVIP</view>
-        </view>
-        <view class='text-gray text-sm'>
-          <text class='icon-redpacket_fill text-red'></text> 收到红包</view>
-      </view>
-      <view class='action'>
-        <view class='text-grey text-xs'>22:20</view>
-        <text class='icon-notice_forbid_fill text-gray'></text>
-      </view>
-    </view>
-  </view>
-  <view class="cu-list menu menu-avatar no-padding">
-    <view class="cu-item ">
-      <view class="cu-avatar radius lg" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
-      <view class='content'>
-        <view>喵星人互动群</view>
-        <view class='text-gray text-sm'>
-          喵星酱：喵喵喵！</view>
-      </view>
-      <view class='action'>
-        <view class='text-grey text-xs'>22:20</view>
-        <view class="cu-tag round bg-red sm">5</view>
-      </view>
-    </view>
-    <view class="cu-item grayscale">
-      <view class="cu-avatar radius lg" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
-      <view class='content'>
-        <view>喵星人互动群</view>
-        <view class='text-gray text-sm'>
-          喵星酱：喵喵喵！</view>
-      </view>
-      <view class='action'>
-        <view class='text-grey text-xs'>22:20</view>
-        <view class="cu-tag round bg-red sm">5</view>
-      </view>
-    </view>
-    <view class="cu-item cur">
-      <view class="cu-avatar radius lg" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);">
-        <view class="cu-tag badge"></view>
-      </view>
-      <view class='content'>
-        <view>喵星人互动群
-          <view class="cu-tag round bg-orange sm">6人</view>
-        </view>
-        <view class='text-gray text-sm'>
-          喵星酱：
-          <text class='icon-picfill text-orange'></text> 图片传输中...</view>
-      </view>
-      <view class='action'>
-        <view class='text-grey text-xs'>22:20</view>
-        <text class='icon-notice_forbid_fill text-gray'></text>
-      </view>
-    </view>
-  </view>
-  <view class="cu-list menu">
-    <view class="cu-item">
-      <view class='content'>
-        <text class='icon-circlefill text-grey'></text>
-        <text class='text-grey'>图标 + 标题</text>
-      </view>
-    </view>
-    <view class="cu-item">
-      <view class='content'>
-        <image src='/images/logo.png' class='png' mode='aspectFit'></image>
-        <text class='text-grey'>图片 + 标题</text>
-      </view>
-    </view>
-    <view class="cu-item">
-      <button class='cu-btn content' open-type='contact'>
-        <text class='icon-btn text-olive'></text>
-        <text class='text-grey'>Open-type 按钮</text>
-      </button>
-    </view>
-    <view class="cu-item">
-      <navigator class='content' hover-class='none' url='../list/list' open-type="redirect">
-        <text class='icon-discoverfill text-orange'></text>
-        <text class='text-grey'>Navigator 跳转</text>
-      </navigator>
-    </view>
-    <view class="cu-item">
-      <view class='content'>
-        <text class='icon-emojifill text-red'></text>
-        <text class='text-grey'>头像</text>
-      </view>
-      <view class='action'>
-        <view class="cu-avatar sm round">
-          <text class='icon-people'></text>
+</view>
+<view class="cu-modal {{modalName=='gridModal'?'show':''}}" bindtap='hideModal'>
+  <view class="cu-dialog" catchtap>
+    <radio-group class="block" bindchange="gridchange">
+      <view class='cu-list menu text-left'>
+        <view class='cu-item' wx:for="{{3}}" wx:key>
+          <label class='flex justify-between align-center flex-sub'>
+            <view class='flex-sub'>{{index +3}} 列</view>
+            <radio class='round' value='{{index +3}}' checked='{{gridCol==index+3}}'></radio>
+          </label>
         </view>
       </view>
-    </view>
-    <view class="cu-item">
-      <view class='content'>
-        <text class='icon-emojiflashfill text-pink'></text>
-        <text class='text-grey'>头像组</text>
-      </view>
-      <view class='action'>
-        <view class="cu-avatar-group">
-          <view class="cu-avatar round sm" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);"></view>
-          <view class="cu-avatar round sm" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
-          <view class="cu-avatar round sm" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>
-          <view class="cu-avatar round sm" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
+    </radio-group>
+    <view class='cu-list menu text-left solid-top'>
+      <view class='cu-item'>
+        <view class='content'>
+          <text class='text-grey'>边框</text>
         </view>
-        <text class='text-grey text-sm'>4 人</text>
-      </view>
-    </view>
-    <view class="cu-item">
-      <view class='content'>
-        <text class='icon-crown text-green'></text>
-        <text class='text-grey'>按钮</text>
-      </view>
-      <view class='action'>
-        <button class='cu-btn round bg-green sm'>
-          <text class='icon-upload'></text> 上传</button>
-      </view>
-    </view>
-    <view class="cu-item">
-      <view class='content'>
-        <text class='icon-crownfill text-green'></text>
-        <text class='text-grey'>按钮</text>
-      </view>
-      <view class='action'>
-        <button class='cu-btn round bg-blue'>
-          <text class='icon-down'></text> 下载</button>
-      </view>
-    </view>
-  </view>
-  <view class="cu-list menu">
-    <view class="cu-item arrow">
-      <view class='content'>
-        <text class='icon-roundrightfill text-grey'></text>
-        <text class='text-grey'>箭头</text>
-      </view>
-    </view>
-    <view class="cu-item arrow">
-      <view class='content'>
-        <text class='icon-tagfill text-red'></text>
-        <text class='text-grey'>标签</text>
-      </view>
-      <view class='action'>
-        <view class="cu-tag round bg-orange light">音乐</view>
-        <view class="cu-tag round bg-olive light">电影</view>
-        <view class="cu-tag round bg-blue light">旅行</view>
-      </view>
-    </view>
-    <view class="cu-item arrow">
-      <view class='content'>
-        <text class='icon-warn text-green'></text>
-        <text class='text-grey'>文本</text>
-      </view>
-      <view class='action'>
-        <text class='text-grey text-sm'>小目标还没有实现！</text>
-      </view>
-    </view>
-    <view class="cu-item arrow">
-      <view class='content'>
-        <text class='icon-warnfill text-green'></text>
-        <text class='text-grey'>文本</text>
-        <text class='text-grey text-sm margin-left-sm'>小目标还没有实现！</text>
-      </view>
-    </view>
-  </view>
-  <view class="cu-list menu no-padding">
-    <view class="cu-item">
-      <view class='content'>
-        <text class='icon-radiobox text-orange'></text>
-        <text class='text-grey'>徽章</text>
-      </view>
-      <view class='action'>
-        <view class='cu-tag bg-red round'></view>
-      </view>
-    </view>
-    <view class="cu-item">
-      <view class='content'>
-        <text class='icon-tagfill text-olive'></text>
-        <text class='text-grey'>标签</text>
-      </view>
-      <view class='action'>
-        <view class='cu-tag bg-olive round'>9</view>
-      </view>
-    </view>
-    <view class="cu-item arrow">
-      <view class='content'>
-        <text class='icon-radioboxfill text-blue'></text>
-        <text class='text-grey'>胶囊</text>
-      </view>
-      <view class='action'>
-        <view class="cu-capsule round">
-          <view class='cu-tag bg-blue'>
-            <text class='icon-locationfill'></text>
-          </view>
-          <view class="cu-tag line-blue">
-            广州
-          </view>
+        <view class='action'>
+          <switch bindchange="gridswitch"></switch>
         </view>
       </view>
     </view>
   </view>
-  <view class="cu-list menu no-padding card-menu margin-bottom-xl">
-    <view class="cu-item">
-      <view class='content'>
-        <text class='icon-radiobox text-orange'></text>
-        <text class='text-grey'>徽章</text>
-      </view>
-      <view class='action'>
-        <view class='cu-tag bg-red round'></view>
+</view>
+<view class="cu-list grid col-{{gridCol}} {{gridBorder?'':'no-border'}}">
+  <view class="cu-item" wx:for="{{iconList}}" wx:key wx:if="{{index<gridCol*2}}">
+    <view class='icon-{{item.icon}} text-{{item.color}}'>
+      <view class="cu-tag badge" wx:if="{{item.badge!=0}}">
+        <block wx:if="{{item.badge!=1}}">{{item.badge>99?'99+':item.badge}}</block>
       </view>
     </view>
-    <view class="cu-item">
-      <view class='content'>
-        <text class='icon-tagfill text-olive'></text>
-        <text class='text-grey'>标签</text>
-      </view>
-      <view class='action'>
-        <view class='cu-tag bg-olive round'>9</view>
-      </view>
-    </view>
-    <view class="cu-item arrow">
-      <view class='content'>
-        <text class='icon-radioboxfill text-blue'></text>
-        <text class='text-grey'>胶囊</text>
-      </view>
-      <view class='action'>
-        <view class="cu-capsule round">
-          <view class='cu-tag bg-blue'>
-            <text class='icon-locationfill'></text>
-          </view>
-          <view class="cu-tag line-blue">
-            广州
-          </view>
+    <text>{{item.name}}</text>
+  </view>
+</view>
+
+
+<view class="cu-bar solid-bottom margin-top">
+  <view class='action'>
+    <text class='icon-title text-orange '></text> 菜单列表
+  </view>
+  <view class='action'>
+    <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="menuModal">设置</button>
+  </view>
+</view>
+<view class="cu-modal {{modalName=='menuModal'?'show':''}}" bindtap='hideModal'>
+  <view class="cu-dialog" catchtap>
+    <view class='cu-list menu text-left solid-top'>
+      <view class='cu-item'>
+        <view class='content'>
+          <text class='text-grey'>短边框</text>
+        </view>
+        <view class='action'>
+          <switch bindchange="menuBorder"></switch>
         </view>
       </view>
+      <view class='cu-item'>
+        <view class='content'>
+          <text class='text-grey'>箭头</text>
+        </view>
+        <view class='action'>
+          <switch bindchange="menuArrow"></switch>
+        </view>
+      </view>
+      <view class='cu-item'>
+        <view class='content'>
+          <text class='text-grey'>卡片</text>
+        </view>
+        <view class='action'>
+          <switch bindchange="menuCard"></switch>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="cu-list menu {{menuBorder?'sm-border':''}} {{menuCard?'card-menu margin-top':''}}">
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class='content'>
+      <text class='icon-circlefill text-grey'></text>
+      <text class='text-grey'>图标 + 标题</text>
+    </view>
+  </view>
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class='content'>
+      <image src='/images/logo.png' class='png' mode='aspectFit'></image>
+      <text class='text-grey'>图片 + 标题</text>
+    </view>
+  </view>
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <button class='cu-btn content' open-type='contact'>
+      <text class='icon-btn text-olive'></text>
+      <text class='text-grey'>Open-type 按钮</text>
+    </button>
+  </view>
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <navigator class='content' hover-class='none' url='../list/list' open-type="redirect">
+      <text class='icon-discoverfill text-orange'></text>
+      <text class='text-grey'>Navigator 跳转</text>
+    </navigator>
+  </view>
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class='content'>
+      <text class='icon-emojiflashfill text-pink'></text>
+      <text class='text-grey'>头像组</text>
+    </view>
+    <view class='action'>
+      <view class="cu-avatar-group">
+        <view class="cu-avatar round sm" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);"></view>
+        <view class="cu-avatar round sm" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
+        <view class="cu-avatar round sm" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>
+        <view class="cu-avatar round sm" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
+      </view>
+      <text class='text-grey text-sm'>4 人</text>
+    </view>
+  </view>
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class='content'>
+      <text class='icon-btn text-green'></text>
+      <text class='text-grey'>按钮</text>
+    </view>
+    <view class='action'>
+      <button class='cu-btn round bg-green shadow'>
+        <text class='icon-upload'></text> 上传</button>
+    </view>
+  </view>
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class='content'>
+      <text class='icon-tagfill text-red'></text>
+      <text class='text-grey'>标签</text>
+    </view>
+    <view class='action'>
+      <view class="cu-tag round bg-orange light">音乐</view>
+      <view class="cu-tag round bg-olive light">电影</view>
+      <view class="cu-tag round bg-blue light">旅行</view>
+    </view>
+  </view>
+  <view class="cu-item {{menuArrow?'arrow':''}}">
+    <view class='content'>
+      <text class='icon-warn text-green'></text>
+      <text class='text-grey'>文本</text>
+    </view>
+    <view class='action'>
+      <text class='text-grey text-sm'>小目标还没有实现！</text>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class='content padding-tb-sm'>
+      <view>
+        <text class='icon-clothesfill text-blue'></text> 多行Item</view>
+      <view class='text-gray text-sm'>
+        <text class='icon-infofill'></text> 小目标还没有实现！</view>
+    </view>
+    <view class='action'>
+      <switch class='switch-sex sm' bindchange="switchSex"></switch>
+    </view>
+  </view>
+</view>
+
+<view class="cu-bar solid-bottom margin-top">
+  <view class='action'>
+    <text class='icon-title text-orange '></text> 消息列表
+  </view>
+</view>
+<view class="cu-list menu menu-avatar">
+  <view class="cu-item">
+    <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
+    <view class='content'>
+      <view class='text-grey'>文晓港</view>
+      <view class='text-gray text-sm'>
+        <text class='icon-infofill text-red'></text> 消息未送达</view>
+    </view>
+    <view class='action'>
+      <view class='text-grey text-xs'>22:20</view>
+      <view class="cu-tag round bg-grey sm">5</view>
+    </view>
+  </view>
+  <view class="cu-item">
+    <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);">
+      <view class="cu-tag badge">99+</view>
+    </view>
+    <view class='content'>
+      <view class='text-grey'>文晓港
+        <view class="cu-tag round bg-orange sm">SVIP</view>
+      </view>
+      <view class='text-gray text-sm'>
+        <text class='icon-redpacket_fill text-red'></text> 收到红包</view>
+    </view>
+    <view class='action'>
+      <view class='text-grey text-xs'>22:20</view>
+      <view class='icon-notice_forbid_fill text-gray'></view>
+    </view>
+  </view>
+  <view class="cu-item ">
+    <view class="cu-avatar radius lg" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
+    <view class='content'>
+      <view>喵星人互动群</view>
+      <view class='text-gray text-sm'>
+        喵星酱：喵喵喵！</view>
+    </view>
+    <view class='action'>
+      <view class='text-grey text-xs'>22:20</view>
+      <view class="cu-tag round bg-red sm">5</view>
+    </view>
+  </view>
+  <view class="cu-item grayscale">
+    <view class="cu-avatar radius lg" style="background-image:url(https://image.weilanwl.com/img/square-3.jpg);"></view>
+    <view class='content'>
+      <view>喵星人互动群</view>
+      <view class='text-gray text-sm'>
+        喵星酱：喵喵喵！</view>
+    </view>
+    <view class='action'>
+      <view class='text-grey text-xs'>22:20</view>
+      <view class="cu-tag round bg-red sm">5</view>
+    </view>
+  </view>
+  <view class="cu-item cur">
+    <view class="cu-avatar radius lg" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);">
+      <view class="cu-tag badge"></view>
+    </view>
+    <view class='content'>
+      <view>喵星人互动群
+        <view class="cu-tag round bg-orange sm">6人</view>
+      </view>
+      <view class='text-gray text-sm'>
+        喵星酱：
+        <text class='icon-picfill text-orange'></text> 图片传输中...</view>
+    </view>
+    <view class='action'>
+      <view class='text-grey text-xs'>22:20</view>
+      <view class='icon-notice_forbid_fill text-gray'></view>
+    </view>
+  </view>
+</view>
+
+
+<view class="cu-bar solid-bottom margin-top">
+  <view class='action'>
+    <text class='icon-title text-orange '></text> 列表右滑
+  </view>
+</view>
+<view class="cu-list menu menu-avatar">
+  <view class="cu-item {{modalName=='move-box-'+ index?'move-cur':''}}" wx:for="{{4}}" wx:key bindtouchstart='ListTouchStart' bindtouchmove='ListTouchMove' bindtouchend='ListTouchEnd' data-target="move-box-{{index}}">
+    <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-{{index+1}}.jpg);"></view>
+    <view class='content'>
+      <view class='text-grey'>文晓港</view>
+      <view class='text-gray text-sm'>
+        <text class='icon-infofill text-red'></text> 消息未送达</view>
+    </view>
+    <view class='action'>
+      <view class='text-grey text-xs'>22:20</view>
+      <view class="cu-tag round bg-grey sm">5</view>
+    </view>
+    <view class='move'>
+      <view class='bg-grey'>置顶</view>
+      <view class="bg-red">删除</view>
     </view>
   </view>
 </view>

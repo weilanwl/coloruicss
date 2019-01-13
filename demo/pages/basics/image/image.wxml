@@ -1,14 +1,2 @@
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-    <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-        <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-            <text class='icon-back'></text>
-            图片
-        </navigator>
-        <view class='action'>
-
-        </view>
-    </view>
-</view>
-
-<image class="" src="https://image.weilanwl.com/img/square-4.jpg" mode="widthFix" lazy-load="true" binderror="" bindload=""></image>
-<view><text>好</text></view>
+<!--pages/basics/image/image.wxml-->
+<text>pages/basics/image/image.wxml</text>

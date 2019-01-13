@@ -2,20 +2,10 @@ image[class*="gif-"]{
   border-radius: 6rpx;
   display: block;
 }
-.gif-wave{
-  mix-blend-mode: screen;
-  width: 100%;   
-  height: 100rpx;   
-}
 
-.gif-loading-black{  
+.gif-black{  
   mix-blend-mode: screen;  
-  width: 100%;   
-  height: 280rpx;   
 }
-
-.gif-loading-white{  
+.gif-white{  
   mix-blend-mode: multiply; 
-  width: 100%;   
-  height: 280rpx;   
 }

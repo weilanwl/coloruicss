@@ -1,5 +1,5 @@
 /*
-  Color UI v2.0.4 | by 文晓港 
+  Color UI v2.0.5 | by 文晓港 
   仅供学习交流，如作它用所承受的法律责任一概与作者无关   
   （QQ交流群：240787041）
   文档：http://www.color-ui.com/
@@ -17,7 +17,8 @@ page {
   font-family: Helvetica Neue, Helvetica, sans-serif;
 }
 
-view, text, custom, .cu-tag, .cu-capsule, scroll-view, swiper, button, .cu-timeline, form, .cu-form-group, info, .cu-bar, progress, input, textarea, label, navigator, list, item, chat, image {
+view, text, scroll-view, swiper, button, form, input, textarea, label, navigator,
+image {
   box-sizing: border-box;
 }
 
@@ -81,9 +82,9 @@ switch::after, switch::before {
   color: #fff;
   top: 0%;
   left: 0rpx;
-  font-size: 32rpx;
-  line-height: 64rpx;
-  width: 64rpx;
+  font-size: 26rpx;
+  line-height: 26px;
+  width: 26px;
   text-align: center;
   pointer-events: none;
   transform: scale(0, 0);
@@ -112,10 +113,10 @@ radio::before, checkbox::before {
   position: absolute;
   color: #fff;
   top: 50%;
-  margin-top: -16rpx;
-  right: 10rpx;
+  margin-top: -8px;
+  right: 5px;
   font-size: 32rpx;
-  line-height: 32rpx;
+  line-height: 16px;
   pointer-events: none;
   transform: scale(1, 1);
   transition: all 0.3s ease-in-out 0s;
@@ -129,16 +130,17 @@ switch[checked]::before {
 switch .wx-switch-input {
   background: #aaa !important;
   border: none;
-  padding: 0 60rpx;
-  height: 64rpx;
+  padding: 0 24px;
+  width: 48px;
+  height: 26px;
   margin: 0;
   border-radius: 100rpx;
 }
 
 switch .wx-switch-input::after {
   margin: auto !important;
-  width: 64rpx !important;
-  height: 64rpx !important;
+  width: 26px !important;
+  height: 26px !important;
   border-radius: 100rpx;
   left: 0rpx !important;
   top: 0rpx !important;
@@ -150,7 +152,7 @@ switch .wx-switch-input::after {
 
 switch .wx-switch-input-checked::after {
   margin: auto !important;
-  left: 57rpx !important;
+  left: 22px !important;
   box-shadow: none !important;
 }
 
@@ -160,19 +162,21 @@ radio-group {
 
 radio .wx-radio-input, checkbox .wx-checkbox-input {
   margin: 0;
-  width: 48rpx;
-  height: 48rpx;
+  width: 24px;
+  height: 24px;
 }
 
 checkbox.round .wx-checkbox-input {
   border-radius: 100rpx;
 }
 
-switch.radius .wx-switch-input::after, switch.radius .wx-switch-input, switch.radius .wx-switch-input::before {
+switch.radius .wx-switch-input::after, switch.radius .wx-switch-input,
+switch.radius .wx-switch-input::before {
   border-radius: 10rpx;
 }
 
-switch .wx-switch-input::before, radio.radio::before, checkbox .wx-checkbox-input::before, radio .wx-radio-input::before {
+switch .wx-switch-input::before, radio.radio::before,
+checkbox .wx-checkbox-input::before, radio .wx-radio-input::before {
   display: none;
 }
 
@@ -181,8 +185,8 @@ radio.radio[checked]::after {
   background: transparent;
   display: block;
   position: absolute;
-  width: 16rpx;
-  height: 16rpx;
+  width: 8px;
+  height: 8px;
   z-index: 999;
   top: 0rpx;
   left: 0rpx;
@@ -190,11 +194,7 @@ radio.radio[checked]::after {
   bottom: 0;
   margin: auto;
   border-radius: 200rpx;
-  border: 16rpx solid #fff;
-}
-
-switch.sm, checkbox.sm, radio.sm {
-  transform: scale(0.8);
+  border: 8px solid #fff;
 }
 
 .switch-sex::after {
@@ -219,137 +219,179 @@ switch.sm, checkbox.sm, radio.sm {
           背景
  ==================== */
 
-.line-red::after, .lines-red::after, switch.red[checked] .wx-switch-input, checkbox.red[checked] .wx-checkbox-input, radio.red[checked] .wx-radio-input {
+.line-red::after, .lines-red::after, switch.red[checked] .wx-switch-input,
+checkbox.red[checked] .wx-checkbox-input, radio.red[checked] .wx-radio-input {
   border-color: #e54d42 !important;
 }
 
-.line-orange::after, .lines-orange::after, switch.orange[checked] .wx-switch-input, checkbox.orange[checked] .wx-checkbox-input, radio.orange[checked] .wx-radio-input {
+.line-orange::after, .lines-orange::after,
+switch.orange[checked] .wx-switch-input,
+checkbox.orange[checked] .wx-checkbox-input,
+radio.orange[checked] .wx-radio-input {
   border-color: #f37b1d !important;
 }
 
-.line-yellow::after, .lines-yellow::after, switch.yellow[checked] .wx-switch-input, checkbox.yellow[checked] .wx-checkbox-input, radio.yellow[checked] .wx-radio-input {
+.line-yellow::after, .lines-yellow::after,
+switch.yellow[checked] .wx-switch-input,
+checkbox.yellow[checked] .wx-checkbox-input,
+radio.yellow[checked] .wx-radio-input {
   border-color: #fbbd08 !important;
 }
 
-.line-olive::after, .lines-olive::after, switch.olive[checked] .wx-switch-input, checkbox.olive[checked] .wx-checkbox-input, radio.olive[checked] .wx-radio-input {
+.line-olive::after, .lines-olive::after, switch.olive[checked] .wx-switch-input,
+checkbox.olive[checked] .wx-checkbox-input, radio.olive[checked] .wx-radio-input {
   border-color: #8dc63f !important;
 }
 
-.line-green::after, .lines-green::after, switch.green[checked] .wx-switch-input, checkbox.green[checked] .wx-checkbox-input, checkbox[checked] .wx-checkbox-input, radio.green[checked] .wx-radio-input {
+.line-green::after, .lines-green::after, switch.green[checked] .wx-switch-input,
+checkbox.green[checked] .wx-checkbox-input, checkbox[checked] .wx-checkbox-input,
+radio.green[checked] .wx-radio-input {
   border-color: #39b54a !important;
 }
 
-.line-cyan::after, .lines-cyan::after, switch.cyan[checked] .wx-switch-input, checkbox.cyan[checked] .wx-checkbox-input, radio.cyan[checked] .wx-radio-input {
+.line-cyan::after, .lines-cyan::after, switch.cyan[checked] .wx-switch-input,
+checkbox.cyan[checked] .wx-checkbox-input, radio.cyan[checked] .wx-radio-input {
   border-color: #1cbbb4 !important;
 }
 
-.line-blue::after, .lines-blue::after, switch.blue[checked] .wx-switch-input, checkbox.blue[checked] .wx-checkbox-input, radio.blue[checked] .wx-radio-input {
+.line-blue::after, .lines-blue::after, switch.blue[checked] .wx-switch-input,
+checkbox.blue[checked] .wx-checkbox-input, radio.blue[checked] .wx-radio-input {
   border-color: #0081ff !important;
 }
 
-.line-purple::after, .lines-purple::after, switch.purple[checked] .wx-switch-input, checkbox.purple[checked] .wx-checkbox-input, radio.purple[checked] .wx-radio-input {
+.line-purple::after, .lines-purple::after,
+switch.purple[checked] .wx-switch-input,
+checkbox.purple[checked] .wx-checkbox-input,
+radio.purple[checked] .wx-radio-input {
   border-color: #6739b6 !important;
 }
 
-.line-mauve::after, .lines-mauve::after, switch.mauve[checked] .wx-switch-input, checkbox.mauve[checked] .wx-checkbox-input, radio.mauve[checked] .wx-radio-input {
+.line-mauve::after, .lines-mauve::after, switch.mauve[checked] .wx-switch-input,
+checkbox.mauve[checked] .wx-checkbox-input, radio.mauve[checked] .wx-radio-input {
   border-color: #9c26b0 !important;
 }
 
-.line-pink::after, .lines-pink::after, switch.pink[checked] .wx-switch-input, checkbox.pink[checked] .wx-checkbox-input, radio.pink[checked] .wx-radio-input {
+.line-pink::after, .lines-pink::after, switch.pink[checked] .wx-switch-input,
+checkbox.pink[checked] .wx-checkbox-input, radio.pink[checked] .wx-radio-input {
   border-color: #e03997 !important;
 }
 
-.line-brown::after, .lines-brown::after, switch.brown[checked] .wx-switch-input, checkbox.brown[checked] .wx-checkbox-input, radio.brown[checked] .wx-radio-input {
+.line-brown::after, .lines-brown::after, switch.brown[checked] .wx-switch-input,
+checkbox.brown[checked] .wx-checkbox-input, radio.brown[checked] .wx-radio-input {
   border-color: #a5673f !important;
 }
 
-.line-grey::after, .lines-grey::after, switch.grey[checked] .wx-switch-input, checkbox.grey[checked] .wx-checkbox-input, radio.grey[checked] .wx-radio-input {
+.line-grey::after, .lines-grey::after, switch.grey[checked] .wx-switch-input,
+checkbox.grey[checked] .wx-checkbox-input, radio.grey[checked] .wx-radio-input {
   border-color: #8799a3 !important;
 }
 
-.line-gray::after, .lines-gray::after, switch.gray[checked] .wx-switch-input, checkbox.gray[checked] .wx-checkbox-input, radio.gray[checked] .wx-radio-input {
+.line-gray::after, .lines-gray::after, switch.gray[checked] .wx-switch-input,
+checkbox.gray[checked] .wx-checkbox-input, radio.gray[checked] .wx-radio-input {
   border-color: #aaa !important;
 }
 
-.line-black::after, .lines-black::after, switch.black[checked] .wx-switch-input, checkbox.black[checked] .wx-checkbox-input, radio.black[checked] .wx-radio-input {
+.line-black::after, .lines-black::after, switch.black[checked] .wx-switch-input,
+checkbox.black[checked] .wx-checkbox-input, radio.black[checked] .wx-radio-input {
   border-color: #333 !important;
 }
 
-.line-white::after, .lines-white::after, switch.white[checked] .wx-switch-input, checkbox.white[checked] .wx-checkbox-input, radio.white[checked] .wx-radio-input {
+.line-white::after, .lines-white::after, switch.white[checked] .wx-switch-input,
+checkbox.white[checked] .wx-checkbox-input, radio.white[checked] .wx-radio-input {
   border-color: #fff !important;
 }
 
-.bg-red, switch.red[checked] .wx-switch-input, checkbox.red[checked] .wx-checkbox-input, radio.red[checked] .wx-radio-input {
+.bg-red, switch.red[checked] .wx-switch-input,
+checkbox.red[checked] .wx-checkbox-input, radio.red[checked] .wx-radio-input {
   background-color: #e54d42 !important;
   color: #fff !important;
 }
 
-.bg-orange, switch.orange[checked] .wx-switch-input, checkbox.orange[checked] .wx-checkbox-input, radio.orange[checked] .wx-radio-input {
+.bg-orange, switch.orange[checked] .wx-switch-input,
+checkbox.orange[checked] .wx-checkbox-input,
+radio.orange[checked] .wx-radio-input {
   background-color: #f37b1d !important;
   color: #fff !important;
 }
 
-.bg-yellow, switch.yellow[checked] .wx-switch-input, checkbox.yellow[checked] .wx-checkbox-input, radio.yellow[checked] .wx-radio-input {
+.bg-yellow, switch.yellow[checked] .wx-switch-input,
+checkbox.yellow[checked] .wx-checkbox-input,
+radio.yellow[checked] .wx-radio-input {
   background-color: #fbbd08 !important;
   color: #333 !important;
 }
 
-.bg-olive, switch.olive[checked] .wx-switch-input, checkbox.olive[checked] .wx-checkbox-input, radio.olive[checked] .wx-radio-input {
+.bg-olive, switch.olive[checked] .wx-switch-input,
+checkbox.olive[checked] .wx-checkbox-input, radio.olive[checked] .wx-radio-input {
   background-color: #8dc63f !important;
   color: #fff !important;
 }
 
-.bg-green, switch.green[checked] .wx-switch-input, switch[checked] .wx-switch-input, checkbox.green[checked] .wx-checkbox-input, checkbox[checked] .wx-checkbox-input, radio.green[checked] .wx-radio-input, radio[checked] .wx-radio-input {
+.bg-green, switch.green[checked] .wx-switch-input,
+switch[checked] .wx-switch-input, checkbox.green[checked] .wx-checkbox-input,
+checkbox[checked] .wx-checkbox-input, radio.green[checked] .wx-radio-input,
+radio[checked] .wx-radio-input {
   background-color: #39b54a !important;
   color: #fff !important;
 }
 
-.bg-cyan, switch.cyan[checked] .wx-switch-input, checkbox.cyan[checked] .wx-checkbox-input, radio.cyan[checked] .wx-radio-input {
+.bg-cyan, switch.cyan[checked] .wx-switch-input,
+checkbox.cyan[checked] .wx-checkbox-input, radio.cyan[checked] .wx-radio-input {
   background-color: #1cbbb4 !important;
   color: #fff !important;
 }
 
-.bg-blue, switch.blue[checked] .wx-switch-input, checkbox.blue[checked] .wx-checkbox-input, radio.blue[checked] .wx-radio-input {
+.bg-blue, switch.blue[checked] .wx-switch-input,
+checkbox.blue[checked] .wx-checkbox-input, radio.blue[checked] .wx-radio-input {
   background-color: #0081ff !important;
   color: #fff !important;
 }
 
-.bg-purple, switch.purple[checked] .wx-switch-input, checkbox.purple[checked] .wx-checkbox-input, radio.purple[checked] .wx-radio-input {
+.bg-purple, switch.purple[checked] .wx-switch-input,
+checkbox.purple[checked] .wx-checkbox-input,
+radio.purple[checked] .wx-radio-input {
   background-color: #6739b6 !important;
   color: #fff !important;
 }
 
-.bg-mauve, switch.mauve[checked] .wx-switch-input, checkbox.mauve[checked] .wx-checkbox-input, radio.mauve[checked] .wx-radio-input {
+.bg-mauve, switch.mauve[checked] .wx-switch-input,
+checkbox.mauve[checked] .wx-checkbox-input, radio.mauve[checked] .wx-radio-input {
   background-color: #9c26b0 !important;
   color: #fff !important;
 }
 
-.bg-pink, switch.pink[checked] .wx-switch-input, checkbox.pink[checked] .wx-checkbox-input, radio.pink[checked] .wx-radio-input {
+.bg-pink, switch.pink[checked] .wx-switch-input,
+checkbox.pink[checked] .wx-checkbox-input, radio.pink[checked] .wx-radio-input {
   background-color: #e03997 !important;
   color: #fff !important;
 }
 
-.bg-brown, switch.brown[checked] .wx-switch-input, checkbox.brown[checked] .wx-checkbox-input, radio.brown[checked] .wx-radio-input {
+.bg-brown, switch.brown[checked] .wx-switch-input,
+checkbox.brown[checked] .wx-checkbox-input, radio.brown[checked] .wx-radio-input {
   background-color: #a5673f !important;
   color: #fff !important;
 }
 
-.bg-grey, switch.grey[checked] .wx-switch-input, checkbox.grey[checked] .wx-checkbox-input, radio.grey[checked] .wx-radio-input {
+.bg-grey, switch.grey[checked] .wx-switch-input,
+checkbox.grey[checked] .wx-checkbox-input, radio.grey[checked] .wx-radio-input {
   background-color: #8799a3 !important;
   color: #fff !important;
 }
 
-.bg-gray, switch.gray[checked] .wx-switch-input, checkbox.gray[checked] .wx-checkbox-input, radio.gray[checked] .wx-radio-input {
+.bg-gray, switch.gray[checked] .wx-switch-input,
+checkbox.gray[checked] .wx-checkbox-input, radio.gray[checked] .wx-radio-input {
   background-color: #f0f0f0 !important;
   color: #666 !important;
 }
 
-.bg-black, switch.black[checked] .wx-switch-input, checkbox.black[checked] .wx-checkbox-input, radio.black[checked] .wx-radio-input {
+.bg-black, switch.black[checked] .wx-switch-input,
+checkbox.black[checked] .wx-checkbox-input, radio.black[checked] .wx-radio-input {
   background-color: #333 !important;
   color: #fff !important;
 }
 
-.bg-white, switch.white[checked] .wx-switch-input, checkbox.white[checked] .wx-checkbox-input, radio.white[checked] .wx-radio-input {
+.bg-white, switch.white[checked] .wx-switch-input,
+checkbox.white[checked] .wx-checkbox-input, radio.white[checked] .wx-radio-input {
   background-color: #fff !important;
   color: #666;
 }
@@ -720,11 +762,16 @@ switch.sm, checkbox.sm, radio.sm {
 
 /* -- 实线 -- */
 
-.solid, .solid-top, .solid-right, .solid-bottom, .solid-left, .solids, .solids-top, .solids-right, .solids-bottom, .solids-left, .dashed, .dashed-top, .dashed-right, .dashed-bottom, .dashed-left {
+.solid, .solid-top, .solid-right, .solid-bottom, .solid-left, .solids,
+.solids-top, .solids-right, .solids-bottom, .solids-left, .dashed, .dashed-top,
+.dashed-right, .dashed-bottom, .dashed-left {
   position: relative;
 }
 
-.solid::after, .solid-top::after, .solid-right::after, .solid-bottom::after, .solid-left::after, .solids::after, .solids-top::after, .solids-right::after, .solids-bottom::after, .solids-left::after, .dashed::after, .dashed-top::after, .dashed-right::after, .dashed-bottom::after, .dashed-left::after {
+.solid::after, .solid-top::after, .solid-right::after, .solid-bottom::after,
+.solid-left::after, .solids::after, .solids-top::after, .solids-right::after,
+.solids-bottom::after, .solids-left::after, .dashed::after, .dashed-top::after,
+.dashed-right::after, .dashed-bottom::after, .dashed-left::after {
   content: " ";
   width: 200%;
   height: 200%;
@@ -981,7 +1028,7 @@ button.icon.lg {
   align-items: stretch;
   justify-content: center;
   box-sizing: border-box;
-  padding: 12rpx 14rpx 10rpx;
+  padding: 12rpx 16rpx 10rpx;
   line-height: 1;
   background: #fff;
   font-family: Helvetica Neue, Helvetica, sans-serif;
@@ -997,7 +1044,7 @@ button.icon.lg {
 
 .cu-tag.sm {
   font-size: 20rpx;
-  padding: 10rpx 12rpx 6rpx;
+  padding: 10rpx 14rpx 8rpx;
 }
 
 .cu-capsule {
@@ -1026,7 +1073,8 @@ button.icon.lg {
   border-bottom-left-radius: 6rpx;
 }
 
-.cu-capsule.radius .cu-tag:last-child::after, .cu-capsule.radius .cu-tag[class*="line-"] {
+.cu-capsule.radius .cu-tag:last-child::after,
+.cu-capsule.radius .cu-tag[class*="line-"] {
   border-top-right-radius: 12rpx;
   border-bottom-right-radius: 12rpx;
 }
@@ -1037,7 +1085,8 @@ button.icon.lg {
   text-indent: 4rpx;
 }
 
-.cu-capsule.round .cu-tag:last-child::after, .cu-capsule.round .cu-tag:last-child {
+.cu-capsule.round .cu-tag:last-child::after,
+.cu-capsule.round .cu-tag:last-child {
   border-top-right-radius: 200rpx;
   border-bottom-right-radius: 200rpx;
   text-indent: -4rpx;
@@ -1231,6 +1280,7 @@ button.icon.lg {
   from {
     background-position: 72rpx 0;
   }
+
   to {
     background-position: 0 0;
   }
@@ -1384,6 +1434,7 @@ button.icon.lg {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -1395,6 +1446,7 @@ button.icon.lg {
     -webkit-transform: rotate(0);
     transform: rotate(0);
   }
+
   100% {
     -webkit-transform: rotate(360deg);
     transform: rotate(360deg);
@@ -1405,22 +1457,8 @@ button.icon.lg {
           列表
  ==================== */
 
-.grayscale {
-  filter: grayscale(1);
-}
-
 .cu-list.menu {
-  padding: 0 30rpx;
-  background: #fff;
   display: block;
-}
-
-.cu-list.menu.no-padding {
-  padding: 0;
-}
-
-.cu-list.menu+.cu-list.menu {
-  margin-top: 30rpx;
 }
 
 .cu-list+.cu-list {
@@ -1432,32 +1470,46 @@ button.icon.lg {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1rpx solid #eee;
   min-height: 100rpx;
+  background: #fff;
+  padding: 0 30rpx;
+}
+
+
+.cu-list.menu>.cu-item::after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.cu-list.menu.sm-border>.cu-item::after {
+  width: calc(200% - 120rpx);
+  left: 30rpx;
+}
+
+.cu-list.menu>.cu-item:last-child::after {
+  border: none;
 }
 
 .cu-list.menu>.cu-item.cur {
   background-color: #fcf7e9;
 }
 
-.cu-list.menu>.cu-item:last-child {
-  border: none;
-}
-
-.cu-list.menu.no-padding>.cu-item {
-  padding: 30rpx;
-}
-
-.cu-list.menu-avatar.no-padding>.cu-item {
+.cu-list.menu-avatar>.cu-item {
   padding-left: 140rpx;
 }
 
-.cu-list.menu-avatar.no-padding>.cu-item .cu-avatar {
+.cu-list.menu-avatar>.cu-item .cu-avatar {
   left: 30rpx;
-}
-
-.cu-list.menu.no-padding>.cu-item.arrow {
-  padding-right: 66rpx;
 }
 
 .cu-list.menu>.cu-item .content {
@@ -1469,6 +1521,7 @@ button.icon.lg {
 .cu-list.menu>.cu-item button.content {
   padding: 0;
   justify-content: flex-start;
+  background-color: transparent;
 }
 
 .cu-list.menu>.cu-item button.content::after {
@@ -1479,7 +1532,7 @@ button.icon.lg {
   margin-right: 10rpx;
   display: inline-block;
   width: 1.6em;
-  text-align: center
+  text-align: center;
 }
 
 .cu-list.menu>.cu-item .content>image {
@@ -1490,12 +1543,12 @@ button.icon.lg {
   vertical-align: middle;
 }
 
-.cu-list.menu>.cu-item .action {
-  text-align: right;
+.cu-list.menu-avatar>.cu-item .action {
+  text-align: center;
 }
 
-.cu-list>.cu-item.grayscale {
-  background-color: #f5f5f5;
+.cu-list.menu-avatar>.cu-item .action view + view {
+  margin-top: 10rpx;
 }
 
 .cu-list.menu>.cu-item .action .cu-tag:empty {
@@ -1503,10 +1556,10 @@ button.icon.lg {
 }
 
 .cu-list.menu>.cu-item.arrow {
-  padding-right: 36rpx;
+  padding-right: 90rpx;
 }
 
-.cu-list.menu>.cu-item.arrow::after {
+.cu-list.menu>.cu-item.arrow::before {
   font-family: "iconfont" !important;
   display: block;
   content: "\e6a3";
@@ -1517,14 +1570,10 @@ button.icon.lg {
   height: 30rpx;
   width: 30rpx;
   text-align: center;
-  top: 1rpx;
+  top: 0rpx;
   bottom: 0;
-  right: 0;
-  margin: auto;
-}
-
-.cu-list.menu.no-padding>.cu-item.arrow::after {
   right: 30rpx;
+  margin: auto;
 }
 
 .cu-list.menu>.cu-item .cu-avatar-group .cu-avatar {
@@ -1538,14 +1587,14 @@ button.icon.lg {
   overflow: hidden;
 }
 
-.cu-list.menu-avatar>.cu-item>.cu-avatar {
-  position: absolute;
-  left: 0;
+.cu-list.menu-avatar>.cu-item {
+  padding-left: 140rpx;
+  height: 140rpx;
 }
 
-.cu-list.menu-avatar>.cu-item {
-  padding-left: 110rpx;
-  height: 140rpx;
+.cu-list.menu-avatar>.cu-item>.cu-avatar {
+  position: absolute;
+  left: 30rpx;
 }
 
 .cu-list.menu>.cu-item .content .cu-tag.sm {
@@ -1557,18 +1606,18 @@ button.icon.lg {
 
 .cu-list.grid {
   text-align: center;
-  background: #fff;
+  background: #fff;  
 }
 
 .cu-list.grid>.cu-item {
   display: flex;
   flex-direction: column;
-  border-right: 1rpx solid #eee;
-  border-bottom: 1rpx solid #eee;
-  padding: 20rpx;
+  padding: 20rpx 0 30rpx;
+  position: relative;
+  transition-duration: 0s;
 }
 
-.cu-list.grid>.cu-item text[class*="icon"] {
+.cu-list.grid>.cu-item [class*="icon"] {
   display: block;
   width: 100%;
   position: relative;
@@ -1590,16 +1639,32 @@ button.icon.lg {
   margin-left: 20rpx;
 }
 
-.cu-list.grid.col-3>.cu-item:nth-child(3n) {
-  border-right: 0rpx;
+.cu-list.grid>.cu-item::after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.cu-list.grid.col-4>.cu-item:nth-child(4n) {
-  border-right: 0rpx;
+.cu-list.grid.col-3>.cu-item:nth-child(3n)::after {
+  border-right-width: 0px;
 }
 
-.cu-list.grid.col-5>.cu-item:nth-child(5n) {
-  border-right: 0rpx;
+.cu-list.grid.col-4>.cu-item:nth-child(4n)::after {
+  border-right-width: 0px;
+}
+
+.cu-list.grid.col-5>.cu-item:nth-child(5n)::after {
+  border-right-width: 0px;
 }
 
 .cu-list.grid.no-border {
@@ -1607,20 +1672,35 @@ button.icon.lg {
 }
 
 .cu-list.grid.no-border>.cu-item {
-  border: none !important;
   padding-top: 10rpx;
-  padding-bottom: 10rpx;
+  padding-bottom: 20rpx;
 }
 
-.cu-list.menu-avatar.comment>.cu-item {
-  height: auto;
-  padding-top: 30rpx;
-  padding-bottom: 30rpx;
-  padding-left: 90rpx;
+.cu-list.grid.no-border>.cu-item::after {
+  border: none !important;
 }
 
-.cu-list.menu-avatar.comment .cu-avatar {
-  align-self: flex-start;
+.cu-list>.cu-item {
+  transform: translateX(0rpx);
+  transition: all 0.6s ease-in-out 0s;
+}
+.cu-list>.cu-item .move {
+  display: flex;
+  width: 260rpx;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);  
+}
+.cu-list>.cu-item.move-cur {
+  transform: translateX(-260rpx);
+}
+
+.cu-list>.cu-item .move view {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ==================
@@ -1736,11 +1816,7 @@ button.icon.lg {
 }
 
 .cu-bar .search-form [class*="icon"] {
-  margin: 0 0.5em;
-}
-
-.cu-bar .search-form.round [class*="icon"] {
-  margin-left: 0.5em;
+  margin: 0 0.5em 0 0.8em;
 }
 
 .cu-bar .search-form [class*="icon"]::before {
@@ -1940,7 +2016,6 @@ button.icon.lg {
 
 .cu-timeline>.cu-item::before {
   font-family: "iconfont";
-  content: "\e763";
   display: block;
   position: absolute;
   top: 36rpx;
@@ -1952,6 +2027,10 @@ button.icon.lg {
   border: none;
   line-height: 50rpx;
   left: 36rpx;
+}
+
+.cu-timeline>.cu-item:not([class*="icon-"])::before {
+  content: "\e763";
 }
 
 .cu-timeline>.cu-item[class*="icon"]::before {
@@ -2324,7 +2403,8 @@ button.icon.lg {
   margin: auto;
 }
 
-.cu-form-group textarea[disabled], .cu-form-group textarea[disabled] .placeholder {
+.cu-form-group textarea[disabled],
+.cu-form-group textarea[disabled] .placeholder {
   color: transparent;
 }
 
@@ -2347,7 +2427,7 @@ button.icon.lg {
   backface-visibility: hidden;
   perspective: 2000rpx;
   background: rgba(0, 0, 0, 0.6);
-  transition: all 0.6s ease-in-out 0;
+  transition: all 0.3s ease-in-out 0s;
   pointer-events: none;
 }
 
@@ -2396,6 +2476,31 @@ button.icon.lg {
 
 .cu-modal.bottom-modal.show {
   margin-bottom: 0;
+}
+
+.cu-modal.drawer-modal {
+  transform: scale(1);
+  display: flex;
+}
+
+.cu-modal.drawer-modal .cu-dialog {
+  height: 100%;
+  min-width: 200rpx;
+  border-radius: 0;
+  margin: initial;
+  transition-duration: 0.3s;
+}
+
+.cu-modal.drawer-modal.justify-start .cu-dialog {
+  transform: translateX(-100%);
+}
+
+.cu-modal.drawer-modal.justify-end .cu-dialog {
+  transform: translateX(100%);
+}
+
+.cu-modal.drawer-modal.show .cu-dialog {
+  transform: translateX(0%);
 }
 
 /* ==================
@@ -2657,13 +2762,13 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
   overflow: hidden;
 }
 
-.grid.col-1.grid-square > view  {
+.grid.col-1.grid-square > view {
   padding-bottom: 100%;
   height: 0;
   margin-right: 0;
 }
 
-.grid.col-2.grid-square > view  {
+.grid.col-2.grid-square > view {
   padding-bottom: calc((100% - 20rpx)/2);
   height: 0;
   width: calc((100% - 20rpx)/2);
@@ -2673,17 +2778,17 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
   margin-right: 0;
 }
 
-.grid.col-3.grid-square > view  {
+.grid.col-3.grid-square > view {
   padding-bottom: calc((100% - 40rpx)/3);
   height: 0;
   width: calc((100% - 40rpx)/3);
 }
 
-.grid.col-3.grid-square > view:nth-child(3n){
+.grid.col-3.grid-square > view:nth-child(3n) {
   margin-right: 0;
 }
 
-.grid.col-4.grid-square > view  {
+.grid.col-4.grid-square > view {
   padding-bottom: calc((100% - 60rpx)/4);
   height: 0;
   width: calc((100% - 60rpx)/4);
@@ -2693,7 +2798,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
   margin-right: 0;
 }
 
-.grid.col-5.grid-square > view  {
+.grid.col-5.grid-square > view {
   padding-bottom: calc((100% - 80rpx)/5);
   height: 0;
   width: calc((100% - 80rpx)/5);

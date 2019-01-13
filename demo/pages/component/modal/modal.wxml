@@ -6,9 +6,9 @@
   </view>
 </view>
 
-<view class="cu-bar ">
+<view class="cu-bar">
   <view class='action'>
-    <text class='icon-titles text-orange '></text> 模态窗口
+    <text class='icon-title text-orange '></text> 模态窗口
   </view>
   <view class='action'>
     <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="Modal">Modal</button>
@@ -28,9 +28,9 @@
   </view>
 </view>
 
-<view class="cu-bar  margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
-    <text class='icon-titles text-orange '></text> 底部窗口
+    <text class='icon-title text-orange '></text> 底部窗口
   </view>
   <view class='action'>
     <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="bottomModal">Bottom</button>
@@ -38,7 +38,7 @@
 </view>
 <view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
   <view class="cu-dialog">
-    <view class="cu-bar ">
+    <view class="cu-bar">
       <view class='action text-green'>确定</view>
       <view class='action text-blue' bindtap='hideModal'>取消</view>
     </view>
@@ -48,9 +48,9 @@
   </view>
 </view>
 
-<view class="cu-bar  margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
-    <text class='icon-titles text-orange '></text> 对话窗口
+    <text class='icon-title text-orange '></text> 对话窗口
   </view>
   <view class='action'>
     <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="DialogModal1">Dialog</button>
@@ -98,9 +98,9 @@
   </view>
 </view>
 
-<view class="cu-bar  margin-top">
+<view class="cu-bar margin-top">
   <view class='action'>
-    <text class='icon-titles text-orange '></text> 图片窗口
+    <text class='icon-title text-orange '></text> 图片窗口
   </view>
   <view class='action'>
     <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="Image">Image</button>
@@ -118,6 +118,109 @@
     </view>
     <view class="cu-bar">
       <view class='action margin-0 flex-sub  solid-left' bindtap='hideModal'>我知道了</view>
+    </view>
+  </view>
+</view>
+
+
+<view class="cu-bar margin-top">
+  <view class='action'>
+    <text class='icon-title text-orange '></text> 单选窗口
+  </view>
+  <view class='action'>
+    <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="RadioModal">Radio</button>
+  </view>
+</view>
+
+<view class="cu-modal {{modalName=='RadioModal'?'show':''}}" bindtap='hideModal'>
+  <view class="cu-dialog" catchtap>
+    <radio-group class="block">
+      <view class='cu-list menu text-left'>
+        <view class='cu-item' wx:for="{{5}}" wx:key>
+          <label class='flex justify-between align-center flex-sub'>
+            <view class='flex-sub'>Item {{index +1}}</view>
+            <radio class='round'></radio>
+          </label>
+        </view>
+      </view>
+    </radio-group>
+  </view>
+</view>
+
+<view class="cu-bar margin-top">
+  <view class='action'>
+    <text class='icon-title text-orange '></text> 多选窗口
+  </view>
+  <view class='action'>
+    <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="ChooseModal">Choose</button>
+  </view>
+</view>
+<view class="cu-modal bottom-modal {{modalName=='ChooseModal'?'show':''}}" bindtap='hideModal'>
+  <view class="cu-dialog" catchtap>
+    <view class="cu-bar">
+      <view class='action text-green'>确定</view>
+      <view class='action text-blue' bindtap='hideModal'>取消</view>
+    </view>
+    <view class='grid col-3 padding-sm'>
+      <view wx:for="{{9}}" class='padding-xs' wx:key>
+        <button class='cu-btn orange lg block {{index == 2?"bg":"line"}}-orange'>Item {{index + 1}}</button>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="cu-bar margin-top">
+  <view class='action'>
+    <text class='icon-title text-orange '></text> 侧边抽屉
+  </view>
+  <view class='action'>
+    <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="DrawerModalL">Left</button>
+    <button class='cu-btn bg-blue shadow margin-left' bindtap="showModal" data-target="DrawerModalR">Right</button>
+  </view>
+</view>
+<view class="cu-modal drawer-modal justify-start {{modalName=='DrawerModalL'?'show':''}}" bindtap='hideModal'>
+  <view class="cu-dialog basis-lg" catchtap style="top:{{CustomBar}}px;">
+    <view class='cu-list menu text-left'>
+      <view class='cu-item arrow' wx:for="{{5}}" wx:key>
+        <view class='content'>
+          <view>Item {{index +1}}</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class="cu-modal drawer-modal justify-end {{modalName=='DrawerModalR'?'show':''}}" bindtap='hideModal'>
+  <view class="cu-dialog basis-lg" catchtap style="top:{{CustomBar}}px;">
+    <view class="cu-list menu menu-avatar text-left">
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
+        <view class='content'>
+          <view class='text-grey'>文晓港</view>
+          <view class='text-gray text-sm'>
+            <text class='icon-infofill text-red'></text> 消息未送达</view>
+        </view>
+        <view class='action'>
+          <view class='text-grey text-xs'>22:20</view>
+          <view class="cu-tag round bg-grey sm">5</view>
+        </view>
+      </view>
+      <view class="cu-item">
+        <view class="cu-avatar round lg" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);">
+          <view class="cu-tag badge">99+</view>
+        </view>
+        <view class='content'>
+          <view class='text-grey'>文晓港
+            <view class="cu-tag round bg-orange sm">SVIP</view>
+          </view>
+          <view class='text-gray text-sm'>
+            <text class='icon-redpacket_fill text-red'></text> 收到红包</view>
+        </view>
+        <view class='action'>
+          <view class='text-grey text-xs'>22:20</view>
+          <text class='icon-notice_forbid_fill text-gray'></text>
+        </view>
+      </view>
     </view>
   </view>
 </view>
