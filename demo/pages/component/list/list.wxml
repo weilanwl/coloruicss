@@ -250,7 +250,7 @@
 
 <view class="cu-bar solid-bottom margin-top">
   <view class='action'>
-    <text class='icon-title text-orange '></text> 列表右滑
+    <text class='icon-title text-orange '></text> 列表左滑
   </view>
 </view>
 <view class="cu-list menu menu-avatar">
