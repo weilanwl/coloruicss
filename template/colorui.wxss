@@ -1,5 +1,5 @@
 /*
-  Color UI v2.0.5 | by 文晓港 
+  Color UI v2.0.5(修复) | by 文晓港 
   仅供学习交流，如作它用所承受的法律责任一概与作者无关   
   （QQ交流群：240787041）
   文档：http://www.color-ui.com/
@@ -1595,6 +1595,17 @@ button.icon.lg {
 .cu-list.menu-avatar>.cu-item>.cu-avatar {
   position: absolute;
   left: 30rpx;
+}
+
+.cu-list.menu-avatar.comment>.cu-item {
+  height: auto;
+  padding-top: 30rpx;
+  padding-bottom: 30rpx;
+  padding-left: 120rpx;
+}
+
+.cu-list.menu-avatar.comment .cu-avatar {
+  align-self: flex-start;
 }
 
 .cu-list.menu>.cu-item .content .cu-tag.sm {
