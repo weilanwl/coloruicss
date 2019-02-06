@@ -1039,6 +1039,7 @@ button.icon.lg {
 }
 
 .cu-tag+.cu-tag {
+  margin-top: 5rpx;
   margin-left: 10rpx;
 }
 
