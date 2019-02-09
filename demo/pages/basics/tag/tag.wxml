@@ -1,32 +1,32 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 标签
     </navigator>
   </view>
 </view>
 
-<view class="cu-bar">
+<view class="cu-bar bg-white solid-bottom">
   <view class='action'>
     <text class='icon-title text-blue'></text>标签形状
   </view>
 </view>
-<view class="padding">
+<view class="padding bg-white solid-bottom">
   <view class='cu-tag'>默认</view>
   <view class='cu-tag round'>椭圆</view>
   <view class='cu-tag radius'>圆角</view>
 </view>
 
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>标签尺寸
   </view>
 </view>
-<view class="padding">
+<view class="padding bg-white">
   <view class='cu-tag radius sm'>小尺寸</view>
   <view class='cu-tag radius'>普通尺寸</view>
 </view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>标签颜色
   </view>
@@ -39,7 +39,7 @@
     <view class='cu-tag bg-{{item.name}} light'>{{item.title}}</view>
   </view>
 </view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>镂空标签
   </view>
@@ -49,7 +49,7 @@
     <view class='cu-tag line-{{item.name}}'>{{item.title}}</view>
   </view>
 </view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>胶囊样式
   </view>
@@ -96,7 +96,7 @@
     </view>
   </view>
 </view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>数字标签
   </view>

@@ -1,4 +1,4 @@
-Page({
+Component({
   data: {
     elements: [
       { title: '操作条', name: 'bar', color: 'purple', icon: 'vipcard' },
@@ -15,4 +15,14 @@ Page({
   },
   onLoad: function () {
   },
+  pageLifetimes: {
+    show() {
+      if (typeof this.getTabBar === 'function' &&
+        this.getTabBar()) {
+        this.getTabBar().setData({
+          selected: 1
+        })
+      }
+    }
+  }
 })

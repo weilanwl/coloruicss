@@ -1,20 +1,20 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 头像
     </navigator>
   </view>
 </view>
-<view class="cu-bar">
+<view class="cu-bar bg-white">
   <view class='action'>
     <text class='icon-title text-blue'></text>头像形状
   </view>
 </view>
-<view class="padding">	
-  <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>	
+<view class="padding">
+  <view class="cu-avatar round" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);"></view>
   <view class="cu-avatar radius margin-left" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);"></view>
 </view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>头像尺寸
   </view>
@@ -26,18 +26,22 @@
   <view class="cu-avatar xl round margin-left" style="background-image:url(https://image.weilanwl.com/img/square-4.jpg);"></view>
 </view>
 <view class="padding">
-  <view class="cu-avatar sm round margin-left bg-red" > orange</view>
-  <view class="cu-avatar round margin-left bg-red" >orange</view>
-  <view class="cu-avatar lg round margin-left bg-red" >orange</view>
-  <view class="cu-avatar xl round margin-left bg-red" >orange</view>
+  <view class="cu-avatar sm round margin-left bg-red"> A</view>
+  <view class="cu-avatar round margin-left bg-red">B</view>
+  <view class="cu-avatar lg round margin-left bg-red">C</view>
+  <view class="cu-avatar xl round margin-left bg-red">D</view>
 </view>
 <view class="padding">
-  <view class="cu-avatar sm round margin-left bg-red" > 蔚蓝</view>
-  <view class="cu-avatar round margin-left bg-red" >蔚蓝</view>
-  <view class="cu-avatar lg round margin-left bg-red" >蔚蓝</view>
-  <view class="cu-avatar xl round margin-left bg-red" >蔚蓝</view>
+  <view class="cu-avatar sm round margin-left bg-red"> 蔚</view>
+  <view class="cu-avatar round margin-left bg-red">蓝</view>
+  <view class="cu-avatar lg round margin-left bg-red">
+    <text>wl</text>
+  </view>
+  <view class="cu-avatar xl round margin-left bg-red">
+    <text class='avatar-text'>网络</text>
+  </view>
 </view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>内嵌文字(图标)
   </view>
@@ -51,17 +55,17 @@
   </view>
 </view>
 
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>头像颜色
   </view>
 </view>
 <view class="padding-sm">
   <view class="cu-avatar round lg bg-{{item.name}} margin-xs" wx:for="{{ColorList}}" wx:key>
-    <text>{{item.name}}</text>
+    <text class='avatar-text'>{{item.name}}</text>
   </view>
 </view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>头像组
   </view>
@@ -72,7 +76,7 @@
   </view>
 </view>
 
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>头像标签
   </view>

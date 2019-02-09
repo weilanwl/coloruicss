@@ -1,5 +1,5 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 导航栏
     </navigator>
@@ -8,7 +8,7 @@
 <view wx:for="{{10}}" wx:key wx:if="{{index==TabCur}}" class='bg-grey padding margin text-center'>
   Tab{{index}}
 </view>
-<view class="cu-bar solid-bottom">
+<view class="cu-bar bg-white solid-bottom">
   <view class='action'>
     <text class='icon-titles text-orange '></text> 默认
   </view>
@@ -19,7 +19,7 @@
   </view>
 </scroll-view>
 
-<view class="cu-bar margin-top solid-bottom">
+<view class="cu-bar bg-white margin-top solid-bottom">
   <view class='action'>
     <text class='icon-title text-orange'></text> 居中
   </view>
@@ -30,7 +30,7 @@
   </view>
 </scroll-view>
 
-<view class="cu-bar margin-top solid-bottom">
+<view class="cu-bar bg-white margin-top solid-bottom">
   <view class='action'>
     <text class='icon-title text-orange'></text> 平分
   </view>
@@ -42,7 +42,7 @@
     </view>
   </view>
 </scroll-view>
-<view class="cu-bar margin-top solid-bottom">
+<view class="cu-bar bg-white margin-top solid-bottom">
   <view class='action'>
     <text class='icon-title text-orange'></text> 背景
   </view>
@@ -52,7 +52,7 @@
     Tab{{index}}
   </view>
 </scroll-view>
-<view class="cu-bar margin-top solid-bottom">
+<view class="cu-bar bg-white margin-top solid-bottom">
   <view class='action'>
     <text class='icon-title text-orange'></text> 图标
   </view>
@@ -69,7 +69,7 @@
   </view>
 </scroll-view>
 
-<view class="cu-bar margin-top solid-bottom">
+<view class="cu-bar bg-white margin-top solid-bottom">
   <view class='action'>
     <text class='icon-title text-orange'></text> 定位
   </view>

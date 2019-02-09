@@ -5,13 +5,13 @@
     </navigator>
   </view>
 </view>
-<view class="cu-bar search fixed" style="top:{{CustomBar}}px;">
+<view class="cu-bar bg-white search fixed" style="top:{{CustomBar}}px;">
   <view class='search-form round'>
     <text class="icon-search"></text>
     <input type="text" placeholder="输入搜索的关键词" confirm-type="search"></input>
   </view>
   <view class='action'>
-    <button class='cu-btn gradual-green shadow-blur round'>搜索</button>
+    <button class='cu-btn bg-gradual-green shadow-blur round'>搜索</button>
   </view>
 </view>
 <scroll-view scroll-y class="indexes" scroll-into-view="indexes-{{listCurID}}" style='height:calc(100vh - {{CustomBar}}px - 50px)' scroll-with-animation="true" enable-back-to-top="true">

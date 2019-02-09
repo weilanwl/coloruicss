@@ -1,11 +1,11 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 进度条
     </navigator>
   </view>
 </view>
-<view class="cu-bar solid-bottom">
+<view class="cu-bar bg-white solid-bottom">
   <view class='action'>
     <text class='icon-title text-blue'></text>进度条形状
   </view>
@@ -21,7 +21,7 @@
     <view class='bg-red' style="width:{{loading?'61.8%':''}};">61.8%</view>
   </view>
 </view>
-<view class="cu-bar solid-bottom margin-top">
+<view class="cu-bar bg-white solid-bottom margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>进度条尺寸
   </view>
@@ -38,7 +38,7 @@
   </view>
 </view>
 
-<view class="cu-bar solid-bottom margin-top" bindtap="showModal" data-target="ColorModal">
+<view class="cu-bar bg-white solid-bottom margin-top" bindtap="showModal" data-target="ColorModal">
   <view class='action'>
     <text class='icon-title text-blue'></text>进度条颜色
   </view>
@@ -53,7 +53,7 @@
 </view>
 
 
-<view class="cu-bar solid-bottom margin-top">
+<view class="cu-bar bg-white solid-bottom margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>进度条条纹
   </view>
@@ -67,7 +67,7 @@
     <view class='bg-black' style="width:{{loading?'40%':''}};"></view>
   </view>
 </view>
-<view class="cu-bar solid-bottom margin-top">
+<view class="cu-bar bg-white solid-bottom margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>进度条比例
   </view>
@@ -79,7 +79,7 @@
     <view class='bg-cyan' style="width:{{loading?'25%':''}};">25%</view>
   </view>
 </view>
-<view class="cu-bar solid-bottom margin-top">
+<view class="cu-bar bg-white solid-bottom margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>进度条布局
   </view>

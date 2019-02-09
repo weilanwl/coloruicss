@@ -1,1 +1,34 @@
-/* pages/auth/auth.wxss */
+.UCenter-bg {
+  background-image: url(https://image.weilanwl.com/color2.0/index.jpg);
+  background-size: cover;
+  height: 700rpx;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+.UCenter-bg::after {
+ content: "";
+ position: absolute;
+ width: 100vw;
+ height: 50vw;
+ background-color: #f1f1f1;
+ transform: rotate(-10deg) scale(2,2);
+ bottom: -60vw;
+ left: 0;
+ right: 0;
+ margin: auto;
+
+}
+.UCenter-bg text{
+  opacity: 0.8;
+}
+.UCenter-bg image {
+  width: 250rpx;
+  height: 250rpx;
+}

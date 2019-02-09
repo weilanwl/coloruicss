@@ -1,5 +1,5 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text>
       时间轴
@@ -65,7 +65,7 @@
           </view>
           <view class='action'>
             <view class='text-grey text-xs'>22:20</view>
-            <view class="cu-tag round grey sm">5</view>
+            <view class="cu-tag round bg-grey sm">5</view>
           </view>
         </view>
         <view class="cu-item">

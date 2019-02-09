@@ -1,5 +1,5 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 文本
     </navigator>
@@ -8,7 +8,7 @@
     </view>
   </view>
 </view>
-<view class="cu-bar solid-bottom">
+<view class="cu-bar bg-white solid-bottom">
   <view class='action'>
     <text class='icon-title text-blue'></text>文字大小
   </view>
@@ -85,7 +85,7 @@
     </view>
   </view>
 </view>
-<view class="cu-bar solid-bottom margin-top">
+<view class="cu-bar bg-white solid-bottom margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>文字颜色
   </view>
@@ -97,7 +97,7 @@
     </view>
   </view>
 </view>
-<view class="cu-bar solid-bottom margin-top">
+<view class="cu-bar bg-white solid-bottom margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>文字截断
   </view>
@@ -105,7 +105,7 @@
 <view class='padding bg-white'>
   <view class='text-cut padding bg-grey radius' style='width:220px'>我于杀戮之中绽放 ,亦如黎明中的花朵</view>
 </view>
-<view class="cu-bar solid-bottom margin-top">
+<view class="cu-bar bg-white solid-bottom margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>文字对齐
   </view>
@@ -115,7 +115,7 @@
   <view class='text-center padding'>我于杀戮之中绽放 ,亦如黎明中的花朵</view>
   <view class='text-right padding'>我于杀戮之中绽放 ,亦如黎明中的花朵</view>
 </view>
-<view class="cu-bar solid-bottom margin-top">
+<view class="cu-bar bg-white solid-bottom margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>特殊文字
   </view>

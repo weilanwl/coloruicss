@@ -6,7 +6,6 @@
     "pages/basics/button/design",
     "pages/basics/tag/tag",
     "pages/basics/avatar/avatar",
-    "pages/basics/image/image",
     "pages/basics/progress/progress",
     "pages/basics/shadow/shadow",
     "pages/basics/background/background",
@@ -27,7 +26,14 @@
     "pages/plugin/home/home",
     "pages/plugin/indexes/indexes",
     "pages/plugin/gradual/gradual",
-    "pages/plugin/animation/animation"
+    "pages/plugin/animation/animation",
+    "pages/auth/auth",
+    "pages/about/about/about",
+    "pages/about/log/log",
+    "pages/about/test/list",
+    "pages/about/test/filter",
+    "pages/about/home/home",
+    "custom-tab-bar/index"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",
@@ -35,8 +41,9 @@
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white"
   },
-  "component": true,
+  "usingComponents": {},
   "tabBar": {
+    "custom": true,
     "color": "#aaa",
     "selectedColor": "#39b54a",
     "borderStyle": "black",
@@ -59,6 +66,12 @@
         "iconPath": "/images/tabbar/plugin.png",
         "selectedIconPath": "/images/tabbar/plugin_cur.png",
         "text": "扩展"
+      },
+      {
+        "pagePath": "pages/about/home/home",
+        "iconPath": "/images/tabbar/about.png",
+        "selectedIconPath": "/images/tabbar/about_cur.png",
+        "text": "关于"
       }
     ]
   }

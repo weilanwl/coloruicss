@@ -1,11 +1,11 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 边框阴影
     </navigator>
   </view>
 </view>
-<view class="cu-bar solid-bottom">
+<view class="cu-bar bg-white solid-bottom">
   <view class='action'>
     <text class='icon-title text-blue'></text>边框
   </view>  
@@ -20,7 +20,7 @@
   <view class='padding solid{{size?"s":""}}-bottom margin-top'>下</view>
   <view class='padding solid{{size?"s":""}}-left margin-top'>左</view>
 </view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>阴影
   </view>

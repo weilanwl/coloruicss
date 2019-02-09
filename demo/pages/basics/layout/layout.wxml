@@ -1,5 +1,5 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 布局
     </navigator>
@@ -11,7 +11,7 @@
   </view>
 </scroll-view>
 <block wx:if="{{TabCur==0}}">
-  <view class="cu-bar solid-bottom margin-top">
+  <view class="cu-bar bg-white solid-bottom margin-top">
     <view class='action'>
       <text class='icon-title text-blue'></text>固定尺寸
     </view>
@@ -27,7 +27,7 @@
       <view class='basis-xl bg-grey margin-xs padding-sm radius'>xl(80%)</view>
     </view>
   </view>
-  <view class="cu-bar margin-top solid-bottom">
+  <view class="cu-bar bg-white margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>比例布局
     </view>
@@ -47,7 +47,7 @@
       <view class='flex-treble bg-grey padding-sm margin-xs radius'>3</view>
     </view>
   </view>
-  <view class="cu-bar margin-top solid-bottom">
+  <view class="cu-bar bg-white margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>水平对齐(justify)
     </view>
@@ -74,7 +74,7 @@
       <view class='bg-grey padding-sm margin-xs radius'>around</view>
     </view>
   </view>
-  <view class="cu-bar margin-top solid-bottom">
+  <view class="cu-bar bg-white margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>垂直对齐(align)
     </view>
@@ -95,7 +95,7 @@
   </view>
 </block>
 <block wx:if="{{TabCur==1}}">
-  <view class="cu-bar margin-top solid-bottom">
+  <view class="cu-bar bg-white margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>等分列
     </view>
@@ -106,7 +106,7 @@
       <view class="{{index%2==0?'bg-cyan':'bg-blue'}} padding" wx:for="{{(index+1)*2}}" wx:key>{{index+1}}</view>
     </view>
   </view>
-  <view class="cu-bar margin-top solid-bottom">
+  <view class="cu-bar bg-white margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>等高
     </view>
@@ -119,7 +119,7 @@
   </view>
 </block>
 <block wx:if="{{TabCur==2}}">
-  <view class="cu-bar margin-top solid-bottom">
+  <view class="cu-bar bg-white margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>浮动
     </view>
@@ -132,7 +132,7 @@
   </view>
 </block>
 <block wx:if="{{TabCur==3}}">
-  <view class="cu-bar margin-top solid-bottom">
+  <view class="cu-bar bg-white margin-top solid-bottom">
     <view class='action'>
       <text class='icon-title text-blue'></text>内外边距
     </view>

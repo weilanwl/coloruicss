@@ -1,11 +1,11 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 步骤条
     </navigator>
   </view>
 </view>
-<view class="cu-bar solid-bottom">
+<view class="cu-bar bg-white solid-bottom">
   <view class='action'>
     <text class='icon-title text-orange'></text> 基本用法
   </view>
@@ -36,7 +36,7 @@
     </view>
   </view>
 </view>
-<view class="cu-bar solid-bottom margin-top">
+<view class="cu-bar bg-white solid-bottom margin-top">
   <view class='action'>
     <text class='icon-title text-orange'></text> 数字完成
   </view>
@@ -51,7 +51,7 @@
     </view>
   </view>
 </view>
-<view class="cu-bar solid-bottom margin-top">
+<view class="cu-bar bg-white solid-bottom margin-top">
   <view class='action'>
     <text class='icon-title text-orange'></text> 多级显示
   </view>

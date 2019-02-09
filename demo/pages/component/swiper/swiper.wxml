@@ -1,11 +1,11 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 轮播图
     </navigator>
   </view>
 </view>
-<view class="cu-bar">
+<view class="cu-bar bg-white">
   <view class='action'>
     <text class='icon-title text-pink'></text> 全屏限高轮播
   </view>
@@ -18,7 +18,7 @@
     <image src="https://image.weilanwl.com/img/4x3-{{index+1}}.jpg" mode='aspectFill'></image>
   </swiper-item>
 </swiper>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-pink'></text> 卡片式轮播
   </view>
@@ -29,7 +29,7 @@
   </swiper-item>
 </swiper>
 
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-pink'></text> 堆叠式轮播
   </view>

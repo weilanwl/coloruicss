@@ -1,5 +1,5 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 加载
     </navigator>
@@ -8,13 +8,13 @@
     </view>
   </view>
 </view>
-<view class="cu-bar">
+<view class="cu-bar bg-white">
   <view class='action'>
     <text class='icon-title text-blue'></text>背景
   </view>
 </view>
 <view class="cu-load bg-blue {{!isLoad?'loading':'over'}}"></view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>加载状态
   </view>
@@ -23,14 +23,14 @@
   </view>
 </view>
 <view class="cu-load bg-grey {{!isLoad?'loading':'over'}}"></view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>加载错误
   </view>
 </view>
 <view class="cu-load bg-red erro"></view>
 
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>弹框加载
   </view>
@@ -45,7 +45,7 @@
     <image src='/images/logo.png' class='png' mode='aspectFit'></image>
     <view class='gray-text'>加载中...</view>
 </view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>进度条加载
   </view>

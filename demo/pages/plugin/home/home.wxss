@@ -1,4 +1,6 @@
-
+page{
+  padding-bottom: 100rpx;
+}
 .cu-bar .content image{
   height: 60rpx;
   width: 240rpx;

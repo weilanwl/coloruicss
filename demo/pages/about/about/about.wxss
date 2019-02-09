@@ -1,1 +1,27 @@
-/* pages/about/about/about.wxss */
+.UCenter-bg {
+  background-image: url(https://image.weilanwl.com/color2.0/index.jpg);
+  background-size: cover;
+  height: 700rpx;
+  display: flex;
+  justify-content: center;
+  padding-top: 40rpx;
+  overflow: hidden;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0,0,0,0.3);
+}
+.UCenter-bg text{
+  opacity: 0.8;
+}
+.UCenter-bg image {
+  width: 250rpx;
+  height: 250rpx;
+}
+
+.UCenter-bg .animation-wave {
+  position: absolute;
+  bottom: 0;
+}

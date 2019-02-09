@@ -1,2 +1,28 @@
-<!--pages/about/test/filter.wxml-->
-<text>pages/about/test/filter.wxml</text>
+<view class="cu-custom" style="height:{{CustomBar}}px;">
+  <view class="cu-bar fixed bg-gradual-green" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
+      <text class='icon-back'></text> <text>filter：blur引起的ios花屏测试</text>
+    </navigator>
+  </view>
+</view>
+<scroll-view scroll-x class="bg-white nav" scroll-with-animation scroll-left="{{scrollLeft}}">
+  <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{10}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+    Tab{{index}}
+  </view>
+</scroll-view>
+
+<view class='padding margin'>
+  <view class="shadow-blur bg-red ABox" style='animation: show 1s 1;-webkit-animation: show 1s 1;'>阴影层</view>
+</view>
+
+<view class='padding margin'>
+  <view class="shadow-blur bg-orange ABox">去掉动画</view>
+</view>
+
+<view class='padding margin'>
+  <view class="shadow-blur bg-blue Box" style='animation: show 1s 1;-webkit-animation: show 1s 1;'>去掉after</view>
+</view>
+
+<view class='padding margin'>
+  <view class="shadow-blur bg-green Box">去掉动画和after</view>
+</view>

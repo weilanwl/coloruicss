@@ -1,5 +1,5 @@
 const app = getApp();
-Page({
+Component({
   data: {
     StatusBar: app.globalData.StatusBar,
     CustomBar: app.globalData.CustomBar,
@@ -15,10 +15,21 @@ Page({
       }
     ]
   },
-  toChild(e) {
-    wx.navigateTo({
-      url: e.currentTarget.dataset.url
-    })
+  methods: {
+    toChild(e) {
+      wx.navigateTo({
+        url: e.currentTarget.dataset.url
+      })
+    },
   },
-
+  pageLifetimes: {
+    show() {
+      if (typeof this.getTabBar === 'function' &&
+        this.getTabBar()) {
+        this.getTabBar().setData({
+          selected: 2
+        })
+      }
+    }
+  }
 });

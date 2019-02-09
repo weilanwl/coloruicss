@@ -1,11 +1,11 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 卡片
     </navigator>
   </view>
 </view>
-<view class="cu-bar solid-bottom">
+<view class="cu-bar bg-white solid-bottom">
   <view class='action'>
     <text class='icon-titles text-orange '></text> 案例类卡片
   </view>
@@ -38,7 +38,7 @@
     </view>
   </view>
 </view>
-<view class="cu-bar solid-bottom {{isCard?'margin-top':''}}">
+<view class="cu-bar bg-white solid-bottom {{isCard?'margin-top':''}}">
   <view class='action'>
     <text class='icon-titles text-orange '></text> 动态类卡片
   </view>
@@ -98,7 +98,7 @@
   </view>
 </view>
 
-<view class="cu-bar solid-bottom margin-top">
+<view class="cu-bar bg-white solid-bottom margin-top">
   <view class='action'>
     <text class='icon-titles text-orange '></text> 文章类卡片
   </view>

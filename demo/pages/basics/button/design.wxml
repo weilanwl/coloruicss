@@ -1,5 +1,5 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 按钮 / 设计
     </navigator>
@@ -9,7 +9,7 @@
   <view class="box bg-white text-center radius {{block?'flex-direction':''}}">
     <button class='cu-btn {{border?"line":"bg"}}{{bordersize?bordersize:""}}-{{color}} {{round?"round":""}} {{size}} {{shadow?"shadow":""}} {{block?"block":""}}'>我是一个按钮</button>
   </view>
-  <view class='padding text-center'> class="<text wx:if="{{color}}">{{border?"line":"bg"}}{{bordersize?bordersize:""}}-{{color}} {{round?"round":""}} {{size}} {{shadow?"shadow":""}} {{block?"block":""}}</text>" </view>
+  <view class='padding text-center'> class="cu-btn<text wx:if="{{color}}"> {{border?"line":"bg"}}{{bordersize?bordersize:""}}-{{color}} {{round?"round":""}} {{size}} {{shadow?"shadow":""}} {{block?"block":""}}</text>" </view>
 </view>
 
 <view class="cu-form-group margin-top" bindtap="showModal" data-target="ColorModal">

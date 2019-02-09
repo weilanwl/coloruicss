@@ -1,12 +1,12 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text> 背景颜色
     </navigator>
   </view>
 </view>
 
-<view class="cu-bar solid-bottom">
+<view class="cu-bar bg-white solid-bottom">
   <view class='action'>
     <text class='icon-title text-blue'></text>深色背景
   </view>
@@ -20,7 +20,7 @@
   </view>
 </view>
 
-<view class="cu-bar solid-bottom">
+<view class="cu-bar bg-white solid-bottom">
   <view class='action'>
     <text class='icon-title text-blue'></text>淡色背景
   </view>
@@ -33,50 +33,50 @@
     </view>
   </view>
 </view>
-<view class="cu-bar solid-bottom margin-top">
+<view class="cu-bar bg-white solid-bottom margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>渐变背景
   </view>
 </view>
 <view class='grid col-2 padding-sm'>
   <view class='padding-sm'>
-    <view class='gradual-red padding radius text-center shadow-blur'>
+    <view class='bg-gradual-red padding radius text-center shadow-blur'>
       <view class="text-lg">魅红</view>
       <view class='margin-top-sm text-Abc'>#f43f3b - #ec008c</view>
     </view>
   </view>
   <view class='padding-sm'>
-    <view class='gradual-orange padding radius text-center shadow-blur'>
+    <view class='bg-gradual-orange padding radius text-center shadow-blur'>
       <view class="text-lg">鎏金</view>
       <view class='margin-top-sm text-Abc'>#ff9700 - #ed1c24</view>
     </view>
   </view>
   <view class='padding-sm'>
-    <view class='gradual-green padding radius text-center shadow-blur'>
+    <view class='bg-gradual-green padding radius text-center shadow-blur'>
       <view class="text-lg">翠柳</view>
       <view class='margin-top-sm text-Abc'>#39b54a - #8dc63f</view>
     </view>
   </view>
   <view class='padding-sm'>
-    <view class='gradual-blue padding radius text-center shadow-blur'>
+    <view class='bg-gradual-blue padding radius text-center shadow-blur'>
       <view class="text-lg">靛青</view>
       <view class='margin-top-sm text-Abc'>#0081ff - #1cbbb4</view>
     </view>
   </view>
   <view class='padding-sm'>
-    <view class='gradual-purple padding radius text-center shadow-blur'>
+    <view class='bg-gradual-purple padding radius text-center shadow-blur'>
       <view class="text-lg">惑紫</view>
       <view class='margin-top-sm text-Abc'>#9000ff - #5e00ff</view>
     </view>
   </view>
   <view class='padding-sm'>
-    <view class='gradual-pink padding radius text-center shadow-blur'>
+    <view class='bg-gradual-pink padding radius text-center shadow-blur'>
       <view class="text-lg">霞彩</view>
       <view class='margin-top-sm text-Abc'>#ec008c - #6739b6</view>
     </view>
   </view>
 </view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>图片背景
   </view>
@@ -91,7 +91,7 @@
     </view>
   </view>
 </view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>视频背景
   </view>
@@ -107,7 +107,7 @@
     </cover-view>
   </cover-view>
 </view>
-<view class="cu-bar margin-top">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
     <text class='icon-title text-blue'></text>透明背景(文字层)
   </view>

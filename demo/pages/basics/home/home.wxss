@@ -1,3 +1,3 @@
-.weui-tabbar{
-  left: 0px !important;
+page{
+  padding-bottom: 100rpx;
 }

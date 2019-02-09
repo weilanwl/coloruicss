@@ -1,0 +1,7 @@
+.box {  
+  margin: 20rpx; 
+}
+
+.box view.cu-bar {
+  margin-top: 20rpx; 
+}

@@ -1,1 +1,3 @@
-/* pages/about/log/log.wxss */
+page {
+  background: #fff;
+}

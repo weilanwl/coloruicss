@@ -1,5 +1,5 @@
 <view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+  <view class="cu-bar fixed bg-gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
     <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
       <text class='icon-back'></text>
       聊天
@@ -10,7 +10,7 @@
 <view class="cu-chat">
   <view class="cu-item self">
     <view class="main">
-      <view class='content bg-green shadow-blur'>
+      <view class='content bg-green shadow'>
         <text>喵喵喵！喵喵喵！喵喵喵！喵喵！喵喵！！喵！喵喵喵！</text>
       </view>
     </view>
@@ -87,5 +87,5 @@
   <view class='action'>
     <text class='icon-emojifill text-grey'></text>
   </view>
-  <button class='cu-btn bg-green shadow-blur'>发送</button>
+  <button class='cu-btn bg-green shadow'>发送</button>
 </view>
