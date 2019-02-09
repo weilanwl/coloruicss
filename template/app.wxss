@@ -9,7 +9,6 @@
 }
 
 .nav-li {
-  color: #666;
   padding: 30rpx;
   border-radius: 12rpx;
   width: 45%;
