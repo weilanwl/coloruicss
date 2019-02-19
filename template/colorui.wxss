@@ -1,5 +1,5 @@
 /*
-  Color UI v2.0.6 | by 文晓港 
+  Color UI v2.0.6 修复v1 | by 文晓港 
   仅供学习交流，如作它用所承受的法律责任一概与作者无关   
   （QQ交流群：240787041）
   文档：http://www.color-ui.com/
@@ -765,7 +765,6 @@ button.icon.lg {
 }
 
 .cu-tag.badge {
-  background: #dd514c !important;
   border-radius: 200rpx;
   position: absolute;
   top: -10rpx;
@@ -775,6 +774,9 @@ button.icon.lg {
   height: 28rpx;
   color: #fff;
 }
+.cu-tag.badge:not([class*="bg-"]) {
+  background: #dd514c;
+}
 
 .cu-tag:empty:not([class*="icon"]) {
   padding: 0rpx;
@@ -783,6 +785,7 @@ button.icon.lg {
   top: -4rpx;
   right: -4rpx;
 }
+
 .cu-tag[class*="icon"] {
   width: 32rpx;
   height: 32rpx;
@@ -811,7 +814,7 @@ button.icon.lg {
   background-size: cover;
   background-position: center;
   vertical-align: middle;
-  font-size: 1.5em
+  font-size: 1.5em;
 }
 
 .cu-avatar.sm {
@@ -831,9 +834,11 @@ button.icon.lg {
   height: 128rpx;
   font-size: 2.5em;
 }
-.cu-avatar .avatar-text{
+
+.cu-avatar .avatar-text {
   font-size: 0.4em;
 }
+
 .cu-avatar-group {
   direction: rtl;
   unicode-bidi: bidi-override;
@@ -1539,7 +1544,8 @@ button.icon.lg {
 .cu-bar.tabbar {
   padding: 0;
 }
-.cu-bar.tabbar.shadow {  
+
+.cu-bar.tabbar.shadow {
   box-shadow: 0 -1rpx 6rpx rgba(0, 0, 0, 0.1);
 }
 
@@ -2397,7 +2403,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 }
 
 .card-swiper swiper-item {
-  width: 610rpx;
+  width: 610rpx !important;
   left: 70rpx;
   box-sizing: border-box;
   padding: 40rpx 0rpx 70rpx;
