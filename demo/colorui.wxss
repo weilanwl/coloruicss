@@ -1,5 +1,5 @@
 /*
-  Color UI v2.0.6 | by 文晓港 
+  Color UI v2.0.6 修复v1 | by 文晓港 
   仅供学习交流，如作它用所承受的法律责任一概与作者无关   
   （QQ交流群：240787041）
   文档：http://www.color-ui.com/
@@ -765,7 +765,6 @@ button.icon.lg {
 }
 
 .cu-tag.badge {
-  background: #dd514c !important;
   border-radius: 200rpx;
   position: absolute;
   top: -10rpx;
@@ -774,6 +773,9 @@ button.icon.lg {
   padding: 0rpx 10rpx;
   height: 28rpx;
   color: #fff;
+}
+.cu-tag.badge:not([class*="bg-"]) {
+  background: #dd514c;
 }
 
 .cu-tag:empty:not([class*="icon"]) {
@@ -2401,7 +2403,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 }
 
 .card-swiper swiper-item {
-  width: 610rpx;
+  width: 610rpx !important;
   left: 70rpx;
   box-sizing: border-box;
   padding: 40rpx 0rpx 70rpx;

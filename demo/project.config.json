@@ -13,7 +13,7 @@
 	"compileType": "miniprogram",
 	"libVersion": "2.5.2",
 	"appid": "wxfd5241d66a07713f",
-	"projectname": "ColorUI2.0-test",
+	"projectname": "ColorUI2.0-demo",
 	"debugOptions": {
 		"hidedInDevtools": []
 	},
