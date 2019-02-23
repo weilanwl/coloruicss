@@ -1,4 +1,4 @@
-<view class="cu-bar tabbar bg-white shadow">
+<view class="cu-bar tabbar bg-white shadow {{isPhoneX ? 'iphone-x-adaption' : ''}}">
   <view class="action" wx:for="{{list}}" wx:key="index" data-path="{{item.pagePath}}" data-index="{{index}}" bindtap="switchTab">
     <view class='icon-cu-image'>
       <image src='{{selected === index ? item.selectedIconPath : item.iconPath}}' class='{{selected === index ? "animation" : "animation"}}'></image>

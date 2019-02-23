@@ -1,3 +1,4 @@
+const app = getApp();
 Component({
   options: {
     addGlobalClass: true,
@@ -28,7 +29,8 @@ Component({
         selectedIconPath: "/images/tabbar/about_cur.png",
         text: "关于"
       }
-    ]
+    ],
+    isPhoneX: app.globalData.IsPhoneX,
   },
   methods: {
     switchTab(e) {      

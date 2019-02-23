@@ -3612,3 +3612,15 @@ scroll-view.cu-steps .cu-item {
 .text-white, .line-white, .lines-white {
   color: #fff;
 }
+
+/* ==================
+     iPhone X+适配
+ ==================== */
+
+.iphone-x-adaption {
+  padding-bottom: 64rpx!important;
+}
+
+.iphone-x-adaption.tabbar {
+  padding-top: 25rpx;
+}
