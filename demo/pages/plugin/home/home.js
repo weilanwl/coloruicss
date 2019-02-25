@@ -17,6 +17,11 @@ Component({
         title: '全屏抽屉',
         img: 'https://image.weilanwl.com/color2.0/plugin/qpct2148.jpg',
         url: '../drawer/drawer'
+      },
+      {
+        title: '垂直导航',
+        img: 'https://image.weilanwl.com/color2.0/plugin/qpczdh2307.jpg',
+        url: '../verticalnav/verticalnav'
       }
     ]
   },

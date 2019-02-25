@@ -10,11 +10,13 @@
     <view class="bg-gradual-green content shadow-blur">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.7</view>
-        <view class="cu-tag line-white">2019/02/20</view>
+        <view class="cu-tag line-white">2019/02/25</view>
       </view>
       <view class='margin-top-sm text-content'>
         <view>1.新增操作条胶囊样式，优化全屏操作条</view>
-        <view>2.新增操垂直导航</view>
+        <view>2.优化iPhone X的Tabbar样式</view>
+        <view>3.新增全屏抽屉插件</view>
+        <view>4.新增垂直导航插件</view>
       </view>
     </view>
   </view>

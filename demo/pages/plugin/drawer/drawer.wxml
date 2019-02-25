@@ -8,29 +8,33 @@
         </block>
       </view>
       <!-- 样式1 -->
-      <view class="action {{1==TabCur?'cur':''}}" bindtap='tabSelect' data-id="1">
-        <view class='icon-cu-image'>
-          <image src='/images/tabbar/component{{1==TabCur?"_cur":""}}.png'></image>
+      <block wx:if="{{1==TabCur?'cur':''}}">
+        <view class="action {{1==TabCur?'cur':''}}" bindtap='tabSelect' data-id="1">
+          <view class='icon-cu-image'>
+            <image src='/images/tabbar/component{{1==TabCur?"_cur":""}}.png'></image>
+          </view>
         </view>
-      </view>
-      <view class="action {{2==TabCur?'cur':''}}" bindtap='tabSelect' data-id="2">
-        <view class='icon-cu-image'>
-          <image src='/images/tabbar/plugin{{2==TabCur?"_cur":""}}.png'></image>
-          <view class='cu-tag badge'>99</view>
+        <view class="action {{2==TabCur?'cur':''}}" bindtap='tabSelect' data-id="2">
+          <view class='icon-cu-image'>
+            <image src='/images/tabbar/plugin{{2==TabCur?"_cur":""}}.png'></image>
+            <view class='cu-tag badge'>99</view>
+          </view>
         </view>
-      </view>
-      <view class="action {{3==TabCur?'cur':''}}" bindtap='tabSelect' data-id="3">
-        <view class='icon-cu-image'>
-          <image src='/images/tabbar/about{{3==TabCur?"_cur":""}}.png'></image>
-          <view class='cu-tag badge'></view>
+        <view class="action {{3==TabCur?'cur':''}}" bindtap='tabSelect' data-id="3">
+          <view class='icon-cu-image'>
+            <image src='/images/tabbar/about{{3==TabCur?"_cur":""}}.png'></image>
+            <view class='cu-tag badge'></view>
+          </view>
         </view>
-      </view>
+      </block>
       <!-- 样式2 -->
-      <!-- <scroll-view scroll-x class="nav" scroll-with-animation scroll-left="{{scrollLeft}}" style='width:calc(100% - 440rpx)'>
-        <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{10}}" wx:key bindtap='tabSelect' data-id="{{index}}">
-          Tab{{index}}
-        </view>
-      </scroll-view> -->
+      <block wx:if="{{1!=TabCur?'cur':''}}">
+        <scroll-view scroll-x class="nav" scroll-with-animation scroll-left="{{scrollLeft}}" style='width:calc(100% - 440rpx)'>
+          <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{10}}" wx:key bindtap='tabSelect' data-id="{{index}}">
+            Tab{{index}}
+          </view>
+        </scroll-view>
+      </block>
     </view>
   </view>
   <view wx:for="{{10}}" wx:key wx:if="{{index==TabCur}}" class='padding margin text-center'>
@@ -41,7 +45,9 @@
     </navigator>
   </view>
 </view>
-<view class="DrawerClose {{modalName=='viewModal'?'show':''}}"  bindtap='hideModal'><text class='icon-pullright'></text></view>
+<view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap='hideModal'>
+  <text class='icon-pullright'></text>
+</view>
 <view class="DrawerWindow {{modalName=='viewModal'?'show':''}}">
   <view class='padding-xl text-center text-white'>
     <image src='/images/logo.png' class='response' mode='widthFix' style='width:200rpx;margin-top:100rpx'></image>

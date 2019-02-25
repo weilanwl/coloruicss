@@ -36,7 +36,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 31,
+			"current": 32,
 			"list": [
 				{
 					"id": 0,
@@ -194,10 +194,17 @@
 					"pathName": "pages/plugin/animation/animation",
 					"query": ""
 				},
+				{
+					"id": 31,
+					"name": "3.3 扩展-全屏抽屉",
+					"pathName": "pages/plugin/drawer/drawer",
+					"query": "",
+					"scene": null
+				},
         {
-          "id": 31,
-          "name": "3.3 扩展-全屏抽屉",
-          "pathName": "pages/plugin/drawer/drawer",
+          "id": -1,
+          "name": "3.4 扩展-垂直导航",
+          "pathName": "pages/plugin/home/home",
           "query": "",
           "scene": null
         },
