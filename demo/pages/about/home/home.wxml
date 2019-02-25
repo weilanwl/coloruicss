@@ -64,17 +64,4 @@
   </view>
 </view>
 
-<view class="cu-modal {{modalName=='QrcodeModal'?'show':''}}">
-  <view class="cu-dialog">
-    <view class="bg-img" style="background-image: url('https://image.weilanwl.com/color2.0/zanCode.jpg');height:544rpx;">
-      <view class="cu-bar justify-end none-bg text-white">
-        <view class='action' bindtap='hideModal'>
-          <text class='icon-close '></text>
-        </view>
-      </view>
-    </view>
-    <view class="cu-bar">
-      <view class='justify-center flex-sub' bindtap='SaveQrcode'>保存到相册</view>
-    </view>
-  </view>
-</view>
+<view class='cu-tabbar-height'></view>

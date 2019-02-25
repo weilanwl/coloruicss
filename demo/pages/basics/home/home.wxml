@@ -6,3 +6,4 @@
     <text class='icon-{{item.icon}}'></text>
   </navigator>
 </view>
+<view class='cu-tabbar-height'></view>

@@ -36,7 +36,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 2,
+			"current": 31,
 			"list": [
 				{
 					"id": 0,
@@ -194,6 +194,13 @@
 					"pathName": "pages/plugin/animation/animation",
 					"query": ""
 				},
+        {
+          "id": 31,
+          "name": "3.3 扩展-全屏抽屉",
+          "pathName": "pages/plugin/drawer/drawer",
+          "query": "",
+          "scene": null
+        },
 				{
 					"id": -1,
 					"name": "-----关于-首页-----",

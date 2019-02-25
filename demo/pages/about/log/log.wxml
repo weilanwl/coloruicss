@@ -9,6 +9,18 @@
   <view class='cu-item text-green'>
     <view class="bg-gradual-green content shadow-blur">
       <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v2.0.7</view>
+        <view class="cu-tag line-white">2019/02/20</view>
+      </view>
+      <view class='margin-top-sm text-content'>
+        <view>1.新增操作条胶囊样式，优化全屏操作条</view>
+        <view>2.新增操垂直导航</view>
+      </view>
+    </view>
+  </view>
+  <view class='cu-item text-green'>
+    <view class="bg-green content shadow-blur">
+      <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.6</view>
         <view class="cu-tag line-white">2019/02/09</view>
       </view>

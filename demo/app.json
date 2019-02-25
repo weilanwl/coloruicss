@@ -33,7 +33,8 @@
     "pages/about/test/list",
     "pages/about/test/filter",
     "pages/about/home/home",
-    "custom-tab-bar/index"
+    "custom-tab-bar/index",
+    "pages/plugin/drawer/drawer"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",

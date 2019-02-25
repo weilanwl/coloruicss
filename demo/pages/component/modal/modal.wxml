@@ -5,10 +5,9 @@
     </navigator>
   </view>
 </view>
-
-<view class="cu-bar bg-white">
+<view class="cu-bar bg-white margin-top">
   <view class='action'>
-    <text class='icon-title text-orange '></text> 模态窗口
+    <text class='icon-title text-orange '></text> 普通窗口
   </view>
   <view class='action'>
     <button class='cu-btn bg-green shadow' bindtap="showModal" data-target="Modal">Modal</button>

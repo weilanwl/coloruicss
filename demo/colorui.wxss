@@ -1,5 +1,5 @@
 /*
-  Color UI v2.0.6 修复v1 | by 文晓港 
+  Color UI v2.0.7 | by 文晓港 
   仅供学习交流，如作它用所承受的法律责任一概与作者无关   
   （QQ交流群：240787041）
   文档：http://www.color-ui.com/
@@ -774,6 +774,7 @@ button.icon.lg {
   height: 28rpx;
   color: #fff;
 }
+
 .cu-tag.badge:not([class*="bg-"]) {
   background: #dd514c;
 }
@@ -1464,10 +1465,11 @@ button.icon.lg {
 .cu-bar .content {
   position: absolute;
   text-align: center;
-  width: 400rpx;
+  width: calc(100% - 340rpx);
   left: 0;
   right: 0;
-  bottom: 20rpx;
+  bottom: 0;
+  top: 0;
   margin: auto;
   height: 60rpx;
   font-size: 32rpx;
@@ -1477,6 +1479,13 @@ button.icon.lg {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.cu-bar.ios .content {
+  bottom: 7px;
+  height: 30px;
+  font-size: 32rpx;
+  line-height: 30px;
 }
 
 .cu-bar.btn-group {
@@ -1543,6 +1552,14 @@ button.icon.lg {
 
 .cu-bar.tabbar {
   padding: 0;
+  z-index: 0;
+  height: calc(100rpx + env(safe-area-inset-bottom) / 2);
+  padding-bottom: calc(env(safe-area-inset-bottom) / 2);
+}
+
+.cu-tabbar-height {
+  min-height: 100rpx;
+  height: calc(100rpx + env(safe-area-inset-bottom) / 2);
 }
 
 .cu-bar.tabbar.shadow {
@@ -1716,49 +1733,70 @@ button.icon.lg {
   margin-left: 0rpx;
 }
 
-/* 
-.cu-bar.tabbar .action {
-  flex: 1;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.cu-bar.tabbar .action .tabbar-icon {
-  width: 54rpx;
-  height: 54rpx;
-  position: relative;
-}
-.cu-bar.tabbar .action image {  
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
-.cu-bar.tabbar .action .tabbar-icon image:first-child,.cu-bar.tabbar .action.cur .tabbar-icon image:last-child {  
-  width: 0rpx;
-  height: 0rpx;
-}
-.cu-bar.tabbar .action .tabbar-icon image:last-child,.cu-bar.tabbar .action.cur .tabbar-icon image:first-child {
-  width: 54rpx;
-  height: 54rpx;
-}
-
-.cu-bar.tabbar .action view {
-  font-size: 20rpx;
-} */
-
 .cu-custom {
   display: block;
   position: relative;
 }
 
+.cu-custom .cu-bar .content {
+  width: calc(100% - 440rpx);
+}
+
+.cu-custom .cu-bar {
+  min-height: 0px;
+}
+
 .cu-custom .cu-bar {
   padding-right: 220rpx;
   box-shadow: 0rpx 0rpx 0rpx;
+}
+
+.cu-custom .cu-bar .border-custom {
+  position: relative;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 1000rpx;
+  height: 30px;
+}
+
+.cu-custom .cu-bar .border-custom::after {
+  content: " ";
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: inherit;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  border: 1rpx solid #fff;
+  opacity: 0.5;
+}
+
+.cu-custom .cu-bar .border-custom::before {
+  content: " ";
+  width: 1rpx;
+  height: 110%;
+  position: absolute;
+  top: 22.5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: scale(0.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  opacity: 0.6;
+  background-color: #fff;
+}
+
+.cu-custom .cu-bar .border-custom text {
+  display: block;
+  flex: 1;
+  margin: auto !important;
+  text-align: center;
+  font-size: 34rpx;
 }
 
 /* ==================
@@ -2010,7 +2048,7 @@ button.icon.lg {
 
 .cu-card>.cu-item {
   display: block;
-  background: #fff;
+  background-color: #fff;
   overflow: hidden;
   border-radius: 10rpx;
   margin: 30rpx;
