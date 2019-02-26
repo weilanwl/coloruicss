@@ -2429,7 +2429,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
   min-height: 375rpx;
 }
 
-.screen-swiper image {
+.screen-swiper image,.screen-swiper video{
   width: 100%;
   display: block;
   height: 100%;

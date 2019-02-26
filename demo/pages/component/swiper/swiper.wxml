@@ -15,8 +15,10 @@
 </view>
 <swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
   <swiper-item wx:for="{{4}}" wx:key>
-    <image src="https://image.weilanwl.com/img/4x3-{{index+1}}.jpg" mode='aspectFill'></image>
+    <image src="https://image.weilanwl.com/img/4x3-{{index+1}}.jpg" mode='aspectFill' wx:if="{{index!=1}}"></image>
+    <video src='https://www.weilanwl.com/theme/wl/assets/images/slider1.mp4' autoplay loop muted show-play-btn="{{false}}" controls="{{false}}" objectFit="cover" wx:else></video>
   </swiper-item>
+
 </swiper>
 <view class="cu-bar bg-white margin-top">
   <view class='action'>
