@@ -10,4 +10,4 @@
                 <p>微信群：加入微信群请先添加开发者微信，备注GitHub。QQ群：240787041 或扫描二维码。</p>
                 <p align="center"><img src="https://image.weilanwl.com/colorui/githubQrcode.jpg" alt="" style="max-width:100%;" width="748"></p>				  
                 <h2>赞赏</h2>
-				  <p align="center"><img src="https://image.weilanwl.com/colorui/githubAppreciate.jpg" alt="" style="max-width:100%;" width="600"></p>
+<p align="center"><img src="https://image.weilanwl.com/githubAppreciate.jpg" alt="" style="max-width:100%;" width="600"></p>
