@@ -15,7 +15,7 @@
   </view>
 </view>
 <view class="padding flex flex-wrap justify-between align-center bg-white">
-  <button class='cu-btn' bindtap='input'>默认</button>
+  <button class='cu-btn'>默认</button>
   <button class='cu-btn round'>圆角</button>
   <button class='cu-btn icon'>
     <text class='icon-emojifill'></text>

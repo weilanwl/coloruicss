@@ -14,8 +14,5 @@ Page({
     this.setData({
       bordersize: e.detail.value
     })
-  },
-  input(){
-    console.log();
   }
 });
