@@ -1,0 +1,6 @@
+<view class="custom" style="height:{{CustomBar}}px;">
+  <view class="bar" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
+    <navigator class='border-custom' open-type="navigateBack" delta="1" hover-class="none" style='width:{{Custom.width}}px;height:{{Custom.height}}px;margin-left:calc(750rpx - {{Custom.right}}px)'></navigator>
+  </view>
+</view>
+<view class='StatusBar' style="height:{{StatusBar}}px;" ></view>

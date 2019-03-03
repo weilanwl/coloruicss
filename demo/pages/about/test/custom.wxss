@@ -1,0 +1,22 @@
+.custom {
+  background-color: #333;
+}
+.bar{
+  display: flex;
+  align-items: center;
+  background: #555;
+  position: fixed;
+  top: 0;
+  width: 50%;
+}
+.StatusBar {
+  position: fixed;
+  background-color: #da0000;
+  width: 75%;
+  top: 0;
+  left: 0;
+}
+.border-custom{
+  background-color: #fff;
+  border-radius: 50px;  
+}

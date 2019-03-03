@@ -37,13 +37,95 @@
       </block>
     </view>
   </view>
-  <view wx:for="{{10}}" wx:key wx:if="{{index==TabCur}}" class='padding margin text-center'>
-    <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
-    <view class='text-xl margin-xl'>点击头像打开抽屉</view>
-    <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'> </text> 返回上一页
-    </navigator>
-  </view>
+  <scroll-view scroll-y style='height:calc(100vh - {{CustomBar}}px)'>
+    <view wx:for="{{10}}" wx:key wx:if="{{index==TabCur}}" class='padding margin text-center'>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+      <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
+      <view class='text-xl margin-xl'>点击头像打开抽屉</view>
+      <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
+        <text class='icon-back'> </text> 返回上一页
+      </navigator>
+    </view>
+  </scroll-view>
 </view>
 <view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap='hideModal'>
   <text class='icon-pullright'></text>

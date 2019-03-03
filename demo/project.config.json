@@ -11,7 +11,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.5.2",
+	"libVersion": "2.6.1",
 	"appid": "wxfd5241d66a07713f",
 	"projectname": "ColorUI2.0-demo",
 	"debugOptions": {
@@ -36,7 +36,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 32,
+			"current": 33,
 			"list": [
 				{
 					"id": 0,
@@ -201,13 +201,13 @@
 					"query": "",
 					"scene": null
 				},
-        {
-          "id": -1,
-          "name": "3.4 扩展-垂直导航",
-          "pathName": "pages/plugin/home/home",
-          "query": "",
-          "scene": null
-        },
+				{
+					"id": -1,
+					"name": "3.4 扩展-垂直导航",
+					"pathName": "pages/plugin/home/home",
+					"query": "",
+					"scene": null
+				},
 				{
 					"id": -1,
 					"name": "-----关于-首页-----",
@@ -233,10 +233,18 @@
 					"query": ""
 				},
 				{
-					"id": -1,
+					"id": 32,
 					"name": "4.3 --- filter：blur引起的ios花屏测试",
 					"pathName": "pages/about/test/filter",
-					"query": ""
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "4.3 --- 胶囊按钮的Api测试",
+					"pathName": "pages/about/test/custom",
+					"query": "",
+					"scene": null
 				}
 			]
 		}

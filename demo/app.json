@@ -35,7 +35,8 @@
     "pages/about/home/home",
     "custom-tab-bar/index",
     "pages/plugin/drawer/drawer",
-    "pages/plugin/verticalnav/verticalnav"
+    "pages/plugin/verticalnav/verticalnav",
+    "pages/about/test/custom"
   ],
   "window": {
     "navigationBarBackgroundColor": "#39b54a",

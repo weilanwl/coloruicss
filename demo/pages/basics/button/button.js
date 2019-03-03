@@ -15,4 +15,7 @@ Page({
       bordersize: e.detail.value
     })
   },
+  input(){
+    console.log();
+  }
 });

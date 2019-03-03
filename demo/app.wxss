@@ -1,6 +1,10 @@
 @import "icon.wxss";
 @import "colorui.wxss";
 
+.cu-btn.button-hover {
+  pointer-events: none;
+}
+
 .cu-modal.show {
   z-index: 99999;
 }

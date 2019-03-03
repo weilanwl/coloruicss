@@ -9,7 +9,7 @@
   <navigator url='filter' class='bg-grey padding radius'>
     <text>filter：blur引起的ios花屏测试</text>
   </navigator>
-  <!-- <navigator url='filter' class='bg-grey padding radius margin-top'>
-    <text>filter：blur引起的ios花屏测试</text>
-  </navigator> -->
+  <navigator url='custom' class='bg-grey padding radius margin-top'>
+    <text>胶囊按钮的Api测试</text>
+  </navigator>
 </view>
