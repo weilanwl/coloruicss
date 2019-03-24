@@ -2713,6 +2713,8 @@ swiper.round-dot .uni-swiper-dot.uni-swiper-dot-active {
 .tower-swiper {
 	height: 420upx;
 	position: relative;
+	max-width: 750upx;
+	overflow: hidden;
 }
 
 .tower-swiper .tower-item {

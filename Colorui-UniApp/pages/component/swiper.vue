@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<custom bgColor="bg-gradual-pink">聊天</custom>
+		<custom bgColor="bg-gradual-pink">轮播图</custom>
 		<view class="cu-bar bg-white">
 			<view class="action">
 				<text class="icon-title text-pink"></text> 全屏限高轮播
@@ -165,5 +165,8 @@
 </script>
 
 <style>
-
+.tower-swiper{
+	 max-width: 750upx;
+	 overflow: hidden;
+ }
 </style>

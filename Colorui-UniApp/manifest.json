@@ -52,5 +52,9 @@
         "setting" : {
             "urlCheck" : true
         }
+    },
+    "h5" : {
+        "title" : "ColorUi for UniApp",
+        "domain" : "demo.color-ui.com"
     }
 }

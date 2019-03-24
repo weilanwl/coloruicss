@@ -47,7 +47,7 @@
 			<view class="title">边框大小</view>
 			<radio-group @change="SetBorderSize">
 				<label class="margin-left-sm">
-					<radio class="blue radio" value"" checked></radio>
+					<radio class="blue radio" value="" checked></radio>
 					<text class="margin-left-sm"> 小</text>
 				</label>
 				<label class="margin-left-sm">
