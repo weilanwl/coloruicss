@@ -1,0 +1,161 @@
+{
+    "pages" : [
+        //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+        {
+            "path" : "pages/index/index",
+            "style" : {
+                "navigationBarTitleText" : "主页面"
+            }
+        },
+        {
+            "path" : "pages/basics/home",
+            "style" : {
+                "navigationBarTitleText" : "基础元素"
+            }
+        },
+        {
+            "path" : "pages/basics/layout",
+            "style" : {
+                "navigationBarTitleText" : "布局"
+            }
+        },
+        {
+            "path" : "pages/basics/background",
+            "style" : {
+                "navigationBarTitleText" : "背景"
+            }
+        },
+        {
+            "path" : "pages/basics/text",
+            "style" : {
+                "navigationBarTitleText" : "文本"
+            }
+        },
+        {
+            "path" : "pages/basics/icon",
+            "style" : {
+                "navigationBarTitleText" : "图标"
+            }
+        },
+        {
+            "path" : "pages/basics/button",
+            "style" : {
+                "navigationBarTitleText" : "按钮"
+            }
+        },
+        {
+            "path" : "pages/basics/design",
+            "style" : {
+                "navigationBarTitleText" : "按钮/设计"
+            }
+        },
+        {
+            "path" : "pages/basics/tag",
+            "style" : {
+                "navigationBarTitleText" : "标签"
+            }
+        },
+        {
+            "path" : "pages/basics/avatar",
+            "style" : {
+                "navigationBarTitleText" : "头像"
+            }
+        },
+        {
+            "path" : "pages/basics/progress",
+            "style" : {
+                "navigationBarTitleText" : "进度条"
+            }
+        },
+        {
+            "path" : "pages/basics/shadow",
+            "style" : {
+                "navigationBarTitleText" : "边框阴影"
+            }
+        },
+        {
+            "path" : "pages/basics/loading",
+            "style" : {
+                "navigationBarTitleText" : "加载"
+            }
+        },
+        {
+            "path" : "pages/component/home",
+            "style" : {
+                "navigationBarTitleText" : "交互组件"
+            }
+        },
+        {
+            "path" : "pages/component/bar",
+            "style" : {
+                "navigationBarTitleText" : "操作条"
+            }
+        },
+        {
+            "path" : "pages/custom/custom",
+            "style" : {
+                "navigationBarTitleText" : "列表"
+            }
+        },
+        {
+            "path" : "pages/component/nav",
+            "style" : {
+                "navigationBarTitleText" : "导航栏"
+            }
+        },
+        {
+            "path" : "pages/component/list",
+            "style" : {
+                "navigationBarTitleText" : "列表"
+            }
+        },
+        {
+            "path" : "pages/component/card",
+            "style" : {
+                "navigationBarTitleText" : "卡片"
+            }
+        },
+        {
+            "path" : "pages/component/form",
+            "style" : {
+                "navigationBarTitleText" : "表单"
+            }
+        },
+        {
+            "path" : "pages/component/timeline",
+            "style" : {
+                "navigationBarTitleText" : "时间轴"
+            }
+        },
+        {
+            "path" : "pages/component/chat",
+            "style" : {
+                "navigationBarTitleText" : "聊天"
+            }
+        },
+        {
+            "path" : "pages/component/swiper",
+            "style" : {
+                "navigationBarTitleText" : "轮播"
+            }
+        },
+        {
+            "path" : "pages/component/modal",
+            "style" : {
+                "navigationBarTitleText" : "模态框"
+            }
+        },
+        {
+            "path" : "pages/component/steps",
+            "style" : {
+                "navigationBarTitleText" : "步骤条"
+            }
+        }
+    ],
+    "globalStyle" : {
+        "navigationBarBackgroundColor" : "#39b54a",
+        "navigationBarTitleText" : "ColorUi for UniApp",
+        "navigationStyle" : "custom",
+        "navigationBarTextStyle" : "white"
+    }
+}
