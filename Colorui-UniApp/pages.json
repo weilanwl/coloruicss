@@ -154,7 +154,7 @@
     ],
     "globalStyle" : {
         "navigationBarBackgroundColor" : "#39b54a",
-        "navigationBarTitleText" : "Color UI",
+        "navigationBarTitleText" : "ColorUi for UniApp",
         "navigationStyle" : "custom",
         "navigationBarTextStyle" : "white"
     }
