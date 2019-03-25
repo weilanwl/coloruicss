@@ -142,22 +142,21 @@
 					let mLeft = list[0].mLeft;
 					let zIndex = list[0].zIndex;
 					for (let i = 1; i < list.length; i++) {
-						list[i - 1].mLeft = list[i].mLeft
-						list[i - 1].zIndex = list[i].zIndex
+						this.swiperList[i - 1].mLeft = this.swiperList[i].mLeft
+						this.swiperList[i - 1].zIndex = this.swiperList[i].zIndex
+				console.log('end')
 					}
-					list[list.length - 1].mLeft = mLeft;
-					list[list.length - 1].zIndex = zIndex;
-					this.swiperList = list
+					this.swiperList[list.length - 1].mLeft = mLeft;
+					this.swiperList[list.length - 1].zIndex = zIndex;
 				} else {
 					let mLeft = list[list.length - 1].mLeft;
 					let zIndex = list[list.length - 1].zIndex;
 					for (let i = list.length - 1; i > 0; i--) {
-						list[i].mLeft = list[i - 1].mLeft
-						list[i].zIndex = list[i - 1].zIndex
+						this.swiperList[i].mLeft = this.swiperList[i - 1].mLeft
+						this.swiperList[i].zIndex = this.swiperList[i - 1].zIndex
 					}
-					list[0].mLeft = mLeft;
-					list[0].zIndex = zIndex;
-					this.swiperList = list
+					this.swiperList[0].mLeft = mLeft;
+					this.swiperList[0].zIndex = zIndex;
 				}
 			},
 		}
@@ -165,8 +164,4 @@
 </script>
 
 <style>
-.tower-swiper{
-	 max-width: 750upx;
-	 overflow: hidden;
- }
 </style>

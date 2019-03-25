@@ -4,13 +4,12 @@
 		onLaunch: function() {
 			uni.getSystemInfo({
 				success: function(e) {
-
-					// #ifdef H5
-					Vue.prototype.StatusBar = e.statusbarHeight;
+					// #ifndef MP-WEIXIN
+					Vue.prototype.StatusBar = e.statusBarHeight;
 					if (e.platform == 'android') {
-						Vue.prototype.CustomBar = e.statusbarHeight + 50;
+						Vue.prototype.CustomBar = e.statusBarHeight + 50;
 					} else {
-						Vue.prototype.CustomBar = e.statusbarHeight + 45;
+						Vue.prototype.CustomBar = e.statusBarHeight + 45;
 					};
 					// #endif
 
