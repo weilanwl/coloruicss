@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<custom bgColor="bg-gradual-pink">卡片</custom>
+		<cu-custom bgColor="bg-gradual-pink" :isBack="true"><block slot="backText">返回</block><block slot="content">卡片</block></cu-custom>
 		<view class="cu-bar bg-white solid-bottom">
 			<view class="action">
 				<text class="icon-titles text-orange"></text> 案例类卡片
@@ -70,7 +70,7 @@
 					<text class="icon-messagefill margin-lr-xs"></text> 30
 				</view>
 
-				<view class="cu-list menu menu-avatar comment solids-top">
+				<view class="cu-list menu-avatar comment solids-top">
 					<view class="cu-item">
 						<view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
 						<view class="content">

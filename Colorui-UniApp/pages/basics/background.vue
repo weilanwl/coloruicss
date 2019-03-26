@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<custom>背景</custom>
+		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><block slot="backText">返回</block><block slot="content">背景</block></cu-custom>
 		<view class="cu-bar bg-white solid-bottom">
 			<view class="action">
 				<text class='icon-title text-blue'></text>深色背景
@@ -85,7 +85,7 @@
 				</view>
 			</view>
 		</view>
-		<!-- #ifdef MP-WEIXIN -->
+		<!-- #ifdef MP -->
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
 				<text class="icon-title text-blue"></text>视频背景

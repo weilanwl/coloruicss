@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<custom bgColor="bg-gradual-pink">时间轴</custom>
+		<cu-custom bgColor="bg-gradual-pink" :isBack="true"><block slot="backText">返回</block><block slot="content">时间轴</block></cu-custom>
 		<view class="cu-timeline">
 			<view class="cu-time">昨天</view>
 			<view class="cu-item cur icon-noticefill">

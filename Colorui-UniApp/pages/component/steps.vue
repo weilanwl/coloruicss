@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<custom bgColor="bg-gradual-pink">步骤条</custom>
+		<cu-custom bgColor="bg-gradual-pink" :isBack="true"><block slot="backText">返回</block><block slot="content">步骤条</block></cu-custom>
 		<view class="cu-bar bg-white solid-bottom">
 			<view class="action">
 				<text class="icon-title text-orange"></text> 基本用法

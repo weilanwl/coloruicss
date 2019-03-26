@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<custom bgColor="bg-gradual-pink">表单</custom>
+		<cu-custom bgColor="bg-gradual-pink" :isBack="true"><block slot="backText">返回</block><block slot="content">表单</block></cu-custom>
 		<form>
 			<view class="cu-form-group margin-top">
 				<view class="title">邮件</view>

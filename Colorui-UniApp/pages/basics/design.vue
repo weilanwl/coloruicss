@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<custom> 按钮 / 设计</custom>
+		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><block slot="backText">返回</block><block slot="content"> 按钮 / 设计</block></cu-custom>
 		<view class="padding-xl">
 			<view class="box bg-white text-center radius">
 				<button class="cu-btn" :class="[border?bordersize?'lines-' + color:'line-' + color:'bg-'+ color,round?'round':'',size,shadow?'shadow':'']">我是一个按钮</button>

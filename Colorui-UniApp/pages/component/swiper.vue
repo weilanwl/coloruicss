@@ -1,6 +1,8 @@
 <template>
 	<view>
-		<custom bgColor="bg-gradual-pink">轮播图</custom>
+		<cu-custom bgColor="bg-gradual-pink" :isBack="true"><block slot="backText">返回</block>
+			<block slot="content">轮播图</block>
+		</cu-custom>
 		<view class="cu-bar bg-white">
 			<view class="action">
 				<text class="icon-title text-pink"></text> 全屏限高轮播
@@ -33,23 +35,17 @@
 		</swiper>
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-pink"></text> 堆叠式轮播
+				<text class="icon-title text-pink"></text> 堆叠式轮播 
 			</view>
 		</view>
 		<view class="tower-swiper" @touchmove="TowerMove" @touchstart="TowerStart" @touchend="TowerEnd">
-			<!-- #ifdef H5  -->
-			<view class="tower-item" :class="item.zIndex==1?'none':''" v-for="(item,index) in swiperList" :key="index" :style="[{transform: 'scale('+ (0.5 + item.zIndex / 10)+')',marginLeft:item.mLeft*100-150+'upx',zIndex:item.zIndex}]">
-			<!-- #endif -->
-			<!-- #ifdef MP-WEIXIN  -->
-			<view class="tower-item" :class="item.zIndex==1?'none':''" v-for="(item,index) in swiperList" :key="index" :style="[{transform: 'scale('+ (0.5 + item.zIndex / 10)+')',marginLeft:item.mLeft*100-150+'rpx',zIndex:item.zIndex}]">
-			<!-- #endif -->
+			<view class="tower-item" :class="item.zIndex==1?'none':''" v-for="(item,index) in swiperList" :key="index" :style="[{'--index': item.zIndex,'--left':item.mLeft}]" :data-direction="direction">
 				<view class="swiper-item">
 					<image :src="item.url" mode="aspectFill" v-if="item.type=='image'"></image>
 					<video :src="item.url" autoplay loop muted :show-play-btn="false" :controls="false" objectFit="cover" v-if="item.type=='video'"></video>
 				</view>
 			</view>
 		</view>
-
 	</view>
 </template>
 
@@ -64,13 +60,12 @@
 					url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg'
 				}, {
 					id: 1,
-					// #ifdef MP-WEIXIN
+					// #ifdef MP
 					type: 'video',
 					url: 'https://yz.lol.qq.com/v1/assets/videos/aatrox-splashvideo.webm',
 					// #endif
 
-
-					// #ifndef MP-WEIXIN
+					// #ifndef MP
 					type: 'image',
 					url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big37006.jpg',
 					// #endif
@@ -97,7 +92,7 @@
 					url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
 				}],
 				dotStyle: false,
-				towerStart:0,
+				towerStart: 0,
 				direction: ''
 			};
 		},
@@ -141,27 +136,33 @@
 				if (direction == 'right') {
 					let mLeft = list[0].mLeft;
 					let zIndex = list[0].zIndex;
-					for (let i = 1; i < list.length; i++) {
+					for (let i = 1; i < this.swiperList.length; i++) {
 						this.swiperList[i - 1].mLeft = this.swiperList[i].mLeft
 						this.swiperList[i - 1].zIndex = this.swiperList[i].zIndex
-				console.log('end')
 					}
 					this.swiperList[list.length - 1].mLeft = mLeft;
 					this.swiperList[list.length - 1].zIndex = zIndex;
 				} else {
 					let mLeft = list[list.length - 1].mLeft;
 					let zIndex = list[list.length - 1].zIndex;
-					for (let i = list.length - 1; i > 0; i--) {
+					for (let i = this.swiperList.length - 1; i > 0; i--) {
 						this.swiperList[i].mLeft = this.swiperList[i - 1].mLeft
 						this.swiperList[i].zIndex = this.swiperList[i - 1].zIndex
 					}
 					this.swiperList[0].mLeft = mLeft;
 					this.swiperList[0].zIndex = zIndex;
 				}
+				this.direction = ""
+				this.swiperList = this.swiperList
 			},
 		}
 	}
 </script>
 
 <style>
+	.tower-swiper .tower-item {
+		transform: scale(calc(0.5 + var(--index) / 10));
+		margin-left: calc(var(--left) * 100upx - 150upx);
+		z-index: var(--index);
+	}
 </style>

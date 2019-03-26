@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<custom>进度条</custom>
+		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><block slot="backText">返回</block><block slot="content">进度条</block></cu-custom>
 		<view class="cu-bar bg-white solid-bottom">
 			<view class="action">
 				<text class="icon-title text-blue"></text>进度条形状

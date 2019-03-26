@@ -4,7 +4,7 @@
 		onLaunch: function() {
 			uni.getSystemInfo({
 				success: function(e) {
-					// #ifndef MP-WEIXIN
+					// #ifndef MP
 					Vue.prototype.StatusBar = e.statusBarHeight;
 					if (e.platform == 'android') {
 						Vue.prototype.CustomBar = e.statusBarHeight + 50;
@@ -13,7 +13,7 @@
 					};
 					// #endif
 
-					// #ifdef MP-WEIXIN
+					// #ifdef MP
 					Vue.prototype.StatusBar = e.statusBarHeight;
 					let custom = wx.getMenuButtonBoundingClientRect();
 					Vue.prototype.Custom = custom;
@@ -110,8 +110,8 @@
 </script>
 
 <style>
-	@import "icon.css";
-	@import "colorui.css";
+	@import "colorui/main.css";
+	@import "colorui/icon.css";
 
 	.nav-list {
 		display: flex;

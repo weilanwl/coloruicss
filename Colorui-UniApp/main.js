@@ -7,8 +7,11 @@ Vue.component('basics',basics)
 import components from './pages/component/home.vue'
 Vue.component('components',components)
 
-import custom from './pages/custom/custom.vue'
-Vue.component('custom',custom)
+import plugin from './pages/plugin/home.vue'
+Vue.component('plugin',plugin)
+
+import cuCustom from './colorui/components/cu-custom.vue'
+Vue.component('cu-custom',cuCustom)
 
 Vue.config.productionTip = false
 
@@ -18,3 +21,8 @@ const app = new Vue({
     ...App
 })
 app.$mount()
+
+
+
+
+

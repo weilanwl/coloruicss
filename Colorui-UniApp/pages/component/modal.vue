@@ -1,6 +1,6 @@
 <template>
 	<view>
-		<custom bgColor="bg-gradual-pink">模态窗口</custom>
+		<cu-custom bgColor="bg-gradual-pink" :isBack="true"><block slot="backText">返回</block><block slot="content">模态窗口</block></cu-custom>
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
 				<text class="icon-title text-orange "></text> 普通窗口

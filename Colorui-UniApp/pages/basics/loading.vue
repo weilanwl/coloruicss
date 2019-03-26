@@ -1,12 +1,12 @@
 <template>
 	<view>
-		<custom>加载
+		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><block slot="backText">返回</block><block slot="content">加载</block>
 			<block slot="right">
 				<view class="action">
 					<view class="cu-load load-icon" :class="!isLoad?'loading':'over'"></view>
 				</view>
 			</block>
-		</custom>
+		</cu-custom>
 		<view class="cu-bar bg-white">
 			<view class="action">
 				<text class="icon-title text-blue"></text>背景

@@ -1,16 +1,15 @@
 <template>
 	<view>
-		<custom>按钮
-			<block slot="right">
+		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><block slot="backText">返回</block><block slot="content">按钮</block></cu-custom>
+		<view class="cu-bar bg-white solid-bottom">
+			<view class="action">
+				<text class="icon-title text-blue"></text>按钮形状
+			</view>
+			<view class="action">
 				<navigator class="action" url="design" hover-class="none">
 					<text class="icon-skinfill"></text>
 					<text class="text-df">设计</text>
 				</navigator>
-			</block>
-		</custom>
-		<view class="cu-bar bg-white solid-bottom">
-			<view class="action">
-				<text class="icon-title text-blue"></text>按钮形状
 			</view>
 		</view>
 		<view class="padding flex flex-wrap justify-between align-center bg-white">
