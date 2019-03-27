@@ -1388,6 +1388,12 @@ button.icon.lg {
 	margin-top: 10upx
 }
 
+.cu-list.menu-avatar.comment>.cu-item  .content{
+	position: relative;
+	left: 0;
+	width: auto;
+	flex: 1;
+}
 .cu-list.menu-avatar.comment>.cu-item {
 	padding-top: 30upx;
 	padding-bottom: 30upx;
