@@ -439,10 +439,10 @@
 
 <style>
 	.box {
-		margin: 20rpx 0;
+		margin: 20upx 0;
 	}
 
 	.box view.cu-bar {
-		margin-top: 20rpx;
+		margin-top: 20upx;
 	}
 </style>

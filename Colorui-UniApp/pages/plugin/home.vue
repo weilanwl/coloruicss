@@ -63,11 +63,6 @@
 		height: 100vh;
 	}
 
-	.cu-bar .content image {
-		height: 60upx;
-		width: 240upx;
-	}
-
 	.cardTitle {
 		color: #fff;
 		padding: 90upx 60upx;

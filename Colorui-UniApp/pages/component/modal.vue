@@ -1,6 +1,9 @@
 <template>
 	<view>
-		<cu-custom bgColor="bg-gradual-pink" :isBack="true"><block slot="backText">返回</block><block slot="content">模态窗口</block></cu-custom>
+		<cu-custom bgColor="bg-gradual-pink" :isBack="true">
+			<block slot="backText">返回</block>
+			<block slot="content">模态窗口</block>
+		</cu-custom>
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
 				<text class="icon-title text-orange "></text> 普通窗口
@@ -254,9 +257,9 @@
 				this.radio = e.detail.value
 			},
 			ChooseCheckbox(e) {
-				var items = this.checkbox,
-					values = e.currentTarget.dataset.value;
-				for (var i = 0, lenI = items.length; i < lenI; ++i) {
+				let items = this.checkbox;
+				let values = e.currentTarget.dataset.value;
+				for (let i = 0, lenI = items.length; i < lenI; ++i) {
 					if (items[i].value == values) {
 						items[i].checked = !items[i].checked;
 						break

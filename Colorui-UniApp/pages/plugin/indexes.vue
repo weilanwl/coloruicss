@@ -17,7 +17,7 @@
 			<block v-for="(item,index) in list" :key="index">
 				<view :class="'indexItem-' + item.name" :id="'indexes-' + item.name" :data-index="item.name">
 					<view class="padding">{{item.name}}</view>
-					<view class="cu-list menu menu-avatar no-padding">
+					<view class="cu-list menu-avatar no-padding">
 						<view class="cu-item" v-for="(items,sub) in 2" :key="sub">
 							<view class="cu-avatar round lg">{{item.name}}</view>
 							<view class="content">
@@ -147,7 +147,7 @@
 		display: flex;
 		flex-direction: column;
 		box-shadow: 0 0 20upx rgba(0, 0, 0, 0.1);
-		border-radius: 5px;
+		border-radius: 10upx;
 	}
 
 	.indexBar-item {

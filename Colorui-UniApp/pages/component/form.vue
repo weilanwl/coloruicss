@@ -36,8 +36,6 @@
 					</view>
 				</view>
 			</view>
-
-
 			<view class="cu-form-group margin-top">
 				<view class="title">普通选择</view>
 				<picker @change="PickerChange" :value="index" :range="picker">
@@ -80,7 +78,6 @@
 				</picker>
 			</view>
 			<!-- #endif -->
-
 			<view class="cu-form-group margin-top">
 				<view class="title">开关选择</view>
 				<switch @change="SwitchA" :class="switchA?'checked':''" :checked="switchA?true:false"></switch>
@@ -129,7 +126,6 @@
 					 value="C"></checkbox>
 				</view>
 			</checkbox-group>
-
 			<view class="cu-bar bg-white margin-top">
 				<view class="action">
 					图片上传
@@ -153,13 +149,12 @@
 			</view>
 			<!-- !!!!! placeholder 在ios表现有偏移 建议使用 第一种样式 -->
 			<view class="cu-form-group margin-top">
-				<textarea data-placeholder="多行文本输入框" maxlength="-1" :disabled="modalName!=null" placeholder-class='placeholder'
+				<textarea data-placeholder="多行文本输入框" maxlength="-1" :disabled="modalName!=null" placeholder-class="placeholder"
 				 :class="textareaAValue?'value':''" @input="textareaAInput"></textarea>
-			</view>
-			
+			</view>			
 			<view class="cu-form-group top">
 				<view class="title">点文本框</view>
-				<textarea data-placeholder="多行文本输入框" maxlength="-1" :disabled="modalName!=null" placeholder-class='placeholder'
+				<textarea data-placeholder="多行文本输入框" maxlength="-1" :disabled="modalName!=null" placeholder-class="placeholder"
 				 :class="textareaBValue?'value':''" @input="textareaBInput"></textarea>
 			</view>
 		</form>
@@ -364,7 +359,6 @@
 				});
 			},
 			ViewImage(e) {
-				console.log(e)
 				uni.previewImage({
 					urls: this.imgList,
 					current: e.currentTarget.dataset.url

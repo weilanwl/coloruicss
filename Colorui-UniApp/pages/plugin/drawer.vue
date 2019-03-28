@@ -65,17 +65,17 @@
 <style>
 	page {
 		background-image: var(--gradualBlue);
-		width: 750upx;
+		width: 100vw;
 		overflow: hidden;
 	}
 
 	.DrawerPage {
-		position: absolute;
+		position: fixed;
 		width: 100vw;
 		height: 100vh;
 		left: 0vw;
 		background-color: #f1f1f1;
-		transition: all 0.6s;
+		transition: all 0.4s;
 	}
 
 	.DrawerPage.show {
@@ -94,7 +94,7 @@
 		transform: scale(0.9, 0.9) translateX(-100%);
 		opacity: 0;
 		pointer-events: none;
-		transition: all 0.6s;
+		transition: all 0.4s;
 		padding: 100upx 0;
 	}
 
@@ -120,7 +120,7 @@
 		font-size: 50upx;
 		opacity: 0;
 		pointer-events: none;
-		transition: all 0.6s;
+		transition: all 0.4s;
 	}
 
 	.DrawerClose.show {

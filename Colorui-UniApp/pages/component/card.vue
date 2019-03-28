@@ -17,7 +17,7 @@
 					<view class="cu-tag bg-blue">史诗</view>
 					<view class="cu-bar bg-shadeBottom"> <text class="text-cut">我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。</text></view>
 				</view>
-				<view class="cu-list menu menu-avatar">
+				<view class="cu-list menu-avatar">
 					<view class="cu-item">
 						<view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
 						<view class="content flex-sub">
@@ -45,7 +45,7 @@
 		</view>
 		<view class="cu-card dynamic" :class="isCard?'no-card':''">
 			<view class="cu-item shadow">
-				<view class="cu-list menu menu-avatar">
+				<view class="cu-list menu-avatar">
 					<view class="cu-item">
 						<view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
 						<view class="content flex-sub">

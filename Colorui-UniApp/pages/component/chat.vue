@@ -98,7 +98,6 @@
 		methods: {
 			InputFocus(e) {
 				this.InputBottom = e.detail.height
-
 			},
 			InputBlur(e) {
 				this.InputBottom = 0

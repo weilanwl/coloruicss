@@ -50,7 +50,7 @@
 			</view>
 			<view class="cu-item text-blue">
 				<view class="bg-blue shadow-blur content">
-					<view class="cu-list menu menu-avatar radius">
+					<view class="cu-list menu-avatar radius">
 						<view class="cu-item">
 							<view class="cu-avatar round lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg);"></view>
 							<view class="content">
