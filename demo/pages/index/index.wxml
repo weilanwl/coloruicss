@@ -25,6 +25,6 @@
     <view class='icon-cu-image'>
       <image src="/images/tabbar/about{{PageCur=='about'?'_cur':''}}.png"></image>
     </view>
-    <view class="{{PageCur=='about'?'text-green':'text-gray'}}">扩展</view>
+    <view class="{{PageCur=='about'?'text-green':'text-gray'}}">关于</view>
   </view>
 </view>
