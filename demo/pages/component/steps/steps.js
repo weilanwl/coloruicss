@@ -1,8 +1,5 @@
-const app = getApp();
 Page({
   data: {
-    StatusBar: app.globalData.StatusBar,
-    CustomBar: app.globalData.CustomBar,
     basicsList: [{
       icon: 'usefullfill',
       name: '开始'
@@ -15,7 +12,7 @@ Page({
     }, {
       icon: 'roundcheckfill',
       name: '完成'
-    },],
+    }, ],
     basics: 0,
     numList: [{
       name: '开始'
@@ -25,7 +22,7 @@ Page({
       name: '错误'
     }, {
       name: '完成'
-    },],
+    }, ],
     num: 0,
     scroll: 0
   },
@@ -44,5 +41,4 @@ Page({
       scroll: this.data.scroll == 9 ? 0 : this.data.scroll + 1
     })
   }
-
-});
+})

@@ -1,99 +1,37 @@
-<view class="DrawerPage {{modalName=='viewModal'?'show':''}}">
-  <view class="cu-custom" style="height:{{CustomBar}}px;">
-    <view class="cu-bar tabbar bg-black fixed" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-      <view class="action text-center" style='width: 100rpx'>
-        <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='cu-btn icon-my icon bg-green shadow'> </button>
-        <block wx:else>
-          <view class="cu-avatar round" style="background-image:url({{userInfo.avatarUrl}})" bindtap="showModal" data-target="viewModal"></view>
-        </block>
-      </view>
-      <!-- 样式1 -->
-      <block wx:if="{{1==TabCur?'cur':''}}">
-        <view class="action {{1==TabCur?'cur':''}}" bindtap='tabSelect' data-id="1">
-          <view class='icon-cu-image'>
-            <image src='/images/tabbar/component{{1==TabCur?"_cur":""}}.png'></image>
-          </view>
-        </view>
-        <view class="action {{2==TabCur?'cur':''}}" bindtap='tabSelect' data-id="2">
-          <view class='icon-cu-image'>
-            <image src='/images/tabbar/plugin{{2==TabCur?"_cur":""}}.png'></image>
-            <view class='cu-tag badge'>99</view>
-          </view>
-        </view>
-        <view class="action {{3==TabCur?'cur':''}}" bindtap='tabSelect' data-id="3">
-          <view class='icon-cu-image'>
-            <image src='/images/tabbar/about{{3==TabCur?"_cur":""}}.png'></image>
-            <view class='cu-tag badge'></view>
-          </view>
-        </view>
-      </block>
-      <!-- 样式2 -->
-      <block wx:if="{{1!=TabCur?'cur':''}}">
-        <scroll-view scroll-x class="nav" scroll-with-animation scroll-left="{{scrollLeft}}" style='width:calc(100% - 440rpx)'>
-          <view class="cu-item {{index==TabCur?'text-green cur':''}}" wx:for="{{10}}" wx:key bindtap='tabSelect' data-id="{{index}}">
-            Tab{{index}}
-          </view>
-        </scroll-view>
-      </block>
-    </view>
-  </view>
-  <view wx:for="{{10}}" wx:key wx:if="{{index==TabCur}}" class='padding margin text-center'>
-    <view class='text-bold text-xxl margin-xl'>Tab{{index}}</view>
-    <view class='text-xl margin-xl'>点击头像打开抽屉</view>
-    <navigator class='cu-btn bg-green lg block shadow radius margin-xl' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'> </text> 返回上一页
-    </navigator>
-  </view>
-</view>
-<view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap='hideModal'>
-  <text class='icon-pullright'></text>
-</view>
-<view class="DrawerWindow {{modalName=='viewModal'?'show':''}}">
-  <view class='padding-xl text-center text-white'>
-    <image src='/images/logo.png' class='response' mode='widthFix' style='width:200rpx;margin-top:100rpx'></image>
-    <view class='text-xl'>ColorUI组件库
-      <text class='text-df'>v2.0</text>
-    </view>
-    <view class='margin-top-sm'>
-      <text>By:文晓港</text>
-    </view>
-  </view>
-  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
-    <view class="cu-item arrow">
-      <view class='content' bindtap='CopyLink' data-link='https://github.com/weilanwl/ColorUI'>
-        <text class='icon-github text-grey'></text>
-        <text class='text-grey'>GitHub</text>
-      </view>
-    </view>
-    <view class="cu-item arrow">
-      <navigator class='content' url='../about/about' hover-class='none'>
-        <image src='/images/logo.png' class='png' mode='aspectFit'></image>
-        <text class='text-grey'>关于ColorUI组件库</text>
-      </navigator>
-    </view>
-    <view class="cu-item arrow">
-      <navigator class='content' url='../log/log' hover-class='none'>
-        <text class='icon-formfill text-green'></text>
-        <text class='text-grey'>日志</text>
-      </navigator>
-    </view>
-    <view class="cu-item arrow">
-      <view class='content' bindtap="showQrcode">
-        <text class='icon-appreciatefill text-red'></text>
-        <text class='text-grey'>赞赏支持</text>
-      </view>
-    </view>
-    <view class="cu-item arrow">
-      <button class='cu-btn content' open-type='feedback'>
-        <text class='icon-writefill text-cyan'></text>
-        <text class='text-grey'>意见反馈</text>
-      </button>
-    </view>
-    <view class="cu-item arrow">
-      <navigator class='content' url='../test/list' hover-class='none'>
-        <text class='icon-creativefill text-orange'></text>
-        <text class='text-grey'>Bug测试</text>
-      </navigator>
-    </view>
-  </view>
-</view>
+		<scroll-view scroll-y class="DrawerPage {{modalName=='viewModal'?'show':''}}">
+			<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view>
+				<view slot="content">全屏抽屉</view>
+			</cu-custom>			
+			<view class='padding margin text-center'>
+				<view class='cu-btn bg-green lg block shadow radius margin-xl' bindtap="showModal" data-target="viewModal">
+					打开抽屉
+				</view>
+			</view>
+			<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
+				<view class="cu-item arrow" wx:for="{{20}}" wx:key="index">
+					<view class="content">
+						<text class="icon-github text-grey"></text>
+						<text class="text-grey">{{index +1}}</text>
+					</view>
+				</view>
+			</view>
+			
+			<view class='padding margin text-center'>
+				<view class='cu-btn bg-green lg block shadow radius margin-xl' bindtap="showModal" data-target="viewModal">
+					打开抽屉
+				</view>
+			</view>
+		</scroll-view>
+		<view class="DrawerClose {{modalName=='viewModal'?'show':''}}" bindtap="hideModal">
+			<text class="icon-pullright"></text>
+		</view>
+		<scroll-view scroll-y class="DrawerWindow {{modalName=='viewModal'?'show':''}}">
+			<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
+				<view class="cu-item arrow" wx:for="{{20}}" wx:key="index">
+					<view class="content">
+						<text class="icon-github text-grey"></text>
+						<text class="text-grey">{{index +1}}</text>
+					</view>
+				</view>
+			</view>
+		</scroll-view>

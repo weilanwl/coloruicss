@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/basics/home/home",
     "pages/basics/layout/layout",
     "pages/basics/button/button",
@@ -33,7 +34,6 @@
     "pages/about/test/list",
     "pages/about/test/filter",
     "pages/about/home/home",
-    "custom-tab-bar/index",
     "pages/plugin/drawer/drawer",
     "pages/plugin/verticalnav/verticalnav"
   ],
@@ -43,38 +43,7 @@
     "navigationStyle": "custom",
     "navigationBarTextStyle": "white"
   },
-  "usingComponents": {},
-  "tabBar": {
-    "custom": true,
-    "color": "#aaa",
-    "selectedColor": "#39b54a",
-    "borderStyle": "black",
-    "backgroundColor": "#ffffff",
-    "list": [
-      {
-        "pagePath": "pages/basics/home/home",
-        "iconPath": "/images/tabbar/basics.png",
-        "selectedIconPath": "/images/tabbar/basics_cur.png",
-        "text": "基础"
-      },
-      {
-        "pagePath": "pages/component/home/home",
-        "iconPath": "/images/tabbar/component.png",
-        "selectedIconPath": "/images/tabbar/component_cur.png",
-        "text": "组件"
-      },
-      {
-        "pagePath": "pages/plugin/home/home",
-        "iconPath": "/images/tabbar/plugin.png",
-        "selectedIconPath": "/images/tabbar/plugin_cur.png",
-        "text": "扩展"
-      },
-      {
-        "pagePath": "pages/about/home/home",
-        "iconPath": "/images/tabbar/about.png",
-        "selectedIconPath": "/images/tabbar/about_cur.png",
-        "text": "关于"
-      }
-    ]
+  "usingComponents": {
+    "cu-custom":"/colorui/components/cu-custom"
   }
 }

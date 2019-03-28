@@ -1,19 +1,13 @@
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'></text> 图标
-    </navigator>
-  </view>
-</view>
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">图标</view></cu-custom>
 <view class="cu-bar bg-white search fixed" style="top:{{CustomBar}}px">
-  <view class='search-form round'>
+  <view class="search-form round">
     <text class="icon-search"></text>
-    <input type="text" placeholder="搜索icon" confirm-type="search" bindinput='searchIcon'></input>
+    <input type="text" placeholder="搜索icon" confirm-type="search" bindinput="searchIcon"></input>
   </view>
 </view>
 <view class="cu-list grid col-3">
   <view class="cu-item" wx:for="{{icon}}" wx:key wx:if="{{item.isShow}}">
-    <text class='icon-{{item.name}} lg text-gray'></text>
+    <text class="icon-{{item.name}} lg text-gray"></text>
     <text>{{item.name}}</text>
   </view>
 </view>

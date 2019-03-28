@@ -1,4 +1,7 @@
 Component({
+  options: {
+    addGlobalClass: true,
+  },
   data: {
     elements: [{
         title: '布局',
@@ -94,13 +97,4 @@ Component({
       }
     },
   },
-  pageLifetimes: {
-    show() {
-      if (typeof this.getTabBar === 'function' && this.getTabBar()) {
-        this.getTabBar().setData({
-          selected: 0
-        })
-      }
-    }
-  }
 })

@@ -1,5 +1,10 @@
 .page {
-  background: #f1f1f1;
+  height: 100Vh;
+  width: 100vw;
+}
+
+.page.show {
+  overflow: hidden;
 }
 
 .switch-sex::after {
@@ -17,3 +22,4 @@
 .switch-music::before {
   content: "\e6db";
 }
+

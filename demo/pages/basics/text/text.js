@@ -1,8 +1,6 @@
 const app = getApp();
 Page({
   data: {
-    StatusBar: app.globalData.StatusBar,
-    CustomBar: app.globalData.CustomBar,
     list: [{
       title: '嫣红',
       name: 'red',
@@ -79,7 +77,5 @@ Page({
       color: '#ffffff'
     },
     ]
-  },
-  onLoad: function () { },
-
+  }
 })

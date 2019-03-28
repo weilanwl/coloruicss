@@ -1,8 +1,6 @@
 const app = getApp();
 Page({
   data: {
-    StatusBar: app.globalData.StatusBar,
-    CustomBar: app.globalData.CustomBar,
     ColorList: app.globalData.ColorList,
   },
   showModal(e) {
@@ -55,5 +53,5 @@ Page({
     this.setData({
       block: e.detail.value
     })
-  },  
-});
+  }
+})

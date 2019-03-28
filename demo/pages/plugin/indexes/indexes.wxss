@@ -1,5 +1,5 @@
 page {
-  padding-top: 50px;
+  padding-top: 100rpx;
 }
 
 .indexes {
@@ -10,36 +10,37 @@ page {
   position: fixed;
   right: 0px;
   bottom: 0px;
-  padding: 10px 10px 10px 30px;
+  padding: 20rpx 20rpx 20rpx 60rpx;
   display: flex;
   align-items: center;
 }
 
 .indexBar .indexBar-box {
-  width: 20px;
+  width: 40rpx;
   height: auto;
   background: #fff;
   display: flex;
   flex-direction: column;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  box-shadow: 0 0 20rpx rgba(0, 0, 0, 0.1);
+  border-radius: 10rpx;
 }
 
 .indexBar-item {
   flex: 1;
-  width: 20px;
-  height: 20px;
+  width: 40rpx;
+  height: 40rpx;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
+  font-size: 24rpx;
   color: #888;
 }
 
 movable-view.indexBar-item {
-  width: 20px;
-  height: 20px;
+  width: 40rpx;
+  height: 40rpx;
   z-index: 9;
+  position: relative;
 }
 
 movable-view.indexBar-item::before {
@@ -47,23 +48,24 @@ movable-view.indexBar-item::before {
   display: block;
   position: absolute;
   left: 0;
-  top: 5px;
-  height: 10px;
-  width: 2px;
+  top: 10rpx;
+  height: 20rpx;
+  width: 4rpx;
   background-color: #f37b1d;
 }
-.indexToast{
+
+.indexToast {
   position: fixed;
   top: 0;
-  right: 40px;
+  right: 80rpx;
   bottom: 0;
-  background: rgba(0,0,0,0.5);
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 10rpx;
   margin: auto;
   color: #fff;
-  line-height: 50px;
+  line-height: 100rpx;
   text-align: center;
-  font-size: 24px;
+  font-size: 48rpx;
 }

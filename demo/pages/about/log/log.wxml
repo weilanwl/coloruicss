@@ -1,18 +1,35 @@
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed bg-gradual-green" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'></text> <text class='text-cut'>日志</text>
-    </navigator>
-  </view>
-</view>
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">日志</view></cu-custom>
 <view class="cu-timeline">
-  <view class='cu-item text-green'>
+  <view class="cu-item text-green">
     <view class="bg-gradual-green content shadow-blur">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v2.1.2</view>
+        <view class="cu-tag line-white">2019/03/28</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.图标修改了字体名称，避免冲突</view>
+        <view>2.优化了消息列表</view>
+        <view>3.更改自定义Tabbar的方案</view>
+        <view>4.修复列表组件样式</view>
+        <view>5.轮播图支持视频(ios/兼容差，暂时去掉)</view>
+        <view>6.优化堆叠轮播图</view>
+        <view>7.优化聊天页输入框聚焦问题</view>
+        <view>8.表单多图上传优化，文本框优化</view>
+        <view>9.优化全屏抽屉扩展</view>
+        <view>10.全屏垂直导航支持双向联动</view>
+        <view>11.优化源码细节，精简代码</view>
+        <view></view>
+        <view>*ColorUI支持UniApp开发了!UniApp版本请移步官方插件市场 https://ext.dcloud.net.cn/plugin?id=239</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow-blur">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.7</view>
         <view class="cu-tag line-white">2019/02/25</view>
       </view>
-      <view class='margin-top-sm text-content'>
+      <view class="margin-top-sm text-content">
         <view>1.新增操作条胶囊样式，优化全屏操作条</view>
         <view>2.优化iPhone X的Tabbar样式</view>
         <view>3.新增全屏抽屉插件</view>
@@ -20,13 +37,13 @@
       </view>
     </view>
   </view>
-  <view class='cu-item text-green'>
+  <view class="cu-item text-green">
     <view class="bg-green content shadow-blur">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.6</view>
         <view class="cu-tag line-white">2019/02/09</view>
       </view>
-      <view class='margin-top-sm text-content'>
+      <view class="margin-top-sm text-content">
         <view>1.修复行距带来的垂直不居中问题</view>
         <view>2.优化操作条组件，新增多种样式</view>
         <view>3.优化背景颜色（某些组件的默认背景调整,移除一些important）</view>
@@ -35,13 +52,13 @@
       </view>
     </view>
   </view>
-  <view class='cu-item text-green'>
+  <view class="cu-item text-green">
     <view class="bg-green content shadow-blur">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.5</view>
         <view class="cu-tag line-white">2019/01/13</view>
       </view>
-      <view class='margin-top-sm text-content'>
+      <view class="margin-top-sm text-content">
         <view>1.修复时间线图标显示问题</view>
         <view>2.switch、radio、checkbox单位改成px，抛弃小尺寸</view>
         <view>3.更新多种窗口组件</view>
@@ -52,13 +69,13 @@
       </view>
     </view>
   </view>
-  <view class='cu-item text-green'>
+  <view class="cu-item text-green">
     <view class="bg-green content shadow-blur">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.4</view>
         <view class="cu-tag line-white">2019/01/10</view>
       </view>
-      <view class='margin-top-sm text-content'>
+      <view class="margin-top-sm text-content">
         <view>1.抛弃标签选择器，改成类名选择器</view>
         <view>2.动画改成Gif，并新增动画</view>
         <view>3.修复一些图标错位问题</view>
@@ -67,13 +84,13 @@
       </view>
     </view>
   </view>
-  <view class='cu-item text-green'>
+  <view class="cu-item text-green">
     <view class="bg-green content shadow-blur">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.3</view>
         <view class="cu-tag line-white">2019/01/06</view>
       </view>
-      <view class='margin-top-sm text-content'>
+      <view class="margin-top-sm text-content">
         <view>1.修复一些单位错误（带输入框的操作条）</view>
         <view>2.纠正一些单词拼写...</view>
         <view>3.抛弃icon标签，改回text标签的写法</view>
@@ -83,13 +100,13 @@
       </view>
     </view>
   </view>
-  <view class='cu-item text-green'>
+  <view class="cu-item text-green">
     <view class="bg-green content shadow-blur">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.2</view>
         <view class="cu-tag line-white">2018/12/24</view>
       </view>
-      <view class='margin-top-sm text-content'>
+      <view class="margin-top-sm text-content">
         <view>1.首页增加分享</view>
         <view>2.卡片页修复switch开关问题</view>
         <view>3.优化首页动画效果（ios表现不佳）</view>
@@ -101,13 +118,13 @@
       </view>
     </view>
   </view>
-  <view class='cu-item text-green'>
+  <view class="cu-item text-green">
     <view class="bg-green content shadow-blur">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.1</view>
         <view class="cu-tag line-white">2018/12/20</view>
       </view>
-      <view class='margin-top-sm text-content'>2.0新版本上线</view>
+      <view class="margin-top-sm text-content">2.0新版本上线</view>
     </view>
   </view>
 </view>

@@ -1,9 +1,15 @@
-const app = getApp();
 Page({
   data: {
-    StatusBar: app.globalData.StatusBar,
-    CustomBar: app.globalData.CustomBar
+    InputBottom: 0
   },
-  onLoad: function () { },
-
-});
+  InputFocus(e) {
+    this.setData({
+      InputBottom: e.detail.height
+    })
+  },
+  InputBlur(e) {
+    this.setData({
+      InputBottom: 0
+    })
+  }
+})

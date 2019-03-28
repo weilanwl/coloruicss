@@ -1,8 +1,6 @@
 const app = getApp();
 Page({
   data: {
-    StatusBar: app.globalData.StatusBar,
-    CustomBar: app.globalData.CustomBar,
     ColorList: app.globalData.ColorList,
     color:'red',
   },
@@ -34,5 +32,5 @@ Page({
     this.setData({
       active: e.detail.value
     })
-  },
-});
+  }
+})

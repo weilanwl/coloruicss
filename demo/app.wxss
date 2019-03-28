@@ -1,8 +1,8 @@
-@import "icon.wxss";
-@import "colorui.wxss";
+@import "colorui/main.wxss";
+@import "colorui/icon.wxss";
 
-.cu-modal.show {
-  z-index: 99999;
+.scrollPage {
+  height: 100vh;
 }
 
 .nav-list {
@@ -104,32 +104,4 @@
 
 .text-light {
   font-weight: 300;
-}
-
-@keyframes show {
-  0% {
-    transform: translateY(-50px);
-  }
-
-  60% {
-    transform: translateY(40rpx);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
-}
-
-@-webkit-keyframes show {
-  0% {
-    transform: translateY(-50px);
-  }
-
-  60% {
-    transform: translateY(40rpx);
-  }
-
-  100% {
-    transform: translateY(0px);
-  }
 }

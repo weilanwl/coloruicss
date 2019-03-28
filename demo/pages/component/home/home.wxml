@@ -1,9 +1,11 @@
-<image src='/images/componentBg.png' mode='widthFix' class='response'></image>
-<view class='nav-list'>
-  <navigator hover-class='none' url="../{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" style='animation: show {{(index+1)*0.2+1}}s 1;-webkit-animation: show {{(index+1)*0.2+1}}s 1;' wx:for="{{elements}}" wx:key>
-    <view class="nav-title">{{item.title}}</view>
-    <view class="nav-name">{{item.name}}</view>
-    <text class='icon-{{item.icon}}'></text>
-  </navigator>
-</view>
-<view class='cu-tabbar-height'></view>
+<scroll-view scroll-y class="scrollPage">
+  <image src='/images/componentBg.png' mode='widthFix' class='response'></image>
+  <view class='nav-list'>
+    <navigator hover-class='none' url="/pages/component/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key>
+      <view class="nav-title">{{item.title}}</view>
+      <view class="nav-name">{{item.name}}</view>
+      <text class='icon-{{item.icon}}'></text>
+    </navigator>
+  </view>
+  <view class='cu-tabbar-height'></view>
+</scroll-view>

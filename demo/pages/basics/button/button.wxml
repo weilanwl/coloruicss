@@ -1,99 +1,96 @@
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'></text> 按钮
-    </navigator>
-    <navigator class='action' url='design' hover-class="none">
-      <text class='icon-skinfill'></text>
-      <text class="text-df">设计</text>
-    </navigator>
-  </view>
-</view>
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">按钮</view>
+</cu-custom>
 <view class="cu-bar bg-white solid-bottom">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>按钮形状
+  <view class="action">
+    <text class="icon-title text-blue"></text>按钮形状
   </view>
+  <navigator class="action" url="design" hover-class="none">
+    <text class="icon-skinfill"></text>
+    <text class="text-df">设计</text>
+  </navigator>
 </view>
 <view class="padding flex flex-wrap justify-between align-center bg-white">
-  <button class='cu-btn'>默认</button>
-  <button class='cu-btn round'>圆角</button>
-  <button class='cu-btn icon'>
-    <text class='icon-emojifill'></text>
+  <button class="cu-btn">默认</button>
+  <button class="cu-btn round">圆角</button>
+  <button class="cu-btn icon">
+    <text class="icon-emojifill"></text>
   </button>
 </view>
 <view class="cu-bar margin-top bg-white solid-bottom">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>按钮尺寸
+  <view class="action">
+    <text class="icon-title text-blue"></text>按钮尺寸
   </view>
 </view>
 <view class="padding flex flex-wrap justify-between align-center bg-white">
-  <button class='cu-btn round sm'>小尺寸</button>
-  <button class='cu-btn round'>默认</button>
-  <button class='cu-btn round lg'>大尺寸</button>
+  <button class="cu-btn round sm">小尺寸</button>
+  <button class="cu-btn round">默认</button>
+  <button class="cu-btn round lg">大尺寸</button>
 </view>
 <view class="cu-bar margin-top bg-white">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>按钮颜色
+  <view class="action">
+    <text class="icon-title text-blue"></text>按钮颜色
   </view>
-  <view class='action'>
-    <text class='text-df margin-right-sm'>阴影</text>
-    <switch class='sm' bindchange='SetShadow'></switch>
+  <view class="action">
+    <text class="text-df margin-right-sm">阴影</text>
+    <switch class="sm" bindchange="SetShadow"></switch>
   </view>
 </view>
-<view class='grid col-5 padding-sm'>
-  <view class='margin-tb-sm text-center' wx:for="{{ColorList}}" wx:key>
-    <button class='cu-btn round bg-{{item.name}} {{shadow?"shadow":""}}'>{{item.title}}</button>
+<view class="grid col-5 padding-sm">
+  <view class="margin-tb-sm text-center" wx:for="{{ColorList}}" wx:key>
+    <button class="cu-btn round bg-{{item.name}} {{shadow?'shadow':''}}">{{item.title}}</button>
   </view>
 </view>
 <view class="cu-bar margin-top bg-white">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>镂空按钮
+  <view class="action">
+    <text class="icon-title text-blue"></text>镂空按钮
   </view>
-  <view class='action'>
-    <radio-group bindchange='SetBorderSize'>
-      <label class='margin-left-sm'>
-        <radio class='blue sm radio' value='' checked></radio>
+  <view class="action">
+    <radio-group bindchange="SetBorderSize">
+      <label class="margin-left-sm">
+        <radio class="blue sm radio" value="" checked></radio>
         <text> 小</text>
       </label>
-      <label class='margin-left-sm'>
-        <radio class='blue sm radio' value='s'></radio>
+      <label class="margin-left-sm">
+        <radio class="blue sm radio" value="s"></radio>
         <text> 大</text>
       </label>
     </radio-group>
   </view>
 </view>
-<view class='grid col-5 padding-sm'>
-  <view class='margin-tb-sm text-center' wx:for="{{ColorList}}" wx:key>
-    <button class='cu-btn round line{{bordersize?bordersize:""}}-{{item.name}} {{shadow?"shadow":""}}'>{{item.title}}</button>
+<view class="grid col-5 padding-sm">
+  <view class="margin-tb-sm text-center" wx:for="{{ColorList}}" wx:key>
+    <button class="cu-btn round line{{bordersize?bordersize:''}}-{{item.name}} {{shadow?'shadow':''}}">{{item.title}}</button>
   </view>
 </view>
 <view class="cu-bar margin-top bg-white">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>块状按钮
+  <view class="action">
+    <text class="icon-title text-blue"></text>块状按钮
   </view>
 </view>
 <view class="padding flex flex-direction">
-  <button class='cu-btn bg-grey lg'>玄灰</button>
-  <button class='cu-btn bg-red margin-tb-sm lg'>嫣红</button>
+  <button class="cu-btn bg-grey lg">玄灰</button>
+  <button class="cu-btn bg-red margin-tb-sm lg">嫣红</button>
 </view>
 <view class="cu-bar margin-top bg-white">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>无效状态
+  <view class="action">
+    <text class="icon-title text-blue"></text>无效状态
   </view>
 </view>
 <view class="padding">
-  <button class='cu-btn block bg-blue margin-tb-sm lg' disabled type=''>无效状态</button>
-  <button class='cu-btn block line-blue margin-tb-sm lg' disabled>无效状态</button>
+  <button class="cu-btn block bg-blue margin-tb-sm lg" disabled type="">无效状态</button>
+  <button class="cu-btn block line-blue margin-tb-sm lg" disabled>无效状态</button>
 </view>
 <view class="cu-bar margin-top bg-white">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>按钮加图标
+  <view class="action">
+    <text class="icon-title text-blue"></text>按钮加图标
   </view>
 </view>
 <view class="padding-xl">
-  <button class='cu-btn block line-orange lg'>
-    <text class='icon-upload'></text> 图标</button>
-  <button class='cu-btn block bg-blue margin-tb-sm lg'>
-    <text class='icon-loading2 iconfont-spin'></text> 加载</button>
-  <button class='cu-btn block bg-black margin-tb-sm lg' loading> 微信加载</button>
+  <button class="cu-btn block line-orange lg">
+    <text class="icon-upload"></text> 图标</button>
+  <button class="cu-btn block bg-blue margin-tb-sm lg">
+    <text class="icon-loading2 iconfont-spin"></text> 加载</button>
+  <button class="cu-btn block bg-black margin-tb-sm lg" loading> 微信加载</button>
 </view>

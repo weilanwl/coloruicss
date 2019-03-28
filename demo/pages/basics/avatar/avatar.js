@@ -1,14 +1,12 @@
 const app = getApp();
 Page({
   data: {
-    StatusBar: app.globalData.StatusBar,
-    CustomBar: app.globalData.CustomBar,
     ColorList: app.globalData.ColorList,
-  },
-  onLoad: function() {},
-  pageBack() {
-    wx.navigateBack({
-      delta: 1
-    });
+    avatar: [
+      'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg',
+      'https://ossweb-img.qq.com/images/lol/web201310/skin/big81005.jpg',
+      'https://ossweb-img.qq.com/images/lol/web201310/skin/big25002.jpg',
+      'https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg'
+    ],
   }
-});
+})

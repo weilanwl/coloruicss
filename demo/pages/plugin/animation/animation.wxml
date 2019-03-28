@@ -1,74 +1,70 @@
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed none-bg text-white bg-img" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;background-image:url(https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg);">
-    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'></text> 微动画
-    </navigator>
-  </view>
-</view>
+<cu-custom bgImage="https://image.weilanwl.com/color2.0/plugin/wdh2236.jpg" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">微动画</view>
+</cu-custom>
 <view class="cu-bar bg-white">
-  <view class='action'>
-    <text class='icon-title text-orange'></text> 默认效果
+  <view class="action">
+    <text class="icon-title text-orange"></text> 默认效果
   </view>
 </view>
 <view class="padding-sm">
-  <view class='flex flex-wrap justify-around'>
-    <button class='cu-btn bg-{{item.color}} animation-{{animation==item.name? item.name :""}} margin-sm basis-sm shadow' bindtap='toggle' data-class='{{item.name}}' wx:for="{{list}}">{{item.name}}</button>
+  <view class="flex flex-wrap justify-around">
+    <button class="cu-btn bg-{{item.color}} animation-{{animation==item.name?item.name:''}} margin-sm basis-sm shadow" bindtap="toggle" data-class="{{item.name}}" wx:for="{{list}}" wx:key="{{index}}">{{item.name}}</button>
   </view>
 </view>
 <view class="cu-bar bg-white">
-  <view class='action'>
-    <text class='icon-title text-orange'></text> 反向动画
+  <view class="action">
+    <text class="icon-title text-orange"></text> 反向动画
+  </view>
+</view>
+<view class="padding-sm">
+  <view class="flex flex-wrap justify-around">
+    <button class="cu-btn bg-{{item.color}} animation-{{animation==item.name+'s'?item.name:''}} animation-reverse margin-sm basis-sm shadow" bindtap="toggle" data-class="{{item.name+'s'}}" wx:for="{{list}}" wx:key="{{index}}">{{item.name}}</button>
+  </view>
+</view>
+<view class="cu-bar bg-white">
+  <view class="action">
+    <text class="icon-title text-orange"></text> 延迟执行
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-cyan shadow" bindtap="toggleDelay">开始执行</button>
   </view>
 </view>
 
 <view class="padding-sm">
-  <view class='flex flex-wrap justify-around'>
-    <button class='cu-btn bg-{{item.color}} animation-{{animation==item.name+"s"? item.name :""}} animation-reverse margin-sm basis-sm shadow' bindtap='toggle' data-class='{{item.name+"s"}}' wx:for="{{list}}">{{item.name}}</button>
+  <view class="flex flex-wrap justify-around">
+    <button class="bg-{{item.color}} cu-btn {{toggleDelay?'animation-slide-bottom':''}} margin-sm basis-sm shadow" style="animation-delay: {{(index+1)*0.1}}s;" wx:for="{{list}}" wx:key="{{index}}">0.{{index+1}}s</button>
   </view>
 </view>
 <view class="cu-bar bg-white">
-  <view class='action'>
-    <text class='icon-title text-orange'></text> 延迟执行
-  </view>
-  <view class='action'>
-    <button class='cu-btn bg-cyan shadow' bindtap='toggleDelay'>开始执行</button>
-  </view>
-</view>
-
-<view class="padding-sm">
-  <view class='flex flex-wrap justify-around'>
-    <button class=' bg-{{item.color}} cu-btn {{toggleDelay?"animation-slide-bottom":""}} margin-sm basis-sm shadow' style='animation-delay: {{(index+1)*0.1}}s;' wx:for="{{list}}">0.{{index+1}}s</button>
-  </view>
-</view>
-<view class="cu-bar bg-white">
-  <view class='action'>
-    <text class='icon-title text-orange'></text> Gif动画
+  <view class="action">
+    <text class="icon-title text-orange"></text> Gif动画
   </view>
 </view>
 <view class="margin radius bg-gradual-green shadow-blur">
-  <image src='https://image.weilanwl.com/gif/wave.gif' mode='scaleToFill' class='gif-black response' style='height:100rpx'></image>
+  <image src="https://image.weilanwl.com/gif/wave.gif" mode="scaleToFill" class="gif-black response" style="height:100rpx"></image>
 </view>
 <view class="margin flex">
-  <view class='bg-black flex-sub margin-right radius shadow-lg'>
-    <image src='https://image.weilanwl.com/gif/loading-black.gif' mode='aspectFit' class='gif-black response' style='height:240rpx'></image>
+  <view class="bg-black flex-sub margin-right radius shadow-lg">
+    <image src="https://image.weilanwl.com/gif/loading-black.gif" mode="aspectFit" class="gif-black response" style="height:240rpx"></image>
   </view>
-  <view class='bg-white flex-sub radius shadow-lg'>
-    <image src='https://image.weilanwl.com/gif/loading-white.gif' mode='aspectFit' class='gif-white response' style='height:240rpx'></image>
-  </view>
-</view>
-<view class="margin flex">
-  <view class='bg-gradual-blue flex-sub margin-right radius shadow-lg'>
-    <image src='https://image.weilanwl.com/gif/rhomb-black.gif' mode='aspectFit' class='gif-black response' style='height:240rpx'></image>
-  </view>
-  <view class='bg-white flex-sub radius shadow-lg'>
-    <image src='https://image.weilanwl.com/gif/rhomb-white.gif' mode='aspectFit' class='gif-white response' style='height:240rpx'></image>
+  <view class="bg-white flex-sub radius shadow-lg">
+    <image src="https://image.weilanwl.com/gif/loading-white.gif" mode="aspectFit" class="gif-white response" style="height:240rpx"></image>
   </view>
 </view>
 <view class="margin flex">
-  <view class='bg-white flex-sub margin-right radius shadow-lg'>
-    <image src='https://image.weilanwl.com/gif/loading-1.gif' mode='aspectFit' class='gif-white response' style='height:240rpx'></image>
+  <view class="bg-gradual-blue flex-sub margin-right radius shadow-lg">
+    <image src="https://image.weilanwl.com/gif/rhomb-black.gif" mode="aspectFit" class="gif-black response" style="height:240rpx"></image>
   </view>
-  <view class='bg-black flex-sub radius shadow-lg'>
-    <image src='https://image.weilanwl.com/gif/loading-2.gif' mode='aspectFit' class='gif-black response' style='height:240rpx'></image>
+  <view class="bg-white flex-sub radius shadow-lg">
+    <image src="https://image.weilanwl.com/gif/rhomb-white.gif" mode="aspectFit" class="gif-white response" style="height:240rpx"></image>
+  </view>
+</view>
+<view class="margin flex">
+  <view class="bg-white flex-sub margin-right radius shadow-lg">
+    <image src="https://image.weilanwl.com/gif/loading-1.gif" mode="aspectFit" class="gif-white response" style="height:240rpx"></image>
+  </view>
+  <view class="bg-black flex-sub radius shadow-lg">
+    <image src="https://image.weilanwl.com/gif/loading-2.gif" mode="aspectFit" class="gif-black response" style="height:240rpx"></image>
   </view>
 </view>

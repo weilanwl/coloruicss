@@ -1,15 +1,6 @@
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed bg-gradual-green" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'></text> 测试
-    </navigator>
-  </view>
-</view>
-<view class='padding margin'>
-  <navigator url='filter' class='bg-grey padding radius'>
+<cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">测试</view></cu-custom>
+<view class="padding margin">
+  <navigator url="filter" class="bg-grey padding radius">
     <text>filter：blur引起的ios花屏测试</text>
   </navigator>
-  <!-- <navigator url='filter' class='bg-grey padding radius margin-top'>
-    <text>filter：blur引起的ios花屏测试</text>
-  </navigator> -->
 </view>

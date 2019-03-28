@@ -1,39 +1,35 @@
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed bg-gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'></text> 表单
-    </navigator>
-  </view>
-</view>
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">表单</view>
+</cu-custom>
 <form>
-
   <view class="cu-form-group margin-top">
-    <view class='title'>邮件</view>
-    <input placeholder="两字短标题" class='radius' name='input'></input>
+    <view class="title">邮件</view>
+    <input placeholder="两字短标题"></input>
   </view>
   <view class="cu-form-group">
-    <view class='title'>输入框</view>
-    <input placeholder="三字标题" class='radius' name='input'></input>
+    <view class="title">输入框</view>
+    <input placeholder="三字标题"></input>
   </view>
   <view class="cu-form-group">
-    <view class='title'>收货地址</view>
-    <input placeholder="统一标题的宽度" class='radius' name='input'></input>
+    <view class="title">收货地址</view>
+    <input placeholder="统一标题的宽度"></input>
   </view>
   <view class="cu-form-group">
-    <view class='title'>收货地址</view>
-    <input placeholder="输入框带个图标" class='radius' name='input'></input>
-    <text class='icon-locationfill text-orange'></text>
+    <view class="title">收货地址</view>
+    <input placeholder="输入框带个图标"></input>
+    <text class="icon-locationfill text-orange"></text>
   </view>
   <view class="cu-form-group">
-    <view class='title'>验证码</view>
-    <input placeholder="输入框带个按钮" class='radius' name='input'></input>
-    <button class='cu-btn bg-green shadow'>验证码</button>
+    <view class="title">验证码</view>
+    <input placeholder="输入框带个按钮"></input>
+    <button class="cu-btn bg-green shadow">验证码</button>
   </view>
   <view class="cu-form-group">
-    <view class='title'>手机号码</view>
-    <input placeholder="输入框带标签" class='radius' name='input'></input>
+    <view class="title">手机号码</view>
+    <input placeholder="输入框带标签"></input>
     <view class="cu-capsule radius">
-      <view class='cu-tag bg-blue '>
+      <view class="cu-tag bg-blue">
         +86
       </view>
       <view class="cu-tag line-blue">
@@ -41,10 +37,8 @@
       </view>
     </view>
   </view>
-
-
   <view class="cu-form-group margin-top">
-    <view class='title'>普通选择</view>
+    <view class="title">普通选择</view>
     <picker bindchange="PickerChange" value="{{index}}" range="{{picker}}">
       <view class="picker">
         {{index?picker[index]:'禁止换行，超出容器部分会以 ... 方式截断'}}
@@ -52,7 +46,7 @@
     </picker>
   </view>
   <view class="cu-form-group">
-    <view class='title'>多列选择</view>
+    <view class="title">多列选择</view>
     <picker mode="multiSelector" bindchange="MultiChange" bindcolumnchange="MultiColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
       <view class="picker">
         {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}，{{multiArray[2][multiIndex[2]]}}
@@ -60,7 +54,7 @@
     </picker>
   </view>
   <view class="cu-form-group">
-    <view class='title'>时间选择</view>
+    <view class="title">时间选择</view>
     <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="TimeChange">
       <view class="picker">
         {{time}}
@@ -68,7 +62,7 @@
     </picker>
   </view>
   <view class="cu-form-group">
-    <view class='title'>日期选择</view>
+    <view class="title">日期选择</view>
     <picker mode="date" value="{{date}}" start="2015-09-01" end="2020-09-01" bindchange="DateChange">
       <view class="picker">
         {{date}}
@@ -76,88 +70,84 @@
     </picker>
   </view>
   <view class="cu-form-group">
-    <view class='title'>地址选择</view>
+    <view class="title">地址选择</view>
     <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
       <view class="picker">
         {{region[0]}}，{{region[1]}}，{{region[2]}}
       </view>
     </picker>
   </view>
-
   <view class="cu-form-group margin-top">
-    <view class='title'>开关选择</view>
+    <view class="title">开关选择</view>
     <switch></switch>
   </view>
   <view class="cu-form-group">
-    <view class='title'>定义颜色</view>
-    <switch class='red sm' checked></switch>
+    <view class="title">定义颜色</view>
+    <switch class="red sm" checked></switch>
   </view>
   <view class="cu-form-group">
-    <switch class='switch-sex' checked></switch>
-    <view class='title'>定义图标</view>
+    <switch class="switch-sex" checked></switch>
+    <view class="title">定义图标</view>
   </view>
   <view class="cu-form-group">
-    <view class='title'>方形开关</view>
-    <switch class='orange radius sm' checked></switch>
+    <view class="title">方形开关</view>
+    <switch class="orange radius sm" checked></switch>
   </view>
   <radio-group class="block">
     <view class="cu-form-group margin-top">
-      <view class='title'>单选操作(radio)</view>
+      <view class="title">单选操作(radio)</view>
       <radio checked></radio>
     </view>
     <view class="cu-form-group">
-      <view class='title'>定义样式</view>
-      <radio class='radio'></radio>
+      <view class="title">定义样式</view>
+      <radio class="radio"></radio>
     </view>
     <view class="cu-form-group">
-      <view class='title'>定义颜色</view>
+      <view class="title">定义颜色</view>
       <view>
-        <radio class='blue radio'></radio>
-        <radio class='red margin-left-sm'></radio>
+        <radio class="blue radio"></radio>
+        <radio class="red margin-left-sm"></radio>
       </view>
     </view>
   </radio-group>
-
   <view class="cu-form-group margin-top">
-    <view class='title'>复选选操作(checkbox)</view>
+    <view class="title">复选选操作(checkbox)</view>
     <checkbox></checkbox>
   </view>
   <view class="cu-form-group">
-    <view class='title'>定义形状</view>
-    <checkbox class='round' checked></checkbox>
+    <view class="title">定义形状</view>
+    <checkbox class="round" checked></checkbox>
   </view>
   <view class="cu-form-group">
-    <view class='title'>定义颜色</view>
-    <checkbox class='round blue' checked></checkbox>
+    <view class="title">定义颜色</view>
+    <checkbox class="round blue" checked></checkbox>
   </view>
-  <view class="cu-form-group margin-top">
-    <view class="grid col-3 grid-square flex-sub">
-      <view class="padding-xs bg-img" style="background-image:url(https://image.weilanwl.com/img/square-1.jpg);">
-      </view>
-      <view class="padding-xs bg-img" style="background-image:url(https://image.weilanwl.com/img/square-2.jpg);">
-        <view class="cu-tag bg-red">
-          <text class='icon-close'></text>
+  <view class="cu-bar bg-white margin-top">
+    <view class="action">
+      图片上传
+    </view>
+    <view class="action">
+      {{imgList.length}}/4
+    </view>
+  </view>
+  <view class="cu-form-group">
+    <view class="grid col-4 grid-square flex-sub">
+      <view class="padding-xs bg-img" style="background-image:url({{imgList[index]}})" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+        <view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+          <text class="icon-close"></text>
         </view>
       </view>
-      <view class="padding-xs solids">
-        <text class='icon-cameraadd'></text>
+      <view class="padding-xs solids" bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
+        <text class="icon-cameraadd"></text>
       </view>
     </view>
   </view>
-  <view class="cu-form-group margin-top" wx:hide="{{modalName==null}}">
-    <textarea placeholder="多行文本输入框" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class='placeholder'></textarea>
-  </view>
-  <view class="cu-form-group top" wx:hide="{{modalName==null}}">
-    <view class='title'>点文本框</view>
-    <textarea placeholder="多行文本输入框" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class='placeholder'></textarea>
-  </view>
-<!-- 
+  <!-- !!!!! placeholder 在ios表现有偏移 建议使用 第一种样式 -->
   <view class="cu-form-group margin-top">
-    <view class='title'>多级联动</view>
-    <picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
-      <view class="picker">
-        {{region[0]}}，{{region[1]}}，{{region[2]}}
-      </view>
-    </picker>
-  </view> -->
+    <textarea data-placeholder="多行文本输入框" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class="placeholder" class="{{textareaAValue?'value':''}}" bindinput="textareaAInput"></textarea>
+  </view>
+  <view class="cu-form-group top">
+    <view class="title">点文本框</view>
+    <textarea data-placeholder="多行文本输入框" maxlength="-1" disabled="{{modalName!=null}}" placeholder-class="placeholder" class="{{textareaBValue?'value':''}}" bindinput="textareaBInput"></textarea>
+  </view>
 </form>

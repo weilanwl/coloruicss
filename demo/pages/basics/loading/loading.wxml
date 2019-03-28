@@ -1,13 +1,10 @@
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'></text> 加载
-    </navigator>
-    <view class='action'>
-      <view class="cu-load load-icon {{!isLoad?'loading':'over'}}"></view>
-    </view>
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}">
+  <view slot="backText">返回</view>
+  <view slot="content">加载</view>
+  <view class="action" slot="right">
+    <view class="cu-load load-icon {{!isLoad?'loading':'over'}}"></view>
   </view>
-</view>
+</cu-custom>
 <view class="cu-bar bg-white">
   <view class='action'>
     <text class='icon-title text-blue'></text>背景
@@ -40,10 +37,10 @@
     </button>
   </view>
 </view>
-<view class='cu-load load-modal' wx:if="{{loadModal}}"> 
-    <!-- <view class='icon-emojifill text-orange'></view> -->
-    <image src='/images/logo.png' class='png' mode='aspectFit'></image>
-    <view class='gray-text'>加载中...</view>
+<view class='cu-load load-modal' wx:if="{{loadModal}}">
+  <!-- <view class='icon-emojifill text-orange'></view> -->
+  <image src='/images/logo.png' class='png' mode='aspectFit'></image>
+  <view class='gray-text'>加载中...</view>
 </view>
 <view class="cu-bar bg-white margin-top">
   <view class='action'>

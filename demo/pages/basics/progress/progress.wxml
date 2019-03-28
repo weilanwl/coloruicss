@@ -1,115 +1,105 @@
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'></text> 进度条
-    </navigator>
-  </view>
-</view>
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">进度条</view></cu-custom>
 <view class="cu-bar bg-white solid-bottom">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>进度条形状
+  <view class="action">
+    <text class="icon-title text-blue"></text>进度条形状
   </view>
 </view>
 <view class="padding bg-white">
   <view class="cu-progress">
-    <view class='bg-red' style="width:{{loading?'61.8%':''}};">61.8%</view>
+    <view class="bg-red" style="width:{{loading?'61.8%':''}};">61.8%</view>
   </view>
   <view class="cu-progress radius margin-top">
-    <view class='bg-red' style="width:{{loading?'61.8%':''}};">61.8%</view>
+    <view class="bg-red" style="width:{{loading?'61.8%':''}};">61.8%</view>
   </view>
   <view class="cu-progress round margin-top">
-    <view class='bg-red' style="width:{{loading?'61.8%':''}};">61.8%</view>
+    <view class="bg-red" style="width:{{loading?'61.8%':''}};">61.8%</view>
   </view>
 </view>
 <view class="cu-bar bg-white solid-bottom margin-top">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>进度条尺寸
+  <view class="action">
+    <text class="icon-title text-blue"></text>进度条尺寸
   </view>
 </view>
 <view class="padding bg-white">
   <view class="cu-progress round">
-    <view class='bg-red' style="width:{{loading?'61.8%':''}};"></view>
+    <view class="bg-red" style="width:{{loading?'61.8%':''}};"></view>
   </view>
   <view class="cu-progress round margin-top sm">
-    <view class='bg-red' style="width:{{loading?'61.8%':''}};"></view>
+    <view class="bg-red" style="width:{{loading?'61.8%':''}};"></view>
   </view>
   <view class="cu-progress round margin-top xs">
-    <view class='bg-red' style="width:{{loading?'61.8%':''}};"></view>
+    <view class="bg-red" style="width:{{loading?'61.8%':''}};"></view>
   </view>
 </view>
-
 <view class="cu-bar bg-white solid-bottom margin-top" bindtap="showModal" data-target="ColorModal">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>进度条颜色
+  <view class="action">
+    <text class="icon-title text-blue"></text>进度条颜色
   </view>
-  <view class='action'>
-    <view class='padding-sm bg-{{color}} solid radius shadow-blur'></view>
+  <view class="action">
+    <view class="padding-sm bg-{{color}} solid radius shadow-blur"></view>
   </view>
 </view>
 <view class="padding {{color=='white'?'bg-grey':'bg-white'}}">
   <view class="cu-progress round">
-    <view class='bg-{{color}}' style="width:{{loading?'61.8%':''}};"></view>
+    <view class="bg-{{color}}" style="width:{{loading?'61.8%':''}};"></view>
   </view>
 </view>
-
-
 <view class="cu-bar bg-white solid-bottom margin-top">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>进度条条纹
+  <view class="action">
+    <text class="icon-title text-blue"></text>进度条条纹
   </view>
-  <switch class='sm margin-right-sm' bindchange='SetActive'></switch>
+  <switch class="sm margin-right-sm" bindchange="SetActive"></switch>
 </view>
 <view class="padding bg-white">
   <view class="cu-progress round sm striped {{active?'active':''}}">
-    <view class='bg-green' style="width:{{loading?'60%':''}};"></view>
+    <view class="bg-green" style="width:{{loading?'60%':''}};"></view>
   </view>
   <view class="cu-progress round sm margin-top-sm striped {{active?'active':''}}">
-    <view class='bg-black' style="width:{{loading?'40%':''}};"></view>
+    <view class="bg-black" style="width:{{loading?'40%':''}};"></view>
   </view>
 </view>
 <view class="cu-bar bg-white solid-bottom margin-top">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>进度条比例
+  <view class="action">
+    <text class="icon-title text-blue"></text>进度条比例
   </view>
 </view>
 <view class="padding bg-white">
   <view class="cu-progress radius striped active">
-    <view class='bg-red' style="width:{{loading?'30%':''}};">30%</view>
-    <view class='bg-olive' style="width:{{loading?'45%':''}};">45%</view>
-    <view class='bg-cyan' style="width:{{loading?'25%':''}};">25%</view>
+    <view class="bg-red" style="width:{{loading?'30%':''}};">30%</view>
+    <view class="bg-olive" style="width:{{loading?'45%':''}};">45%</view>
+    <view class="bg-cyan" style="width:{{loading?'25%':''}};">25%</view>
   </view>
 </view>
 <view class="cu-bar bg-white solid-bottom margin-top">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>进度条布局
+  <view class="action">
+    <text class="icon-title text-blue"></text>进度条布局
   </view>
 </view>
 <view class="padding bg-white ">
-  <view class='flex'>
+  <view class="flex">
     <view class="cu-progress round">
-      <view class='bg-green' style="width:{{loading?'100%':''}};"></view>
+      <view class="bg-green" style="width:{{loading?'100%':''}};"></view>
     </view>
-    <text class='icon-roundcheckfill text-green margin-left-sm'></text>
+    <text class="icon-roundcheckfill text-green margin-left-sm"></text>
   </view>
-  <view class='flex margin-top'>
+  <view class="flex margin-top">
     <view class="cu-progress round">
-      <view class='bg-green' style="width:{{loading?'80%':''}};"></view>
+      <view class="bg-green" style="width:{{loading?'80%':''}};"></view>
     </view>
-    <text class='margin-left'>80%</text>
+    <text class="margin-left">80%</text>
   </view>
 </view>
-
 <view class="cu-modal {{modalName=='ColorModal'?'show':''}}">
   <view class="cu-dialog">
-    <view class="cu-bar justify-end">
-      <view class='content'>选择颜色</view>
-      <view class='action' bindtap='hideModal'>
-        <text class='icon-close text-red'></text>
+    <view class="cu-bar justify-end solid-bottom">
+      <view class="content">选择颜色</view>
+      <view class="action" bindtap="hideModal">
+        <text class="icon-close text-red"></text>
       </view>
     </view>
-    <view class='grid col-5 padding'>
-      <view class='padding-xs' wx:for="{{ColorList}}" wx:key bindtap='SetColor' data-color='{{item.name}}' wx:if="{{item.name!='gray'}}">
-        <view class='padding-tb bg-{{item.name}} radius'> {{item.title}} </view>
+    <view class="grid col-5 padding">
+      <view class="padding-xs" wx:for="{{ColorList}}" wx:key bindtap="SetColor" data-color="{{item.name}}" wx:if="{{item.name!='gray'}}">
+        <view class="padding-tb bg-{{item.name}} radius"> {{item.title}} </view>
       </view>
     </view>
   </view>

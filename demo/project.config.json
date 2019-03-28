@@ -11,7 +11,7 @@
 		"newFeature": true
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.5.2",
+	"libVersion": "2.6.4",
 	"appid": "wxfd5241d66a07713f",
 	"projectname": "ColorUI2.0-demo",
 	"debugOptions": {
@@ -36,7 +36,7 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 32,
+			"current": 27,
 			"list": [
 				{
 					"id": 0,
@@ -201,13 +201,13 @@
 					"query": "",
 					"scene": null
 				},
-        {
-          "id": -1,
-          "name": "3.4 扩展-垂直导航",
-          "pathName": "pages/plugin/home/home",
-          "query": "",
-          "scene": null
-        },
+				{
+					"id": 27,
+					"name": "3.4 扩展-垂直导航",
+					"pathName": "pages/plugin/verticalnav/verticalnav",
+					"query": "",
+					"scene": null
+				},
 				{
 					"id": -1,
 					"name": "-----关于-首页-----",

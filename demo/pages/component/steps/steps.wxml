@@ -1,66 +1,58 @@
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed bg-gradual-pink" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'></text> 步骤条
-    </navigator>
-  </view>
-</view>
+<cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">步骤条</view></cu-custom>
 <view class="cu-bar bg-white solid-bottom">
-  <view class='action'>
-    <text class='icon-title text-orange'></text> 基本用法
+  <view class="action">
+    <text class="icon-title text-orange"></text> 基本用法
   </view>
-  <view class='action'>
-    <button class='cu-btn bg-green shadow' bindtap='basicsSteps'>下一步</button>
+  <view class="action">
+    <button class="cu-btn bg-green shadow" bindtap="basicsSteps">下一步</button>
   </view>
 </view>
-<view class='bg-white padding'>
-  <view class='cu-steps'>
-    <view class='cu-item {{index>basics?"":"text-red"}}' wx:for="{{basicsList}}" wx:key>
-      <text class='icon-{{item.icon}}'></text> {{item.name}}
+<view class="bg-white padding">
+  <view class="cu-steps">
+    <view class="cu-item {{index>basics?'':'text-red'}}" wx:for="{{basicsList}}" wx:key>
+      <text class="icon-{{item.icon}}"></text> {{item.name}}
     </view>
   </view>
 </view>
-
-<view class='bg-white padding margin-top-xs'>
-  <view class='cu-steps'>
-    <view class='cu-item {{index>basics?"":"text-orange"}}' wx:for="{{basicsList}}" wx:key>
-      <text class='icon-{{index>basics?"title":item.icon}}'></text> {{item.name}}
+<view class="bg-white padding margin-top-xs">
+  <view class="cu-steps">
+    <view class="cu-item {{index>basics?'':'text-orange'}}" wx:for="{{basicsList}}" wx:key>
+      <text class="icon-{{index>basics?'title':item.icon}}"></text> {{item.name}}
     </view>
   </view>
 </view>
-
-<view class='bg-white padding  margin-top-xs'>
-  <view class='cu-steps steps-arrow'>
-    <view class='cu-item {{index>basics?"":"text-blue"}}' wx:for="{{basicsList}}" wx:key>
-      <text class='icon-{{item.icon}}'></text> {{item.name}}
-    </view>
-  </view>
-</view>
-<view class="cu-bar bg-white solid-bottom margin-top">
-  <view class='action'>
-    <text class='icon-title text-orange'></text> 数字完成
-  </view>
-  <view class='action'>
-    <button class='cu-btn bg-green shadow' bindtap='numSteps'>下一步</button>
-  </view>
-</view>
-<view class='bg-white padding'>
-  <view class='cu-steps'>
-    <view class='cu-item {{index>num?"":"text-blue"}}' wx:for="{{numList}}" wx:key>
-      <text class='num {{index==2?"err":""}}' data-index='{{index + 1}}'></text> {{item.name}}
+<view class="bg-white padding  margin-top-xs">
+  <view class="cu-steps steps-arrow">
+    <view class="cu-item {{index>basics?'':'text-blue'}}" wx:for="{{basicsList}}" wx:key>
+      <text class="icon-{{item.icon}}"></text> {{item.name}}
     </view>
   </view>
 </view>
 <view class="cu-bar bg-white solid-bottom margin-top">
-  <view class='action'>
-    <text class='icon-title text-orange'></text> 多级显示
+  <view class="action">
+    <text class="icon-title text-orange"></text> 数字完成
   </view>
-  <view class='action'>
-    <button class='cu-btn bg-green shadow' bindtap='scrollSteps'>下一步</button>
+  <view class="action">
+    <button class="cu-btn bg-green shadow" bindtap="numSteps">下一步</button>
   </view>
 </view>
-<scroll-view scroll-x class='bg-white padding response cu-steps steps-bottom' scroll-into-view="scroll-{{scroll}}" scroll-with-animation>
-  <view class='cu-item {{index>scroll?"":"text-blue"}} padding-lr-xl' wx:for="{{10}}" wx:key id="scroll-{{index}}">
-   Level {{index + 1}} <text class='num' data-index='{{index + 1}}'></text>
+<view class="bg-white padding">
+  <view class="cu-steps">
+    <view class="cu-item {{index>num?'':'text-blue'}}" wx:for="{{numList}}" wx:key>
+      <text class="num {{index==2?'err':''}}" data-index="{{index + 1}}"></text> {{item.name}}
+    </view>
+  </view>
+</view>
+<view class="cu-bar bg-white solid-bottom margin-top">
+  <view class="action">
+    <text class="icon-title text-orange"></text> 多级显示
+  </view>
+  <view class="action">
+    <button class="cu-btn bg-green shadow" bindtap="scrollSteps">下一步</button>
+  </view>
+</view>
+<scroll-view scroll-x class="bg-white padding response cu-steps steps-bottom" scroll-into-view="scroll-{{scroll}}" scroll-with-animation>
+  <view class="cu-item {{index>scroll?'':'text-blue'}} padding-lr-xl" wx:for="{{10}}" wx:key id="scroll-{{index}}">
+   Level {{index + 1}} <text class="num" data-index="{{index + 1}}"></text>
   </view>
 </scroll-view>

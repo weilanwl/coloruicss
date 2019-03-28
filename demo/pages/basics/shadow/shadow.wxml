@@ -1,28 +1,22 @@
-<view class="cu-custom" style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-    <navigator class='action' open-type="navigateBack" delta="1" hover-class="none">
-      <text class='icon-back'></text> 边框阴影
-    </navigator>
-  </view>
-</view>
+<cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">边框阴影</view></cu-custom>
 <view class="cu-bar bg-white solid-bottom">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>边框
+  <view class="action">
+    <text class="icon-title text-blue"></text>边框
   </view>  
-  <view class='action'>
-   <switch class='sm' bindchange='SetSize'></switch>
+  <view class="action">
+   <switch class="sm" bindchange="SetSize"></switch>
   </view>   
 </view>
-<view class='padding bg-white text-center'>
-  <view class='padding solid{{size?"s":""}}'>四周</view>
-  <view class='padding solid{{size?"s":""}}-top margin-top'>上</view>
-  <view class='padding solid{{size?"s":""}}-right margin-top'>右</view>
-  <view class='padding solid{{size?"s":""}}-bottom margin-top'>下</view>
-  <view class='padding solid{{size?"s":""}}-left margin-top'>左</view>
+<view class="padding bg-white text-center">
+  <view class="padding solid{{size?'s':''}}">四周</view>
+  <view class="padding solid{{size?'s':''}}-top margin-top">上</view>
+  <view class="padding solid{{size?'s':''}}-right margin-top">右</view>
+  <view class="padding solid{{size?'s':''}}-bottom margin-top">下</view>
+  <view class="padding solid{{size?'s':''}}-left margin-top">左</view>
 </view>
 <view class="cu-bar bg-white margin-top">
-  <view class='action'>
-    <text class='icon-title text-blue'></text>阴影
+  <view class="action">
+    <text class="icon-title text-blue"></text>阴影
   </view>
 </view>
 <view class="padding text-center">

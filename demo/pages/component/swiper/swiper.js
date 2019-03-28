@@ -1,34 +1,38 @@
-const app = getApp();
 Page({
   data: {
-    StatusBar: app.globalData.StatusBar,
-    CustomBar: app.globalData.CustomBar,
     cardCur: 0,
-    tower: [{
+    swiperList: [{
       id: 0,
-      url: 'https://image.weilanwl.com/img/4x3-1.jpg'
+      type: 'image',
+      url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg'
     }, {
       id: 1,
-      url: 'https://image.weilanwl.com/img/4x3-2.jpg'
+      type: 'image',
+      url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84001.jpg',
     }, {
       id: 2,
-      url: 'https://image.weilanwl.com/img/4x3-3.jpg'
-      }, {
-        id: 3,
-        url: 'https://image.weilanwl.com/img/4x3-4.jpg'
-      }, {
-        id: 4,
-        url: 'https://image.weilanwl.com/img/4x3-2.jpg'
-      }, {
-        id: 5,
-        url: 'https://image.weilanwl.com/img/4x3-4.jpg'
-      }, {
-        id: 6,
-        url: 'https://image.weilanwl.com/img/4x3-2.jpg'
-      }]
+      type: 'image',
+      url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big39000.jpg'
+    }, {
+      id: 3,
+      type: 'image',
+      url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big10001.jpg'
+    }, {
+      id: 4,
+      type: 'image',
+      url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big25011.jpg'
+    }, {
+      id: 5,
+      type: 'image',
+      url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big21016.jpg'
+    }, {
+      id: 6,
+      type: 'image',
+      url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big99008.jpg'
+    }],
   },
   onLoad() {
-    this.towerSwiper('tower');
+    this.towerSwiper('swiperList');
     // 初始化towerSwiper 传已有的数组名即可
   },
   DotStyle(e) {
@@ -51,28 +55,25 @@ Page({
       list[i].mLeft = i - parseInt(list.length / 2)
     }
     this.setData({
-      towerList: list
+      swiperList: list
     })
   },
-
   // towerSwiper触摸开始
   towerStart(e) {
     this.setData({
       towerStart: e.touches[0].pageX
     })
   },
-
   // towerSwiper计算方向
   towerMove(e) {
     this.setData({
       direction: e.touches[0].pageX - this.data.towerStart > 0 ? 'right' : 'left'
     })
   },
-
   // towerSwiper计算滚动
   towerEnd(e) {
     let direction = this.data.direction;
-    let list = this.data.towerList;
+    let list = this.data.swiperList;
     if (direction == 'right') {
       let mLeft = list[0].mLeft;
       let zIndex = list[0].zIndex;
@@ -83,7 +84,7 @@ Page({
       list[list.length - 1].mLeft = mLeft;
       list[list.length - 1].zIndex = zIndex;
       this.setData({
-        towerList: list
+        swiperList: list
       })
     } else {
       let mLeft = list[list.length - 1].mLeft;
@@ -95,8 +96,8 @@ Page({
       list[0].mLeft = mLeft;
       list[0].zIndex = zIndex;
       this.setData({
-        towerList: list
+        swiperList: list
       })
     }
-  },
-});
+  }
+})

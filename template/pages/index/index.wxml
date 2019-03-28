@@ -1,8 +1,6 @@
-<view class='cu-custom' style="height:{{CustomBar}}px;">
-  <view class="cu-bar fixed bg-gradual-blue" style="height:{{CustomBar}}px;padding-top:{{StatusBar}}px;">
-    <view class='content' style='top:{{StatusBar}}px;'>ColorUI 空白模板</view>
-  </view>
-</view>
+<cu-custom bgColor="bg-gradual-blue">
+  <view slot="content">ColorUI 空白模板</view>
+</cu-custom>
 <view class="margin-xl padding-xl bg-white radius shadow-lg">
   <view class="flex justify-center">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class='cu-btn round bg-green shadow'> 获取头像昵称 </button>
@@ -14,7 +12,6 @@
     </block>
   </view>
 </view>
-
 <view class="text-center margin-top">
   <text class="text-grey text-xl">{{motto}}</text>
 </view>

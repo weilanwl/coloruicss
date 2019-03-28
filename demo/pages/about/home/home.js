@@ -1,39 +1,43 @@
 Component({
+  options: {
+    addGlobalClass: true,
+  },
   data: {
     starCount: 0,
     forksCount: 0,
     visitTotal: 0,
   },
-  methods: {
-    onLoad(options) {
-      let that = this;
-      wx.showLoading({
-        title: '数据加载中',
-        mask: true,
-      })
-      let i = 0;
-      numDH();
-      function numDH() {
-        if (i < 20) {
-          setTimeout(function() {
-            that.setData({
-              visitTotal: i,
-              forksCount: i,
-              visitTotal: i
-            })
-            i++
-            numDH();
-          }, 20)
-        } else {
+  attached() {
+    console.log("success")
+    let that = this;
+    wx.showLoading({
+      title: '数据加载中',
+      mask: true,
+    })
+    let i = 0;
+    numDH();
+    function numDH() {
+      if (i < 20) {
+        setTimeout(function () {
           that.setData({
-            starCount: that.coutNum(999),
-            forksCount: that.coutNum(8888),
-            visitTotal: that.coutNum(77777)
+            starCount: i,
+            forksCount: i,
+            visitTotal: i
           })
-        }
+          i++
+          numDH();
+        }, 20)
+      } else {
+        that.setData({
+          starCount: that.coutNum(999),
+          forksCount: that.coutNum(8888),
+          visitTotal: that.coutNum(77777)
+        })
       }
-      wx.hideLoading()
-    },
+    }
+    wx.hideLoading()
+  },
+  methods: {
     coutNum(e) {
       if (e > 1000 && e < 10000) {
         e = (e / 1000).toFixed(1) + 'k'
@@ -70,15 +74,5 @@ Component({
         current: 'https://image.weilanwl.com/color2.0/zanCode.jpg' // 当前显示图片的http链接      
       })
     },
-  },
-  pageLifetimes: {
-    show() {
-      if (typeof this.getTabBar === 'function' &&
-        this.getTabBar()) {
-        this.getTabBar().setData({
-          selected: 3
-        })
-      }
-    }
   }
 })
