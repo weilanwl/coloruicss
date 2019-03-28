@@ -1,7 +1,7 @@
 <p style="text-align: center;"><img src="https://image.weilanwl.com/uni/UniAppReadme.jpg" title="ColorUI简介"></img></p>
 
 ## 开始使用
-下载源码解压，复制根目录的 `colorui/` 文件夹到你的根目录
+下载源码解压，复制根目录的 `/colorui` 文件夹到你的根目录
 
 `App.vue` 引入关键Css `main.css` `icon.css`
 ```
