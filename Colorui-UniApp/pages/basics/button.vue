@@ -35,7 +35,7 @@
 			</view>
 			<view class="action">
 				<text class="text-df margin-right-sm">阴影</text>
-				<switch @change="SetShadow" :class="shadow?'checked':''"></switch>
+				<switch @change="SetShadow" :class="shadow?'checked':''" color="#39B54A"></switch>
 			</view>
 		</view>
 		<view class="grid col-5 padding-sm">
@@ -93,7 +93,7 @@
 				<text class="icon-upload"></text> 图标</button>
 			<button class="cu-btn block bg-blue margin-tb-sm lg">
 				<text class="icon-loading2 iconfont-spin"></text> 加载</button>
-			<button class="cu-btn block bg-black margin-tb-sm lg" loading> 微信加载</button>
+			<button class="cu-btn block bg-black margin-tb-sm lg" loading> 原生加载</button>
 		</view>
 	</view>
 </template>

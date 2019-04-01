@@ -3,7 +3,7 @@
 		<scroll-view scroll-y class="page">
 			<cu-custom bgImage="https://image.weilanwl.com/color2.0/plugin/cjkz2329.jpg">
 				<block slot="content">
-					<image src="/static/cjkz.png" mode="widthFix"></image>
+					<image src="/static/cjkz.png" mode="aspectFill" style="width: 240upx;height: 60upx;"></image>
 				</block>
 			</cu-custom>
 			<view class="cu-card">

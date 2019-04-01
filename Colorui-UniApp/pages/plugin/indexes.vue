@@ -13,7 +13,7 @@
 			</view>
 		</view>
 		<scroll-view scroll-y class="indexes" :scroll-into-view="'indexes-'+ listCurID" :style="[{height:'calc(100vh - '+ CustomBar + 'px - 50px)'}]"
-		 :scroll-with-animation="true" :enable-back-to-top="true" @scroll="scroll">
+		 :scroll-with-animation="true" :enable-back-to-top="true">
 			<block v-for="(item,index) in list" :key="index">
 				<view :class="'indexItem-' + item.name" :id="'indexes-' + item.name" :data-index="item.name">
 					<view class="padding">{{item.name}}</view>

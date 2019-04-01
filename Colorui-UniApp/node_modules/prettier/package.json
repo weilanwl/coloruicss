@@ -1,0 +1,86 @@
+{
+  "_from": "prettier@~1.12.0",
+  "_id": "prettier@1.12.1",
+  "_inBundle": false,
+  "_integrity": "sha1-wa0g6APndJ+vkFpAnSNn4Gu+cyU=",
+  "_location": "/prettier",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "prettier@~1.12.0",
+    "name": "prettier",
+    "escapedName": "prettier",
+    "rawSpec": "~1.12.0",
+    "saveSpec": null,
+    "fetchSpec": "~1.12.0"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "http://registry.npm.taobao.org/prettier/download/prettier-1.12.1.tgz",
+  "_shasum": "c1ad20e803e7749faf905a409d2367e06bbe7325",
+  "_spec": "prettier@~1.12.0",
+  "_where": "E:\\weilanwlSVN\\colorui\\github\\ColorUI\\Colorui-UniApp",
+  "author": {
+    "name": "James Long"
+  },
+  "bin": {
+    "prettier": "./bin-prettier.js"
+  },
+  "bugs": {
+    "url": "https://github.com/prettier/prettier/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Prettier is an opinionated code formatter",
+  "devDependencies": {
+    "babel-cli": "6.24.1",
+    "babel-preset-es2015": "6.24.1",
+    "codecov": "2.2.0",
+    "cross-env": "5.0.5",
+    "eslint": "4.18.2",
+    "eslint-config-prettier": "2.9.0",
+    "eslint-friendly-formatter": "3.0.0",
+    "eslint-plugin-import": "2.9.0",
+    "eslint-plugin-prettier": "2.6.0",
+    "eslint-plugin-react": "7.7.0",
+    "jest": "21.1.0",
+    "mkdirp": "0.5.1",
+    "prettier": "1.12.0",
+    "prettylint": "1.0.0",
+    "rimraf": "2.6.2",
+    "rollup": "0.47.6",
+    "rollup-plugin-commonjs": "8.2.6",
+    "rollup-plugin-json": "2.1.1",
+    "rollup-plugin-node-builtins": "2.0.0",
+    "rollup-plugin-node-globals": "1.1.0",
+    "rollup-plugin-node-resolve": "2.0.0",
+    "rollup-plugin-replace": "1.2.1",
+    "shelljs": "0.8.1",
+    "snapshot-diff": "0.2.2",
+    "strip-ansi": "4.0.0",
+    "tempy": "0.2.1",
+    "uglify-es": "3.3.9",
+    "webpack": "2.6.1"
+  },
+  "engines": {
+    "node": ">=4"
+  },
+  "files": [
+    "*.js"
+  ],
+  "homepage": "https://prettier.io",
+  "license": "MIT",
+  "main": "./index.js",
+  "name": "prettier",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prettier/prettier.git"
+  },
+  "scripts": {
+    "prepublishOnly": "node -e \"assert.equal(require('.').version, require('..').version)\""
+  },
+  "version": "1.12.1"
+}

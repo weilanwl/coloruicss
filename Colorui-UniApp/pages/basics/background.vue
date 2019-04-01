@@ -23,7 +23,7 @@
 			</view>
 		</view>
 		<view class="grid col-3 bg-white padding-sm">
-			<view class="padding-sm" v-for="(item,index) in ColorList" :key="index" v:if="index<12">
+			<view class="padding-sm" v-for="(item,index) in ColorList" :key="index" v-if="index<12">
 				<view class="padding radius text-center light" :class="'bg-' + item.name">
 					<view class="text-lg">{{item.title}}</view>
 					<view class="margin-top-sm text-Abc">{{item.name}}</view>
@@ -88,8 +88,7 @@
 				</view>
 			</view>
 		</view>
-		<!-- #ifdef MP -->
-		<view class="cu-bar bg-white margin-top">
+<!-- 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
 				<text class="icon-title text-blue"></text>视频背景
 			</view>
@@ -105,8 +104,8 @@
 					我必须连同希望一起毁坏……
 				</cover-view>
 			</cover-view>
-		</view>
-		<!-- #endif -->
+		</view> -->
+		
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
 				<text class="icon-title text-blue"></text>透明背景(文字层)

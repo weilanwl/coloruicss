@@ -4,178 +4,166 @@
 		{
 			"path": "pages/index/index",
 			"style": {
-				"navigationBarTitleText": "主页面"
-			}
-		},
-		{
-			"path": "pages/basics/home",
-			"style": {
-				"navigationBarTitleText": "基础元素"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/basics/layout",
 			"style": {
-				"navigationBarTitleText": "布局"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/basics/background",
 			"style": {
-				"navigationBarTitleText": "背景"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/basics/text",
 			"style": {
-				"navigationBarTitleText": "文本"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/basics/icon",
 			"style": {
-				"navigationBarTitleText": "图标"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/basics/button",
 			"style": {
-				"navigationBarTitleText": "按钮"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/basics/design",
 			"style": {
-				"navigationBarTitleText": "按钮/设计"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/basics/tag",
 			"style": {
-				"navigationBarTitleText": "标签"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/basics/avatar",
 			"style": {
-				"navigationBarTitleText": "头像"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/basics/progress",
 			"style": {
-				"navigationBarTitleText": "进度条"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/basics/shadow",
 			"style": {
-				"navigationBarTitleText": "边框阴影"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/basics/loading",
 			"style": {
-				"navigationBarTitleText": "加载"
-			}
-		},
-		{
-			"path": "pages/component/home",
-			"style": {
-				"navigationBarTitleText": "交互组件"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/component/bar",
 			"style": {
-				"navigationBarTitleText": "操作条"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/component/nav",
 			"style": {
-				"navigationBarTitleText": "导航栏"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/component/list",
 			"style": {
-				"navigationBarTitleText": "列表"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/component/card",
 			"style": {
-				"navigationBarTitleText": "卡片"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/component/form",
 			"style": {
-				"navigationBarTitleText": "表单"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/component/timeline",
 			"style": {
-				"navigationBarTitleText": "时间轴"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/component/chat",
 			"style": {
-				"navigationBarTitleText": "聊天"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/component/swiper",
 			"style": {
-				"navigationBarTitleText": "轮播"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/component/modal",
 			"style": {
-				"navigationBarTitleText": "模态框"
+				"navigationBarTitleText": ""
 			}
 		},
 		{
 			"path": "pages/component/steps",
 			"style": {
-				"navigationBarTitleText": "步骤条"
-			}
-		}, {
-			"path": "pages/plugin/home",
-			"style": {
-				"navigationBarTitleText": "插件扩展"
+				"navigationBarTitleText": ""
 			}
 		}, {
 			"path": "pages/plugin/indexes",
 			"style": {
-				"navigationBarTitleText": "索引列表"
+				"navigationBarTitleText": ""
 			}
 		}, {
 			"path": "pages/plugin/animation",
 			"style": {
-				"navigationBarTitleText": "微动画"
+				"navigationBarTitleText": ""
 			}
 		}, {
 			"path": "pages/plugin/drawer",
 			"style": {
-				"navigationBarTitleText": "全屏抽屉"
+				"navigationBarTitleText": ""
 			}
 		}, {
 			"path": "pages/plugin/verticalnav",
 			"style": {
-				"navigationBarTitleText": "垂直导航"
+				"navigationBarTitleText": ""
 			}
 		}
 	],
 	"globalStyle": {
-		"navigationBarBackgroundColor": "#39b54a",
+		"mp-alipay": {
+			/* 支付宝小程序特有相关 */
+			"transparentTitle": "always",
+			"allowsBounceVertical": "NO"
+		},
+		"navigationBarBackgroundColor": "#0081ff",
 		"navigationBarTitleText": "ColorUi for UniApp",
 		"navigationStyle": "custom",
 		"navigationBarTextStyle": "white"
 	},
-	"usingComponts":true
+	"usingComponts": true
 }

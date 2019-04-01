@@ -1,4 +1,4 @@
-<template>
+<template name="components">
 	<view>
 		<scroll-view scroll-y class="page">
 			<image src="/static/componentBg.png" mode="widthFix" class="response"></image>

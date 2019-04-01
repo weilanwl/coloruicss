@@ -1,11 +1,14 @@
 /*
-  ColorUi for uniApp  v2.1.2 | by 文晓港 2019年3月28日23:58:47
+  ColorUi for uniApp  v2.1.3 | by 文晓港 2019年4月1日22:58:47
   仅供学习交流，如作它用所承受的法律责任一概与作者无关
   使用ColorUi开发扩展与插件时，请注明基于ColorUi开发
   
   （QQ交流群：240787041）
   文档：http://www.color-ui.com/
 */
+html {
+	max-width: 750px;
+}
 
 /* ==================
         初始化
@@ -30,7 +33,19 @@ body {
 	--grey: #8799a3;
 	--gray: #aaaaaa;
 	--black: #333333;
-	--white:  #ffffff;
+	--white: #ffffff;
+	--redLight: #fadbd9;
+	--orangeLight: #fde6d2;
+	--yellowLight: #fef2ce;
+	--oliveLight: #e8f4d9;
+	--greenLight: #d7f0db;
+	--cyanLight: #d2f1f0;
+	--blueLight: #cce6ff;
+	--purpleLight: #e1d7f0;
+	--mauveLight: #ebd4ef;
+	--pinkLight: #f9d7ea;
+	--brownLight: #ede1d9;
+	--greyLight: #e7ebed;
 	--gradualRed: linear-gradient(45deg, #f43f3b, #ec008c);
 	--gradualOrange: linear-gradient(45deg, #ff9700, #ed1c24);
 	--gradualGreen: linear-gradient(45deg, #39b54a, #8dc63f);
@@ -119,17 +134,20 @@ switch::before {
 	font-family: "cuIcon";
 	content: "\e645";
 	position: absolute;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 	top: 0%;
 	left: 0upx;
 	font-size: 26upx;
 	line-height: 26px;
-	width: 26px;
+	width: 50%;
 	text-align: center;
 	pointer-events: none;
 	transform: scale(0, 0);
 	transition: all 0.3s ease-in-out 0s;
 	z-index: 9;
+	bottom: 0;
+	height: 26px;
+	margin: auto;
 }
 
 switch::before {
@@ -149,12 +167,13 @@ switch.checked::before {
 	transform: scale(0, 0);
 }
 
+/* #ifndef MP-ALIPAY */
 radio::before,
 checkbox::before {
 	font-family: "cuIcon";
 	content: "\e645";
 	position: absolute;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 	top: 50%;
 	margin-top: -8px;
 	right: 5px;
@@ -165,6 +184,22 @@ checkbox::before {
 	transition: all 0.3s ease-in-out 0s;
 	z-index: 9;
 }
+
+radio .wx-radio-input,
+checkbox .wx-checkbox-input,
+radio .uni-radio-input,
+checkbox .uni-checkbox-input {
+	margin: 0;
+	width: 24px;
+	height: 24px;
+}
+
+checkbox.round .wx-checkbox-input,
+checkbox.round .uni-checkbox-input {
+	border-radius: 100upx;
+}
+
+/* #endif */
 
 switch[checked]::before {
 	transform: scale(0, 0);
@@ -211,19 +246,7 @@ radio-group {
 	display: inline-block;
 }
 
-radio .wx-radio-input,
-checkbox .wx-checkbox-input,
-radio .uni-radio-input,
-checkbox .uni-checkbox-input {
-	margin: 0;
-	width: 24px;
-	height: 24px;
-}
 
-checkbox.round .wx-checkbox-input,
-checkbox.round .uni-checkbox-input {
-	border-radius: 100upx;
-}
 
 switch.radius .wx-switch-input::after,
 switch.radius .wx-switch-input,
@@ -261,11 +284,11 @@ radio.radio .uni-radio-input-checked::after {
 	margin: auto;
 	border-radius: 200upx;
 	/* #ifndef MP */
-	border: 7px solid  var(--white) !important;
+	border: 7px solid var(--white) !important;
 	/* #endif */
 
 	/* #ifdef MP */
-	border: 8px solid  var(--white) !important;
+	border: 8px solid var(--white) !important;
 	/* #endif */
 }
 
@@ -424,7 +447,7 @@ radio.white[checked] .wx-radio-input,
 switch.white.checked .uni-switch-input,
 checkbox.white.checked .uni-checkbox-input,
 radio.white.checked .uni-radio-input {
-	border-color:  var(--white) !important;
+	border-color: var(--white) !important;
 }
 
 switch.red[checked] .wx-switch-input.wx-switch-input-checked,
@@ -434,7 +457,7 @@ switch.red.checked .uni-switch-input.uni-switch-input-checked,
 checkbox.red.checked .uni-checkbox-input,
 radio.red.checked .uni-radio-input {
 	background-color: var(--red) !important;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 }
 
 switch.orange[checked] .wx-switch-input,
@@ -444,7 +467,7 @@ switch.orange.checked .uni-switch-input,
 checkbox.orange.checked .uni-checkbox-input,
 radio.orange.checked .uni-radio-input {
 	background-color: var(--orange) !important;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 }
 
 switch.yellow[checked] .wx-switch-input,
@@ -464,7 +487,7 @@ switch.olive.checked .uni-switch-input,
 checkbox.olive.checked .uni-checkbox-input,
 radio.olive.checked .uni-radio-input {
 	background-color: var(--olive) !important;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 }
 
 switch.green[checked] .wx-switch-input,
@@ -480,7 +503,7 @@ checkbox.checked .uni-checkbox-input,
 radio.green.checked .uni-radio-input,
 radio.checked .uni-radio-input {
 	background-color: var(--green) !important;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 }
 
 switch.cyan[checked] .wx-switch-input,
@@ -490,7 +513,7 @@ switch.cyan.checked .uni-switch-input,
 checkbox.cyan.checked .uni-checkbox-input,
 radio.cyan.checked .uni-radio-input {
 	background-color: var(--cyan) !important;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 }
 
 switch.blue[checked] .wx-switch-input,
@@ -500,7 +523,7 @@ switch.blue.checked .uni-switch-input,
 checkbox.blue.checked .uni-checkbox-input,
 radio.blue.checked .uni-radio-input {
 	background-color: var(--blue) !important;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 }
 
 switch.purple[checked] .wx-switch-input,
@@ -510,7 +533,7 @@ switch.purple.checked .uni-switch-input,
 checkbox.purple.checked .uni-checkbox-input,
 radio.purple.checked .uni-radio-input {
 	background-color: var(--purple) !important;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 }
 
 switch.mauve[checked] .wx-switch-input,
@@ -520,7 +543,7 @@ switch.mauve.checked .uni-switch-input,
 checkbox.mauve.checked .uni-checkbox-input,
 radio.mauve.checked .uni-radio-input {
 	background-color: var(--mauve) !important;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 }
 
 switch.pink[checked] .wx-switch-input,
@@ -530,7 +553,7 @@ switch.pink.checked .uni-switch-input,
 checkbox.pink.checked .uni-checkbox-input,
 radio.pink.checked .uni-radio-input {
 	background-color: var(--pink) !important;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 }
 
 switch.brown[checked] .wx-switch-input,
@@ -540,7 +563,7 @@ switch.brown.checked .uni-switch-input,
 checkbox.brown.checked .uni-checkbox-input,
 radio.brown.checked .uni-radio-input {
 	background-color: var(--brown) !important;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 }
 
 switch.grey[checked] .wx-switch-input,
@@ -550,7 +573,7 @@ switch.grey.checked .uni-switch-input,
 checkbox.grey.checked .uni-checkbox-input,
 radio.grey.checked .uni-radio-input {
 	background-color: var(--grey) !important;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 }
 
 switch.gray[checked] .wx-switch-input,
@@ -570,7 +593,7 @@ switch.black.checked .uni-switch-input,
 checkbox.black.checked .uni-checkbox-input,
 radio.black.checked .uni-radio-input {
 	background-color: var(--black) !important;
-	color:  var(--white) !important;
+	color: var(--white) !important;
 }
 
 switch.white[checked] .wx-switch-input,
@@ -579,7 +602,7 @@ radio.white[checked] .wx-radio-input,
 switch.white.checked .uni-switch-input,
 checkbox.white.checked .uni-checkbox-input,
 radio.white.checked .uni-radio-input {
-	background-color:  var(--white) !important;
+	background-color: var(--white) !important;
 	color: #666 !important;
 }
 
@@ -758,6 +781,7 @@ radio.white.checked .uni-radio-input {
 
 .cu-btn {
 	position: relative;
+	border: 0upx;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -865,7 +889,7 @@ button.icon.lg {
 
 .cu-btn[disabled] {
 	opacity: 0.6;
-	color:  var(--white);
+	color: var(--white);
 }
 
 /* ==================
@@ -981,7 +1005,7 @@ button.icon.lg {
 	font-size: 20upx;
 	padding: 0upx 10upx;
 	height: 28upx;
-	color:  var(--white);
+	color: var(--white);
 }
 
 .cu-tag.badge:not([class*="bg-"]) {
@@ -1016,7 +1040,7 @@ button.icon.lg {
 	justify-content: center;
 	align-items: center;
 	background-color: #ccc;
-	color:  var(--white);
+	color: var(--white);
 	white-space: nowrap;
 	position: relative;
 	width: 64upx;
@@ -1101,7 +1125,7 @@ button.icon.lg {
 	justify-items: flex-end;
 	justify-content: space-around;
 	font-size: 20upx;
-	color:  var(--white);
+	color: var(--white);
 	transition: width 0.6s ease;
 }
 
@@ -1198,7 +1222,7 @@ button.icon.lg {
 	margin: auto;
 	width: 260upx;
 	height: 260upx;
-	background-color:  var(--white);
+	background-color: var(--white);
 	border-radius: 10upx;
 	box-shadow: 0 0 0upx 2000upx rgba(0, 0, 0, 0.5);
 	display: flex;
@@ -1222,7 +1246,7 @@ button.icon.lg {
 .cu-load.load-modal::after {
 	content: "";
 	position: absolute;
-	background-color:  var(--white);
+	background-color: var(--white);
 	border-radius: 50%;
 	width: 200upx;
 	height: 200upx;
@@ -1348,7 +1372,7 @@ button.icon.lg {
 	display: flex;
 	padding-right: 10upx;
 	height: 140upx;
-	background-color:  var(--white);
+	background-color: var(--white);
 	justify-content: flex-end;
 	align-items: center
 }
@@ -1417,7 +1441,7 @@ button.icon.lg {
 	display: flex;
 	padding: 0 30upx;
 	min-height: 100upx;
-	background-color:  var(--white);
+	background-color: var(--white);
 	justify-content: space-between;
 	align-items: center
 }
@@ -1481,7 +1505,7 @@ button.icon.lg {
 }
 
 .cu-list.menu>.cu-item .cu-avatar-group .cu-avatar {
-	border-color:  var(--white)
+	border-color: var(--white)
 }
 
 .cu-list.menu>.cu-item .content>view:first-child {
@@ -1579,7 +1603,7 @@ button.icon.lg {
 }
 
 .cu-list.grid {
-	background-color:  var(--white);
+	background-color: var(--white);
 	text-align: center
 }
 
@@ -1779,6 +1803,7 @@ button.icon.lg {
 	height: 64upx;
 	line-height: 64upx;
 	font-size: 26upx;
+	background-color: transparent;
 }
 
 .cu-bar .search-form [class*="icon"] {
@@ -1958,7 +1983,7 @@ button.icon.lg {
 
 .cu-bar.input {
 	padding-right: 20upx;
-	background-color:  var(--white);
+	background-color: var(--white);
 }
 
 .cu-bar.input input {
@@ -1997,6 +2022,13 @@ button.icon.lg {
 	width: calc(100% - 440upx);
 }
 
+/* #ifdef MP-ALIPAY */
+.cu-custom .cu-bar .action .icon-back {
+	opacity: 0;
+}
+
+/* #endif */
+
 .cu-custom .cu-bar .content image {
 	height: 60upx;
 	width: 240upx;
@@ -2004,8 +2036,11 @@ button.icon.lg {
 
 .cu-custom .cu-bar {
 	min-height: 0px;
-	/* #ifdef MP */
+	/* #ifdef MP-WEIXIN */
 	padding-right: 220upx;
+	/* #endif */
+	/* #ifdef MP-ALIPAY */
+	padding-right: 150upx;
 	/* #endif */
 	box-shadow: 0upx 0upx 0upx;
 	z-index: 9999;
@@ -2030,7 +2065,7 @@ button.icon.lg {
 	transform-origin: 0 0;
 	pointer-events: none;
 	box-sizing: border-box;
-	border: 1upx solid  var(--white);
+	border: 1upx solid var(--white);
 	opacity: 0.5;
 }
 
@@ -2048,7 +2083,7 @@ button.icon.lg {
 	pointer-events: none;
 	box-sizing: border-box;
 	opacity: 0.6;
-	background-color:  var(--white);
+	background-color: var(--white);
 }
 
 .cu-custom .cu-bar .border-custom text {
@@ -2089,7 +2124,7 @@ button.icon.lg {
 
 .cu-timeline {
 	display: block;
-	background-color:  var(--white);
+	background-color: var(--white);
 }
 
 .cu-timeline .cu-time {
@@ -2130,7 +2165,7 @@ button.icon.lg {
 	position: absolute;
 	top: 36upx;
 	z-index: 9;
-	background-color:  var(--white);
+	background-color: var(--white);
 	width: 50upx;
 	height: 50upx;
 	text-align: center;
@@ -2144,7 +2179,7 @@ button.icon.lg {
 }
 
 .cu-timeline>.cu-item[class*="icon"]::before {
-	background-color:  var(--white);
+	background-color: var(--white);
 	width: 50upx;
 	height: 50upx;
 	text-align: center;
@@ -2214,7 +2249,7 @@ button.icon.lg {
 }
 
 .cu-chat .cu-item>.main .content:not([class*="bg-"]) {
-	background-color:  var(--white);
+	background-color: var(--white);
 	color: #666;
 }
 
@@ -2292,7 +2327,7 @@ button.icon.lg {
 	padding: 8upx 12upx;
 	background-color: rgba(0, 0, 0, 0.2);
 	border-radius: 6upx;
-	color:  var(--white);
+	color: var(--white);
 	max-width: 400upx;
 	line-height: 1.4;
 }
@@ -2308,7 +2343,7 @@ button.icon.lg {
 
 .cu-card>.cu-item {
 	display: block;
-	background-color:  var(--white);
+	background-color: var(--white);
 	overflow: hidden;
 	border-radius: 10upx;
 	margin: 30upx;
@@ -2361,7 +2396,7 @@ button.icon.lg {
 
 .cu-card.dynamic>.cu-item {
 	display: block;
-	background-color:  var(--white);
+	background-color: var(--white);
 	overflow: hidden;
 }
 
@@ -2439,7 +2474,7 @@ button.icon.lg {
  ==================== */
 
 .cu-form-group {
-	background-color:  var(--white);
+	background-color: var(--white);
 	padding: 1upx 30upx;
 	display: flex;
 	align-items: center;
@@ -2473,13 +2508,6 @@ button.icon.lg {
 	box-sizing: border-box;
 }
 
-.cu-form-group.top .title {
-	height: 1em;
-	line-height: 1;
-	align-self: flex-start;
-	margin-top: 16px;
-}
-
 .cu-form-group textarea {
 	margin: 32upx 0 30upx;
 	height: 4.6em;
@@ -2488,28 +2516,12 @@ button.icon.lg {
 	flex: 1;
 	font-size: 28upx;
 	padding: 0;
-	box-sizing: content-box;
-	display: inline-block;
-	vertical-align: top;
 }
 
-.cu-form-group textarea .placeholder {
-	color: transparent;
-}
-
-.cu-form-group textarea::after {
-	content: attr(data-placeholder);
-	color: gray;
-	position: absolute;
-	top: 0;
-	left: 0;
-	pointer-events: none;
-	transition: 0.2s;
-	opacity: 1;
-}
-
-.cu-form-group textarea.value::after {
-	opacity: 0;
+.cu-form-group.align-start .title {
+	height: 1em;
+	margin-top: 32upx;
+	line-height: 1em;
 }
 
 .cu-form-group picker {
@@ -2648,33 +2660,53 @@ button.icon.lg {
 /* ==================
          轮播
  ==================== */
+swiper .a-swiper-dot {
+	display: inline-block;
+	width: 16upx;
+	height: 16upx;
+	background: rgba(0, 0, 0, .3);
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+swiper .wx-swiper-dots,
+swiper .a-swiper-dots,
+swiper .uni-swiper-dots {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: center;
+}
 
 swiper.square-dot .wx-swiper-dot,
+swiper.square-dot .a-swiper-dot,
 swiper.square-dot .uni-swiper-dot {
-	background-color:  var(--white);
+	background-color: var(--white);
 	opacity: 0.4;
 	width: 10upx;
 	height: 10upx;
 	border-radius: 20upx;
-	transition: all 0.3s ease-in-out 0s;
+	margin: 0 8upx !important;
 }
 
 swiper.square-dot .wx-swiper-dot.wx-swiper-dot-active,
+swiper.square-dot .a-swiper-dot.a-swiper-dot-active,
 swiper.square-dot .uni-swiper-dot.uni-swiper-dot-active {
 	opacity: 1;
 	width: 30upx;
 }
 
 swiper.round-dot .wx-swiper-dot,
+swiper.round-dot .a-swiper-dot,
 swiper.round-dot .uni-swiper-dot {
 	width: 10upx;
 	height: 10upx;
-	top: -4upx;
-	transition: all 0.3s ease-in-out 0s;
 	position: relative;
+	margin: 4upx 8upx !important;
 }
 
 swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active::after,
+swiper.round-dot .a-swiper-dot.a-swiper-dot-active::after,
 swiper.round-dot .uni-swiper-dot.uni-swiper-dot-active::after {
 	content: "";
 	position: absolute;
@@ -2685,15 +2717,15 @@ swiper.round-dot .uni-swiper-dot.uni-swiper-dot-active::after {
 	right: 0;
 	bottom: 0;
 	margin: auto;
-	background-color:  var(--white);
+	background-color: var(--white);
 	border-radius: 20upx;
 }
 
 swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active,
+swiper.round-dot .a-swiper-dot.a-swiper-dot-active,
 swiper.round-dot .uni-swiper-dot.uni-swiper-dot-active {
 	width: 18upx;
 	height: 18upx;
-	top: 0upx;
 }
 
 .screen-swiper {
@@ -2712,7 +2744,7 @@ swiper.round-dot .uni-swiper-dot.uni-swiper-dot-active {
 }
 
 .card-swiper {
-	height: 420upx;
+	height: 420upx !important;
 }
 
 .card-swiper swiper-item {
@@ -2885,19 +2917,19 @@ scroll-view.cu-steps .cu-item {
 
 .cu-steps .cu-item[class*="text-"] .num::before {
 	transform: translateY(-40upx);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .cu-steps .cu-item .num::after {
 	transform: translateY(40upx);
-	color:  var(--white);
+	color: var(--white);
 	transition: all 0.3s ease-in-out 0s;
 }
 
 .cu-steps .cu-item[class*="text-"] .num::after {
 	content: "\e645";
 	font-family: 'cuIcon';
-	color:  var(--white);
+	color: var(--white);
 	transform: translateY(0upx);
 }
 
@@ -3513,7 +3545,7 @@ scroll-view.cu-steps .cu-item {
 
 .line-gray::after,
 .lines-gray::after {
-	border-color: var(--grey);
+	border-color: var(--gray);
 }
 
 .line-black::after,
@@ -3523,17 +3555,17 @@ scroll-view.cu-steps .cu-item {
 
 .line-white::after,
 .lines-white::after {
-	border-color:  var(--white);
+	border-color: var(--white);
 }
 
 .bg-red {
 	background-color: var(--red);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-orange {
 	background-color: var(--orange);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-yellow {
@@ -3543,47 +3575,47 @@ scroll-view.cu-steps .cu-item {
 
 .bg-olive {
 	background-color: var(--olive);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-green {
 	background-color: var(--green);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-cyan {
 	background-color: var(--cyan);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-blue {
 	background-color: var(--blue);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-purple {
 	background-color: var(--purple);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-mauve {
 	background-color: var(--mauve);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-pink {
 	background-color: var(--pink);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-brown {
 	background-color: var(--brown);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-grey {
 	background-color: var(--grey);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-gray {
@@ -3593,22 +3625,22 @@ scroll-view.cu-steps .cu-item {
 
 .bg-black {
 	background-color: var(--black);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-white {
-	background-color:  var(--white);
+	background-color: var(--white);
 	color: #666;
 }
 
 .bg-shadeTop {
 	background-image: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.01));
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-shadeBottom {
 	background-image: linear-gradient(rgba(0, 0, 0, 0.01), rgba(0, 0, 0, 1));
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-red.light {
@@ -3671,44 +3703,34 @@ scroll-view.cu-steps .cu-item {
 	background-color: #e7ebed;
 }
 
-.bg-gray.light {
-	color: #666;
-	background-color: #fadbd9;
-}
-
-.bg-gray.light {
-	color: #888;
-	background-color: #f1f1f1;
-}
-
 .bg-gradual-red {
 	background-image: var(--gradualRed);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-gradual-orange {
 	background-image: var(--gradualOrange);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-gradual-green {
 	background-image: var(--gradualGreen);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-gradual-purple {
 	background-image: var(--gradualPurple);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-gradual-pink {
 	background-image: var(--gradualPink);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .bg-gradual-blue {
 	background-image: var(--gradualBlue);
-	color:  var(--white);
+	color: var(--white);
 }
 
 .shadow[class*="-red"] {
@@ -3981,7 +4003,7 @@ scroll-view.cu-steps .cu-item {
 .text-white,
 .line-white,
 .lines-white {
-	color:  var(--white);
+	color: var(--white);
 }
 
 .text-shadow {

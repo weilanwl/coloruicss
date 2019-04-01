@@ -3,7 +3,7 @@
     "appid" : "__UNI__239DC72",
     "description" : "",
     "versionName" : "1.0.0",
-    "versionCode" : "100",
+    "versionCode" : 213,
     "transformPx" : false,
     "app-plus" : {
         /* 5+App特有相关 */
@@ -50,7 +50,8 @@
         /* 小程序特有相关 */
         "appid" : "",
         "setting" : {
-            "urlCheck" : true
+            "urlCheck" : false,
+            "es6" : true
         }
     },
     "h5" : {

@@ -1,4 +1,4 @@
-<template>
+<template name="basics">
 	<view>
 		<scroll-view scroll-y class="page">
 			<image src="https://cdn.nlark.com/yuque/0/2019/png/280374/1552996358228-assets/web-upload/e256b4ce-d9a4-488b-8da2-032747213982.png"

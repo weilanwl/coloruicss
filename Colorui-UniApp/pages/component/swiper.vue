@@ -18,6 +18,7 @@
 				<video :src="item.url" autoplay loop muted :show-play-btn="false" :controls="false" objectFit="cover" v-if="item.type=='video'"></video>
 			</swiper-item>
 		</swiper>
+		<!-- #ifndef MP-ALIPAY -->
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
 				<text class="icon-title text-pink"></text> 卡片式轮播
@@ -46,6 +47,7 @@
 				</view>
 			</view>
 		</view>
+		<!-- #endif -->
 	</view>
 </template>
 
@@ -60,16 +62,8 @@
 					url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big84000.jpg'
 				}, {
 					id: 1,
-					// #ifdef MP
-					type: 'video',
-					url: 'https://yz.lol.qq.com/v1/assets/videos/aatrox-splashvideo.webm',
-					// #endif
-
-					// #ifndef MP
 					type: 'image',
 					url: 'https://ossweb-img.qq.com/images/lol/web201310/skin/big37006.jpg',
-					// #endif
-
 				}, {
 					id: 2,
 					type: 'image',

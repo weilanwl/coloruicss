@@ -1,6 +1,9 @@
 <template>
 	<view>
-		<cu-custom bgColor="bg-gradual-pink" :isBack="true"><block slot="backText">返回</block><block slot="content">表单</block></cu-custom>
+		<cu-custom bgColor="bg-gradual-pink" :isBack="true">
+			<block slot="backText">返回</block>
+			<block slot="content">表单</block>
+		</cu-custom>
 		<form>
 			<view class="cu-form-group margin-top">
 				<view class="title">邮件</view>
@@ -44,6 +47,7 @@
 					</view>
 				</picker>
 			</view>
+			<!-- #ifndef MP-ALIPAY -->
 			<view class="cu-form-group">
 				<view class="title">多列选择</view>
 				<picker mode="multiSelector" @change="MultiChange" @columnchange="MultiColumnChange" :value="multiIndex" :range="multiArray">
@@ -52,6 +56,7 @@
 					</view>
 				</picker>
 			</view>
+			<!-- #endif -->
 			<view class="cu-form-group">
 				<view class="title">时间选择</view>
 				<picker mode="time" :value="time" start="09:01" end="21:01" @change="TimeChange">
@@ -68,7 +73,7 @@
 					</view>
 				</picker>
 			</view>
-			<!-- #ifndef H5 || APP-PLUS -->
+			<!-- #ifndef H5 || APP-PLUS || MP-ALIPAY -->
 			<view class="cu-form-group">
 				<view class="title">地址选择</view>
 				<picker mode="region" @change="RegionChange" :value="region">
@@ -84,21 +89,30 @@
 			</view>
 			<view class="cu-form-group">
 				<view class="title">定义颜色</view>
+				<!-- #ifdef MP-ALIPAY -->
+				<switch class='red' @change="SwitchB" :class="switchB?'checked':''" :checked="switchB?true:false" color="#e54d42"></switch>
+				<!-- #endif -->
+
+				<!-- #ifndef MP-ALIPAY -->
 				<switch class='red' @change="SwitchB" :class="switchB?'checked':''" :checked="switchB?true:false"></switch>
+				<!-- #endif -->
 			</view>
 			<view class="cu-form-group">
 				<view class="title">定义图标</view>
 				<switch class='switch-sex' @change="SwitchC" :class="switchC?'checked':''" :checked="switchC?true:false"></switch>
 			</view>
+			<!-- #ifndef MP-ALIPAY -->
 			<view class="cu-form-group">
 				<view class="title">方形开关</view>
 				<switch class='orange radius' @change="SwitchD" :class="switchD?'checked':''" :checked="switchD?true:false"></switch>
 			</view>
+			<!-- #endif -->
 			<radio-group class="block" @change="RadioChange">
 				<view class="cu-form-group margin-top">
 					<view class="title">单选操作(radio)</view>
 					<radio :class="radio=='A'?'checked':''" :checked="radio=='A'?true:false" value="A"></radio>
 				</view>
+				<!-- #ifndef MP-ALIPAY -->
 				<view class="cu-form-group">
 					<view class="title">定义样式</view>
 					<radio class='radio' :class="radio=='B'?'checked':''" :checked="radio=='B'?true:false" value="B"></radio>
@@ -110,12 +124,14 @@
 						<radio class='red margin-left-sm' :class="radio=='D'?'checked':''" :checked="radio=='D'?true:false" value="D"></radio>
 					</view>
 				</view>
+				<!-- #endif -->
 			</radio-group>
 			<checkbox-group class="block" @change="CheckboxChange">
 				<view class="cu-form-group margin-top">
 					<view class="title">复选选操作(checkbox)</view>
 					<checkbox :class="checkbox[0].checked?'checked':''" :checked="checkbox[0].checked?true:false" value="A"></checkbox>
 				</view>
+				<!-- #ifndef MP-ALIPAY -->
 				<view class="cu-form-group">
 					<view class="title">定义形状</view>
 					<checkbox class='round' :class="checkbox[1].checked?'checked':''" :checked="checkbox[1].checked?true:false" value="B"></checkbox>
@@ -125,6 +141,7 @@
 					<checkbox class='round blue' :class="checkbox[2].checked?'checked':''" :checked="checkbox[2].checked?true:false"
 					 value="C"></checkbox>
 				</view>
+				<!-- #endif -->
 			</checkbox-group>
 			<view class="cu-bar bg-white margin-top">
 				<view class="action">
@@ -149,13 +166,11 @@
 			</view>
 			<!-- !!!!! placeholder 在ios表现有偏移 建议使用 第一种样式 -->
 			<view class="cu-form-group margin-top">
-				<textarea data-placeholder="多行文本输入框" maxlength="-1" :disabled="modalName!=null" placeholder-class="placeholder"
-				 :class="textareaAValue?'value':''" @input="textareaAInput"></textarea>
-			</view>			
-			<view class="cu-form-group top">
-				<view class="title">点文本框</view>
-				<textarea data-placeholder="多行文本输入框" maxlength="-1" :disabled="modalName!=null" placeholder-class="placeholder"
-				 :class="textareaBValue?'value':''" @input="textareaBInput"></textarea>
+				<textarea maxlength="-1" :disabled="modalName!=null" @input="textareaAInput" placeholder="多行文本输入框"></textarea>
+			</view>
+			<view class="cu-form-group align-start">
+				<view class="title">文本框</view>
+				<textarea maxlength="-1" :disabled="modalName!=null" @input="textareaBInput" placeholder="多行文本输入框"></textarea>
 			</view>
 		</form>
 	</view>
@@ -233,7 +248,7 @@
 					checked: false
 				}],
 				imgList: [],
-				modalName:null,
+				modalName: null,
 				textareaAValue: '',
 				textareaBValue: ''
 			};
