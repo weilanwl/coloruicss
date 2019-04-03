@@ -17,10 +17,10 @@ ColorUI在语雀有个群友共同在维护的知识库，里面有一些群友�
 `App.vue` 引入关键Css `main.css` `icon.css`
 ```
 <style>
-    @import "colorui/main.css";
-	@import "colorui/icon.css";
-	@import "app.css"; /* 你的项目css */
-	....
+@import "colorui/main.css";
+@import "colorui/icon.css";
+@import "app.css"; /* 你的项目css */
+....
 </style>
 ```
 
@@ -97,8 +97,11 @@ Vue.component('cu-custom',cuCustom)
 @import "colorui/main.wxss";
 @import "colorui/icon.wxss";
 @import "app.css"; /* 你的项目css */
-	....
+....
 ```
+
+### 从新项目开始
+下载源码解压获得`/template`，复制`/template`并重命名为你的项目，导入到小程序开发工具既可以开始你的新项目了
 
 ### 使用自定义导航栏
 导航栏作为常用组件有做简单封装，当然你也可以直接复制代码结构自己修改，达到个性化目的。
@@ -147,9 +150,6 @@ Vue.component('cu-custom',cuCustom)
 | backText    | 返回时的文字 | 
 | content     | 中间区域 | 
 | right    | 右侧区域(小程序端可使用范围很窄！)  | 
-
-### 从新项目开始
-下载源码解压获得`/template`，复制`/template`并重命名为你的项目，导入到小程序开发工具既可以开始你的新项目了
 
 ## 赞赏
 <p align="center"><img src="https://image.weilanwl.com/colorui/githubAppreciate.jpg" alt="" style="max-width:100%;" width="600"></p>
