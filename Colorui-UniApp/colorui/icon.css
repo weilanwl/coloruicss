@@ -22,9 +22,9 @@
 	display: inline-block;
 }
 
-text[class*="icon-"],
-view[class*="icon-"],
-button[class*="icon-"] {
+text[class^="icon-"],
+view[class^="icon-"],
+button[class^="icon-"] {
 	font-family: "cuIcon";
 	font-size: inherit;
 	font-style: normal;
