@@ -3,7 +3,7 @@
 		<cu-custom bgColor="bg-gradual-pink" :isBack="true"><block slot="backText">返回</block><block slot="content">卡片</block></cu-custom>
 		<view class="cu-bar bg-white solid-bottom">
 			<view class="action">
-				<text class="icon-titles text-orange"></text> 案例类卡片
+				<text class="cuIcon-titles text-orange"></text> 案例类卡片
 			</view>
 			<view class="action">
 				<switch :class="isCard?'checked':''" :checked="isCard?true:false" @change="IsCard"></switch>
@@ -25,9 +25,9 @@
 							<view class="text-gray text-sm flex justify-between">
 								十天前
 								<view class="text-gray text-sm">
-									<text class="icon-attentionfill margin-lr-xs"></text> 10
-									<text class="icon-appreciatefill margin-lr-xs"></text> 20
-									<text class="icon-messagefill margin-lr-xs"></text> 30
+									<text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+									<text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+									<text class="cuIcon-messagefill margin-lr-xs"></text> 30
 								</view>
 							</view>
 						</view>
@@ -37,7 +37,7 @@
 		</view>
 		<view class="cu-bar bg-white solid-bottom" :class="isCard?'margin-top':''">
 			<view class="action">
-				<text class="icon-titles text-orange "></text> 动态类卡片
+				<text class="cuIcon-titles text-orange "></text> 动态类卡片
 			</view>
 			<view class="action">
 				<switch :class="isCard?'checked':''" :checked="isCard?true:false" @change="IsCard"></switch>
@@ -65,9 +65,9 @@
 					</view>
 				</view>
 				<view class="text-gray text-sm text-right padding">
-					<text class="icon-attentionfill margin-lr-xs"></text> 10
-					<text class="icon-appreciatefill margin-lr-xs"></text> 20
-					<text class="icon-messagefill margin-lr-xs"></text> 30
+					<text class="cuIcon-attentionfill margin-lr-xs"></text> 10
+					<text class="cuIcon-appreciatefill margin-lr-xs"></text> 20
+					<text class="cuIcon-messagefill margin-lr-xs"></text> 30
 				</view>
 
 				<view class="cu-list menu-avatar comment solids-top">
@@ -87,8 +87,8 @@
 							<view class="margin-top-sm flex justify-between">
 								<view class="text-gray text-df">2018年12月4日</view>
 								<view>
-									<text class="icon-appreciatefill text-red"></text>
-									<text class="icon-messagefill text-gray margin-left-sm"></text>
+									<text class="cuIcon-appreciatefill text-red"></text>
+									<text class="cuIcon-messagefill text-gray margin-left-sm"></text>
 								</view>
 							</view>
 						</view>
@@ -110,8 +110,8 @@
 							<view class="margin-top-sm flex justify-between">
 								<view class="text-gray text-df">2018年12月4日</view>
 								<view>
-									<text class="icon-appreciate text-gray"></text>
-									<text class="icon-messagefill text-gray margin-left-sm"></text>
+									<text class="cuIcon-appreciate text-gray"></text>
+									<text class="cuIcon-messagefill text-gray margin-left-sm"></text>
 								</view>
 							</view>
 						</view>
@@ -122,7 +122,7 @@
 
 		<view class="cu-bar bg-white solid-bottom margin-top">
 			<view class="action">
-				<text class="icon-titles text-orange "></text> 文章类卡片
+				<text class="cuIcon-titles text-orange "></text> 文章类卡片
 			</view>
 			<view class="action">
 				<switch :class="isCard?'checked':''" :checked="isCard?true:false" @change="IsCard"></switch>

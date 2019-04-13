@@ -3,33 +3,33 @@
 		<cu-custom bgColor="bg-gradual-pink" :isBack="true"><block slot="backText">返回</block><block slot="content">操作条</block></cu-custom>
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-green"></text>
+				<text class="cuIcon-title text-green"></text>
 				<text>底部操作条</text>
 			</view>
 		</view>
 		<view class="box">
 			<view class="cu-bar tabbar bg-white">
 				<view class="action">
-					<view class="icon-cu-image">
+					<view class="cuIcon-cu-image">
 						<image src="/static/tabbar/basics_cur.png"></image>
 					</view>
 					<view class="text-green">元素</view>
 				</view>
 				<view class="action">
-					<view class="icon-cu-image">
+					<view class="cuIcon-cu-image">
 						<image src="/static/tabbar/component.png"></image>
 					</view>
 					<view class="text-gray">组件</view>
 				</view>
 				<view class="action">
-					<view class="icon-cu-image">
+					<view class="cuIcon-cu-image">
 						<image src="/static/tabbar/plugin.png"></image>
 						<view class="cu-tag badge">99</view>
 					</view>
 					<view class="text-gray">扩展</view>
 				</view>
 				<view class="action">
-					<view class="icon-cu-image">
+					<view class="cuIcon-cu-image">
 						<image src="/static/tabbar/about.png"></image>
 						<view class="cu-tag badge"></view>
 					</view>
@@ -38,23 +38,23 @@
 			</view>
 			<view class="cu-bar tabbar margin-bottom-xl bg-black">
 				<view class="action text-orange">
-					<view class="icon-homefill"></view> 首页
+					<view class="cuIcon-homefill"></view> 首页
 				</view>
 				<view class="action text-gray">
-					<view class="icon-similar"></view> 分类
+					<view class="cuIcon-similar"></view> 分类
 				</view>
 				<view class="action text-gray">
-					<view class="icon-recharge"></view>
+					<view class="cuIcon-recharge"></view>
 					积分
 				</view>
 				<view class="action text-gray">
-					<view class="icon-cart">
+					<view class="cuIcon-cart">
 						<view class="cu-tag badge">99</view>
 					</view>
 					购物车
 				</view>
 				<view class="action text-gray">
-					<view class="icon-my">
+					<view class="cuIcon-my">
 						<view class="cu-tag badge"></view>
 					</view>
 					我的
@@ -62,23 +62,23 @@
 			</view>
 			<view class="cu-bar tabbar margin-bottom-xl bg-white">
 				<view class="action text-green">
-					<view class="icon-homefill"></view> 首页
+					<view class="cuIcon-homefill"></view> 首页
 				</view>
 				<view class="action text-gray">
-					<view class="icon-similar"></view> 分类
+					<view class="cuIcon-similar"></view> 分类
 				</view>
 				<view class="action text-gray add-action">
-					<button class="cu-btn icon-add bg-green shadow"></button>
+					<button class="cu-btn cuIcon-add bg-green shadow"></button>
 					发布
 				</view>
 				<view class="action text-gray">
-					<view class="icon-cart">
+					<view class="cuIcon-cart">
 						<view class="cu-tag badge">99</view>
 					</view>
 					购物车
 				</view>
 				<view class="action text-gray">
-					<view class="icon-my">
+					<view class="cuIcon-my">
 						<view class="cu-tag badge"></view>
 					</view>
 					我的
@@ -86,23 +86,23 @@
 			</view>
 			<view class="cu-bar tabbar bg-black">
 				<view class="action text-green">
-					<view class="icon-homefill"></view> 首页
+					<view class="cuIcon-homefill"></view> 首页
 				</view>
 				<view class="action text-gray">
-					<view class="icon-similar"></view> 分类
+					<view class="cuIcon-similar"></view> 分类
 				</view>
 				<view class="action text-gray add-action">
-					<button class="cu-btn icon-add bg-green shadow"></button>
+					<button class="cu-btn cuIcon-add bg-green shadow"></button>
 					发布
 				</view>
 				<view class="action text-gray">
-					<view class="icon-cart">
+					<view class="cuIcon-cart">
 						<view class="cu-tag badge">99</view>
 					</view>
 					购物车
 				</view>
 				<view class="action text-gray">
-					<view class="icon-my">
+					<view class="cuIcon-my">
 						<view class="cu-tag badge"></view>
 					</view>
 					我的
@@ -111,16 +111,16 @@
 
 			<view class="cu-bar bg-white tabbar border shop">
 				<button class="action" open-type="contact">
-					<view class="icon-service text-green">
+					<view class="cuIcon-service text-green">
 						<view class="cu-tag badge"></view>
 					</view>
 					客服
 				</button>
 				<view class="action text-orange">
-					<view class="icon-favorfill"></view> 已收藏
+					<view class="cuIcon-favorfill"></view> 已收藏
 				</view>
 				<view class="action">
-					<view class="icon-cart">
+					<view class="cuIcon-cart">
 						<view class="cu-tag badge">99</view>
 					</view>
 					购物车
@@ -130,13 +130,13 @@
 
 			<view class="cu-bar bg-white tabbar border shop">
 				<button class="action" open-type="contact">
-					<view class="icon-service text-green">
+					<view class="cuIcon-service text-green">
 						<view class="cu-tag badge"></view>
 					</view>
 					客服
 				</button>
 				<view class="action">
-					<view class="icon-cart">
+					<view class="cuIcon-cart">
 						<view class="cu-tag badge">99</view>
 					</view>
 					购物车
@@ -147,16 +147,16 @@
 
 			<view class="cu-bar bg-white tabbar border shop">
 				<button class="action" open-type="contact">
-					<view class="icon-service text-green">
+					<view class="cuIcon-service text-green">
 						<view class="cu-tag badge"></view>
 					</view>
 					客服
 				</button>
 				<view class="action">
-					<view class=" icon-shop"></view> 店铺
+					<view class=" cuIcon-shop"></view> 店铺
 				</view>
 				<view class="action">
-					<view class="icon-cart">
+					<view class="cuIcon-cart">
 						<view class="cu-tag badge">99</view>
 					</view>
 					购物车
@@ -167,12 +167,12 @@
 			</view>
 			<view class="cu-bar bg-white tabbar border shop">
 				<button class="action" open-type="contact">
-					<view class="icon-service text-green">
+					<view class="cuIcon-service text-green">
 						<view class="cu-tag badge"></view>
 					</view> 客服
 				</button>
 				<view class="action">
-					<view class="icon-cart">
+					<view class="cuIcon-cart">
 						<view class="cu-tag badge">99</view>
 					</view>
 					购物车
@@ -186,7 +186,7 @@
 
 		<view class="cu-bar bg-white">
 			<view class="action">
-				<text class="icon-title text-green"></text>
+				<text class="cuIcon-title text-green"></text>
 				<text>标题操作条</text>
 			</view>
 		</view>
@@ -255,13 +255,13 @@
 			</view>
 			<view class="cu-bar bg-white">
 				<view class="action">
-					<text class="icon-title text-green"></text>
+					<text class="cuIcon-title text-green"></text>
 					<text class="text-xl text-bold">关于我们</text>
 				</view>
 			</view>
 			<view class="cu-bar bg-white">
 				<view class="action">
-					<text class="icon-titles text-green"></text>
+					<text class="cuIcon-titles text-green"></text>
 					<text class="text-xl text-bold">关于我们</text>
 				</view>
 			</view>
@@ -269,14 +269,14 @@
 
 		<view class="cu-bar bg-white">
 			<view class="action">
-				<text class="icon-title text-green"></text>
+				<text class="cuIcon-title text-green"></text>
 				<text>顶部操作条</text>
 			</view>
 		</view>
 		<view class="box">
 			<view class="cu-bar bg-white">
 				<view class="action">
-					<text class="icon-back text-gray"></text> 返回
+					<text class="cuIcon-back text-gray"></text> 返回
 				</view>
 				<view class="content text-bold">
 					操作条
@@ -284,19 +284,19 @@
 			</view>
 			<view class="cu-bar bg-white">
 				<view class="action">
-					<text class="icon-homefill text-gray"></text> 首页
+					<text class="cuIcon-homefill text-gray"></text> 首页
 				</view>
 				<view class="content text-bold">
 					鲜亮的高饱和色彩，专注视觉的小程序组件库
 				</view>
 				<view class="action">
-					<text class="icon-cardboardfill text-grey"></text>
-					<text class="icon-recordfill text-red"></text>
+					<text class="cuIcon-cardboardfill text-grey"></text>
+					<text class="cuIcon-recordfill text-red"></text>
 				</view>
 			</view>
 			<view class="cu-bar bg-blue">
 				<view class="action">
-					<text class="icon-close"></text> 关闭
+					<text class="cuIcon-close"></text> 关闭
 				</view>
 				<view class="content text-bold">
 					海蓝
@@ -308,7 +308,7 @@
 					ColorUI
 				</view>
 				<view class="action">
-					<text class="icon-more"></text>
+					<text class="cuIcon-more"></text>
 				</view>
 			</view>
 		</view>
@@ -316,14 +316,14 @@
 
 		<view class="cu-bar bg-white">
 			<view class="action">
-				<text class="icon-title text-green"></text>
+				<text class="cuIcon-title text-green"></text>
 				<text>搜索操作条</text>
 			</view>
 		</view>
 		<view class="box">
 			<view class="cu-bar search bg-white">
 				<view class="search-form round">
-					<text class="icon-search"></text>
+					<text class="cuIcon-search"></text>
 					<input @focus="InputFocus" @blur="InputBlur" :adjust-position="false" type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
 				</view>
 				<view class="action">
@@ -333,32 +333,32 @@
 			<view class="cu-bar search bg-white">
 				<view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big11010.jpg"></view>
 				<view class="search-form round">
-					<text class="icon-search"></text>
+					<text class="cuIcon-search"></text>
 					<input @focus="InputFocus" @blur="InputBlur" :adjust-position="false" type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
 				</view>
 				<view class="action">
 					<text>广州</text>
-					<text class="icon-triangledownfill"></text>
+					<text class="cuIcon-triangledownfill"></text>
 				</view>
 			</view>
 			<view class="cu-bar bg-red search">
 				<view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big114004.jpg);"></view>
 				<view class="search-form radius">
-					<text class="icon-search"></text>
+					<text class="cuIcon-search"></text>
 					<input @focus="InputFocus" @blur="InputBlur" :adjust-position="false" type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
 				</view>
 				<view class="action">
 					<text>广州</text>
-					<text class="icon-triangledownfill"></text>
+					<text class="cuIcon-triangledownfill"></text>
 				</view>
 			</view>
 			<view class="cu-bar bg-cyan search">
 				<view class="search-form radius">
-					<text class="icon-search"></text>
+					<text class="cuIcon-search"></text>
 					<input @focus="InputFocus" @blur="InputBlur" :adjust-position="false" type="text" placeholder="搜索图片、文章、视频" confirm-type="search"></input>
 				</view>
 				<view class="action">
-					<text class="icon-close"></text>
+					<text class="cuIcon-close"></text>
 					<text>取消</text>
 				</view>
 			</view>
@@ -366,7 +366,7 @@
 
 		<view class="cu-bar bg-white">
 			<view class="action">
-				<text class="icon-title text-green"></text>
+				<text class="cuIcon-title text-green"></text>
 				<text>操作条按钮组</text>
 			</view>
 		</view>
@@ -388,18 +388,18 @@
 
 		<view class="cu-bar bg-white">
 			<view class="action">
-				<text class="icon-title text-green"></text>
+				<text class="cuIcon-title text-green"></text>
 				<text>输入操作条</text>
 			</view>
 		</view>
 		<view class="box">
 			<view class="cu-bar input">
 				<view class="action">
-					<text class="icon-sound text-grey"></text>
+					<text class="cuIcon-sound text-grey"></text>
 				</view>
 				<input @focus="InputFocus" @blur="InputBlur" :adjust-position="false" class="solid-bottom" :focus="false" maxlength="300" cursor-spacing="10"></input>
 				<view class="action">
-					<text class="icon-emojifill text-grey"></text>
+					<text class="cuIcon-emojifill text-grey"></text>
 				</view>
 				<button class="cu-btn bg-green shadow-blur">发送</button>
 			</view>
@@ -407,11 +407,11 @@
 			<view class="cu-bar input">
 				<view class="cu-avatar round" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg);"></view>
 				<view class="action">
-					<text class="icon-roundaddfill text-grey"></text>
+					<text class="cuIcon-roundaddfill text-grey"></text>
 				</view>
 				<input @focus="InputFocus" @blur="InputBlur" :adjust-position="false" class="solid-bottom" maxlength="300" cursor-spacing="10"></input>
 				<view class="action">
-					<text class="icon-emojifill text-grey"></text>
+					<text class="cuIcon-emojifill text-grey"></text>
 				</view>
 				<button class="cu-btn bg-green shadow-blur">发送</button>
 			</view>

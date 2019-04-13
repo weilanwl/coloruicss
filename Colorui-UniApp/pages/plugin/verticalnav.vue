@@ -1,11 +1,10 @@
 <template>
 	<view>
-		<view class=" fixed ">
+		<view class="fixed">
 			<cu-custom :isBack="true" bgColor="bg-shadeTop text-white">
 				<block slot="backText">返回</block>
 				<block slot="content">垂直导航</block>
 			</cu-custom>
-
 		</view>
 		<swiper class="screen-swiper round-dot" :indicator-dots="true" :circular="true" :autoplay="true" interval="5000"
 		 duration="500">
@@ -25,7 +24,7 @@
 				<view class="padding-top padding-lr" v-for="(item,index) in list" :key="index" :id="'main-'+index">
 					<view class="cu-bar solid-bottom bg-white">
 						<view class="action">
-							<text class="icon-title text-green"></text> Tab-{{item.name}}</view>
+							<text class="cuIcon-title text-green"></text> Tab-{{item.name}}</view>
 					</view>
 					<view class="cu-list menu-avatar">
 						<view class="cu-item">
@@ -34,7 +33,7 @@
 								<view class="text-grey">凯尔</view>
 								<view class="text-gray text-sm flex">
 									<text class="text-cut">
-										<text class="icon-infofill text-red  margin-right-xs"></text>
+										<text class="cuIcon-infofill text-red  margin-right-xs"></text>
 										我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
 									</text> </view>
 							</view>
@@ -60,7 +59,7 @@
 							</view>
 							<view class="action">
 								<view class="text-grey text-xs">22:20</view>
-								<view class="icon-notice_forbid_fill text-gray"></view>
+								<view class="cuIcon-notice_forbid_fill text-gray"></view>
 							</view>
 						</view>
 						<view class="cu-item ">
@@ -97,11 +96,11 @@
 									<view class="cu-tag round bg-orange sm">6人</view>
 								</view>
 								<view class="text-gray text-sm flex">
-									<text class="text-cut"> 伊泽瑞尔：<text class="icon-locationfill text-orange margin-right-xs"></text> 传送中...</text></view>
+									<text class="text-cut"> 伊泽瑞尔：<text class="cuIcon-locationfill text-orange margin-right-xs"></text> 传送中...</text></view>
 							</view>
 							<view class="action">
 								<view class="text-grey text-xs">22:20</view>
-								<view class="icon-notice_forbid_fill text-gray"></view>
+								<view class="cuIcon-notice_forbid_fill text-gray"></view>
 							</view>
 						</view>
 					</view>

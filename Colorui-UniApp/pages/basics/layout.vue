@@ -10,7 +10,7 @@
 		<block v-if="TabCur==0">
 			<view class="cu-bar bg-white solid-bottom margin-top">
 				<view class="action">
-					<text class="icon-title text-blue"></text>固定尺寸
+					<text class="cuIcon-title text-blue"></text>固定尺寸
 				</view>
 			</view>
 			<view class="padding bg-white">
@@ -26,7 +26,7 @@
 			</view>
 			<view class="cu-bar bg-white  margin-top solid-bottom">
 				<view class="action">
-					<text class="icon-title text-blue"></text>比例布局
+					<text class="cuIcon-title text-blue"></text>比例布局
 				</view>
 			</view>
 			<view class="padding bg-white">
@@ -46,7 +46,7 @@
 			</view>
 			<view class="cu-bar bg-white  margin-top solid-bottom">
 				<view class="action">
-					<text class="icon-title text-blue"></text>水平对齐(justify)
+					<text class="cuIcon-title text-blue"></text>水平对齐(justify)
 				</view>
 			</view>
 			<view class="bg-white">
@@ -73,7 +73,7 @@
 			</view>
 			<view class="cu-bar bg-white  margin-top solid-bottom">
 				<view class="action">
-					<text class="icon-title text-blue"></text>垂直对齐(align)
+					<text class="cuIcon-title text-blue"></text>垂直对齐(align)
 				</view>
 			</view>
 			<view class="bg-white">
@@ -94,7 +94,7 @@
 		<block v-if="TabCur==1">
 			<view class="cu-bar bg-white  margin-top solid-bottom">
 				<view class="action">
-					<text class="icon-title text-blue"></text>等分列
+					<text class="cuIcon-title text-blue"></text>等分列
 				</view>
 				<view class="action"></view>
 			</view>
@@ -105,7 +105,7 @@
 			</view>
 			<view class="cu-bar bg-white  margin-top solid-bottom">
 				<view class="action">
-					<text class="icon-title text-blue"></text>等高
+					<text class="cuIcon-title text-blue"></text>等高
 				</view>
 				<view class="action"></view>
 			</view>
@@ -118,7 +118,7 @@
 		<block v-if="TabCur==2">
 			<view class="cu-bar bg-white margin-top solid-bottom">
 				<view class="action">
-					<text class="icon-title text-blue"></text>浮动
+					<text class="cuIcon-title text-blue"></text>浮动
 				</view>
 			</view>
 			<view class="bg-white padding">
@@ -129,7 +129,7 @@
 			</view>
 			<view class="cu-bar bg-white  solid-bottom margin-top solid-bottom">
 				<view class="action">
-					<text class="icon-title text-blue"></text>内外边距
+					<text class="cuIcon-title text-blue"></text>内外边距
 				</view>
 			</view>
 			<view class="bg-white">

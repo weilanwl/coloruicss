@@ -7,7 +7,7 @@
 			</cu-custom>
 			<view class="cu-bar bg-white solid-bottom margin-top">
 				<view class="action">
-					<text class="icon-title text-orange "></text> 宫格列表
+					<text class="cuIcon-title text-orange "></text> 宫格列表
 				</view>
 				<view class="action">
 					<button class="cu-btn bg-green shadow" @tap="showModal" data-target="gridModal">设置</button>
@@ -39,7 +39,7 @@
 			</view>
 			<view class="cu-list grid" :class="['col-' + gridCol,gridBorder?'':'no-border']">
 				<view class="cu-item" v-for="(item,index) in iconList" :key="index" v-if="index<gridCol*2">
-					<view :class="['icon-' + item.icon,'text-' + item.color]">
+					<view :class="['cuIcon-' + item.icon,'text-' + item.color]">
 						<view class="cu-tag badge" v-if="item.badge!=0">
 							<block v-if="item.badge!=1">{{item.badge>99?'99+':item.badge}}</block>
 						</view>
@@ -51,7 +51,7 @@
 
 			<view class="cu-bar bg-white solid-bottom margin-top">
 				<view class="action">
-					<text class="icon-title text-orange"></text> 菜单列表
+					<text class="cuIcon-title text-orange"></text> 菜单列表
 				</view>
 				<view class="action">
 					<button class="cu-btn bg-green shadow" @tap="showModal" data-target="menuModal">设置</button>
@@ -90,7 +90,7 @@
 			<view class="cu-list menu" :class="[menuBorder?'sm-border':'',menuCard?'card-menu margin-top':'']">
 				<view class="cu-item" :class="menuArrow?'arrow':''">
 					<view class="content">
-						<text class="icon-circlefill text-grey"></text>
+						<text class="cuIcon-circlefill text-grey"></text>
 						<text class="text-grey">图标 + 标题</text>
 					</view>
 				</view>
@@ -102,19 +102,19 @@
 				</view>
 				<view class="cu-item" :class="menuArrow?'arrow':''">
 					<button class="cu-btn content" open-type="contact">
-						<text class="icon-btn text-olive"></text>
+						<text class="cuIcon-btn text-olive"></text>
 						<text class="text-grey">Open-type 按钮</text>
 					</button>
 				</view>
 				<view class="cu-item" :class="menuArrow?'arrow':''">
 					<navigator class="content" hover-class="none" url="../list/list" open-type="redirect">
-						<text class="icon-discoverfill text-orange"></text>
+						<text class="cuIcon-discoverfill text-orange"></text>
 						<text class="text-grey">Navigator 跳转</text>
 					</navigator>
 				</view>
 				<view class="cu-item" :class="menuArrow?'arrow':''">
 					<view class="content">
-						<text class="icon-emojiflashfill text-pink"></text>
+						<text class="cuIcon-emojiflashfill text-pink"></text>
 						<text class="text-grey">头像组</text>
 					</view>
 					<view class="action">
@@ -129,17 +129,17 @@
 				</view>
 				<view class="cu-item" :class="menuArrow?'arrow':''">
 					<view class="content">
-						<text class="icon-btn text-green"></text>
+						<text class="cuIcon-btn text-green"></text>
 						<text class="text-grey">按钮</text>
 					</view>
 					<view class="action">
 						<button class="cu-btn round bg-green shadow">
-							<text class="icon-upload"></text> 上传</button>
+							<text class="cuIcon-upload"></text> 上传</button>
 					</view>
 				</view>
 				<view class="cu-item" :class="menuArrow?'arrow':''">
 					<view class="content">
-						<text class="icon-tagfill text-red  margin-right-xs"></text>
+						<text class="cuIcon-tagfill text-red  margin-right-xs"></text>
 						<text class="text-grey">标签</text>
 					</view>
 					<view class="action">
@@ -150,7 +150,7 @@
 				</view>
 				<view class="cu-item" :class="menuArrow?'arrow':''">
 					<view class="content">
-						<text class="icon-warn text-green"></text>
+						<text class="cuIcon-warn text-green"></text>
 						<text class="text-grey">文本</text>
 					</view>
 					<view class="action">
@@ -160,9 +160,9 @@
 				<view class="cu-item">
 					<view class="content padding-tb-sm">
 						<view>
-							<text class="icon-clothesfill text-blue margin-right-xs"></text> 多行Item</view>
+							<text class="cuIcon-clothesfill text-blue margin-right-xs"></text> 多行Item</view>
 						<view class="text-gray text-sm">
-							<text class="icon-infofill margin-right-xs"></text> 小目标还没有实现！</view>
+							<text class="cuIcon-infofill margin-right-xs"></text> 小目标还没有实现！</view>
 					</view>
 					<view class="action">
 						<switch class="switch-sex" @change="SwitchSex" :class="skin?'checked':''" :checked="skin?true:false"></switch>
@@ -172,7 +172,7 @@
 
 			<view class="cu-bar bg-white solid-bottom margin-top">
 				<view class="action">
-					<text class="icon-title text-orange "></text> 消息列表
+					<text class="cuIcon-title text-orange "></text> 消息列表
 				</view>
 			</view>
 			<view class="cu-list menu-avatar">
@@ -182,7 +182,7 @@
 						<view class="text-grey">凯尔</view>
 						<view class="text-gray text-sm flex">
 							<text class="text-cut">
-								<text class="icon-infofill text-red  margin-right-xs"></text>
+								<text class="cuIcon-infofill text-red  margin-right-xs"></text>
 								我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
 							</text> </view>
 					</view>
@@ -208,7 +208,7 @@
 					</view>
 					<view class="action">
 						<view class="text-grey text-xs">22:20</view>
-						<view class="icon-notice_forbid_fill text-gray"></view>
+						<view class="cuIcon-notice_forbid_fill text-gray"></view>
 					</view>
 				</view>
 				<view class="cu-item ">
@@ -245,17 +245,17 @@
 							<view class="cu-tag round bg-orange sm">6人</view>
 						</view>
 						<view class="text-gray text-sm flex">
-							<text class="text-cut"> 伊泽瑞尔：<text class="icon-locationfill text-orange margin-right-xs"></text> 传送中...</text></view>
+							<text class="text-cut"> 伊泽瑞尔：<text class="cuIcon-locationfill text-orange margin-right-xs"></text> 传送中...</text></view>
 					</view>
 					<view class="action">
 						<view class="text-grey text-xs">22:20</view>
-						<view class="icon-notice_forbid_fill text-gray"></view>
+						<view class="cuIcon-notice_forbid_fill text-gray"></view>
 					</view>
 				</view>
 			</view>
 			<view class="cu-bar bg-white solid-bottom margin-top">
 				<view class="action">
-					<text class="icon-title text-orange "></text> 列表左滑
+					<text class="cuIcon-title text-orange "></text> 列表左滑
 				</view>
 			</view>
 			<view class="cu-list menu-avatar">
@@ -265,7 +265,7 @@
 					<view class="content">
 						<view class="text-grey">文晓港</view>
 						<view class="text-gray text-sm">
-							<text class="icon-infofill text-red  margin-right-xs"></text> 消息未送达</view>
+							<text class="cuIcon-infofill text-red  margin-right-xs"></text> 消息未送达</view>
 					</view>
 					<view class="action">
 						<view class="text-grey text-xs">22:20</view>

@@ -61,7 +61,7 @@
 				<view class="cu-bar justify-end solid-bottom">
 					<view class="content">选择颜色</view>
 					<view class="action" @tap="hideModal">
-						<text class="icon-close text-red"></text>
+						<text class="cuIcon-close text-red"></text>
 					</view>
 				</view>
 				<view class="grid col-5 padding">

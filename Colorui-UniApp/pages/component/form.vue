@@ -20,7 +20,7 @@
 			<view class="cu-form-group">
 				<view class="title">收货地址</view>
 				<input placeholder="输入框带个图标" name="input"></input>
-				<text class='icon-locationfill text-orange'></text>
+				<text class='cuIcon-locationfill text-orange'></text>
 			</view>
 			<view class="cu-form-group">
 				<view class="title">验证码</view>
@@ -153,16 +153,20 @@
 			</view>
 			<view class="cu-form-group">
 				<view class="grid col-4 grid-square flex-sub">
-					<view class="padding-xs bg-img" :style="'background-image:url(' + imgList[index] +')'" v-for="(item,index) in imgList"
+					<view class="padding-xs bg-img" :style="[{backgroundImage:'url(' + imgList[index] +')'}]" v-for="(item,index) in imgList"
 					 :key="index" @tap="ViewImage" :data-url="imgList[index]">
 						<view class="cu-tag bg-red" @tap.stop="DelImg" :data-index="index">
-							<text class='icon-close'></text>
+							<text class='cuIcon-close'></text>
 						</view>
 					</view>
 					<view class="padding-xs solids" @tap="ChooseImage" v-if="imgList.length<4">
-						<text class='icon-cameraadd'></text>
+						<text class='cuIcon-cameraadd'></text>
 					</view>
 				</view>
+			</view>
+			<view class="cu-form-group margin-top">
+				<view class="title">头像</view>
+				<view class="cu-avatar radius lg bg-gray"></view>
 			</view>
 			<!-- !!!!! placeholder 在ios表现有偏移 建议使用 第一种样式 -->
 			<view class="cu-form-group margin-top">

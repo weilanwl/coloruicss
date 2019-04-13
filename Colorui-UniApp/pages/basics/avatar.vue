@@ -3,7 +3,7 @@
 		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><block slot="backText">返回</block><block slot="content">头像</block></cu-custom>
 		<view class="cu-bar bg-white">
 			<view class="action">
-				<text class="icon-title text-blue"></text>头像形状
+				<text class="cuIcon-title text-blue"></text>头像形状
 			</view>
 		</view>
 		<view class="padding">
@@ -12,7 +12,7 @@
 		</view>
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>头像尺寸
+				<text class="cuIcon-title text-blue"></text>头像尺寸
 			</view>
 		</view>
 		<view class="padding">
@@ -39,12 +39,12 @@
 		</view>
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>内嵌文字(图标)
+				<text class="cuIcon-title text-blue"></text>内嵌文字(图标)
 			</view>
 		</view>
 		<view class="padding">
 			<view class="cu-avatar radius">
-				<text class="icon-people"></text>
+				<text class="cuIcon-people"></text>
 			</view>
 			<view class="cu-avatar radius margin-left">
 				<text>港</text>
@@ -53,7 +53,7 @@
 
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>头像颜色
+				<text class="cuIcon-title text-blue"></text>头像颜色
 			</view>
 		</view>
 		<view class="padding-sm">
@@ -63,7 +63,7 @@
 		</view>
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>头像组
+				<text class="cuIcon-title text-blue"></text>头像组
 			</view>
 		</view>
 		<view class="padding">
@@ -74,12 +74,12 @@
 
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>头像标签
+				<text class="cuIcon-title text-blue"></text>头像标签
 			</view>
 		</view>
 		<view class="padding">
 			<view class="cu-avatar round lg margin-left"  v-for="(item,index) in avatar" :key="index" :style="[{ backgroundImage:'url(' + avatar[index] + ')' }]">
-				<view class="cu-tag badge" :class="index%2==0?'icon-female bg-pink':'icon-male bg-blue'"></view>
+				<view class="cu-tag badge" :class="index%2==0?'cuIcon-female bg-pink':'cuIcon-male bg-blue'"></view>
 			</view>
 		</view>
 

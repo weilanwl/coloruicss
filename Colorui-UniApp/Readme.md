@@ -5,6 +5,7 @@ ColorUI是一个css库！！！在你引入样式后可以根据class来调用�
 
 ## 交流
 微信群：加入微信群请先添加开发者微信，备注UniApp插件市场。QQ群：240787041 或扫描二维码。
+<p style="text-align: center;"><img src="https://image.weilanwl.com/colorui/githubQrcode.jpg" alt="" style="max-width:100%;" width="748"></p>				  
 
 ## 素材
 ColorUI在语雀有个群友共同在维护的知识库，里面有一些群友改的模板和UI素材供开发使用哦！
@@ -41,12 +42,15 @@ onLaunch: function() {
 				Vue.prototype.CustomBar = e.statusBarHeight + 45;
 			};
 			// #endif
-			
-			// #ifdef MP
+			// #ifdef MP-WEIXIN
 			Vue.prototype.StatusBar = e.statusBarHeight;
 			let custom = wx.getMenuButtonBoundingClientRect();
 			Vue.prototype.Custom = custom;
 			Vue.prototype.CustomBar = custom.bottom + custom.top - e.statusBarHeight;
+			// #endif		
+			// #ifdef MP-ALIPAY
+			Vue.prototype.StatusBar = e.statusBarHeight;
+			Vue.prototype.CustomBar = e.statusBarHeight + e.titleBarHeight;
 			// #endif
 		}
 	})
@@ -99,6 +103,13 @@ Vue.component('cu-custom',cuCustom)
 
 ## 更新日志
 
+ * 2019年4月14日 v2.1.4
+    *  新增多种阴影
+	*  修复一些var属性的错误
+	*  修复轮播图控制点隐藏不了
+	*  修改图标类名
+
+ 
  * 2019年4月01日 v2.1.3
     *  优化代码,支持支付宝小程序
 	*  textarea 样式还原

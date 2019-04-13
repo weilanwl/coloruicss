@@ -3,7 +3,7 @@
 		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><block slot="backText">返回</block><block slot="content">进度条</block></cu-custom>
 		<view class="cu-bar bg-white solid-bottom">
 			<view class="action">
-				<text class="icon-title text-blue"></text>进度条形状
+				<text class="cuIcon-title text-blue"></text>进度条形状
 			</view>
 		</view>
 		<view class="padding bg-white">
@@ -19,7 +19,7 @@
 		</view>
 		<view class="cu-bar bg-white solid-bottom margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>进度条尺寸
+				<text class="cuIcon-title text-blue"></text>进度条尺寸
 			</view>
 		</view>
 		<view class="padding bg-white">
@@ -36,7 +36,7 @@
 
 		<view class="cu-bar bg-white solid-bottom margin-top" @tap="showModal" data-target="ColorModal">
 			<view class="action">
-				<text class="icon-title text-blue"></text>进度条颜色
+				<text class="cuIcon-title text-blue"></text>进度条颜色
 			</view>
 			<view class="action">
 				<view class="padding-sm solid radius shadow-blur" :class="'bg-' + color"></view>
@@ -51,7 +51,7 @@
 
 		<view class="cu-bar bg-white solid-bottom margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>进度条条纹
+				<text class="cuIcon-title text-blue"></text>进度条条纹
 			</view>
 			<switch class="margin-right-sm" :class="active?'checked':''" @change="SetActive"></switch>
 		</view>
@@ -65,7 +65,7 @@
 		</view>
 		<view class="cu-bar bg-white solid-bottom margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>进度条比例
+				<text class="cuIcon-title text-blue"></text>进度条比例
 			</view>
 		</view>
 		<view class="padding bg-white">
@@ -77,7 +77,7 @@
 		</view>
 		<view class="cu-bar bg-white solid-bottom margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>进度条布局
+				<text class="cuIcon-title text-blue"></text>进度条布局
 			</view>
 		</view>
 		<view class="padding bg-white ">
@@ -85,7 +85,7 @@
 				<view class="cu-progress round">
 					<view class="bg-green" :style="[{ width:loading?'100%':''}]"></view>
 				</view>
-				<text class="icon-roundcheckfill text-green margin-left-sm"></text>
+				<text class="cuIcon-roundcheckfill text-green margin-left-sm"></text>
 			</view>
 			<view class="flex margin-top">
 				<view class="cu-progress round">
@@ -100,7 +100,7 @@
 				<view class="cu-bar justify-end solid-bottom">
 					<view class="content">选择颜色</view>
 					<view class="action" @tap="hideModal">
-						<text class="icon-close text-red"></text>
+						<text class="cuIcon-close text-red"></text>
 					</view>
 				</view>
 				<view class="grid col-5 padding">

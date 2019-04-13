@@ -6,7 +6,7 @@
 		</cu-custom>
 		<view class="cu-bar bg-white solid-bottom">
 			<view class="action">
-				<text class='icon-title text-blue'></text>深色背景
+				<text class='cuIcon-title text-blue'></text>深色背景
 			</view>
 		</view>
 		<view class="grid col-3 padding-sm">
@@ -19,7 +19,7 @@
 		</view>
 		<view class="cu-bar bg-white solid-bottom">
 			<view class="action">
-				<text class="icon-title text-blue"></text>淡色背景
+				<text class="cuIcon-title text-blue"></text>淡色背景
 			</view>
 		</view>
 		<view class="grid col-3 bg-white padding-sm">
@@ -32,7 +32,7 @@
 		</view>
 		<view class="cu-bar bg-white solid-bottom margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>渐变背景
+				<text class="cuIcon-title text-blue"></text>渐变背景
 			</view>
 		</view>
 		<view class="grid col-2 padding-sm">
@@ -75,7 +75,7 @@
 		</view>
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>图片背景
+				<text class="cuIcon-title text-blue"></text>图片背景
 			</view>
 		</view>
 		<view class="bg-img bg-mask flex align-center" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big10006.jpg');height: 414upx;">
@@ -90,7 +90,7 @@
 		</view>
 <!-- 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>视频背景
+				<text class="cuIcon-title text-blue"></text>视频背景
 			</view>
 		</view>
 		<view class="bg-video bg-mask flex align-center" style="height: 422upx;">
@@ -108,7 +108,7 @@
 		
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>透明背景(文字层)
+				<text class="cuIcon-title text-blue"></text>透明背景(文字层)
 			</view>
 		</view>
 		<view class="grid col-2">

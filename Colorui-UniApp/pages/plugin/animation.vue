@@ -5,7 +5,7 @@
 		</cu-custom>
 		<view class="cu-bar bg-white">
 			<view class="action">
-				<text class="icon-title text-orange"></text> 默认效果
+				<text class="cuIcon-title text-orange"></text> 默认效果
 			</view>
 		</view>
 		<view class="padding-sm">
@@ -16,7 +16,7 @@
 		</view>
 		<view class="cu-bar bg-white">
 			<view class="action">
-				<text class="icon-title text-orange"></text> 反向动画
+				<text class="cuIcon-title text-orange"></text> 反向动画
 			</view>
 		</view>
 
@@ -28,7 +28,7 @@
 		</view>
 		<view class="cu-bar bg-white">
 			<view class="action">
-				<text class="icon-title text-orange"></text> 延迟执行
+				<text class="cuIcon-title text-orange"></text> 延迟执行
 			</view>
 			<view class="action">
 				<button class="cu-btn bg-cyan shadow" @tap="ToggleDelay">开始执行</button>
@@ -43,7 +43,7 @@
 		</view>
 		<view class="cu-bar bg-white">
 			<view class="action">
-				<text class="icon-title text-orange"></text> Gif动画
+				<text class="cuIcon-title text-orange"></text> Gif动画
 			</view>
 		</view>
 		<view class="margin radius bg-gradual-green shadow-blur">

@@ -3,17 +3,17 @@
 		<cu-custom bgColor="bg-gradual-pink" :isBack="true"><block slot="backText">返回</block><block slot="content">时间轴</block></cu-custom>
 		<view class="cu-timeline">
 			<view class="cu-time">昨天</view>
-			<view class="cu-item cur icon-noticefill">
+			<view class="cu-item cur cuIcon-noticefill">
 				<view class="content bg-green shadow-blur">
 					<text>22:22</text> 【广州市】快件已到达地球
 				</view>
 			</view>
-			<view class="cu-item text-red icon-attentionforbidfill">
+			<view class="cu-item text-red cuIcon-attentionforbidfill">
 				<view class="content bg-red shadow-blur">
 					这是第一次，我家的铲屎官走了这么久。久到足足有三天！！
 				</view>
 			</view>
-			<view class="cu-item text-grey icon-evaluate_fill">
+			<view class="cu-item text-grey cuIcon-evaluate_fill">
 				<view class="content bg-grey shadow-blur">
 					这是第一次，我家的铲屎官走了这么久。
 				</view>
@@ -56,7 +56,7 @@
 							<view class="content">
 								<view class="text-grey">文晓港</view>
 								<view class="text-gray text-sm">
-									<text class="icon-infofill text-red"></text> 消息未送达</view>
+									<text class="cuIcon-infofill text-red"></text> 消息未送达</view>
 							</view>
 							<view class="action">
 								<view class="text-grey text-xs">22:20</view>
@@ -72,11 +72,11 @@
 									<view class="cu-tag round orange sm">SVIP</view>
 								</view>
 								<view class="text-gray text-sm">
-									<text class="icon-redpacket_fill text-red"></text> 收到红包</view>
+									<text class="cuIcon-redpacket_fill text-red"></text> 收到红包</view>
 							</view>
 							<view class="action">
 								<view class="text-grey text-xs">22:20</view>
-								<text class="icon-notice_forbid_fill text-gray"></text>
+								<text class="cuIcon-notice_forbid_fill text-gray"></text>
 							</view>
 						</view>
 					</view>

@@ -9,13 +9,13 @@
 		</cu-custom>
 		<view class="cu-bar bg-white">
 			<view class="action">
-				<text class="icon-title text-blue"></text>背景
+				<text class="cuIcon-title text-blue"></text>背景
 			</view>
 		</view>
 		<view class="cu-load bg-blue" :class="!isLoad?'loading':'over'"></view>
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>加载状态
+				<text class="cuIcon-title text-blue"></text>加载状态
 			</view>
 			<view class="action">
 				<switch @change="isLoading" :class="isLoad?'checked':''"></switch>
@@ -24,14 +24,14 @@
 		<view class="cu-load bg-grey" :class="!isLoad?'loading':'over'"></view>
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>加载错误
+				<text class="cuIcon-title text-blue"></text>加载错误
 			</view>
 		</view>
 		<view class="cu-load bg-red erro"></view>
 
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>弹框加载
+				<text class="cuIcon-title text-blue"></text>弹框加载
 			</view>
 			<view class="action">
 				<button class="cu-btn bg-green shadow" @tap="LoadModal">
@@ -40,13 +40,13 @@
 			</view>
 		</view>
 		<view class="cu-load load-modal" v-if="loadModal">
-			<!-- <view class="icon-emojifill text-orange"></view> -->
+			<!-- <view class="cuIcon-emojifill text-orange"></view> -->
 			<image src="/static/logo.png" mode="aspectFit"></image>
 			<view class="gray-text">加载中...</view>
 		</view>
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-blue"></text>进度条加载
+				<text class="cuIcon-title text-blue"></text>进度条加载
 			</view>
 			<view class="action">
 				<button class="cu-btn bg-green shadow" @tap="LoadProgress">

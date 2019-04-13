@@ -3,7 +3,7 @@
 		<cu-custom bgColor="bg-gradual-pink" :isBack="true"><block slot="backText">返回</block><block slot="content">步骤条</block></cu-custom>
 		<view class="cu-bar bg-white solid-bottom">
 			<view class="action">
-				<text class="icon-title text-orange"></text> 基本用法
+				<text class="cuIcon-title text-orange"></text> 基本用法
 			</view>
 			<view class="action">
 				<button class="cu-btn bg-green shadow" @tap="BasicsSteps">下一步</button>
@@ -12,7 +12,7 @@
 		<view class="bg-white padding">
 			<view class="cu-steps">
 				<view class="cu-item" :class="index>basics?'':'text-red'" v-for="(item,index) in basicsList" :key="index">
-					<text :class="'icon-' + item.icon"></text> {{item.name}}
+					<text :class="'cuIcon-' + item.icon"></text> {{item.name}}
 				</view>
 			</view>
 		</view>
@@ -20,7 +20,7 @@
 		<view class="bg-white padding margin-top-xs">
 			<view class="cu-steps">
 				<view class="cu-item" :class="index>basics?'':'text-orange'" v-for="(item,index) in basicsList" :key="index">
-					<text :class="index>basics?'icon-title':'icon-' + item.icon"></text> {{item.name}}
+					<text :class="index>basics?'cuIcon-title':'cuIcon-' + item.icon"></text> {{item.name}}
 				</view>
 			</view>
 		</view>
@@ -28,13 +28,13 @@
 		<view class="bg-white padding  margin-top-xs">
 			<view class="cu-steps steps-arrow">
 				<view class="cu-item" :class="index>basics?'':'text-blue'" v-for="(item,index) in basicsList" :key="index">
-					<text :class="'icon-' + item.icon"></text> {{item.name}}
+					<text :class="'cuIcon-' + item.icon"></text> {{item.name}}
 				</view>
 			</view>
 		</view>
 		<view class="cu-bar bg-white solid-bottom margin-top">
 			<view class="action">
-				<text class="icon-title text-orange"></text> 数字完成
+				<text class="cuIcon-title text-orange"></text> 数字完成
 			</view>
 			<view class="action">
 				<button class="cu-btn bg-green shadow" @tap="NumSteps">下一步</button>
@@ -49,7 +49,7 @@
 		</view>
 		<view class="cu-bar bg-white solid-bottom margin-top">
 			<view class="action">
-				<text class="icon-title text-orange"></text> 多级显示
+				<text class="cuIcon-title text-orange"></text> 多级显示
 			</view>
 			<view class="action">
 				<button class="cu-btn bg-green shadow" @tap="ScrollSteps">下一步</button>

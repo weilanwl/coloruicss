@@ -5,7 +5,7 @@
 		</cu-custom>
 		<view class="cu-bar bg-white">
 			<view class="action">
-				<text class="icon-title text-pink"></text> 全屏限高轮播
+				<text class="cuIcon-title text-pink"></text> 全屏限高轮播
 			</view>
 			<view class="action">
 				<switch @change="DotStyle" :class="dotStyle?'checked':''" :checked="dotStyle?true:false"></switch>
@@ -21,7 +21,7 @@
 		<!-- #ifndef MP-ALIPAY -->
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-pink"></text> 卡片式轮播
+				<text class="cuIcon-title text-pink"></text> 卡片式轮播
 			</view>
 		</view>
 		<swiper class="card-swiper" :class="dotStyle?'square-dot':'round-dot'" :indicator-dots="true" :circular="true"
@@ -36,7 +36,7 @@
 		</swiper>
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-pink"></text> 堆叠式轮播 
+				<text class="cuIcon-title text-pink"></text> 堆叠式轮播 
 			</view>
 		</view>
 		<view class="tower-swiper" @touchmove="TowerMove" @touchstart="TowerStart" @touchend="TowerEnd">

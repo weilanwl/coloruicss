@@ -12,7 +12,7 @@
 			<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
 				<view class="cu-item arrow" v-for="(item,index) in 20" :key="index">
 					<view class="content">
-						<text class="icon-github text-grey"></text>
+						<text class="cuIcon-github text-grey"></text>
 						<text class="text-grey">{{index +1}}</text>
 					</view>
 				</view>
@@ -25,13 +25,13 @@
 			</view>
 		</scroll-view>
 		<view class="DrawerClose" :class="modalName=='viewModal'?'show':''" @tap="hideModal">
-			<text class="icon-pullright"></text>
+			<text class="cuIcon-pullright"></text>
 		</view>
 		<scroll-view scroll-y class="DrawerWindow" :class="modalName=='viewModal'?'show':''">
 			<view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg">
 				<view class="cu-item arrow" v-for="(item,index) in 20" :key="index">
 					<view class="content">
-						<text class="icon-github text-grey"></text>
+						<text class="cuIcon-github text-grey"></text>
 						<text class="text-grey">{{index +1}}</text>
 					</view>
 				</view>

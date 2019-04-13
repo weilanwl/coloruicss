@@ -3,13 +3,13 @@
 		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><block slot="backText">返回</block><block slot="content">图标</block></cu-custom>
 		<view class="cu-bar bg-white search fixed" :style="[{top:CustomBar + 'px'}]">
 			<view class="search-form round">
-				<text class="icon-search"></text>
+				<text class="cuIcon-search"></text>
 				<input type="text" placeholder="搜索icon" confirm-type="search" @input="searchIcon"></input>
 			</view>
 		</view>
 		<view class="cu-list grid col-3">
 			<view class="cu-item" v-for="(item,index) in icon" :key="index" v-if="item.isShow">
-				<text class="lg text-gray" :class="'icon-' + item.name"></text>
+				<text class="lg text-gray" :class="'cuIcon-' + item.name"></text>
 				<text>{{item.name}}</text>
 			</view>
 		</view>

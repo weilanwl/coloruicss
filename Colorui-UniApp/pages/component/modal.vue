@@ -6,7 +6,7 @@
 		</cu-custom>
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-orange "></text> 普通窗口
+				<text class="cuIcon-title text-orange "></text> 普通窗口
 			</view>
 			<view class="action">
 				<button class="cu-btn bg-green shadow" @tap="showModal" data-target="Modal">Modal</button>
@@ -17,7 +17,7 @@
 				<view class="cu-bar bg-white justify-end">
 					<view class="content">Modal标题</view>
 					<view class="action" @tap="hideModal">
-						<text class="icon-close text-red"></text>
+						<text class="cuIcon-close text-red"></text>
 					</view>
 				</view>
 				<view class="padding-xl">
@@ -28,7 +28,7 @@
 
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-orange "></text> 底部窗口
+				<text class="cuIcon-title text-orange "></text> 底部窗口
 			</view>
 			<view class="action">
 				<button class="cu-btn bg-green shadow" @tap="showModal" data-target="bottomModal">Bottom</button>
@@ -48,7 +48,7 @@
 
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-orange "></text> 对话窗口
+				<text class="cuIcon-title text-orange "></text> 对话窗口
 			</view>
 			<view class="action">
 				<button class="cu-btn bg-green shadow" @tap="showModal" data-target="DialogModal1">Dialog</button>
@@ -60,7 +60,7 @@
 				<view class="cu-bar bg-white justify-end">
 					<view class="content">Modal标题</view>
 					<view class="action" @tap="hideModal">
-						<text class="icon-close text-red"></text>
+						<text class="cuIcon-close text-red"></text>
 					</view>
 				</view>
 				<view class="padding-xl">
@@ -81,7 +81,7 @@
 				<view class="cu-bar bg-white justify-end">
 					<view class="content">Modal标题</view>
 					<view class="action" @tap="hideModal">
-						<text class="icon-close text-red"></text>
+						<text class="cuIcon-close text-red"></text>
 					</view>
 				</view>
 				<view class="padding-xl">
@@ -89,7 +89,7 @@
 				</view>
 				<view class="cu-bar bg-white">
 					<view class="action margin-0 flex-sub text-green " @tap="hideModal">
-						<text class="icon-moneybag"></text>微信支付</view>
+						<text class="cuIcon-moneybag"></text>微信支付</view>
 					<view class="action margin-0 flex-sub text-green solid-left" @tap="hideModal">取消</view>
 					<view class="action margin-0 flex-sub  solid-left" @tap="hideModal">确定</view>
 				</view>
@@ -98,7 +98,7 @@
 
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-orange "></text> 图片窗口
+				<text class="cuIcon-title text-orange "></text> 图片窗口
 			</view>
 			<view class="action">
 				<button class="cu-btn bg-green shadow" @tap="showModal" data-target="Image">Image</button>
@@ -110,7 +110,7 @@
 				<view class="bg-img" style="background-image: url('https://ossweb-img.qq.com/images/lol/web201310/skin/big91012.jpg');height:200px;">
 					<view class="cu-bar justify-end text-white">
 						<view class="action" @tap="hideModal">
-							<text class="icon-close "></text>
+							<text class="cuIcon-close "></text>
 						</view>
 					</view>
 				</view>
@@ -123,7 +123,7 @@
 
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-orange "></text> 单选窗口
+				<text class="cuIcon-title text-orange "></text> 单选窗口
 			</view>
 			<view class="action">
 				<button class="cu-btn bg-green shadow" @tap="showModal" data-target="RadioModal">Radio</button>
@@ -148,7 +148,7 @@
 
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-orange "></text> 多选窗口
+				<text class="cuIcon-title text-orange "></text> 多选窗口
 			</view>
 			<view class="action">
 				<button class="cu-btn bg-green shadow" @tap="showModal" data-target="ChooseModal">Choose</button>
@@ -173,7 +173,7 @@
 
 		<view class="cu-bar bg-white margin-top">
 			<view class="action">
-				<text class="icon-title text-orange "></text> 侧边抽屉
+				<text class="cuIcon-title text-orange "></text> 侧边抽屉
 			</view>
 			<view class="action">
 				<button class="cu-btn bg-green shadow" @tap="showModal" data-target="DrawerModalL">Left</button>

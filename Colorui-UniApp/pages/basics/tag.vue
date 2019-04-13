@@ -3,7 +3,7 @@
 		<cu-custom bgColor="bg-gradual-blue" :isBack="true"><block slot="backText">返回</block><block slot="content">标签</block></cu-custom>
 		<view class="cu-bar bg-white solid-bottom">
 			<view class='action'>
-				<text class='icon-title text-blue'></text>标签形状
+				<text class='cuIcon-title text-blue'></text>标签形状
 			</view>
 		</view>
 		<view class="padding bg-white solid-bottom">
@@ -14,7 +14,7 @@
 
 		<view class="cu-bar bg-white margin-top">
 			<view class='action'>
-				<text class='icon-title text-blue'></text>标签尺寸
+				<text class='cuIcon-title text-blue'></text>标签尺寸
 			</view>
 		</view>
 		<view class="padding bg-white">
@@ -23,7 +23,7 @@
 		</view>
 		<view class="cu-bar bg-white margin-top">
 			<view class='action'>
-				<text class='icon-title text-blue'></text>标签颜色
+				<text class='cuIcon-title text-blue'></text>标签颜色
 			</view>
 		</view>
 		<view class='padding-sm flex flex-wrap'>
@@ -36,7 +36,7 @@
 		</view>
 		<view class="cu-bar bg-white margin-top">
 			<view class='action'>
-				<text class='icon-title text-blue'></text>镂空标签
+				<text class='cuIcon-title text-blue'></text>镂空标签
 			</view>
 		</view>
 		<view class='padding-sm flex flex-wrap'>
@@ -46,13 +46,13 @@
 		</view>
 		<view class="cu-bar bg-white margin-top">
 			<view class='action'>
-				<text class='icon-title text-blue'></text>胶囊样式
+				<text class='cuIcon-title text-blue'></text>胶囊样式
 			</view>
 		</view>
 		<view class="padding">
 			<view class="cu-capsule">
 				<view class='cu-tag bg-red'>
-					<text class='icon-likefill'></text>
+					<text class='cuIcon-likefill'></text>
 				</view>
 				<view class="cu-tag line-red">
 					12
@@ -60,7 +60,7 @@
 			</view>
 			<view class="cu-capsule round">
 				<view class='cu-tag bg-blue '>
-					<text class='icon-likefill'></text>
+					<text class='cuIcon-likefill'></text>
 				</view>
 				<view class="cu-tag line-blue">
 					23
@@ -76,7 +76,7 @@
 			</view>
 			<view class="cu-capsule radius">
 				<view class='cu-tag bg-grey '>
-					<text class='icon-likefill'></text>
+					<text class='cuIcon-likefill'></text>
 				</view>
 				<view class="cu-tag line-grey">
 					23
@@ -84,7 +84,7 @@
 			</view>
 			<view class="cu-capsule radius">
 				<view class='cu-tag bg-brown sm'>
-					<text class='icon-likefill'></text>
+					<text class='cuIcon-likefill'></text>
 				</view>
 				<view class="cu-tag line-brown sm">
 					23
@@ -93,7 +93,7 @@
 		</view>
 		<view class="cu-bar bg-white margin-top">
 			<view class='action'>
-				<text class='icon-title text-blue'></text>数字标签
+				<text class='cuIcon-title text-blue'></text>数字标签
 			</view>
 		</view>
 		<view class="padding flex justify-between align-center">
@@ -106,7 +106,7 @@
 			</view>
 			<view class='cu-avatar xl radius'>
 				<view class='cu-tag badge'>99</view>
-				<text class='icon-people'></text>
+				<text class='cuIcon-people'></text>
 			</view>
 			<view class='cu-avatar xl radius'>
 				<view class='cu-tag badge'>99+</view>
