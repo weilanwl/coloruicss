@@ -166,7 +166,7 @@
 			</view>
 			<view class="cu-form-group margin-top">
 				<view class="title">头像</view>
-				<view class="cu-avatar radius lg bg-gray"></view>
+				<view class="cu-avatar radius bg-gray"></view>
 			</view>
 			<!-- !!!!! placeholder 在ios表现有偏移 建议使用 第一种样式 -->
 			<view class="cu-form-group margin-top">
