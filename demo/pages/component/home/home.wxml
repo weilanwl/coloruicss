@@ -4,7 +4,7 @@
     <navigator hover-class='none' url="/pages/component/{{item.name}}/{{item.name}}" class="nav-li bg-{{item.color}}" wx:for="{{elements}}" wx:key>
       <view class="nav-title">{{item.title}}</view>
       <view class="nav-name">{{item.name}}</view>
-      <text class='icon-{{item.icon}}'></text>
+      <text class='cuIcon-{{item.icon}}'></text>
     </navigator>
   </view>
   <view class='cu-tabbar-height'></view>

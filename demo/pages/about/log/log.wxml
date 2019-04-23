@@ -3,6 +3,21 @@
   <view class="cu-item text-green">
     <view class="bg-gradual-green content shadow-blur">
       <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v2.1.3</view>
+        <view class="cu-tag line-white">2019/04/23</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.新增多种阴影</view>
+        <view>2.修复一些var属性的错误</view>
+        <view>3.修改图标类名</view>
+        <view>4.修复图片上传时图片为空</view>
+        <view>5.优化一些细节</view>
+      </view>
+    </view>
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow-blur">
+      <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.1.2</view>
         <view class="cu-tag line-white">2019/03/28</view>
       </view>

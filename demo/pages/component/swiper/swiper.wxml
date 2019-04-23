@@ -4,7 +4,7 @@
 </cu-custom>
 <view class="cu-bar bg-white">
   <view class="action">
-    <text class="icon-title text-pink"></text> 全屏限高轮播
+    <text class="cuIcon-title text-pink"></text> 全屏限高轮播
   </view>
   <view class="action">
     <switch class="sm" bindchange="DotStyle"></switch>
@@ -18,7 +18,7 @@
 </swiper>
 <view class="cu-bar bg-white margin-top">
   <view class="action">
-    <text class="icon-title text-pink"></text> 卡片式轮播
+    <text class="cuIcon-title text-pink"></text> 卡片式轮播
   </view>
 </view>
 <swiper class="card-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500" bindchange="cardSwiper" indicator-color="#8799a3" indicator-active-color="#0081ff">
@@ -32,7 +32,7 @@
 
 <view class="cu-bar bg-white margin-top">
   <view class="action">
-    <text class="icon-title text-pink"></text> 堆叠式轮播
+    <text class="cuIcon-title text-pink"></text> 堆叠式轮播
   </view>
 </view>
 <view class="tower-swiper" bindtouchmove="towerMove" bindtouchstart="towerStart" bindtouchend="towerEnd">

@@ -28,7 +28,6 @@
     "pages/plugin/indexes/indexes",
     "pages/plugin/gradual/gradual",
     "pages/plugin/animation/animation",
-    "pages/auth/auth",
     "pages/about/about/about",
     "pages/about/log/log",
     "pages/about/test/list",

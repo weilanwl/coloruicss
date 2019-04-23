@@ -4,7 +4,7 @@
 </cu-custom>
 <view class="cu-bar bg-white search fixed" style="top:{{CustomBar}}px;">
   <view class="search-form round">
-    <text class="icon-search"></text>
+    <text class="cuIcon-search"></text>
     <input type="text" placeholder="输入搜索的关键词" confirm-type="search"></input>
   </view>
   <view class="action">

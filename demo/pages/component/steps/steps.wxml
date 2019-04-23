@@ -1,7 +1,7 @@
 <cu-custom bgColor="bg-gradual-pink" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">步骤条</view></cu-custom>
 <view class="cu-bar bg-white solid-bottom">
   <view class="action">
-    <text class="icon-title text-orange"></text> 基本用法
+    <text class="cuIcon-title text-orange"></text> 基本用法
   </view>
   <view class="action">
     <button class="cu-btn bg-green shadow" bindtap="basicsSteps">下一步</button>
@@ -10,27 +10,27 @@
 <view class="bg-white padding">
   <view class="cu-steps">
     <view class="cu-item {{index>basics?'':'text-red'}}" wx:for="{{basicsList}}" wx:key>
-      <text class="icon-{{item.icon}}"></text> {{item.name}}
+      <text class="cuIcon-{{item.icon}}"></text> {{item.name}}
     </view>
   </view>
 </view>
 <view class="bg-white padding margin-top-xs">
   <view class="cu-steps">
     <view class="cu-item {{index>basics?'':'text-orange'}}" wx:for="{{basicsList}}" wx:key>
-      <text class="icon-{{index>basics?'title':item.icon}}"></text> {{item.name}}
+      <text class="cuIcon-{{index>basics?'title':item.icon}}"></text> {{item.name}}
     </view>
   </view>
 </view>
 <view class="bg-white padding  margin-top-xs">
   <view class="cu-steps steps-arrow">
     <view class="cu-item {{index>basics?'':'text-blue'}}" wx:for="{{basicsList}}" wx:key>
-      <text class="icon-{{item.icon}}"></text> {{item.name}}
+      <text class="cuIcon-{{item.icon}}"></text> {{item.name}}
     </view>
   </view>
 </view>
 <view class="cu-bar bg-white solid-bottom margin-top">
   <view class="action">
-    <text class="icon-title text-orange"></text> 数字完成
+    <text class="cuIcon-title text-orange"></text> 数字完成
   </view>
   <view class="action">
     <button class="cu-btn bg-green shadow" bindtap="numSteps">下一步</button>
@@ -45,7 +45,7 @@
 </view>
 <view class="cu-bar bg-white solid-bottom margin-top">
   <view class="action">
-    <text class="icon-title text-orange"></text> 多级显示
+    <text class="cuIcon-title text-orange"></text> 多级显示
   </view>
   <view class="action">
     <button class="cu-btn bg-green shadow" bindtap="scrollSteps">下一步</button>

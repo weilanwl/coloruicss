@@ -4,10 +4,10 @@
 </cu-custom>
 <view class="cu-bar bg-white solid-bottom">
   <view class="action">
-    <text class="icon-title text-blue"></text>按钮形状
+    <text class="cuIcon-title text-blue"></text>按钮形状
   </view>
   <navigator class="action" url="design" hover-class="none">
-    <text class="icon-skinfill"></text>
+    <text class="cuIcon-skinfill"></text>
     <text class="text-df">设计</text>
   </navigator>
 </view>
@@ -15,12 +15,12 @@
   <button class="cu-btn">默认</button>
   <button class="cu-btn round">圆角</button>
   <button class="cu-btn icon">
-    <text class="icon-emojifill"></text>
+    <text class="cuIcon-emojifill"></text>
   </button>
 </view>
 <view class="cu-bar margin-top bg-white solid-bottom">
   <view class="action">
-    <text class="icon-title text-blue"></text>按钮尺寸
+    <text class="cuIcon-title text-blue"></text>按钮尺寸
   </view>
 </view>
 <view class="padding flex flex-wrap justify-between align-center bg-white">
@@ -30,7 +30,7 @@
 </view>
 <view class="cu-bar margin-top bg-white">
   <view class="action">
-    <text class="icon-title text-blue"></text>按钮颜色
+    <text class="cuIcon-title text-blue"></text>按钮颜色
   </view>
   <view class="action">
     <text class="text-df margin-right-sm">阴影</text>
@@ -44,7 +44,7 @@
 </view>
 <view class="cu-bar margin-top bg-white">
   <view class="action">
-    <text class="icon-title text-blue"></text>镂空按钮
+    <text class="cuIcon-title text-blue"></text>镂空按钮
   </view>
   <view class="action">
     <radio-group bindchange="SetBorderSize">
@@ -60,13 +60,13 @@
   </view>
 </view>
 <view class="grid col-5 padding-sm">
-  <view class="margin-tb-sm text-center" wx:for="{{ColorList}}" wx:key>
+  <view class="margin-tb-sm text-center" wx:for="{{ColorList}}" wx:key wx:if="{{item.name!='white'}}">
     <button class="cu-btn round line{{bordersize?bordersize:''}}-{{item.name}} {{shadow?'shadow':''}}">{{item.title}}</button>
   </view>
 </view>
 <view class="cu-bar margin-top bg-white">
   <view class="action">
-    <text class="icon-title text-blue"></text>块状按钮
+    <text class="cuIcon-title text-blue"></text>块状按钮
   </view>
 </view>
 <view class="padding flex flex-direction">
@@ -75,7 +75,7 @@
 </view>
 <view class="cu-bar margin-top bg-white">
   <view class="action">
-    <text class="icon-title text-blue"></text>无效状态
+    <text class="cuIcon-title text-blue"></text>无效状态
   </view>
 </view>
 <view class="padding">
@@ -84,13 +84,13 @@
 </view>
 <view class="cu-bar margin-top bg-white">
   <view class="action">
-    <text class="icon-title text-blue"></text>按钮加图标
+    <text class="cuIcon-title text-blue"></text>按钮加图标
   </view>
 </view>
 <view class="padding-xl">
   <button class="cu-btn block line-orange lg">
-    <text class="icon-upload"></text> 图标</button>
+    <text class="cuIcon-upload"></text> 图标</button>
   <button class="cu-btn block bg-blue margin-tb-sm lg">
-    <text class="icon-loading2 iconfont-spin"></text> 加载</button>
+    <text class="cuIcon-loading2 iconfont-spin"></text> 加载</button>
   <button class="cu-btn block bg-black margin-tb-sm lg" loading> 微信加载</button>
 </view>

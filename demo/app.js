@@ -1,6 +1,11 @@
 //app.js
 App({
   onLaunch: function() {
+    if (wx.cloud) {
+      wx.cloud.init({
+        traceUser: true
+      })
+    }
     wx.getSystemInfo({
       success: e => {
         this.globalData.StatusBar = e.statusBarHeight;

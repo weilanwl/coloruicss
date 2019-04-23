@@ -2,6 +2,7 @@ const app = getApp();
 Page({
   data: {
     ColorList: app.globalData.ColorList,
+    color:'red'
   },
   showModal(e) {
     this.setData({

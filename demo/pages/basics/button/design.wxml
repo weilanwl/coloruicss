@@ -7,7 +7,7 @@
 </view>
 <view class="cu-form-group margin-top" bindtap="showModal" data-target="ColorModal">
   <view class="title">选择颜色</view>
-  <view class="padding-sm bg-{{color}} solid radius shadow-blur"></view>
+  <view class="padding bg-{{color}} solid radius shadow-blur"></view>
 </view>
 <view class="cu-form-group">
   <view class="title">是否圆角</view>
@@ -56,11 +56,11 @@
     <view class="cu-bar justify-end solid-bottom">
       <view class="content">选择颜色</view>
       <view class="action" bindtap="hideModal">
-        <text class="icon-close text-red"></text>
+        <text class="cuIcon-close text-red"></text>
       </view>
     </view>
     <view class="grid col-5 padding">
-      <view class="padding-xs" wx:for="{{ColorList}}" wx:key bindtap="SetColor" data-color="{{item.name}}">
+      <view class="padding-xs" wx:for="{{ColorList}}" wx:key bindtap="SetColor" data-color="{{item.name}}" wx:if="{{item.name!='white'}}">
         <view class="padding-tb bg-{{item.name}} radius"> {{item.title}} </view>
       </view>
     </view>

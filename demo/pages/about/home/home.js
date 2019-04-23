@@ -29,9 +29,9 @@ Component({
         }, 20)
       } else {
         that.setData({
-          starCount: that.coutNum(999),
-          forksCount: that.coutNum(8888),
-          visitTotal: that.coutNum(77777)
+          starCount: that.coutNum(3000),
+          forksCount: that.coutNum(484),
+          visitTotal: that.coutNum(24000)
         })
       }
     }

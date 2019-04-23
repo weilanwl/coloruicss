@@ -1,7 +1,7 @@
 <cu-custom bgColor="bg-gradual-blue" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">文本</view></cu-custom>
 <view class="cu-bar bg-white solid-bottom">
   <view class="action">
-    <text class="icon-title text-blue"></text>文字大小
+    <text class="cuIcon-title text-blue"></text>文字大小
   </view>
 </view>
 <view class="bg-white padding-lr">
@@ -9,7 +9,7 @@
     <view class="padding">60</view>
     <view class="flex-sub text-center">
       <view class="solid-bottom text-xsl padding">
-        <text class=" icon-roundcheckfill text-green"></text>
+        <text class=" cuIcon-roundcheckfill text-green"></text>
       </view>
       <view class="padding">用于图标、数字等特大显示</view>
     </view>
@@ -18,7 +18,7 @@
     <view class="padding">40</view>
     <view class="flex-sub text-center">
       <view class="solid-bottom text-sl padding">
-        <text class=" icon-roundcheckfill text-green"></text>
+        <text class=" cuIcon-roundcheckfill text-green"></text>
       </view>
       <view class="padding">用于图标、数字等较大显示</view>
     </view>
@@ -78,19 +78,31 @@
 </view>
 <view class="cu-bar bg-white solid-bottom margin-top">
   <view class="action">
-    <text class="icon-title text-blue"></text>文字颜色
+    <text class="cuIcon-title text-blue"></text>文字颜色
   </view>
 </view>
 <view class="grid col-5 padding-sm">
-  <view class="padding-sm" wx:for="{{list}}" wx:key>
+  <view class="padding-sm" wx:for="{{list}}" wx:key wx:if="{{item.name!='white'}}">
     <view class="text-{{item.name}} text-center">
       {{item.title}}
     </view>
   </view>
 </view>
+		<view class="cu-bar bg-white solid-bottom margin-top">
+			<view class="action">
+				<text class="cuIcon-title text-blue"></text>文字阴影
+			</view>
+		</view>
+		<view class="grid col-5 padding-sm">
+			<view class="padding-sm" wx:for="{{list}}" wx:key wx:if="{{item.name!='white'}}">
+				<view class="text-center text-shadow text-{{item.name}}">
+					<view class="cuIcon-ellipse text-xxl"></view>
+				</view>
+			</view>
+		</view>
 <view class="cu-bar bg-white solid-bottom margin-top">
   <view class="action">
-    <text class="icon-title text-blue"></text>文字截断
+    <text class="cuIcon-title text-blue"></text>文字截断
   </view>
 </view>
 <view class="padding bg-white">
@@ -98,7 +110,7 @@
 </view>
 <view class="cu-bar bg-white solid-bottom margin-top">
   <view class="action">
-    <text class="icon-title text-blue"></text>文字对齐
+    <text class="cuIcon-title text-blue"></text>文字对齐
   </view>
 </view>
 <view class="padding bg-white">
@@ -108,7 +120,7 @@
 </view>
 <view class="cu-bar bg-white solid-bottom margin-top">
   <view class="action">
-    <text class="icon-title text-blue"></text>特殊文字
+    <text class="cuIcon-title text-blue"></text>特殊文字
   </view>
 </view>
 <view class="padding text-center">

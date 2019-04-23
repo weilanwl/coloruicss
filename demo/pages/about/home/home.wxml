@@ -13,23 +13,23 @@
     <view class="flex flex-sub flex-direction solid-right">
       <view class="text-xxl text-orange">{{visitTotal}}</view>
       <view class="margin-top-sm">
-        <text class="icon-attentionfill"></text> View</view>
+        <text class="cuIcon-attentionfill"></text> View</view>
     </view>
     <view class="flex flex-sub flex-direction solid-right">
       <view class="text-xxl text-blue">{{starCount}}</view>
       <view class="margin-top-sm">
-        <text class="icon-favorfill"></text> Star</view>
+        <text class="cuIcon-favorfill"></text> Star</view>
     </view>
     <view class="flex flex-sub flex-direction">
       <view class="text-xxl text-green">{{forksCount}}</view>
       <view class="margin-top-sm">
-        <text class="icon-fork"></text> Fork</view>
+        <text class="cuIcon-fork"></text> Fork</view>
     </view>
   </view>
   <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
     <view class="cu-item arrow">
       <view class="content" bindtap="CopyLink" data-link="https://github.com/weilanwl/ColorUI">
-        <text class="icon-github text-grey"></text>
+        <text class="cuIcon-github text-grey"></text>
         <text class="text-grey">GitHub</text>
       </view>
     </view>
@@ -41,25 +41,25 @@
     </view>
     <view class="cu-item arrow">
       <navigator class="content" url="/pages/about/log/log" hover-class="none">
-        <text class="icon-formfill text-green"></text>
+        <text class="cuIcon-formfill text-green"></text>
         <text class="text-grey">日志</text>
       </navigator>
     </view>
     <view class="cu-item arrow">
       <view class="content" bindtap="showQrcode">
-        <text class="icon-appreciatefill text-red"></text>
+        <text class="cuIcon-appreciatefill text-red"></text>
         <text class="text-grey">赞赏支持</text>
       </view>
     </view>
     <view class="cu-item arrow">
       <button class="cu-btn content" open-type="feedback">
-        <text class="icon-writefill text-cyan"></text>
+        <text class="cuIcon-writefill text-cyan"></text>
         <text class="text-grey">意见反馈</text>
       </button>
     </view>
     <view class="cu-item arrow">
       <navigator class="content" url="/pages/about/test/list" hover-class="none">
-        <text class="icon-creativefill text-orange"></text>
+        <text class="cuIcon-creativefill text-orange"></text>
         <text class="text-grey">Bug测试</text>
       </navigator>
     </view>
