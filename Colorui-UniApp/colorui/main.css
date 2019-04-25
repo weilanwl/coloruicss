@@ -1,7 +1,8 @@
 /*
-  ColorUi for uniApp  v2.1.4 | by 文晓港 2019年04月14日04:16:13
-  仅供学习交流，如作它用所承受的法律责任一概与作者无关
-  使用ColorUi开发扩展与插件时，请注明基于ColorUi开发
+  ColorUi for uniApp  v2.1.5 | by 文晓港 2019年4月25日18:57:19
+  仅供学习交流，如作它用所承受的法律责任一概与作者无关  
+  
+  *使用ColorUi开发扩展与插件时，请注明基于ColorUi开发 
   
   （QQ交流群：240787041）
 */
@@ -602,7 +603,7 @@ switch.gray.checked .uni-switch-input,
 checkbox.gray.checked .uni-checkbox-input,
 radio.gray.checked .uni-radio-input {
 	background-color: #f0f0f0 !important;
-	color: var(--) !important;
+	color: var(--black) !important;
 }
 
 switch.black[checked] .wx-switch-input,
@@ -622,7 +623,7 @@ switch.white.checked .uni-switch-input,
 checkbox.white.checked .uni-checkbox-input,
 radio.white.checked .uni-radio-input {
 	background-color: var(--white) !important;
-	color: var(--) !important;
+	color: var(--black) !important;
 }
 
 /* ==================
@@ -741,7 +742,7 @@ radio.white.checked .uni-radio-input {
 
 /* -- 阴影 -- */
 
-.shadow {
+.shadow[class*='white'] {
 	--ShadowSize: 0 1upx 6upx;
 }
 
@@ -1152,7 +1153,7 @@ button.icon.lg {
 	align-items: center;
 	display: flex;
 	font-size: 20upx;
-	color: var(--);
+	color: var(--black);
 	text-indent: 10upx;
 }
 
@@ -1805,7 +1806,7 @@ button.icon.lg {
 	line-height: 64upx;
 	height: 64upx;
 	font-size: 24upx;
-	color: var(--);
+	color: var(--black);
 	flex: 1;
 	display: flex;
 	align-items: center;
@@ -2216,7 +2217,7 @@ button.icon.lg {
 
 .cu-timeline>.cu-item>.content:not([class*="bg-"]) {
 	background-color: var(--ghostWhite);
-	color: var(--);
+	color: var(--black);
 }
 
 .cu-timeline>.cu-item>.content+.content {
@@ -2269,7 +2270,7 @@ button.icon.lg {
 
 .cu-chat .cu-item>.main .content:not([class*="bg-"]) {
 	background-color: var(--white);
-	color: var(--);
+	color: var(--black);
 }
 
 .cu-chat .cu-item .date {
@@ -2675,7 +2676,11 @@ button.icon.lg {
 .cu-modal.drawer-modal.show .cu-dialog {
 	transform: translateX(0%);
 }
-
+.cu-modal .cu-dialog>.cu-bar:first-child .action{
+  min-width: 100rpx;
+  margin-right: 0;
+  min-height: 100rpx;
+}
 /* ==================
          轮播
  ==================== */
@@ -3105,7 +3110,11 @@ scroll-view.cu-steps .cu-item {
 	position: relative;
 	overflow: hidden;
 }
-
+.grid.grid-square>view.bg-img image {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
 .grid.col-1.grid-square>view {
 	padding-bottom: 100%;
 	height: 0;
@@ -3118,18 +3127,10 @@ scroll-view.cu-steps .cu-item {
 	width: calc((100% - 20upx)/2);
 }
 
-.grid.col-2.grid-square>view:nth-child(2n) {
-	margin-right: 0;
-}
-
 .grid.col-3.grid-square>view {
 	padding-bottom: calc((100% - 40upx)/3);
 	height: 0;
 	width: calc((100% - 40upx)/3);
-}
-
-.grid.col-3.grid-square>view:nth-child(3n) {
-	margin-right: 0;
 }
 
 .grid.col-4.grid-square>view {
@@ -3138,14 +3139,17 @@ scroll-view.cu-steps .cu-item {
 	width: calc((100% - 60upx)/4);
 }
 
-.grid.col-4.grid-square>view:nth-child(4n) {
-	margin-right: 0;
-}
-
 .grid.col-5.grid-square>view {
 	padding-bottom: calc((100% - 80upx)/5);
 	height: 0;
 	width: calc((100% - 80upx)/5);
+}
+
+.grid.col-2.grid-square>view:nth-child(2n),
+.grid.col-3.grid-square>view:nth-child(3n),
+.grid.col-4.grid-square>view:nth-child(4n),
+.grid.col-5.grid-square>view:nth-child(5n) {
+	margin-right: 0;
 }
 
 .grid.col-1>view {
@@ -3639,7 +3643,7 @@ scroll-view.cu-steps .cu-item {
 
 .bg-gray {
 	background-color: #f0f0f0;
-	color: var(--);
+	color: var(--black);
 }
 
 .bg-black {

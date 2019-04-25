@@ -153,13 +153,13 @@
 			</view>
 			<view class="cu-form-group">
 				<view class="grid col-4 grid-square flex-sub">
-					<view class="padding-xs bg-img" :style="[{backgroundImage:'url(' + imgList[index] +')'}]" v-for="(item,index) in imgList"
-					 :key="index" @tap="ViewImage" :data-url="imgList[index]">
+					<view class="bg-img" v-for="(item,index) in imgList" :key="index" @tap="ViewImage" :data-url="imgList[index]">
+					 <image :src="imgList[index]" mode="aspectFill"></image>
 						<view class="cu-tag bg-red" @tap.stop="DelImg" :data-index="index">
 							<text class='cuIcon-close'></text>
 						</view>
 					</view>
-					<view class="padding-xs solids" @tap="ChooseImage" v-if="imgList.length<4">
+					<view class="solids" @tap="ChooseImage" v-if="imgList.length<4">
 						<text class='cuIcon-cameraadd'></text>
 					</view>
 				</view>

@@ -39,7 +39,7 @@
 				<text class="cuIcon-title text-blue"></text>进度条颜色
 			</view>
 			<view class="action">
-				<view class="padding-sm solid radius shadow-blur" :class="'bg-' + color"></view>
+				<view class="padding solid radius shadow-blur" :class="'bg-' + color"></view>
 			</view>
 		</view>
 		<view class="padding" :class="color=='white'?'bg-grey':'bg-white'">
@@ -104,8 +104,7 @@
 					</view>
 				</view>
 				<view class="grid col-5 padding">
-					<view class="padding-xs" v-for="(item,index) in ColorList" :key="index" @tap="SetColor" :data-color="item.name"
-					 v-if="item.name!='gray'">
+					<view class="padding-xs" v-for="(item,index) in ColorList" :key="index" @tap="SetColor" :data-color="item.name" v-if="item.name!='gray' && item.name!='white'">
 						<view class="padding-tb radius" :class="'bg-' + item.name"> {{item.title}} </view>
 					</view>
 				</view>

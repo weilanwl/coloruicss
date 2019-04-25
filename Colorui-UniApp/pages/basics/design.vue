@@ -6,13 +6,12 @@
 				<button class="cu-btn" :class="[border?bordersize?'lines-' + color:'line-' + color:'bg-'+ color,round?'round':'',size,shadow?'shadow':'']">我是一个按钮</button>
 			</view>
 			<view class="padding text-center">
-				class="cu-btn <text v-if="color">{{' '}} {{border?bordersize?'lines-' + color:'line-' + color:'bg-'+ color}}
-					{{round?'round':''}} {{size}} {{shadow?'shadow':''}}</text>"
+				class="cu-btn <text v-if="color">{{' '}} {{border?bordersize?'lines-' + color:'line-' + color:'bg-'+ color}} {{round?'round':''}} {{size}} {{shadow?'shadow':''}}</text>"
 			</view>
 		</view>
 		<view class="cu-form-group margin-top" @tap="showModal" data-target="ColorModal">
 			<view class="title">选择颜色</view>
-			<view class="padding-sm solid radius shadow-blur" :class="'bg-'+color"></view>
+			<view class="padding solid radius shadow-blur" :class="'bg-'+color"></view>
 		</view>
 		<view class="cu-form-group">
 			<view class="title">是否圆角</view>
@@ -65,7 +64,7 @@
 					</view>
 				</view>
 				<view class="grid col-5 padding">
-					<view class="padding-xs" v-for="(item,index) in ColorList" :key="index" @tap="SetColor" :data-color="item.name">
+					<view class="padding-xs" v-for="(item,index) in ColorList" :key="index" @tap="SetColor" :data-color="item.name" v-if="item.name!='white'">
 						<view class="padding-tb radius" :class="'bg-' + item.name"> {{item.title}} </view>
 					</view>
 				</view>
@@ -82,7 +81,7 @@
 				modalName: '',
 				round: false,
 				size: '',
-				color: '',
+				color: 'red',
 				shadow: false,
 				border: false,
 				bordersize: ''

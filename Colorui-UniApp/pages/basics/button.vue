@@ -61,7 +61,7 @@
 			</view>
 		</view>
 		<view class="grid col-5 padding-sm">
-			<view class="margin-tb-sm text-center" v-for="(item,index) in ColorList" :key="index">
+			<view class="margin-tb-sm text-center" v-for="(item,index) in ColorList" :key="index" v-if="item.name!='white'">
 				<button class="cu-btn round" :class="[bordersize?'lines-' + item.name:'line-' + item.name, shadow?'shadow':'']">{{item.title}}</button>
 			</view>
 		</view>

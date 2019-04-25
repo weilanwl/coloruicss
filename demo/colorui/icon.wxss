@@ -1,4 +1,4 @@
-@keyframes icon-spin {
+@keyframes cuIcon-spin {
 	0% {
 		-webkit-transform: rotate(0);
 		transform: rotate(0);
@@ -11,14 +11,14 @@
 }
 
 .iconfont-spin {
-	-webkit-animation: icon-spin 2s infinite linear;
-	animation: icon-spin 2s infinite linear;
+	-webkit-animation: cuIcon-spin 2s infinite linear;
+	animation: cuIcon-spin 2s infinite linear;
 	display: inline-block;
 }
 
 .iconfont-pulse {
-	-webkit-animation: icon-spin 1s infinite steps(8);
-	animation: icon-spin 1s infinite steps(8);
+	-webkit-animation: cuIcon-spin 1s infinite steps(8);
+	animation: cuIcon-spin 1s infinite steps(8);
 	display: inline-block;
 }
 

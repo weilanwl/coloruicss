@@ -116,8 +116,8 @@
 </script>
 
 <style>
-	@import "colorui/icon.css";
 	@import "colorui/main.css";
+	@import "colorui/icon.css";
 
 	.nav-list {
 		display: flex;
@@ -246,8 +246,5 @@
 		100% {
 			transform: translateY(0px);
 		}
-	}
-	html{
-		font-size: 18.75px !important;
 	}
 </style>

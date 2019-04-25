@@ -1,4 +1,4 @@
-<template>
+<template name="components">
 	<view>
 		<scroll-view scroll-y class="page">
 			<cu-custom bgImage="https://image.weilanwl.com/color2.0/plugin/cjkz2329.jpg">
@@ -21,6 +21,7 @@
 
 <script>
 	export default {
+		name: "components",
 		data() {
 			return {
 				StatusBar: this.StatusBar,

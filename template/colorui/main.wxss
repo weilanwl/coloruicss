@@ -1,10 +1,9 @@
 /*
-  ColorUi for MP-weixin  v2.1.3 | by 文晓港 2019年4月23日12:51:48
+  ColorUi for MP-weixin  v2.1.4 | by 文晓港 2019年4月25日19:15:42
   仅供学习交流，如作它用所承受的法律责任一概与作者无关
   使用ColorUi开发扩展与插件时，请注明基于ColorUi开发
   
   （QQ交流群：240787041）
-  文档：http://www.color-ui.com/
 */
 
 /* ==================
@@ -130,8 +129,8 @@ image.loading::after {
 	font-size: 32rpx;
 	margin: auto;
 	color: #ccc;
-	-webkit-animation: icon-spin 2s infinite linear;
-	animation: icon-spin 2s infinite linear;
+	-webkit-animation: cuIcon-spin 2s infinite linear;
+	animation: cuIcon-spin 2s infinite linear;
 	display: block;
 }
 
@@ -190,6 +189,7 @@ switch.checked::before {
 switch[checked]::before {
 	transform: scale(0, 0);
 }
+
 radio::before,
 checkbox::before {
 	font-family: "cuIcon";
@@ -208,15 +208,16 @@ checkbox::before {
 }
 
 radio .wx-radio-input,
-checkbox .wx-checkbox-input{
+checkbox .wx-checkbox-input {
 	margin: 0;
 	width: 24px;
 	height: 24px;
 }
 
-checkbox.round .wx-checkbox-input{
+checkbox.round .wx-checkbox-input {
 	border-radius: 100rpx;
 }
+
 switch .wx-switch-input {
 	border: none;
 	padding: 0 24px;
@@ -226,7 +227,7 @@ switch .wx-switch-input {
 	border-radius: 100rpx;
 }
 
-switch .wx-switch-input:not([class*="bg-"]){
+switch .wx-switch-input:not([class*="bg-"]) {
 	background: var(--grey) !important;
 }
 
@@ -266,7 +267,7 @@ switch .wx-switch-input::before,
 radio.radio::before,
 checkbox .wx-checkbox-input::before,
 radio .wx-radio-input::before,
-radio.radio::before{
+radio.radio::before {
 	display: none;
 }
 
@@ -295,12 +296,12 @@ radio.radio[checked]::after {
 	content: "\e71a";
 }
 
-.switch-sex .wx-switch-input{
+.switch-sex .wx-switch-input {
 	background: var(--red) !important;
 	border-color: var(--red) !important;
 }
 
-.switch-sex[checked] .wx-switch-input{
+.switch-sex[checked] .wx-switch-input {
 	background: var(--blue) !important;
 	border-color: var(--blue) !important;
 }
@@ -344,7 +345,7 @@ radio.cyan[checked] .wx-radio-input {
 
 switch.blue[checked] .wx-switch-input,
 checkbox.blue[checked] .wx-checkbox-input,
-radio.blue[checked] .wx-radio-input{
+radio.blue[checked] .wx-radio-input {
 	border-color: var(--blue) !important;
 }
 
@@ -368,7 +369,7 @@ radio.pink[checked] .wx-radio-input {
 
 switch.brown[checked] .wx-switch-input,
 checkbox.brown[checked] .wx-checkbox-input,
-radio.brown[checked] .wx-radio-input{
+radio.brown[checked] .wx-radio-input {
 	border-color: var(--brown) !important;
 }
 
@@ -620,7 +621,7 @@ radio.white[checked] .wx-radio-input {
 
 /* -- 阴影 -- */
 
-.shadow {
+.shadow[class*='white'] {
 	--ShadowSize: 0 1rpx 6rpx;
 }
 
@@ -1076,7 +1077,7 @@ button.icon.lg {
 
 .cu-load.loading::before {
 	content: "\e67a";
-	animation: icon-spin 2s infinite linear;
+	animation: cuIcon-spin 2s infinite linear;
 }
 
 .cu-load.loading::after {
@@ -1153,7 +1154,7 @@ button.icon.lg {
 	border-right: 6rpx solid rgba(0, 0, 0, 0.05);
 	border-bottom: 6rpx solid rgba(0, 0, 0, 0.05);
 	border-left: 6rpx solid var(--orange);
-	animation: icon-spin 1s infinite linear;
+	animation: cuIcon-spin 1s infinite linear;
 	z-index: -1;
 }
 
@@ -1766,7 +1767,7 @@ button.icon.lg {
 	position: relative;
 	z-index: 2;
 	padding-top: 50rpx;
-	background-color:inherit;
+	background-color: inherit;
 }
 
 .cu-bar.tabbar .action.add-action [class*="cuIcon-"] {
@@ -2536,7 +2537,11 @@ button.icon.lg {
 .cu-modal.drawer-modal.show .cu-dialog {
 	transform: translateX(0%);
 }
-
+.cu-modal .cu-dialog>.cu-bar:first-child .action{
+  min-width: 100rpx;
+  margin-right: 0;
+  min-height: 100rpx;
+}
 /* ==================
          轮播
  ==================== */
@@ -2565,12 +2570,12 @@ swiper.square-dot .wx-swiper-dot {
 	margin: 0 8rpx !important;
 }
 
-swiper.square-dot .wx-swiper-dot.wx-swiper-dot-active{
+swiper.square-dot .wx-swiper-dot.wx-swiper-dot-active {
 	opacity: 1;
 	width: 30rpx;
 }
 
-swiper.round-dot .wx-swiper-dot{
+swiper.round-dot .wx-swiper-dot {
 	width: 10rpx;
 	height: 10rpx;
 	position: relative;
@@ -2591,7 +2596,7 @@ swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active::after {
 	border-radius: 20rpx;
 }
 
-swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active{
+swiper.round-dot .wx-swiper-dot.wx-swiper-dot-active {
 	width: 18rpx;
 	height: 18rpx;
 }
@@ -2954,6 +2959,7 @@ scroll-view.cu-steps .cu-item {
 	position: relative;
 	overflow: hidden;
 }
+
 .grid.grid-square>view.bg-img image {
 	width: 100%;
 	height: 100%;
@@ -2972,18 +2978,10 @@ scroll-view.cu-steps .cu-item {
 	width: calc((100% - 20rpx)/2);
 }
 
-.grid.col-2.grid-square>view:nth-child(2n) {
-	margin-right: 0;
-}
-
 .grid.col-3.grid-square>view {
 	padding-bottom: calc((100% - 40rpx)/3);
 	height: 0;
 	width: calc((100% - 40rpx)/3);
-}
-
-.grid.col-3.grid-square>view:nth-child(3n) {
-	margin-right: 0;
 }
 
 .grid.col-4.grid-square>view {
@@ -2992,14 +2990,17 @@ scroll-view.cu-steps .cu-item {
 	width: calc((100% - 60rpx)/4);
 }
 
-.grid.col-4.grid-square>view:nth-child(4n) {
-	margin-right: 0;
-}
-
 .grid.col-5.grid-square>view {
 	padding-bottom: calc((100% - 80rpx)/5);
 	height: 0;
 	width: calc((100% - 80rpx)/5);
+}
+
+.grid.col-2.grid-square>view:nth-child(2n),
+.grid.col-3.grid-square>view:nth-child(3n),
+.grid.col-4.grid-square>view:nth-child(4n),
+.grid.col-5.grid-square>view:nth-child(5n){
+	margin-right: 0;
 }
 
 .grid.col-1>view {

@@ -18,6 +18,7 @@
 
 <script>
 	export default {
+		name: "basics",
 		data() {
 			return {
 				elements: [{

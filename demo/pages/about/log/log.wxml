@@ -1,7 +1,21 @@
 <cu-custom bgColor="bg-gradual-green" isBack="{{true}}"><view slot="backText">返回</view><view slot="content">日志</view></cu-custom>
 <view class="cu-timeline">
   <view class="cu-item text-green">
-    <view class="bg-gradual-green content shadow-blur">
+    <view class="bg-gradual-green content shadow">
+      <view class="cu-capsule radius">
+        <view class="cu-tag bg-white text-green">v2.1.4</view>
+        <view class="cu-tag line-white">2019/04/25</view>
+      </view>
+      <view class="margin-top-sm text-content">
+        <view>1.优化一些点击区域过小</view>
+        <view>2.优化图标旋转</view>
+        <view>3.优化demo显示</view>
+        <view>4.优化阴影</view>
+      </view>
+    </view>   
+  </view>
+  <view class="cu-item text-green">
+    <view class="bg-green content shadow">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.1.3</view>
         <view class="cu-tag line-white">2019/04/23</view>
@@ -16,7 +30,7 @@
     </view>
   </view>
   <view class="cu-item text-green">
-    <view class="bg-green content shadow-blur">
+    <view class="bg-green content shadow">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.1.2</view>
         <view class="cu-tag line-white">2019/03/28</view>
@@ -39,7 +53,7 @@
     </view>
   </view>
   <view class="cu-item text-green">
-    <view class="bg-green content shadow-blur">
+    <view class="bg-green content shadow">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.7</view>
         <view class="cu-tag line-white">2019/02/25</view>
@@ -53,7 +67,7 @@
     </view>
   </view>
   <view class="cu-item text-green">
-    <view class="bg-green content shadow-blur">
+    <view class="bg-green content shadow">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.6</view>
         <view class="cu-tag line-white">2019/02/09</view>
@@ -68,7 +82,7 @@
     </view>
   </view>
   <view class="cu-item text-green">
-    <view class="bg-green content shadow-blur">
+    <view class="bg-green content shadow">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.5</view>
         <view class="cu-tag line-white">2019/01/13</view>
@@ -85,7 +99,7 @@
     </view>
   </view>
   <view class="cu-item text-green">
-    <view class="bg-green content shadow-blur">
+    <view class="bg-green content shadow">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.4</view>
         <view class="cu-tag line-white">2019/01/10</view>
@@ -100,7 +114,7 @@
     </view>
   </view>
   <view class="cu-item text-green">
-    <view class="bg-green content shadow-blur">
+    <view class="bg-green content shadow">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.3</view>
         <view class="cu-tag line-white">2019/01/06</view>
@@ -116,7 +130,7 @@
     </view>
   </view>
   <view class="cu-item text-green">
-    <view class="bg-green content shadow-blur">
+    <view class="bg-green content shadow">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.2</view>
         <view class="cu-tag line-white">2018/12/24</view>
@@ -134,7 +148,7 @@
     </view>
   </view>
   <view class="cu-item text-green">
-    <view class="bg-green content shadow-blur">
+    <view class="bg-green content shadow">
       <view class="cu-capsule radius">
         <view class="cu-tag bg-white text-green">v2.0.1</view>
         <view class="cu-tag line-white">2018/12/20</view>

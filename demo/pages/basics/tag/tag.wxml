@@ -24,10 +24,10 @@
   </view>
 </view>
 <view class="padding-sm flex flex-wrap">
-  <view class="padding-xs" wx:for="{{ColorList}}" wx:key>
+  <view class="padding-xs" wx:for="{{ColorList}}" wx:key  wx:if="{{item.name!='gray'}}">
     <view class="cu-tag bg-{{item.name}}">{{item.title}}</view>
   </view>
-  <view class="padding-xs" wx:for="{{ColorList}}" wx:key wx:if="{{index<12}}">
+  <view class="padding-xs" wx:for="{{ColorList}}" wx:key  wx:if="{{item.name!='gray' && item.name!='black' && item.name!='white'}}">
     <view class="cu-tag bg-{{item.name}} light">{{item.title}}</view>
   </view>
 </view>
@@ -37,7 +37,7 @@
   </view>
 </view>
 <view class="padding-sm flex flex-wrap">
-  <view class="padding-xs" wx:for="{{ColorList}}" wx:key>
+  <view class="padding-xs" wx:for="{{ColorList}}" wx:key  wx:if="{{item.name!='white'}}">
     <view class="cu-tag line-{{item.name}}">{{item.title}}</view>
   </view>
 </view>

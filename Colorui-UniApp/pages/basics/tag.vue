@@ -27,10 +27,10 @@
 			</view>
 		</view>
 		<view class='padding-sm flex flex-wrap'>
-			<view class="padding-xs" v-for="(item,index) in ColorList" :key="index">
+			<view class="padding-xs" v-for="(item,index) in ColorList" :key="index" v-if="item.name!='gray'">
 				<view class='cu-tag' :class="'bg-' + item.name">{{item.title}}</view>
 			</view>
-			<view class="padding-xs" v-for="(item,index) in ColorList" :key="index" v-if="index<12">
+			<view class="padding-xs" v-for="(item,index) in ColorList" :key="index" v-if="item.name!='gray' && item.name!='black' && item.name!='white'">
 				<view class='cu-tag light' :class="'bg-' + item.name">{{item.title}}</view>
 			</view>
 		</view>
@@ -40,7 +40,7 @@
 			</view>
 		</view>
 		<view class='padding-sm flex flex-wrap'>
-			<view class="padding-xs" v-for="(item,index) in ColorList" :key="index">
+			<view class="padding-xs" v-for="(item,index) in ColorList" :key="index" v-if="item.name!='white'">
 				<view class='cu-tag' :class="'line-' + item.name">{{item.title}}</view>
 			</view>
 		</view>
