@@ -4,7 +4,7 @@
 ColorUI是一个css库！！！在你引入样式后可以根据class来调用组件，一些含有交互的操作我也有简单写，可以为你开发提供一些思路。
 ## 交流
 微信群：加入微信群请先添加开发者微信，备注UniApp插件市场。QQ群：240787041 或扫描二维码。
-<p align="center"><img src="https://image.weilanwl.com/colorui/githubQrcode.jpg" alt="" style="max-width:100%;" width="748"></p>				  
+<p align="center"><img src="https://image.weilanwl.com/colorui/githubQrcode.jpg?a=0" alt="" style="max-width:100%;" width="748"></p>				  
 
 ## 素材
 ColorUI在语雀有个群友共同在维护的知识库，里面有一些群友改的模板和UI素材供开发使用哦！
