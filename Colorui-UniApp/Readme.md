@@ -14,11 +14,11 @@ ColorUI在语雀有个群友共同在维护的知识库，里面有一些群友�
 ## 开始使用
 下载源码解压，复制根目录的 `/colorui` 文件夹到你的根目录
 
-`App.vue` 引入关键Css `main.css` `cuIcon.css`
+`App.vue` 引入关键Css `main.css` `icon.css`
 ```
 <style>
     @import "colorui/main.css";
-	@import "colorui/cuIcon.css";
+	@import "colorui/icon.css";
 	@import "app.css"; /* 你的项目css */
 	....
 </style>
@@ -140,5 +140,5 @@ Vue.component('cu-custom',cuCustom)
 
 * 2019年3月25日 v2.1.0
     *  完成元素，组件移植
-	*  cuIcon文件更改名称，避免图标冲突
+	*  icon文件更改名称，避免图标冲突
 	*  针对不同端口做了优化
