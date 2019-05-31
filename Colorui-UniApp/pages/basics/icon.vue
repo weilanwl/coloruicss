@@ -4,11 +4,11 @@
 		<view class="cu-bar bg-white search fixed" :style="[{top:CustomBar + 'px'}]">
 			<view class="search-form round">
 				<text class="cuIcon-search"></text>
-				<input type="text" placeholder="搜索icon" confirm-type="search" @input="searchIcon"></input>
+				<input type="text" placeholder="搜索cuIcon" confirm-type="search" @input="searchIcon"></input>
 			</view>
 		</view>
 		<view class="cu-list grid col-3">
-			<view class="cu-item" v-for="(item,index) in icon" :key="index" v-if="item.isShow">
+			<view class="cu-item" v-for="(item,index) in cuIcon" :key="index" v-if="item.isShow">
 				<text class="lg text-gray" :class="'cuIcon-' + item.name"></text>
 				<text>{{item.name}}</text>
 			</view>
@@ -21,7 +21,7 @@
 		data() {
 			return {
 				CustomBar: this.CustomBar,
-				icon: [{
+				cuIcon: [{
 					name: 'appreciate',
 					isShow: true
 				}, {
@@ -901,7 +901,7 @@
 					name: 'dianhua',
 					isShow: true
 				}, {
-					name: 'icon',
+					name: 'cuIcon',
 					isShow: true
 				}, {
 					name: 'loading2',
@@ -916,7 +916,7 @@
 		methods: {
 			searchIcon(e) {
 				let key = e.detail.value.toLowerCase();
-				let list = this.icon;
+				let list = this.cuIcon;
 				for (let i = 0; i < list.length; i++) {
 					let a = key;
 					let b = list[i].name.toLowerCase();
@@ -926,7 +926,7 @@
 						list[i].isShow = false
 					}
 				}
-				this.icon = list
+				this.cuIcon = list
 			}
 		}
 	}

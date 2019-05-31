@@ -38,8 +38,8 @@
 				</view>
 			</view>
 			<view class="cu-list grid" :class="['col-' + gridCol,gridBorder?'':'no-border']">
-				<view class="cu-item" v-for="(item,index) in iconList" :key="index" v-if="index<gridCol*2">
-					<view :class="['cuIcon-' + item.icon,'text-' + item.color]">
+				<view class="cu-item" v-for="(item,index) in cuIconList" :key="index" v-if="index<gridCol*2">
+					<view :class="['cuIcon-' + item.cuIcon,'text-' + item.color]">
 						<view class="cu-tag badge" v-if="item.badge!=0">
 							<block v-if="item.badge!=1">{{item.badge>99?'99+':item.badge}}</block>
 						</view>
@@ -181,10 +181,10 @@
 					<view class="content">
 						<view class="text-grey">凯尔</view>
 						<view class="text-gray text-sm flex">
-							<text class="text-cut">
+							<view class="text-cut">
 								<text class="cuIcon-infofill text-red  margin-right-xs"></text>
 								我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。我已天理为凭，踏入这片荒芜，不再受凡人的枷锁遏制。
-							</text> </view>
+							</view> </view>
 					</view>
 					<view class="action">
 						<view class="text-grey text-xs">22:20</view>
@@ -197,13 +197,13 @@
 					</view>
 					<view class="content">
 						<view class="text-grey">
-							<text class="text-cut">瓦洛兰之盾-塔里克</text>
+							<view class="text-cut">瓦洛兰之盾-塔里克</view>
 							<view class="cu-tag round bg-orange sm">战士</view>
 						</view>
 						<view class="text-gray text-sm flex">
-							<text class="text-cut">
+							<view class="text-cut">
 								塔里克是保护者星灵，用超乎寻常的力量守护着符文之地的生命、仁爱以及万物之美。塔里克由于渎职而被放逐，离开了祖国德玛西亚，前去攀登巨神峰寻找救赎，但他找到的却是来自星界的更高层的召唤。现在的塔里克与古代巨神族的神力相融合，以瓦洛兰之盾的身份，永不疲倦地警惕着阴险狡诈的虚空腐化之力。
-							</text>
+							</view>
 						</view>
 					</view>
 					<view class="action">
@@ -214,8 +214,8 @@
 				<view class="cu-item ">
 					<view class="cu-avatar radius lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/img/champion/Morgana.png);"></view>
 					<view class="content">
-						<view class="text-pink"><text class="text-cut">莫甘娜</text></view>
-						<view class="text-gray text-sm flex"> <text class="text-cut">凯尔，你被自己的光芒变的盲目！</text></view>
+						<view class="text-pink"><view class="text-cut">莫甘娜</view></view>
+						<view class="text-gray text-sm flex"> <view class="text-cut">凯尔，你被自己的光芒变的盲目！</view></view>
 					</view>
 					<view class="action">
 						<view class="text-grey text-xs">22:20</view>
@@ -225,10 +225,10 @@
 				<view class="cu-item grayscale">
 					<view class="cu-avatar radius lg" style="background-image:url(https://ossweb-img.qq.com/images/lol/web201310/skin/big81007.jpg);"></view>
 					<view class="content">
-						<view><text class="text-cut">伊泽瑞尔</text>
+						<view><view class="text-cut">伊泽瑞尔</view>
 							<view class="cu-tag round bg-orange sm">断开连接...</view>
 						</view>
-						<view class="text-gray text-sm flex"> <text class="text-cut"> 等我回来一个打十个</text></view>
+						<view class="text-gray text-sm flex"> <view class="text-cut"> 等我回来一个打十个</view></view>
 					</view>
 					<view class="action">
 						<view class="text-grey text-xs">22:20</view>
@@ -241,11 +241,11 @@
 					</view>
 					<view class="content">
 						<view>
-							<text class="text-cut">瓦罗兰大陆-睡衣守护者-新手保护营</text>
+							<view class="text-cut">瓦罗兰大陆-睡衣守护者-新手保护营</view>
 							<view class="cu-tag round bg-orange sm">6人</view>
 						</view>
 						<view class="text-gray text-sm flex">
-							<text class="text-cut"> 伊泽瑞尔：<text class="cuIcon-locationfill text-orange margin-right-xs"></text> 传送中...</text></view>
+							<view class="text-cut"> 伊泽瑞尔：<text class="cuIcon-locationfill text-orange margin-right-xs"></text> 传送中...</view></view>
 					</view>
 					<view class="action">
 						<view class="text-grey text-xs">22:20</view>
@@ -286,53 +286,53 @@
 	export default {
 		data() {
 			return {
-				iconList: [{
-					icon: 'cardboardfill',
+				cuIconList: [{
+					cuIcon: 'cardboardfill',
 					color: 'red',
 					badge: 120,
 					name: 'VR'
 				}, {
-					icon: 'recordfill',
+					cuIcon: 'recordfill',
 					color: 'orange',
 					badge: 1,
 					name: '录像'
 				}, {
-					icon: 'picfill',
+					cuIcon: 'picfill',
 					color: 'yellow',
 					badge: 0,
 					name: '图像'
 				}, {
-					icon: 'noticefill',
+					cuIcon: 'noticefill',
 					color: 'olive',
 					badge: 22,
 					name: '通知'
 				}, {
-					icon: 'upstagefill',
+					cuIcon: 'upstagefill',
 					color: 'cyan',
 					badge: 0,
 					name: '排行榜'
 				}, {
-					icon: 'clothesfill',
+					cuIcon: 'clothesfill',
 					color: 'blue',
 					badge: 0,
 					name: '皮肤'
 				}, {
-					icon: 'discoverfill',
+					cuIcon: 'discoverfill',
 					color: 'purple',
 					badge: 0,
 					name: '发现'
 				}, {
-					icon: 'questionfill',
+					cuIcon: 'questionfill',
 					color: 'mauve',
 					badge: 0,
 					name: '帮助'
 				}, {
-					icon: 'commandfill',
+					cuIcon: 'commandfill',
 					color: 'purple',
 					badge: 0,
 					name: '问答'
 				}, {
-					icon: 'brandfill',
+					cuIcon: 'brandfill',
 					color: 'mauve',
 					badge: 0,
 					name: '版权'

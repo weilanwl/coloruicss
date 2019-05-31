@@ -3,155 +3,103 @@
 		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
 			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/basics/layout",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/basics/background",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/basics/text",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/basics/icon",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/basics/button",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/basics/design",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/basics/tag",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/basics/avatar",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/basics/progress",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/basics/shadow",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/basics/loading",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/component/bar",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/component/nav",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/component/list",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/component/card",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/component/form",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/component/timeline",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/component/chat",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/component/swiper",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/component/modal",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		},
 		{
 			"path": "pages/component/steps",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		}, {
 			"path": "pages/plugin/indexes",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		}, {
 			"path": "pages/plugin/animation",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		}, {
 			"path": "pages/plugin/drawer",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		}, {
 			"path": "pages/plugin/verticalnav",
-			"style": {
-				"navigationBarTitleText": ""
-			}
+			"style": {}
 		}
 	],
 	"globalStyle": {
@@ -165,5 +113,15 @@
 		"navigationStyle": "custom",
 		"navigationBarTextStyle": "white"
 	},
-	"usingComponts": true
+	"usingComponts": true,
+		"condition": { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [{
+				"name": "表单", //模式名称
+				"path": "pages/component/form", //启动页面
+				"query": "" //启动参数
+			}
+		]
+	}
+
 }

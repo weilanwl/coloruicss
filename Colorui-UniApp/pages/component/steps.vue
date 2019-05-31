@@ -12,7 +12,7 @@
 		<view class="bg-white padding">
 			<view class="cu-steps">
 				<view class="cu-item" :class="index>basics?'':'text-red'" v-for="(item,index) in basicsList" :key="index">
-					<text :class="'cuIcon-' + item.icon"></text> {{item.name}}
+					<text :class="'cuIcon-' + item.cuIcon"></text> {{item.name}}
 				</view>
 			</view>
 		</view>
@@ -20,7 +20,7 @@
 		<view class="bg-white padding margin-top-xs">
 			<view class="cu-steps">
 				<view class="cu-item" :class="index>basics?'':'text-orange'" v-for="(item,index) in basicsList" :key="index">
-					<text :class="index>basics?'cuIcon-title':'cuIcon-' + item.icon"></text> {{item.name}}
+					<text :class="index>basics?'cuIcon-title':'cuIcon-' + item.cuIcon"></text> {{item.name}}
 				</view>
 			</view>
 		</view>
@@ -28,7 +28,7 @@
 		<view class="bg-white padding  margin-top-xs">
 			<view class="cu-steps steps-arrow">
 				<view class="cu-item" :class="index>basics?'':'text-blue'" v-for="(item,index) in basicsList" :key="index">
-					<text :class="'cuIcon-' + item.icon"></text> {{item.name}}
+					<text :class="'cuIcon-' + item.cuIcon"></text> {{item.name}}
 				</view>
 			</view>
 		</view>
@@ -69,16 +69,16 @@
 		data() {
 			return {
 				basicsList: [{
-					icon: 'usefullfill',
+					cuIcon: 'usefullfill',
 					name: '开始'
 				}, {
-					icon: 'radioboxfill',
+					cuIcon: 'radioboxfill',
 					name: '等待'
 				}, {
-					icon: 'roundclosefill',
+					cuIcon: 'roundclosefill',
 					name: '错误'
 				}, {
-					icon: 'roundcheckfill',
+					cuIcon: 'roundcheckfill',
 					name: '完成'
 				}, ],
 				basics: 0,

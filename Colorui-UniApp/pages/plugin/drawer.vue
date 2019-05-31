@@ -130,7 +130,7 @@
 		color: #fff;
 	}
 
-	.DrawerPage .cu-bar.tabbar .action button.icon {
+	.DrawerPage .cu-bar.tabbar .action button.cuIcon {
 		width: 64upx;
 		height: 64upx;
 		line-height: 64upx;

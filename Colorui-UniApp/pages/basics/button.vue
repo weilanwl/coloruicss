@@ -15,7 +15,7 @@
 		<view class="padding flex flex-wrap justify-between align-center bg-white">
 			<button class="cu-btn">默认</button>
 			<button class="cu-btn round">圆角</button>
-			<button class="cu-btn icon">
+			<button class="cu-btn cuIcon">
 				<text class="cuIcon-emojifill"></text>
 			</button>
 		</view>
@@ -92,7 +92,7 @@
 			<button class="cu-btn block line-orange lg">
 				<text class="cuIcon-upload"></text> 图标</button>
 			<button class="cu-btn block bg-blue margin-tb-sm lg">
-				<text class="cuIcon-loading2 iconfont-spin"></text> 加载</button>
+				<text class="cuIcon-loading2 cuIconfont-spin"></text> 加载</button>
 			<button class="cu-btn block bg-black margin-tb-sm lg" loading> 原生加载</button>
 		</view>
 	</view>

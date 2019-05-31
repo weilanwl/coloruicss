@@ -8,7 +8,7 @@
 				 :style="[{animation: 'show ' + ((index+1)*0.2+1) + 's 1'}]" v-for="(item,index) in elements" :key="index">
 					<view class="nav-title">{{item.title}}</view>
 					<view class="nav-name">{{item.name}}</view>
-					<text :class="'cuIcon-' + item.icon"></text>
+					<text :class="'cuIcon-' + item.cuIcon"></text>
 				</navigator>
 			</view>
 			<view class="cu-tabbar-height"></view>
@@ -25,64 +25,67 @@
 						title: '布局',
 						name: 'layout',
 						color: 'cyan',
-						icon: 'newsfill'
+						cuIcon: 'newsfill'
 					},
 					{
 						title: '背景',
 						name: 'background',
 						color: 'blue',
-						icon: 'colorlens'
+						cuIcon: 'colorlens'
 					},
 					{
 						title: '文本',
 						name: 'text',
 						color: 'purple',
-						icon: 'font'
+						cuIcon: 'font'
 					},
 					{
 						title: '图标 ',
 						name: 'icon',
 						color: 'mauve',
-						icon: 'icon'
+						cuIcon: 'cuIcon'
 					},
 					{
 						title: '按钮',
 						name: 'button',
 						color: 'pink',
-						icon: 'btn'
+						cuIcon: 'btn'
 					},
 					{
 						title: '标签',
 						name: 'tag',
 						color: 'brown',
-						icon: 'tagfill'
+						cuIcon: 'tagfill'
 					},
 					{
 						title: '头像',
 						name: 'avatar',
 						color: 'red',
-						icon: 'myfill'
+						cuIcon: 'myfill'
 					},
 					{
 						title: '进度条',
 						name: 'progress',
 						color: 'orange',
-						icon: 'icloading'
+						cuIcon: 'icloading'
 					},
 					{
 						title: '边框阴影',
 						name: 'shadow',
 						color: 'olive',
-						icon: 'copy'
+						cuIcon: 'copy'
 					},
 					{
 						title: '加载',
 						name: 'loading',
 						color: 'green',
-						icon: 'loading2'
+						cuIcon: 'loading2'
 					}
 				],
 			};
+		},
+		onShow() {
+			console.log("success")
 		}
 	}
 </script>
