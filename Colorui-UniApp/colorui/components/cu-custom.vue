@@ -2,9 +2,12 @@
 	<view>
 		<view class="cu-custom" :style="[{height:CustomBar + 'px'}]">
 			<view class="cu-bar fixed" :style="style" :class="[bgImage!=''?'none-bg text-white bg-img':'',bgColor]">
-				<view class="action" @tap="BackPage" v-if="isBack">
-					<text class="cuIcon-back"></text>
-					<slot name="backText"></slot>
+				<view class="action" >
+					<view v-if="isBack" @tap="BackPage">
+						<text class="cuIcon-back"></text>
+						<slot name="backText"></slot>
+					</view>
+					<slot name="left"></slot>
 				</view>
 				<view class="content" :style="[{top:StatusBar + 'px'}]">
 					<slot name="content"></slot>
