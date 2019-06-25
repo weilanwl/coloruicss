@@ -52,6 +52,10 @@ onLaunch: function() {
 			Vue.prototype.StatusBar = e.statusBarHeight;
 			Vue.prototype.CustomBar = e.statusBarHeight + e.titleBarHeight;
 			// #endif
+			// #ifdef MP-BAIDU
+				Vue.prototype.StatusBar = e.statusBarHeight;
+				Vue.prototype.CustomBar = e.statusBarHeight + e.navigationBarHeight;
+			// #endif
 		}
 	})
 },

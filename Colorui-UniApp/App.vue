@@ -24,6 +24,11 @@
 					Vue.prototype.StatusBar = e.statusBarHeight;
 					Vue.prototype.CustomBar = e.statusBarHeight + e.titleBarHeight;
 					// #endif
+					
+					// #ifdef MP-BAIDU
+						Vue.prototype.StatusBar = e.statusBarHeight;
+						Vue.prototype.CustomBar = e.statusBarHeight + e.navigationBarHeight;
+					// #endif
 				}
 			})
 
@@ -131,6 +136,7 @@
 		border-radius: 12upx;
 		width: 45%;
 		margin: 0 2.5% 40upx;
+		box-sizing: border-box;
 		background-image: url(https://cdn.nlark.com/yuque/0/2019/png/280374/1552996358352-assets/web-upload/cc3b1807-c684-4b83-8f80-80e5b8a6b975.png);
 		background-size: cover;
 		background-position: center;
