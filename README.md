@@ -29,7 +29,11 @@ ColorUI在语雀有个群友共同在维护的知识库，里面有一些群友�
 
 `App.vue` 获得系统信息
 ```
-onLaunch: function() {
+// 导入Vue
+import Vue from 'vue'
+export default {
+
+    onLaunch: function() {
 	uni.getSystemInfo({
 		success: function(e) {
 			// #ifndef MP
@@ -52,7 +56,9 @@ onLaunch: function() {
 			// #endif
 		}
 	})
-},
+    },
+
+}
 ```
 
 `pages.json` 配置取消系统导航栏
