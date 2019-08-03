@@ -68,6 +68,10 @@
 			let that = this;
 			uni.createSelectorQuery().select('.indexBar-box').boundingClientRect(function(res) {
 				that.boxTop = res.top
+				that.boxBottom = res.bottom
+			}).exec();
+			uni.createSelectorQuery().select('.indexBar-item').boundingClientRect(function(res) {
+				that.boxItemHeight = res.height
 			}).exec();
 			uni.createSelectorQuery().select('.indexes').boundingClientRect(function(res) {
 				that.barTop = res.top
@@ -87,10 +91,12 @@
 			tMove(e) {
 				let y = e.touches[0].clientY,
 					offsettop = this.boxTop,
+					offsetbottom = this.boxBottom,
+					itemH = this.boxItemHeight,
 					that = this;
 				//判断选择区域,只有在选择区才会生效
-				if (y > offsettop) {
-					let num = parseInt((y - offsettop) / 20);
+				if (y > offsettop && y < offsetbottom) {
+					let num = parseInt((y - offsettop) / itemH);
 					this.listCur = that.list[num].name
 				};
 			},
