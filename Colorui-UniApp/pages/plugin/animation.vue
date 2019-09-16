@@ -47,7 +47,7 @@
 			</view>
 		</view>
 		<view class="margin radius bg-gradual-green shadow-blur">
-			<image src="https://image.weilanwl.com/gif/wave.gif" mode="scaleToFill" class="gif-black response" style="height:100upx"></image>
+			<image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-black response" style="height:100upx"></image>
 		</view>
 		<view class="margin flex">
 			<view class="bg-black flex-sub margin-right radius shadow-lg">
