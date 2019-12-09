@@ -2322,6 +2322,7 @@ button.cuIcon.lg {
 	align-items: center;
 	min-height: 100upx;
 	justify-content: space-between;
+	position: relative;
 }
 
 .cu-form-group+.cu-form-group {
@@ -2368,7 +2369,9 @@ button.cuIcon.lg {
 
 .cu-form-group picker {
 	flex: 1;
-	padding-right: 40upx;
+	/* padding-right: 40upx; */
+	/* 和cu-list一样的距离 */
+	padding-right: 60upx;
 	overflow: hidden;
 	position: relative;
 }
@@ -2403,6 +2406,26 @@ button.cuIcon.lg {
 .cu-form-group textarea[disabled] .placeholder {
 	color: transparent;
 }
+
+.cu-form-group.arrow {
+    padding-right: 45px;
+}
+.cu-form-group.arrow:before {
+	position: absolute;
+	top: 0;
+	right: 15px;
+	bottom: 0;
+	display: block;
+	margin: auto;
+	width: 15px;
+	height: 15px;
+	color: #8799a3;
+	content: "\E6A3";
+	text-align: center;
+	font-size: 17px;
+	font-family: cuIcon;
+	line-height: 15px;
+  }
 
 /* ==================
          模态窗口
