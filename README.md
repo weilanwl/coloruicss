@@ -9,6 +9,8 @@ ColorUI是一个css库！！！在你引入样式后可以根据class来调用�
 ## 素材
 ColorUI在语雀有个群友共同在维护的知识库，里面有一些群友改的模板和UI素材供开发使用哦！
 [语雀-ColorUI群资源](https://www.yuque.com/colorui)
+[语雀-ColorUI文档(群友整理)](https://www.yuque.com/swing-xcgis/hytn5l)
+
 
 ## 使用UniApp开发
 ### 开始
