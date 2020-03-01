@@ -30,6 +30,12 @@
 					Vue.prototype.StatusBar = e.statusBarHeight;
 					Vue.prototype.CustomBar = e.statusBarHeight + e.titleBarHeight;
 					// #endif
+					// #ifdef MP-QQ
+					Vue.prototype.StatusBar = e.statusBarHeight;
+					let custom_qq = qq.getMenuButtonBoundingClientRect();
+					Vue.prototype.Custom = custom_qq;
+					Vue.prototype.CustomBar = custom_qq.bottom + custom_qq.top - e.statusBarHeight;
+					// #endif
 				}
 			})
 
