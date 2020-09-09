@@ -36,6 +36,17 @@ Component({
     CustomBar: app.globalData.CustomBar,
     Custom: app.globalData.Custom
   },
+
+  lifetimes: {
+    attached: function(){
+      this.setData({
+        StatusBar: app.globalData.StatusBar,
+        CustomBar: app.globalData.CustomBar,
+        Custom: app.globalData.Custom
+      })
+    }
+  },
+
   /**
    * 组件的方法列表
    */
