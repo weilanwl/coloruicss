@@ -32,9 +32,9 @@ Component({
    * 组件的初始数据
    */
   data: {
-    StatusBar: app.globalData.StatusBar,
-    CustomBar: app.globalData.CustomBar,
-    Custom: app.globalData.Custom
+    StatusBar: 0,
+    CustomBar: 0,
+    Custom: {}
   },
   /**
    * 组件的方法列表
@@ -50,5 +50,25 @@ Component({
         url: '/pages/index/index',
       })
     }
+  }},
+  ready()
+  {
+    wx.getSystemInfo({
+      success: e => {
+        const data = {};
+        data.StatusBar = e.statusBarHeight;
+        let capsule = wx.getMenuButtonBoundingClientRect();
+        if (capsule)
+        {
+          data.Custom = capsule;
+          data.CustomBar = capsule.bottom + capsule.top - e.statusBarHeight;
+        }
+        else
+        {
+          data.CustomBar = e.statusBarHeight + 50;
+        }
+        this.setData(data);
+      }
+    });
   }
 })
