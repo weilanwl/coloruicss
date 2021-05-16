@@ -1,0 +1,13 @@
+Page {
+  background: #1467D4;
+  text-align: center;
+  color: white;
+}
+.log-list {
+  display: flex;
+  flex-direction: column;
+  padding: 40rpx;
+}
+.log-item {
+  margin: 10rpx;
+}

@@ -1,0 +1,146 @@
+// 使用vs扩展easy sass来编写scss转成wxss
+@font-face {
+  font-family: "cuNav"; /* Project id 2547288 */
+  src: url('data:font/woff2;charset=utf-8;base64,d09GMgABAAAAAALcAA0AAAAABsQAAAKHAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP0ZGVE0cGh4GVgCCShEICoFEgTULDAABNgIkAxIEIAWEZAc6G8AFyJ4FdpMbjE2rsJgfdpnnRcbD82vfzn3zZllmEPe6JG+iaRviUdyaaVVvEGlQvUL+9v1+vz1fEYskPIpLqE/92kCoJLPQSIGkWUMkk8zA80vG/H9upk3C/7yX05q+NKBAA80CiwJu+xw3BI7PDiw91UO+QXdT4FUXL5i9EPD15sgG4NuHmCM/mtAOPUASClnISIgs/ilJR9JnnALvj7+mRANJWZAr563YsrH6Y8svit2N3VpFxO0JQIEC/RCYoSzQT8Uo0CQLya3baICv73209x4IIJoIQCQk+OcRwGtEoyGBElRIaAGzAGQAhOgyOjnr4d7u6endHbu3u5vt3Oy+u63no6Ps68vdb27Vddr9qq6PPYjY8+LYM3bfM5hvolDS7vR8utKx23fN7yggv2CUJcxI47VM/pKxHXYyfTVDZ2PToPUD/wNf2jp3uOr8NO614xz1jT+HvRyR9DS19JoJQCDouP93q/ap/5vrrGrWW25cfCoGgWYJBNXpn5BB8UkAAHIGZGTRyTJCaTQCCZUKDQBd/AlAd4MIhNIcBJI2liFQKG1GICsdFaBUuytAk9JbASpjowuBWtdgyiK3xRjQIFSmQdLBIihU1qGZ3AmlHs6hSeUhVJZ4qa6NiH1NpmMcBqFS2HqYTukBSyblxghNVHvlbJ/F/qn+DJaSjhkULN1wbChgAYdHihkYfITmY8vX0nYJB8MFMqkeY4aNwoIpdGx41AU6OzrlYGlYwymecYLg6uFiMoke26m6whGLZXrkmEzIYRGGYZPdy5U3LoS7smLvk7ITHPHn3c8BqwhCbt6IEa7PzjArTAMTX8N1zI4cUucUREUnlggpUhS501YbOnR2RAQA') format('woff2')
+}
+
+[class*="cuNav-"] {
+	font-family: "cuNav" !important;
+	font-size: inherit;
+	font-style: normal;
+}
+
+.cuNav-homefill:before {
+  content: "\e6bb";
+}
+
+.cuNav-back:before {
+  content: "\e679";
+}
+
+view {
+  box-sizing: border-box;
+}
+.cu-custom {
+	display: block;
+	position: relative;
+  .cu-bar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    min-height: 100rpx;
+    justify-content: space-between;
+    min-height: 0px;
+    padding-right: 220rpx;
+    box-shadow: 0rpx 0rpx 0rpx;
+    z-index: 9999;
+    &.fixed {
+      position: fixed;
+      width: 100%;
+      top: 0;
+    }
+    &.ios .content {
+      bottom: 7px;
+      height: 30px;
+      font-size: 32rpx;
+      line-height: 30px;
+    }
+    .content {
+      position: absolute;
+      text-align: center;
+      width: calc(100% - 440rpx);
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 0;
+      margin: auto;
+      height: 60rpx;
+      font-size: 32rpx;
+      line-height: 60rpx;
+      cursor: none;
+      pointer-events: none;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+    .action {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      justify-content: center;
+      max-width: 100%;
+      &:first-child {
+        margin-left: 30rpx;
+        font-size: 30rpx;
+      }
+      &:last-child {
+        margin-right: 30rpx;
+      }
+      &:first-child>text[class*="cuNav-"] {
+        margin-left: -0.3em;
+        margin-right: 0.3em;
+      }
+      & > text[class*="cuNav-"] {
+        font-size: 36rpx;
+      }
+      & > text[class*="cuNav-"]+text[class*="cuNav-"] {
+        margin-left: 0.5em;
+      }
+    }
+    .border-custom {
+      position: relative;
+      background: rgba(0, 0, 0, 0.15);
+      border-radius: 1000rpx;
+      height: 30px;
+      &::after {
+        content: " ";
+        width: 200%;
+        height: 200%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        border-radius: inherit;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        pointer-events: none;
+        box-sizing: border-box;
+        border: 1rpx solid #fff;
+        opacity: 0.5;
+      }
+      &::before {
+        content: " ";
+        width: 1rpx;
+        height: 110%;
+        position: absolute;
+        top: 22.5%;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        pointer-events: none;
+        box-sizing: border-box;
+        opacity: 0.6;
+        background-color: #fff;
+      }
+      text[class*="cuNav-"] {
+        display: block;
+        flex: 1;
+        margin: auto !important;
+        text-align: center;
+        font-size: 34rpx;
+      }
+    }
+  }
+  .text-white {
+    color: #fff;
+  }
+  .text-black {
+    color: #000;
+  }
+  .bg-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

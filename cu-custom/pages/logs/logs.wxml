@@ -1,0 +1,13 @@
+<!--logs.wxml-->
+<cu-custom
+  bgColor="text-white"
+  isCustom="{{true}}">
+  <view slot="content">
+    胶囊样式
+  </view>
+</cu-custom>
+<view class="container log-list">
+  <block wx:for="{{logs}}" wx:key="timeStamp" wx:for-item="log">
+    <text class="log-item">{{index + 1}}. {{log.date}}</text>
+  </block>
+</view>
