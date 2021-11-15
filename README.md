@@ -1,3 +1,5 @@
+V3 测试版：https://github.com/weilanwl/coloruiBeta
+
 <p style="text-align: center;"><img src="https://image.weilanwl.com/uni/UniAppReadme.jpg" alt="ColorUI简介"></img></p>
 
 ## 前言
