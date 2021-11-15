@@ -154,7 +154,7 @@ Vue.component('cu-custom',cuCustom)
 | right    | 右侧区域(小程序端可使用范围很窄！)  | 
 
 ## 赞赏
-<p align="center"><img src="https://image.weilanwl.com/colorui/githubAppreciate.jpg" alt="" style="max-width:100%;" width="600"></p>
+<p align="center"><img src="https://cos.color-ui.com/web/yehv3.jpgg" alt="" style="max-width:100%;" width="600"></p>
 
 
 
