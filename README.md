@@ -3,7 +3,7 @@
 <p align="center">V3 测试版：https://github.com/weilanwl/coloruiBeta</p>
 
 
-<p align="center"><img src="https://cos.color-ui.com/web/zva3m.png" alt="ColorUI简介"></img></p>
+<p align="center"><img src="https://cos.color-ui.com/web/zva3m.png" alt="ColorUI简介" width="75%"></img></p>
 
 ## 素材
 ColorUI在语雀有个群友共同在维护的知识库，里面有一些群友改的模板和UI素材供开发使用哦！
