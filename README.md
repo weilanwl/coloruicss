@@ -1,16 +1,20 @@
-V3 测试版：https://github.com/weilanwl/coloruiBeta
 
-<p style="text-align: center;"><img src="https://image.weilanwl.com/uni/UniAppReadme.jpg" alt="ColorUI简介"></img></p>
+
+<p align="center">V3 测试版：https://github.com/weilanwl/coloruiBeta</p>
+
+
+<p align="center"><img src="https://cos.color-ui.com/web/kd473.png" alt="ColorUI简介"></img></p>
+
+## 素材
+ColorUI在语雀有个群友共同在维护的知识库，里面有一些群友改的模板和UI素材供开发使用哦！
+[语雀-ColorUI群资源](https://www.yuque.com/colorui)
 
 ## 前言
 ColorUI是一个css库！！！在你引入样式后可以根据class来调用组件，一些含有交互的操作我也有简单写，可以为你开发提供一些思路。
 ## 交流
 微信群：加入微信群请先添加开发者微信，备注UniApp插件市场。QQ群：240787041 或扫描二维码。
-<p align="center"><img src="https://image.weilanwl.com/colorui/githubQrcode.jpg?a=1" alt="" style="max-width:100%;" width="748"></p>				  
+<p align="center"><img src="https://cos.color-ui.com/web/km4js.png" alt="" style="max-width:100%;" width="748"></p>				  
 
-## 素材
-ColorUI在语雀有个群友共同在维护的知识库，里面有一些群友改的模板和UI素材供开发使用哦！
-[语雀-ColorUI群资源](https://www.yuque.com/colorui)
 
 ## 使用UniApp开发
 ### 开始
@@ -125,7 +129,7 @@ Vue.component('cu-custom',cuCustom)
 `App.json` 配置取消系统导航栏,并全局引入组件
 ```
 "window": {
-	"navigationStyle": "custom"
+    "navigationStyle": "custom"
 },
 "usingComponents": {
     "cu-custom":"/colorui/components/cu-custom"
@@ -135,8 +139,8 @@ Vue.component('cu-custom',cuCustom)
 `page.wxml` 页面可以直接调用了
 ```
 <cu-custom bgColor="bg-gradual-pink" isBack="{{true}}">
-	<view slot="backText">返回</view>
-	<view slot="content">导航栏</view>
+    <view slot="backText">返回</view>
+    <view slot="content">导航栏</view>
 </cu-custom>
 
 ```
@@ -154,7 +158,11 @@ Vue.component('cu-custom',cuCustom)
 | right    | 右侧区域(小程序端可使用范围很窄！)  | 
 
 ## 赞赏
-<p align="center"><img src="https://cos.color-ui.com/web/yehv3.jpgg" alt="" style="max-width:100%;" width="600"></p>
+<p align="center"><img src="https://cos.color-ui.com/web/yehv3.jpg" alt="" style="max-width:100%;" width="600"></p>
 
 
+## License
 
+[MIT](https://opensource.org/licenses/MIT)
+
+Copyright (c) 2020-present, XiaoGang Wen
