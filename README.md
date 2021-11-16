@@ -83,13 +83,13 @@ Vue.component('cu-custom',cuCustom)
 </cu-custom>
 ```
 | 参数       | 作用   |类型    |  默认值 |
-| --------   | -----:  |-----:  | :----:  |
+| --------   | :----:  |:----:  | :----:  |
 | bgColor    | 背景颜色类名 |String  |   ''    |
 | isBack     | 是否开启返回 | Boolean |   false |
 | bgImage    | 背景图片路径 | String  |  ''     |
 
 | slot块       | 作用   |
-| --------   | -----:  |
+| --------   | :----:  |
 | backText    | 返回时的文字 | 
 | content     | 中间区域 | 
 | right    | 右侧区域(小程序端可使用范围很窄！)  | 
@@ -145,14 +145,14 @@ onLaunch: function() {
 
 ```
 | 参数       | 作用   |类型    |  默认值 |
-| --------   | -----:  |-----:  | :----:  |
+| --------   |:----:  |:----:  | :----:  |
 | bgColor    | 背景颜色类名 |String  |   ''    |
 | isBack     | 是否开启返回 | Boolean |   false |
 | isCustom   | 是否开启左侧胶囊 | Boolean |   false |
 | bgImage    | 背景图片路径 | String  |  ''     |
 
 | slot块       | 作用   |
-| --------   | -----:  |
+| --------   | :----:  |
 | backText    | 返回时的文字 | 
 | content     | 中间区域 | 
 | right    | 右侧区域(小程序端可使用范围很窄！)  | 
